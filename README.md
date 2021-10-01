@@ -46,10 +46,10 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 ## Enterprise Data Mesh Data Product User Persona 
 - Data Product Owners
+	- - Citizen Developers (assisted by LCNC)
 - Data Management & Governance 'Stewards'
 - Semantic Specialists
 - Data Story Tellers & Navigation SME
-- Citizen Developers (assisted by LCNC)
 - Data Infra PlatformOps specialists
 - Data Security Professionals
 - CDO
