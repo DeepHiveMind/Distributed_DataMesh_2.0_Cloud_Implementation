@@ -43,6 +43,7 @@ Contents
 		-- Azure Data Lake			[Node on Domain driven storage- Data Lake Storage]
 		-- Azure Stream Analytics	[Stream Analytics engine]
 		-- Azure Data Explorer		[Data Exploration Service]
+		-- Presidio					[ Data Protection and PII Anonymization API]
 		
 		-- Azure Data Factory [Data Ingestion engine]
 		-- Azure DataBricks [Data Integration engine]
@@ -51,10 +52,16 @@ Contents
 		
 		-- IaC ARM Templates				[IaC engine]
 		-- Azure Vnet & SubNet		[Azure Networking]
-		-- Azure AKS				[Azure Managed K8S Services]
+		-- Azure DevOps 			[DevOps Service]
 		-- Azure Key Valut			[Key Security]
 		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
-
+		
+	- Yet to be implemented Tools & Technology
+		-- Domain Ontology on CosmosDB			[Knowledge Graph]		
+		-- WebOntology & Protege
+		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
+		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
+		
 ## DataMesh-as-a-Code on AWS Cloud
 
 ## Reference Technical Blogs
