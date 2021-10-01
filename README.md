@@ -15,11 +15,13 @@
 ## Contents
 
 - [Distributed Data Mesh]
-	- [Reference Technical Blogs](#Reference-Technical-Blogs)
-	- [Reference Training Courses](#Reference-training-courses)
 	
 	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)
+	
 	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
+	
+	- [Reference Technical Blogs](#Reference-Technical-Blogs)
+	- [Reference Training Courses](#Reference-training-courses)
 	
 	- [Books](#books)
 	- [Community Resources](#community-resources)
@@ -27,6 +29,26 @@
 	- [License](#license)
 
 Contents
+## DataMesh-as-a-Code on Azure Cloud
+DataMesh-as-a-Code on Azure Cloud sample implementation  
+	- Modern Domain Driven Data Warehouse on DataOps
+	- Technology & Tools 
+		-- Azure Data Factory [Data Ingestion engine]
+		-- Azure DataBricks [Data Integration engine]
+		-- Azure Purview	[Data Provenance engine]
+		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
+		-- Azure CosmosDB			[Node on Domain driven storage- MultiDomain NOSQL DB ]
+		-- Azure Data Lake			[Node on Domain driven storage- Data Lake Storage]
+		-- Azure Stream Analytics	[Stream Analytics engine]
+		-- Azure Data Explorer	
+		-- Azure Key Valut			[Key Security]
+		-- Azure Function & Azure App Logic [MicroService Serverless engine & MicroService Serverless Orachsteration engine]
+		-- IaC ARM Templates				[IaC]
+		-- Azure App Insight 	[Azure Monitoring Services]
+		-- Azure Vnet & SubNet
+		-- Azure AKS
+
+## DataMesh-as-a-Code on AWS Cloud
 
 ## Reference Technical Blogs
 
@@ -44,10 +66,6 @@ Contents
 - [Zhamak Dehghani | Kafka Summit Europe 2021 Keynote: How to Build the Data Mesh Foundation](https://www.youtube.com/watch?v=QF41q10NSAs) - Kafka Summit talk about building the foundations for Data Mesh.
 - [Data Mesh - Domain-Oriented Data](https://training.dddeurope.com/data-mesh-zhamak-dheghani/) - Public Workshops by Zhamak Dehghani.
 
-
-## DataMesh-as-a-Code on Azure Cloud
-
-## DataMesh-as-a-Code on AWS Cloud
 
 
 ## Books
