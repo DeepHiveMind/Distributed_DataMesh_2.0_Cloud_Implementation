@@ -28,7 +28,7 @@ The aim is to
 10. Unified Data Virtualization Service
 11. Secured Data Sharing and Data Access Service
 
-# **Data Mesh Topolgy** - 3 Major Patterns
+# **Data Mesh Topolgy** - 3 Major Patterns based on Data Monetization feasibility
 - Governed Data Mesh topology
 - Harmonized Data Mesh topology
 - Highly federated Mesh topology
