@@ -44,6 +44,15 @@ The aim is to
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 
 
+## Enterprise Data Mesh Data Product User Persona 
+- Data Product Owners
+- Data Management & Governance 'Stewards'
+- Semantic Specialists
+- Data Story Tellers & Navigation SME
+- Citizen Developers (assisted by LCNC)
+- Data Infra PlatformOps specialists
+- Data Security Professionals
+- CDO
 
 ## Contents
 
