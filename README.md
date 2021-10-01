@@ -36,23 +36,24 @@ Contents
 	- Modern Domain Driven Data Warehouse on DataOps
 	
 	- Technology & Tools 
-	
-		-- Azure Data Factory [Data Ingestion engine]
-		
-		-- Azure DataBricks [Data Integration engine]
-		
+
 		-- Azure Purview	[Data Provenance engine]
 		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
 		-- Azure CosmosDB			[Node on Domain driven storage- MultiDomain NOSQL DB ]
 		-- Azure Data Lake			[Node on Domain driven storage- Data Lake Storage]
 		-- Azure Stream Analytics	[Stream Analytics engine]
-		-- Azure Data Explorer	
-		-- Azure Key Valut			[Key Security]
+		-- Azure Data Explorer		[Data Exploration Service]
+		
+		-- Azure Data Factory [Data Ingestion engine]
+		-- Azure DataBricks [Data Integration engine]
+
 		-- Azure Function & Azure App Logic [MicroService Serverless engine & MicroService Serverless Orachsteration engine]
-		-- IaC ARM Templates				[IaC]
-		-- Azure App Insight 	[Azure Monitoring Services]
-		-- Azure Vnet & SubNet
-		-- Azure AKS
+		
+		-- IaC ARM Templates				[IaC engine]
+		-- Azure Vnet & SubNet		[Azure Networking]
+		-- Azure AKS				[Azure Managed K8S Services]
+		-- Azure Key Valut			[Key Security]
+		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
 
 ## DataMesh-as-a-Code on AWS Cloud
 
