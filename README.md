@@ -17,9 +17,11 @@
 - [Distributed Data Mesh]
 	- [Reference Technical Blogs](#Reference-Technical-Blogs)
 	- [Reference Training Courses](#Reference-training-courses)
-	- [Books](#books)	
+	
 	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)
 	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
+	
+	- [Books](#books)
 	- [Community Resources](#community-resources)
 	- [Conferences](#conferences)
 	- [License](#license)
