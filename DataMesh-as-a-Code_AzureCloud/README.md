@@ -12,7 +12,7 @@ products:
 - Azure-Stream-Analytics
 - Azure-Data-Lake-Gen2
 - Azure-Functions
-description: "Code samples showcasing how to apply DevOps concepts to the Data Mesh with Modern Data Warehouse Architecture leveraging different Azure Sevices."
+description: "Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices."
 ---
 
 # DataMesh on Azure Cloud | DataOps for the Modern Data Warehouse with Service Mesh and KnowledgeGraph
