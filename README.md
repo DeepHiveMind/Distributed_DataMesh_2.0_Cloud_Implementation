@@ -12,13 +12,17 @@ The aim is to
 -- Enabling each domain to handle **its own data pipelines**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
 
 
-**[Data Mesh]** is a new paradigm to data architecture that follows 5 main principles: 
-1. Data Mesh Topology Patterns
-2. Domain-oriented data and compute 
-3. Data as a product
-4. Self-serve data platform (Data-as-a-Service)
-5. Federated computational governance
-6. Service Mesh powered Data Governance & Data Management
+**[Data Mesh]** is a new paradigm to data architecture that follows 10 main principles: 
+1. Data Mesh Topology
+2. Domain-oriented Data Model  
+3. Domain-oriented Data compute 
+4. Domain-oriented Data Stoarge 
+5. Data as a product
+6. Self-serve data platform (Data-as-a-Service)
+7. Federated computational governance
+8. Service Mesh 
+9. Distributed Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
+10. Unified Data Virtualization Service
 
 # **Data Mesh Topolgy** - 3 Major Patterns
 - Governed Data Mesh topology
