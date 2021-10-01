@@ -30,11 +30,17 @@
 
 Contents
 ## DataMesh-as-a-Code on Azure Cloud
-DataMesh-as-a-Code on Azure Cloud sample implementation  
+
+> DataMesh-as-a-Code on Azure Cloud sample implementation  
+
 	- Modern Domain Driven Data Warehouse on DataOps
+	
 	- Technology & Tools 
+	
 		-- Azure Data Factory [Data Ingestion engine]
+		
 		-- Azure DataBricks [Data Integration engine]
+		
 		-- Azure Purview	[Data Provenance engine]
 		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
 		-- Azure CosmosDB			[Node on Domain driven storage- MultiDomain NOSQL DB ]
