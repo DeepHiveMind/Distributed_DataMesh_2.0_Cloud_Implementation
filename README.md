@@ -18,7 +18,7 @@ The aim is to
 3. Domain-oriented Data compute 
 4. Domain-oriented Data Stoarge 
 5. Data as a product
-6. Self-serve data platform (Data-as-a-Service)
+6. Self-serve Infra data platform (DataInfra-as-a-Service)
 7. Federated computational governance
 8. Service Mesh 
 9. Distributed Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
