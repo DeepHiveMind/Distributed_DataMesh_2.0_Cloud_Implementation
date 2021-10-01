@@ -1,6 +1,6 @@
 # Distributed Data Mesh 2.0 
 
-> A curated list of Data Mesh resources.
+> DataMesh-as-a-Code on Cloud | Curated list of Data Mesh Artefacts.
 
 
 
@@ -15,18 +15,16 @@
 ## Contents
 
 - [Distributed Data Mesh]
-	- [Contents](#contents)
-	- [Books](#books)
-	- [Training Courses](#training-courses)
-	- [Video Collections](#video-collections)
-	- [Community Resources](#community-resources)
 	- [Reference Technical Blogs](#Reference-Technical-Blogs)
-	- [Podcasts and Interviews](#podcasts-and-interviews)
+	- [Reference Training Courses](#Reference-training-courses)
+	- [Books](#books)	
+	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)
+	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
+	- [Community Resources](#community-resources)
 	- [Conferences](#conferences)
-	- [User Groups](#user-groups)
-	- [Tools](#tools)
 	- [License](#license)
 
+Contents
 
 ## Reference Technical Blogs
 
@@ -37,12 +35,7 @@
 - [Data mesh: it's not just about tech, it's about ownership and communication](https://www.thoughtworks.com/insights/blog/data-mesh-its-not-about-tech-its-about-ownership-and-communication) - article about ownership in Data Mesh.
 
 
-## Books
-
-- [Data Management at Scale](https://www.oreilly.com/library/view/data-management-at/9781492054771/) - Book about Enterprise Data Architecture called Scaled Architecture. Data Mesh is only mentioned in this book, but Scaled Architecture follows all principles of Data Mesh. Book describes in details its implementation.
-
-
-## Training Courses
+## Reference Training Courses
 
 - [Data Mesh Paradigm Shift in Data Platform Architecture](https://www.youtube.com/watch?v=52MCFe4v0UU) - Zhamak Dehghani overview of Data Mesh. 
 - [Data Mesh Paradigm Shift in Data Platform Architecture - Arif Wider - DDD Europe 2020](https://www.youtube.com/watch?v=Iqbl9AS03VU&t=1s) - DDD Europe talk about Data Mesh.
@@ -50,16 +43,22 @@
 - [Data Mesh - Domain-Oriented Data](https://training.dddeurope.com/data-mesh-zhamak-dheghani/) - Public Workshops by Zhamak Dehghani.
 
 
+## Books
+
+- [Data Management at Scale](https://www.oreilly.com/library/view/data-management-at/9781492054771/) - Book about Enterprise Data Architecture called Scaled Architecture. Data Mesh is only mentioned in this book, but Scaled Architecture follows all principles of Data Mesh. Book describes in details its implementation.
+
+## DataMesh-as-a-Code on Azure Cloud
+
+## DataMesh-as-a-Code on AWS Cloud
+
 ## Community Resources
 
 - [Data Mesh Slack community](data-mesh.slack.com) - Active slack community about Data Mesh, Scaled Architecture and related topics.
 
 
-
 ## Conferences
 
 - [Domain-Driven Design Europe](https://dddeurope.com) - The Leading DDD conference - Data Mesh included (online during COVID19)
-
 
 
 ## License
