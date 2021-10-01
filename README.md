@@ -23,7 +23,7 @@ The aim is to
 5. Data as a product
 6. Self-serve Infra data platform (DataInfra-as-a-Service)
 7. Federated computational governance
-8. Service Mesh 
+8. Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
 9. Distributed Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
 10. Unified Data Virtualization Service
 11. Secured Data Sharing and Data Access Service
