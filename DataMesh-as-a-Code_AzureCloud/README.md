@@ -1,8 +1,7 @@
 ---
-page_type: sample
 
-
-Description: "Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices."
+Description: 
+- Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices.
 
 High Level Technology View:
 - Azure
