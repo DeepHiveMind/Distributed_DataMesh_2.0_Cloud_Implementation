@@ -1,25 +1,29 @@
 ---
 page_type: sample
-languages:
-- python
-- C#
-- TypeScript
-- bicep
-products:
+
+
+Description: "Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices."
+
+High Level Technology View:
 - Azure
 - Azure-Data-factory
 - Azure-Databricks
 - Azure-Stream-Analytics
 - Azure-Data-Lake-Gen2
-- Azure-Functions
-description: "Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices."
----
-
-# DataMesh on Azure Cloud | DataOps for the Modern Data Warehouse with Service Mesh and KnowledgeGraph
-
-This repository contains numerous code samples and artifacts on how to apply DevOps principles to data pipelines with Service Mesh and KnowledgeGraph built according to the Data Mesh concepts on Modern Data Warehouse architectural pattern.
-
-
+- Azure-Function-&-Azure-App-Logic
+- Azure Synapse Analytics	
+- Azure CosmosDB	
+- Azure Data Lake			
+- Azure Stream Analytics
+- Azure Data Explorer		
+- Presidio
+- IaC ARM Templates	
+- Azure Vnet & SubNet	
+- Azure DevOps 		
+- Azure Key Valut		
+- Azure App Insight 	
+- WebOntology & Protege
+- Istio on AKS
 
 ## Single Technology Samples
 
