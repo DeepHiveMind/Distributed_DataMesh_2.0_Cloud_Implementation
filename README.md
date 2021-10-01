@@ -33,7 +33,7 @@ The aim is to
 |<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
 
 
-Please refer to [Data Mesh Topology]() for further details into 3 most prevalent Topolgy patterns in Data Mesh.
+Please refer to [Data Mesh Topology](DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 
 
 
