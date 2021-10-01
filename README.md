@@ -15,7 +15,7 @@ The aim is to
 
 
 ## Data Mesh Architecture Principles
-**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to Distributed + Domain-Oriented + Scaling + Self-serve data architecture that follows 10 main principles: 
+**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to Distributed + Domain-Oriented + Scaling + Self-serve data architecture that follows 11 main principles: 
 1. Data Mesh Topology
 2. Domain-oriented Data Model  
 3. Domain-oriented Data compute 
@@ -26,6 +26,7 @@ The aim is to
 8. Service Mesh 
 9. Distributed Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
 10. Unified Data Virtualization Service
+11. Secured Data Sharing and Data Access Service
 
 # **Data Mesh Topolgy** - 3 Major Patterns
 - Governed Data Mesh topology
