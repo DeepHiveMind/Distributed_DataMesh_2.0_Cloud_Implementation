@@ -7,11 +7,12 @@
 The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. Based on these nuances and considerations, different data mesh topologies can be used.
 
 The aim is to 
--- Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity.
 
--- A cloud distributed data mesh, which allows domain-specific data and treats “data-as-a-product,” 
+- Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity.
 
--- Enabling each domain to handle **its own data pipelines**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
+- A cloud distributed data mesh, which allows domain-specific data and treats “data-as-a-product,” 
+
+- Enabling each domain to handle **its own data pipelines**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
 
 
 **[Data Mesh]** is a new paradigm to Distributed + Domain-Oriented + Scaling + Self-serve data architecture that follows 10 main principles: 
