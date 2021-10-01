@@ -63,6 +63,10 @@ Contents
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
 		
 ## DataMesh-as-a-Code on AWS Cloud
+[DataMesh on AWS Cloud with AWS Glue & AWS LakeFormation](https://aws.amazon.com/blogs/big-data/design-a-data-mesh-architecture-using-aws-lake-formation-and-aws-glue/)
+
+## Data Mesh in Practice with DataBricks
+[Data Mesh in Practice with DataBricks](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
 
 ## Reference Technical Blogs
 
