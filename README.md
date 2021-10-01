@@ -14,8 +14,8 @@ The aim is to
 
 
 
-
-**[Data Mesh]** is a new paradigm to Distributed + Domain-Oriented + Scaling + Self-serve data architecture that follows 10 main principles: 
+## Data Mesh Architecture Principles
+**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to Distributed + Domain-Oriented + Scaling + Self-serve data architecture that follows 10 main principles: 
 1. Data Mesh Topology
 2. Domain-oriented Data Model  
 3. Domain-oriented Data compute 
