@@ -12,7 +12,7 @@ The aim is to
 -- Enabling each domain to handle **its own data pipelines**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
 
 
-**[Data Mesh]** is a new paradigm to data architecture that follows 10 main principles: 
+**[Data Mesh]** is a new paradigm to Distributed + Domain-Oriented + Scaling + Self-serve data architecture that follows 10 main principles: 
 1. Data Mesh Topology
 2. Domain-oriented Data Model  
 3. Domain-oriented Data compute 
