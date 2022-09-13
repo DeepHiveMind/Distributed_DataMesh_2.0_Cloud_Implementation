@@ -1,18 +1,21 @@
 # Distributed Data Mesh 2.0 
 
-> DataMesh-as-a-Code on Cloud | Curated list of Data Mesh TOPOLOGY | 
+> Why DATA MESH? | AIM of DATA MESH | 
+> Enterprise DATA MESH Architecture Principles |
+> Enterprise DATA MESH -  User Persona |
+> Curated list of DATA MESH TOPOLOGY |
+ 
+> DataMesh-as-a-Code on Cloud |  
 
-> ENTERPRISE DATA MESH Architecture Principles | AIM of DATA MESH | Enterprise Data Mesh Data Product User Persona |
+>> DataMesh-as-a-Code on Azure Cloud |
 
-> DataMesh-as-a-Code on Azure Cloud |
+>> DataMesh-as-a-Code on AWS Cloud |
 
-> DataMesh-as-a-Code on AWS Cloud |
-
-> Data Mesh in Practice with DataBricks | 
+>> Data Mesh in Practice with DataBricks | 
 
 The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. 
 
-## Why DATA MESH Architecture (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product node governance with Self-serve Data Infra) ?:
+## Why DATA MESH (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product node governance with Self-serve Data Infra) Architecture/ Model ?:
 - The Beauty of 'Central Data Platform': Organizations of all sizes have recognized that data is one of the key enablers to increase and sustain innovation, and drive value for their customers and business units. They are eagerly modernizing traditional data platforms with cloud-native technologies that are highly scalable, feature-rich, and cost-effective.A centralized model is intended to simplify staffing and training by centralizing data and technical expertise in a single place, to reduce technical debt by managing a single data platform, and to reduce operational costs.
 - The Challenge with 'Central Data Platform': Managing data through a Central Data Platform can create scaling, ownership, and accountability challenges, because central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.
 - Data Mesh as Solution: These challenges can often be reduced by giving ownership and autonomy to the team who owns the data, best allowing them to build data products, rather than only being able to use a common central data platform. 
@@ -26,7 +29,7 @@ The AIM of DATA MESH:
 
 
 
-## Data Mesh Architecture Principles
+## Enterprise DATA MESH Architecture Principles
 **[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to  DOMAIN-ORIENTED + SELF-SERVE DATA Infra + DECENTRALIZED Topology + DATA PRODUCT + SCALABLE data architecture that follows main principles, such as: 
 
 1. Data Mesh Topology (DECENTRALIZED Topology - Data Mesh Node Pattern)
@@ -42,20 +45,23 @@ The AIM of DATA MESH:
 	2c. Domain-oriented Data Stoarge  
 	2d. Domain-oriented Data pipeline
 
-3. Data as a Product  
+3. Data as a Product
+
 	3a. Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
 	
-5. Self-serve Infra for data platform (DataInfra-as-a-Service)
+4. Self-serve Infra for data platform (DataInfra-as-a-Service)
+
 6. Centeralized Data Governance  
-	6a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
-	6a. Unified Policy Management  
-	6b. Unified Data Virtualization Service  
-	6b. Federated Data Access Control Service  
-	6b. Organization wide Secured Data Sharing
+	5a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
+	5b. Unified Policy Management  
+	5c. Unified Data Virtualization Service  
+	5d. Federated Data Access Control Service  
+	5e. Organization wide Secured Data Sharing
 
 
 
-# **Data Mesh Topolgy** - 3 Major DECENTRALIZED Topologyies based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility
+# **Data Mesh Topolgy** 
+## 3 Major DECENTRALIZED Topologyies based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility
 - Governed Data Mesh topology
 - Harmonized Data Mesh topology
 - Highly federated Mesh topology
@@ -73,7 +79,7 @@ Based on nuances and considerations, different data mesh topologies can be used.
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 
 
-## Enterprise Data Mesh Data Product User Persona 
+## Enterprise Data Mesh Data-Product User Persona 
 - Data Product Owners
 	- - Citizen Developers (assisted by LCNC)
 - Data Management & Governance 'Stewards'
@@ -90,6 +96,9 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)
 	
 	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
+
+	- [DataMesh-in-practice with DATABRICKS](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
+
 
 
 ## Contents
@@ -137,11 +146,6 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
 		
-## DataMesh-as-a-Code on AWS Cloud
-[DataMesh on AWS Cloud with AWS Glue & AWS LakeFormation](https://aws.amazon.com/blogs/big-data/design-a-data-mesh-architecture-using-aws-lake-formation-and-aws-glue/)
-
-## Data Mesh in Practice with DataBricks
-[Data Mesh in Practice with DataBricks](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
 
 ## Reference Technical Blogs
 
