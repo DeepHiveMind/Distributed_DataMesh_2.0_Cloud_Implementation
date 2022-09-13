@@ -1,5 +1,3 @@
----
-
 Description: 
 - Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices.
 
@@ -23,6 +21,37 @@ High Level Technology View:
 - Azure App Insight 	
 - WebOntology & Protege
 - Istio on AKS
+
+> DataMesh-as-a-Code on Azure Cloud - sample implementation  
+
+	- Technology & Tools 
+
+		-- Azure Purview	[Data Provenance engine]
+		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
+		-- Azure CosmosDB			[Node on Domain driven storage- MultiDomain NOSQL DB ]
+		-- Azure Data Lake			[Node on Domain driven storage- Data Lake Storage]
+		-- Azure Stream Analytics	[Stream Analytics engine]
+		-- Azure Data Explorer		[Data Exploration Service]
+		-- Presidio					[ Data Protection and PII Anonymization API]
+		
+		-- Azure Data Factory [Data Ingestion engine]
+		-- Azure DataBricks [Data Integration engine]
+
+		-- Azure Function & Azure App Logic [MicroService Serverless engine & MicroService Serverless Orachsteration engine]
+		
+		-- IaC ARM Templates				[IaC engine]
+		-- Azure Vnet & SubNet		[Azure Networking]
+		-- Azure DevOps 			[DevOps Service]
+		-- Azure Key Valut			[Key Security]
+		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
+		-- Modern Domain Driven Data Warehouse on DataOps
+		
+	- Yet to be implemented Tools & Technology
+		-- Domain Ontology on CosmosDB			[Knowledge Graph]		
+		-- WebOntology & Protege
+		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
+		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
+
 
 ## Single Technology Samples
 
@@ -48,7 +77,7 @@ High Level Technology View:
 - [**Temperature Events Solution**](e2e_samples/temperature_events) - This demonstrate a high-scale event-driven data pipeline with a focus on how to implement Observability and Load Testing.
 ![Architecture](e2e_samples/temperature_events/images/temperature-events-architecture.png?raw=true "Architecture")
 
-- [**Dataset Versioning Solution**](e2e_samples/dataset_versioning) - This demonstrates how to use DataFactory to Orchestrate DataFlow, to do DeltaLoads into DeltaLake On DataLake(DoDDDoD).
+- [**Dataset Versioning Solution**](e2e_samples/dataset_versioning) - This demonstrates how to use DataFactory to Orchestrate DataFlow, to do DeltaLoads into DeltaLake On DataLake.
 
 - [**MDW Data Governance and PII data detection**](e2e_samples/mdw_governance) - This sample demonstrates how to deploy the Infrastructure of an end-to-end MDW Pipeline using [Azure DevOps pipelines](https://azure.microsoft.com/en-au/services/devops/pipelines/) along with a focus around Data Governance and PII data detection.
   
