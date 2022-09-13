@@ -60,8 +60,8 @@ The AIM of DATA MESH:
 
 
 
-# **Data Mesh Topolgy** 
-## 3 Major DECENTRALIZED Topologyies based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility
+## **Data Mesh Topology** 
+#### 3 Major DECENTRALIZED Topologyies based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility
 - Governed Data Mesh topology
 - Harmonized Data Mesh topology
 - Highly federated Mesh topology
@@ -91,29 +91,13 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 ## DataMesh-as-a-Code on Cloud
 
-- [Distributed Data Mesh]
+- [Distributed-Data-Mesh-as-a-Code on Cloud]
 	
 	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)
 	
 	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
 
 	- [DataMesh-in-practice with DATABRICKS](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
-
-
-
-## Contents
-
-- [Distributed Data Mesh]
-	
-	- [Reference Technical Blogs](#Reference-Technical-Blogs)
-	- [Reference Training Courses](#Reference-training-courses)
-	
-	- [Books](#books)
-	- [Community Resources](#community-resources)
-	- [Conferences](#conferences)
-	- [License](#license)
-
-## DataMesh-as-a-Code on Azure Cloud
 
 > DataMesh-as-a-Code on Azure Cloud sample implementation  
 
@@ -147,7 +131,23 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
 		
 
-## Reference Technical Blogs
+
+## Reference Contents
+
+- [Distributed Data Mesh]
+	
+	- [Reference Technical Blogs](#Reference-Technical-Blogs)
+	- [Reference Training Courses](#Reference-training-courses)
+	
+	- [Books](#books)
+	- [Community Resources](#community-resources)
+	- [Conferences](#conferences)
+	- [License](#license)
+
+
+
+## Data Mesh Reference Artefacts in Public Domain 
+#### Reference Technical Blogs
 
 - [How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh by Martin Fowler](https://martinfowler.com/articles/data-monolith-to-mesh.html) - First article on data mesh that started whole concept.
 - [Data Mesh Principles and Logical Architecture by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html) - second article by by Martin Fowler about principles of data mesh.
@@ -156,7 +156,7 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 - [Data mesh: it's not just about tech, it's about ownership and communication](https://www.thoughtworks.com/insights/blog/data-mesh-its-not-about-tech-its-about-ownership-and-communication) - article about ownership in Data Mesh.
 
 
-## Reference Training Courses
+#### Reference Training Courses
 
 - [Data Mesh Paradigm Shift in Data Platform Architecture](https://www.youtube.com/watch?v=52MCFe4v0UU) - Zhamak Dehghani overview of Data Mesh. 
 - [Data Mesh Paradigm Shift in Data Platform Architecture - Arif Wider - DDD Europe 2020](https://www.youtube.com/watch?v=Iqbl9AS03VU&t=1s) - DDD Europe talk about Data Mesh.
@@ -165,16 +165,16 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 
 
-## Books
+#### Referenc Books
 
 - [Data Management at Scale](https://www.oreilly.com/library/view/data-management-at/9781492054771/) - Book about Enterprise Data Architecture called Scaled Architecture. Data Mesh is only mentioned in this book, but Scaled Architecture follows all principles of Data Mesh. Book describes in details its implementation.
 
-## Community Resources
+## Refence Community Resources
 
 - [Data Mesh Slack community](data-mesh.slack.com) - Active slack community about Data Mesh, Scaled Architecture and related topics.
 
 
-## Conferences
+#### Conferences
 
 - [Domain-Driven Design Europe](https://dddeurope.com) - The Leading DDD conference - Data Mesh included (online during COVID19)
 
