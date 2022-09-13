@@ -104,7 +104,7 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 	- [DataMesh-in-practice with DATABRICKS](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
 
-- DataMesh-as-a-Code on Azure Cloud sample implementation  
+> DataMesh-as-a-Code on Azure Cloud sample implementation  
 
 	- Technology & Tools 
 
@@ -126,7 +126,7 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 		-- Azure DevOps 			[DevOps Service]
 		-- Azure Key Valut			[Key Security]
 		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
-		-- Modern Domain Driven Data Warehouse on DataOps
+		
 	- Yet to be implemented Tools & Technology
 		-- Domain Ontology on CosmosDB			[Knowledge Graph]		
 		-- WebOntology & Protege
