@@ -55,6 +55,9 @@
 
 	3a. Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
 	
+		Data products and services are not defined by the size of the function, but instead by the context, cohesion and coupling, requiring either orchestration (Service) or choreography (Micro-Service) to mediate between Services  
+
+	
 4. Self-serve Infra for data platform (DataInfra-as-a-Service)
 
 6. Centeralized Data Governance  
