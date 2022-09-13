@@ -58,7 +58,7 @@
 4. Self-serve Infra for data platform (DataInfra-as-a-Service)
 
 6. Centeralized Data Governance  
-	5a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
+	5a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)  
 	5b. Unified Policy Management  
 	5c. Unified Data Virtualization Service  
 	5d. Federated Data Access Control Service  
