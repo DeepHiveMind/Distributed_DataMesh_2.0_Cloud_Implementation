@@ -22,7 +22,7 @@ The AIM with cloud distributed DATA MESH is to
 
 	2a. Domain-oriented Data Model  
 	2b. Domain-oriented Data compute 
-	2c. Domain-oriented Data Stoarge 
+	2c. Domain-oriented Data Stoarge
 	2d. Domain-oriented Data pipeline
 
 3. Data as a product
