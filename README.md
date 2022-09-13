@@ -127,6 +127,7 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 		-- Azure Key Valut			[Key Security]
 		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
 		-- Modern Domain Driven Data Warehouse on DataOps
+		
 	- Yet to be implemented Tools & Technology
 		-- Domain Ontology on CosmosDB			[Knowledge Graph]		
 		-- WebOntology & Protege
