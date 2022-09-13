@@ -19,14 +19,16 @@ The AIM with cloud distributed DATA MESH is to
 
 1. Data Mesh Topology
 2. Domain Oriented DECENTRALIZATION
-2a. 	Domain-oriented Data Model  
-2b. 	Domain-oriented Data compute 
-2c. 	Domain-oriented Data Stoarge 
-2d. 	Domain-oriented Data pipeline
-2e. 	Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
+
+	2a. Domain-oriented Data Model  
+	2b. Domain-oriented Data compute 
+	2c. Domain-oriented Data Stoarge 
+	2d. Domain-oriented Data pipeline
+
 3. Data as a product
-4. Self-serve Infra data platform (DataInfra-as-a-Service)
-5. Federated computational governance
+	3a. Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
+5. Self-serve Infra data platform (DataInfra-as-a-Service)
+6. Federated computational governance
 5a. 	Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
 5b. 	Unified Data Virtualization Service
 6. Secured Data Sharing and Data Access Service 
