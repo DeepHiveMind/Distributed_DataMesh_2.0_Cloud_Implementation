@@ -2,11 +2,23 @@
 
 > DataMesh-as-a-Code on Cloud | Curated list of Data Mesh TOPOLOGY | 
 
-> Design considerations for ENTERPRISE DATA MESH Architecture | DataMesh-as-a-Code on Azure Cloud |
+> ENTERPRISE DATA MESH Architecture Principles | AIM of DATA MESH | Enterprise Data Mesh Data Product User Persona |
+
+> DataMesh-as-a-Code on Azure Cloud |
+
+> DataMesh-as-a-Code on AWS Cloud |
+
+> Data Mesh in Practice with DataBricks | 
 
 The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. 
 
-The AIM with cloud distributed DATA MESH is to 
+## Why DATA MESH Architecture (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product node governance with Self-serve Data Infra) ?:
+- The Beauty of 'Central Data Platform': Organizations of all sizes have recognized that data is one of the key enablers to increase and sustain innovation, and drive value for their customers and business units. They are eagerly modernizing traditional data platforms with cloud-native technologies that are highly scalable, feature-rich, and cost-effective.A centralized model is intended to simplify staffing and training by centralizing data and technical expertise in a single place, to reduce technical debt by managing a single data platform, and to reduce operational costs.
+- The Challenge with 'Central Data Platform': Managing data through a Central Data Platform can create scaling, ownership, and accountability challenges, because central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.
+- Data Mesh as Solution: These challenges can often be reduced by giving ownership and autonomy to the team who owns the data, best allowing them to build data products, rather than only being able to use a common central data platform. 
+-- For instance, product teams are responsible for ensuring the product inventory is updated regularly with new products and changes to existing ones. They’re the domain experts of the product inventory datasets. If a discrepancy occurs, they’re the only group who knows how to fix it. Therefore, they’re best able to implement and operate a technical solution to ingest, process, and produce the product inventory dataset. They own everything leading up to the data being consumed: they choose the technology stack, operate in the mindset of data as a product, enforce security and auditing, and provide a mechanism to expose the data to the organization in an easy-to-consume way. This reduces overall friction for information flow in the organization, where the producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs.
+
+The AIM of DATA MESH:
 
 - **Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity**.
 - **A cloud distributed data mesh, which allows DOMAIN-SPECIFIC data and treats “DATA-as-a-PRODUCT”**. 
@@ -15,9 +27,14 @@ The AIM with cloud distributed DATA MESH is to
 
 
 ## Data Mesh Architecture Principles
-**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to DUSTRIBUTED + DOMAIN-ORIENTED + SELF-SERVE DATA Infra + SCALABLE data architecture that follows 11 main principles: 
+**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to  DOMAIN-ORIENTED + SELF-SERVE DATA Infra + DECENTRALIZED Topology + DATA PRODUCT + SCALABLE data architecture that follows main principles, such as: 
 
-1. Data Mesh Topology
+1. Data Mesh Topology (DECENTRALIZED Topology - Data Mesh Node Pattern)
+
+	1a. Governed Data Mesh topology  
+	1b. Harmonized Data Mesh topology  
+	1c. Highly federated Data Mesh topology
+	
 2. Domain Oriented DECENTRALIZATION
 
 	2a. Domain-oriented Data Model  
@@ -25,17 +42,20 @@ The AIM with cloud distributed DATA MESH is to
 	2c. Domain-oriented Data Stoarge  
 	2d. Domain-oriented Data pipeline
 
-3. Data as a product
+3. Data as a Product  
 	3a. Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
-5. Self-serve Infra data platform (DataInfra-as-a-Service)
-6. Federated computational governance
-5a. 	Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
-5b. 	Unified Data Virtualization Service
-6. Secured Data Sharing and Data Access Service 
+	
+5. Self-serve Infra for data platform (DataInfra-as-a-Service)
+6. Centeralized Data Governance  
+	6a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
+	6a. Unified Policy Management  
+	6b. Unified Data Virtualization Service  
+	6b. Federated Data Access Control Service  
+	6b. Organization wide Secured Data Sharing
 
 
 
-# **Data Mesh Topolgy** - 3 Major Patterns based on Data Monetization feasibility
+# **Data Mesh Topolgy** - 3 Major DECENTRALIZED Topologyies based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility
 - Governed Data Mesh topology
 - Harmonized Data Mesh topology
 - Highly federated Mesh topology
@@ -63,13 +83,18 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 - Data Security Professionals
 - CDO
 
-## Contents
+## DataMesh-as-a-Code on Cloud
 
 - [Distributed Data Mesh]
 	
 	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)
 	
 	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
+
+
+## Contents
+
+- [Distributed Data Mesh]
 	
 	- [Reference Technical Blogs](#Reference-Technical-Blogs)
 	- [Reference Training Courses](#Reference-training-courses)
@@ -79,7 +104,6 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 	- [Conferences](#conferences)
 	- [License](#license)
 
-Contents
 ## DataMesh-as-a-Code on Azure Cloud
 
 > DataMesh-as-a-Code on Azure Cloud sample implementation  
