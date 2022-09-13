@@ -2,15 +2,15 @@
 
 > DataMesh-as-a-Code on Cloud | Curated list of Data Mesh Artefacts.
 
-> Design considerations for building a data mesh architecture
+> Design considerations for Industrialize a Data Mesh Architecture
 
 The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. Based on these nuances and considerations, different data mesh topologies can be used.
 
-The aim is to 
+The AIM with DATA MESH is to 
 
-- Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity.
-- A cloud distributed data mesh, which allows domain-specific data and treats “data-as-a-product,” 
-- Enabling each domain to handle **its own data pipelines**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
+- **Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity**.
+- **A cloud distributed data mesh, which allows DOMAIN-SPECIFIC data and treats “DATA-as-a-PRODUCT” ** 
+- **Enabling each domain to handle its own DATA-PIPELINES**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
 
 
 
