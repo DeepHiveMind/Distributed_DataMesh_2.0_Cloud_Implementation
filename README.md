@@ -7,16 +7,17 @@
  
 > DataMesh-as-a-Code on Cloud |  
 
->>>> DataMesh-as-a-Code on Azure Cloud |
+>>>> DataMesh-as-a-Code on Azure Cloud 
 
->>>>> DataMesh-as-a-Code on AWS Cloud |
+>>>> DataMesh-as-a-Code on AWS Cloud
 
->> Data Mesh in Practice with DataBricks | 
+>>>> Data Mesh in Practice with DataBricks 
 
 > Data Mesh Reference Artefacts in Public Domain
 
+	
 
-Disclamer: The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. 
+	Disclamer: The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. 
 
 
 ## Why DATA MESH (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product node governance with Self-serve Data Infra) Architecture/ Model ?:
