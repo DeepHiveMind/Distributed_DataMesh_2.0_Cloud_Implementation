@@ -1,10 +1,10 @@
 # Distributed Data Mesh 2.0 
 
-> DataMesh-as-a-Code on Cloud | Curated list of Data Mesh Artefacts.
+> DataMesh-as-a-Code on Cloud | Curated list of Data Mesh TOPOLOGY | 
 
-> Design considerations for Industrialize a Data Mesh Architecture
+> Design considerations for ENTERPRISE DATA MESH Architecture | DataMesh-as-a-Code on Azure Cloud |
 
-The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. Based on these nuances and considerations, different data mesh topologies can be used.
+The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. 
 
 The AIM with cloud distributed DATA MESH is to 
 
@@ -15,23 +15,30 @@ The AIM with cloud distributed DATA MESH is to
 
 
 ## Data Mesh Architecture Principles
-**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to Distributed + Domain-Oriented + Scaling + Self-serve data architecture that follows 11 main principles: 
+**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to DUSTRIBUTED + DOMAIN-ORIENTED + SELF-SERVE DATA Infra + SCALABLE data architecture that follows 11 main principles: 
+
 1. Data Mesh Topology
-2. Domain-oriented Data Model  
-3. Domain-oriented Data compute 
-4. Domain-oriented Data Stoarge 
-5. Data as a product
-6. Self-serve Infra data platform (DataInfra-as-a-Service)
-7. Federated computational governance
-8. Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
-9. Distributed Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
-10. Unified Data Virtualization Service
-11. Secured Data Sharing and Data Access Service
+2. Domain Oriented DECENTRALIZATION
+2a. 	Domain-oriented Data Model  
+2b. 	Domain-oriented Data compute 
+2c. 	Domain-oriented Data Stoarge 
+2d. 	Domain-oriented Data pipeline
+2e. 	Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
+3. Data as a product
+4. Self-serve Infra data platform (DataInfra-as-a-Service)
+5. Federated computational governance
+5a. 	Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)
+5b. 	Unified Data Virtualization Service
+6. Secured Data Sharing and Data Access Service 
+
+
 
 # **Data Mesh Topolgy** - 3 Major Patterns based on Data Monetization feasibility
 - Governed Data Mesh topology
 - Harmonized Data Mesh topology
 - Highly federated Mesh topology
+
+Based on nuances and considerations, different data mesh topologies can be used.
 
 |**DATA MESH TOPOLOGY**| **DATA MESH TOPOLOGY**|
 | :---: | :---:|
