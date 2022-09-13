@@ -132,21 +132,17 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 		
 
 
-## Reference Contents
+## Data Mesh Reference Artefacts in Public Domain 
 
-- [Distributed Data Mesh]
-	
 	- [Reference Technical Blogs](#Reference-Technical-Blogs)
 	- [Reference Training Courses](#Reference-training-courses)
-	
-	- [Books](#books)
+	- [Reference Books](#Reference-Books)
 	- [Community Resources](#community-resources)
 	- [Conferences](#conferences)
 	- [License](#license)
 
 
 
-## Data Mesh Reference Artefacts in Public Domain 
 #### Reference Technical Blogs
 
 - [How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh by Martin Fowler](https://martinfowler.com/articles/data-monolith-to-mesh.html) - First article on data mesh that started whole concept.
@@ -165,11 +161,11 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 
 
-#### Referenc Books
+#### Reference Books
 
 - [Data Management at Scale](https://www.oreilly.com/library/view/data-management-at/9781492054771/) - Book about Enterprise Data Architecture called Scaled Architecture. Data Mesh is only mentioned in this book, but Scaled Architecture follows all principles of Data Mesh. Book describes in details its implementation.
 
-## Refence Community Resources
+#### Community Resources
 
 - [Data Mesh Slack community](data-mesh.slack.com) - Active slack community about Data Mesh, Scaled Architecture and related topics.
 
