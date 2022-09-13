@@ -138,6 +138,10 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 ## Data Mesh Reference Artefacts in Public Domain 
 
+A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data.   Zhamak Dehghani, Thoughtworks
+![image](https://user-images.githubusercontent.com/44175636/189994919-c4c795e5-9299-4934-9a2a-278d8fb15465.png)
+
+
 	- [Reference Technical Blogs](#Reference-Technical-Blogs)
 	- [Reference Training Courses](#Reference-training-courses)
 	- [Reference Books](#Reference-Books)
