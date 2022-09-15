@@ -1,6 +1,8 @@
-# Distributed Data Mesh 2.0 
+# Data Mesh Journey - from Theory to Practice
 
-> Why DATA MESH? | AIM of DATA MESH | 
+## Distributed Data Mesh 2.0 
+
+> What & Why DATA MESH? | AIM of DATA MESH | 
 > Enterprise DATA MESH Architecture Principles |
 > Enterprise DATA MESH -  User Persona |
 > Curated list of DATA MESH TOPOLOGY |
@@ -15,9 +17,10 @@
 
 > Data Mesh Reference Artefacts in Public Domain
 
-	
+		"A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". -- Zhamak Dehghani, Thoughtworks
 
-	Disclamer: The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics**. 
+
+	Disclamer: The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics** . 
 
 
 ## Why DATA MESH (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product node governance with Self-serve Data Infra) Architecture/ Model?:
@@ -25,7 +28,7 @@
 - The Challenge with 'Central Data Platform': Managing data through a Central Data Platform can create scaling, ownership, and accountability challenges, because central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.
 - Data Mesh as Solution: These challenges can often be reduced by giving ownership and autonomy to the team who owns the data, best allowing them to build data products, rather than only being able to use a common central data platform. 
 ---- For instance, product teams are responsible for ensuring the product inventory is updated regularly with new products and changes to existing ones. They’re the domain experts of the product inventory datasets. If a discrepancy occurs, they’re the only group who knows how to fix it. Therefore, they’re best able to implement and operate a technical solution to ingest, process, and produce the product inventory dataset. They own everything leading up to the data being consumed: they choose the technology stack, operate in the mindset of data as a product, enforce security and auditing, and provide a mechanism to expose the data to the organization in an easy-to-consume way. This reduces overall friction for information flow in the organization, where the producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs.
-- "A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". -- Zhamak Dehghani, Thoughtworks
+
 
 ## The AIM of DATA MESH:
 
