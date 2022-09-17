@@ -1,4 +1,13 @@
-# Data Mesh Journey - from Theory to Practice
+# Data Mesh Journey *from Theory to Practice*
+<br>
+<br>
+
+# Technical Nuances of The World of "Enterprise AI"
+## Deep-Learning | Deep-Reinforcement-Learning | NLP-IE-Pipeline | MLOPS-Real-World-ML-System | Knowledge-Graph | AI-Security-&-Privacy | Serverless-AI/ML | AI-Datasets | AutoML-&-HPO |
+
+
+This repository is my humble endeavour to take a you through **The Best of Enterprise AI** by introducing you to very many constructs, design elements, real life AI applications, codesets, FAQs from the captivatingly beautiful landscape of AI. Gear up for **the Universe called "AI"**. Bon Vaoyage!!
+
 
 ## Distributed Data Mesh 2.0 
 
