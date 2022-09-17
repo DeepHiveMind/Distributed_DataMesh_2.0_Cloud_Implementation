@@ -10,12 +10,11 @@ This repository is my humble contribution to the Open Source Community for **The
 # DataMesh-as-a-Code on Cloud
 
 >>>> DataMesh-as-a-Code on Azure Cloud 
+>>>> DataMesh in practice on AWS Cloud
+>>>> DataMesh in Practice on DataBricks 
+>>>> DataMesh in practice with Confluent Kafka
 
->>>> DataMesh-as-a-Code on AWS Cloud
-
->>>> Data Mesh in Practice with DataBricks 
-
-
+<br>
 
 	"A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
 -- Zhamak Dehghani, Thoughtworks
