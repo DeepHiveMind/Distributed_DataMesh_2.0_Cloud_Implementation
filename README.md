@@ -211,6 +211,6 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 
 ## License
+I, [*DeepHiveMind*](https://DeepHiveMind.io), am providing resources in this repository to you under custom Copyright & license (Copyright 2019 DeepHiveMind & Creative Commons Legal Code CC0 1.0 Universal). Please Refer to the [Copyright 2019 DeepHiveMind License](https://github.com/DeepHiveMind/gateway_to_DeepReinforcementLearning_DeepNN/blob/master/LICENSE) for further details as to this. Thanks!
 
-
-To the extent possible under law, [Deep Hive Mind](https://DeepHiveMind.io) has waived all copyright and related or neighboring rights to this work.
+However, to the extent possible under law, [DeepHiveMind](https://DeepHiveMind.io) has waived all copyright and related or neighboring rights to the codesets.
