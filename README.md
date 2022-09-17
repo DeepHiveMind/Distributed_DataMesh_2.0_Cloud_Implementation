@@ -41,12 +41,16 @@ Disclamer:
 
 <br>
 <br>
+
+## What is Enterprise Data MESH?
 	"A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
 -- Zhamak Dehghani, Thoughtworks
-<br>
+
+- Please refer to the original paper on **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** 
 <br>
 
-## What is Enterprise DATA MESH?
+
+## What are Architecture Principles of Enterprise Data MESH?
 
 **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to DOMAIN-ORIENTED + DATA PRODUCT + SELF-SERVE DATA Infra + DECENTRALIZED TOPOLOGY data architecture that conforms to the following main Architecture Principles, such as: 
 
@@ -86,25 +90,18 @@ Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Dece
 --------- :bulb: Therefore, Data Mesh paradigm reduces overall friction for information flow in the organization, where the producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs.
 
 
-## The Goal of DATA MESH:
+## The Goal of DATA MESH
 
 - **Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity**.
 - **A cloud distributed data mesh, which allows DOMAIN-SPECIFIC data and treats “DATA-as-a-PRODUCT”**. 
 - **Enabling each domain to handle its own DATA-PIPELINES**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
 
 
+## Data MESH Pattrens 
 
+Based on nuances and considerations, different key patterns for data mesh --
 
-
-## **Data Mesh Topology** 
-#### 3 Major DECENTRALIZED Topologyies based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility
-- Governed Data Mesh topology
-- Harmonized Data Mesh topology
-- Highly federated Mesh topology
-
-Based on nuances and considerations, different data mesh topologies can be used.
-
-|**DATA MESH TOPOLOGY**| **DATA MESH TOPOLOGY**|
+|**DATA MESH Pattern**| **DATA MESH Pattern**|
 | :---: | :---:|
 | Governed Data Mesh topology- DataMesh Node Pattern | Governed Data Mesh topology- DataMesh Node Ecosystem| 
 |<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
@@ -113,6 +110,13 @@ Based on nuances and considerations, different data mesh topologies can be used.
 
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
+
+|**DATA MESH TOPOLOGY**| **DATA MESH TOPOLOGY**|
+| :---: | :---:|
+| Governed Data Mesh topology- DataMesh Node Pattern | Governed Data Mesh topology- DataMesh Node Ecosystem| 
+|<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
+| **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| 
+|<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
 
 
 ## Enterprise Data Mesh Data-Product User Persona 
