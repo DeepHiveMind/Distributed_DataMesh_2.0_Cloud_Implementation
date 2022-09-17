@@ -1,0 +1,67 @@
+the client get the project faster and cheaper with the good architecture and operating model design
+
+Becoming a Data Centric organisation is a top priority for our clients
+They have invested heavily in build next gen Cloud based 
+
+Issues - 
+	Struggling to implement
+		DataOps
+		Distributed Domain Driven Data centric Architecture
+		Federated Data Hub (struggling to break away from the hassles of Monolithic Data Platform leading to Data Swamp) 
+		Federated ownership & Access
+		Microservice architecture driven Data centric pipeline
+		Kubernetes powered 
+		Data Trust & Governance (Discoverable - Data Catalog, MDM, Data Security)
+		Self Serve data Infra
+		Federated Compute
+
+		
+"You might ask where does the data lake or data warehouse fit in this architecture? They are simply {{nodes on the mesh}}. It's very likely that we won't need a data lake, because the distributed logs and storage that hold the original data are available for exploration from different addressable immutable datasets as products. However, in cases where we do need to make changes to the original format of the data for further exploration, such as labeling, the domain with such need might create its own lake or data hub."
+
+Data centric view with Data Mesh architecture
+	- DataOps - 
+	- Break away from [Centralized & Monolithic] data platform hosting Centralized data lake and allowing [Federated Data Lake] with Data repos puprpose built for different data domains	
+			- Data as a Product – Apply the Microservice Paradigm shift to Data
+			- Scalable polyglot Big data storage
+				
+				- Time series data domain stoarges [Node in mesh]
+				- distributed Log data stoarge [Node in mesh]
+				- The MPP Data warehouse is another node in this mesh (Consumer side of the mesh) [Node in mesh]
+				- Distributed File System [Node in Mesh]
+				- RDF/oWL data domaine stoarge [Node in mesh]
+				- Source Domain RAW stoarges  [Node in mesh] and
+				- Consumer Domain oriented stoarges
+				
+				- Self-serve functionality (Data Access API // abstract the technical complexity and focus on their individual data use cases.)
+	- API Management with API Gateway
+	- Centalized Data Disocvery, data lineage, Data Security controls, in
+	- 3rd Gen - V3 Kappa architecture
+	- Coupled Pipeline Decomposition - Seperation of concern / Ingestion, Transformation, Storage, Serving / indepenedently scaling and deployment
+	- Federated ownership & Access (API based access with RBAC)
+	- 		Domain Events ingestion using Kafka-connect
+	
+	Additional DONE - 
+		Data product schema
+		Unified data access control and logging
+		Data pipeline implementation and orchestration
+		Data product monitoring/alerting/log
+		Data product quality metrics (collection and sharing) - Static (NOT yet for  Event based runtime)
+		Federated identity management
+		Compute and data locality
+	WHAT MORE TO BE DONE - 
+		Encryption for data at rest and in motion
+		Data product versioning
+		Data product de-identification
+		Data product discovery, catalog registration and publishing
+		Data governance and standardization
+		Data product lineage
+		Data product quality metrics (collection and sharing) - Static & Event based runtime
+		In memory data caching
+		Zone Redundant Stoarge (ZRS) & Geo Redundant Stoarge (GRS)
+			Data mesh supervision plane [data virtualization- Denedo/ PRESTO / DREMIO]
+			https://martinfowler.com/articles/data-mesh-principles/platform.png
+
+Microservice scale for data landscape.
+
+https://github.com/TrivadisPF/data-mesh-hackathon
+https://github.com/confluentinc/data-mesh-demo
