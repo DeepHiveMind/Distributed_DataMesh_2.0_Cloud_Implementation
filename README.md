@@ -10,7 +10,8 @@
 <br>
 Disclamer:
 
-	1. The paradigm shift in Distributed Data Architecture with domain driven ownership comes with several nuances and consideration. Implmentation of Data Mesh architecture in any enterprise mostly depend on 
+	1. The paradigm shift in Distributed Data Architecture with domain driven ownership comes with several nuances and consideration. 
+	Implmentation of Data Mesh architecture in any enterprise mostly depends on 
 	(a) organizational maturity and skills, 
 	(b) organizational structure, 
 	(c) risk appetite, 
