@@ -43,7 +43,7 @@ Disclamer:
 <br>
 
 ## What is Enterprise Data MESH?
-	"A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
+- "A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
 -- Zhamak Dehghani, Thoughtworks
 
 - Data Mesh is a new paradigm to *DOMAIN-ORIENTED + DATA PRODUCT + SELF-SERVE DATA Infra Platform + DECENTRALIZED TOPOLOGY* driven modern distributed data architecture that conforms to [A] the certain defined Architecture Principles (as detailed in below section) and [B] the tenets, such as:  
