@@ -97,19 +97,14 @@ Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Dece
 - **Enabling each domain to handle its own DATA-PIPELINES**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
 
 
-## Data MESH Pattrens 
+## Data MESH TOPOLOGY 
 
-Based on nuances and considerations, different key patterns for data mesh --
+#### 3 Major DECENTRALIZED Topologyies based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility -
+Governed Data Mesh topology
+Harmonized Data Mesh topology
+Highly federated Mesh topology
+Based on nuances and considerations, different data mesh topologies can be used.
 
-|**DATA MESH Pattern**| **DATA MESH Pattern**|
-| :---: | :---:|
-| Governed Data Mesh topology- DataMesh Node Pattern | Governed Data Mesh topology- DataMesh Node Ecosystem| 
-|<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
-| **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| 
-|<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
-
-
-Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 
 |**DATA MESH TOPOLOGY**| **DATA MESH TOPOLOGY**|
 | :---: | :---:|
@@ -117,6 +112,21 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 |<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
 | **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| 
 |<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
+
+Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
+
+## Data MESH Patterns 
+
+Following key Patterns of Data Mesh - 
+
+
+|**DATA MESH PATTERN**| **DATA MESH PATTERN**| **DATA MESH PATTERN**|
+| :---: | :---:| :---:|
+| Governed Data Mesh topology- DataMesh Node Pattern | Governed Data Mesh topology- DataMesh Node Ecosystem|  Governed Data Mesh topology- DataMesh Node Ecosystem| 
+|<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
+| **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| **Highly federated Mesh topology**| 
+|<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">| <img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
+
 
 
 ## Enterprise Data Mesh Data-Product User Persona 
