@@ -1,22 +1,14 @@
-# Data Mesh Journey *from Theory to Practice*
+# DATA MESH Journey *from Theory to Practice*
 <br>
+
+This repository is my humble endeavour to take a you through **The Best of Enterprise Data Mesh 2.0** by introducing the Constructs, Design Elements, Real life implementations of Data Mesh, Codesets, Data Mesh Reference Artefacts & FAQs from the captivating landscape of Distributed Data Mesh 2.0. Gear up for **the Conceptual Universe called "Distributed Data Mesh 2.0"**. Bon Vaoyage!!
+
+
+# Nuances of The World of "Data Mesh 2.0"
+### What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY 
 <br>
 
-# Technical Nuances of The World of "Enterprise AI"
-## Deep-Learning | Deep-Reinforcement-Learning | NLP-IE-Pipeline | MLOPS-Real-World-ML-System | Knowledge-Graph | AI-Security-&-Privacy | Serverless-AI/ML | AI-Datasets | AutoML-&-HPO |
-
-
-This repository is my humble endeavour to take a you through **The Best of Enterprise AI** by introducing you to very many constructs, design elements, real life AI applications, codesets, FAQs from the captivatingly beautiful landscape of AI. Gear up for **the Universe called "AI"**. Bon Vaoyage!!
-
-
-## Distributed Data Mesh 2.0 
-
-> What & Why DATA MESH? | AIM of DATA MESH | 
-> Enterprise DATA MESH Architecture Principles |
-> Enterprise DATA MESH -  User Persona |
-> Curated list of DATA MESH TOPOLOGY |
- 
-> DataMesh-as-a-Code on Cloud |  
+# DataMesh-as-a-Code on Cloud
 
 >>>> DataMesh-as-a-Code on Azure Cloud 
 
@@ -24,7 +16,7 @@ This repository is my humble endeavour to take a you through **The Best of Enter
 
 >>>> Data Mesh in Practice with DataBricks 
 
-> Data Mesh Reference Artefacts in Public Domain
+
 
 		"A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". -- Zhamak Dehghani, Thoughtworks
 
