@@ -1,7 +1,7 @@
 # DATA MESH Journey *from Theory to Practice*
 <br>
 
-This repository is my humble contribution to the Open Source Community for **The Best of Enterprise Data Mesh 2.0** by introducing the Constructs, Design Elements, Real life implementations of Data Mesh, Codesets, Data Mesh Reference Artefacts & FAQs from the captivating landscape of Distributed Data Mesh 2.0. Gear up for **the Conceptual Universe called "Distributed Data Mesh 2.0"**. Bon Vaoyage!!
+This repository is an humble contribution from @DeepHiveMind to the Open Source Community for **The Best of Enterprise Data Mesh 2.0** by introducing the Constructs, Design Elements, Real life implementations of Data Mesh, Codesets, Data Mesh Reference Artefacts & FAQs from the captivating landscape of Distributed Data Mesh 2.0. Gear up for **the Conceptual Universe called "Distributed Data Mesh 2.0"**. Bon Vaoyage!!
 
 
 # Nuances of The Universe of "Ditributed Data Mesh 2.0"
