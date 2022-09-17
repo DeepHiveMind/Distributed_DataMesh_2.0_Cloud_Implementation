@@ -1,18 +1,18 @@
 # Enterprise Data MESH journey :airplane: *from Theory to Practice*
 
 This repository is my humble contribution to the Open Source Community for **The Best of Enterprise Data Mesh 2.0** by introducing the Constructs, Design Elements, Real life implementations of Data Mesh, Codesets, Data Mesh Reference Artefacts & FAQs from the captivating landscape of Distributed Data Mesh 2.0. Gear up for **the Conceptual Universe called "Distributed Data Mesh 2.0"**. 
+
+Many enterprises are investing in their next generation data lake, with the hope of democratizing data at scale to provide business insights and ultimately make automated intelligent decisions. Data platforms based on the data lake architecture have common failure modes that lead to unfulfilled promises at scale. To address these failure modes we need to shift from the centralized paradigm of a lake, or its predecessor data warehouse. We need to shift to a paradigm that draws from modern distributed architecture: considering domains as the first class concern, applying platform thinking to create self-serve data infrastructure, and treating data as a product.
+
+To Move Beyond a Monolithic Data Lake/ Centralized LakeHouse / Data Warehouse to a Distributed Data Mesh paradigm is a journey.
 <br>
 
 # Nuances of The Universe of "Ditributed Data Mesh 2.0"
-### What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY | Distributed Data Mesh 2.0 |
+#### What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY | Distributed Data Mesh 2.0 |
 <br>
 
 # DataMesh-as-a-Code on Cloud
-
->>>> DataMesh-as-a-Code on Azure Cloud 
->>>> DataMesh in practice on AWS Cloud
->>>> DataMesh in Practice on DataBricks 
->>>> DataMesh in practice with Confluent Kafka
+>>>> DataMesh-as-a-Code on Azure Cloud | DataMesh in practice on AWS Cloud | DataMesh in Practice on DataBricks | DataMesh in practice with Confluent Kafka |
 
 <br>
 
@@ -31,8 +31,36 @@ Disclamer:
 	2. Data Mesh has a concrete set of principle (most importantly a set of ideas). Physcializing those ideas to practice by building out mesh is a JOURNEY.
 	
 	3. There may not be an obvious THRESHOLD to measure the Data Mesh industrialization. i.e., it's a continuum of care.
+	
+<br>
+<br>
+## What is Enterprise DATA MESH?
+**[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to DOMAIN-ORIENTED + DATA PRODUCT + SELF-SERVE DATA Infra + DECENTRALIZED TOPOLOGY data architecture that conforms to the following main Architecture Principles, such as: 
 
+	1. Domain Oriented DECENTRALIZATION
+		a. Domain-oriented Data compute  
+		b. Domain-oriented Data Stoarge  
+		c. Domain-oriented Data pipeline
+		d. Domain-oriented Data Model 
 
+	2. Data-as-a-Product
+		# DATA PRODUCT is a function of Data platform governed by MICROSERVICE GOVERNANCE & SERVICE MESH for self-discoverable, resilient, secured and performant for data domain services
+	
+		# Caveat: DATA PRODUCT & SERVICES are not defined by the size of the function, but instead by the context, cohesion and coupling, requiring either orchestration (Service) or choreography (Micro-Service) to mediate between Services  
+	
+	3. Self-serve Infra for data platform (DataInfra-as-a-Service)
+
+	4. Centeralized Data Governance  
+		a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)  
+		b. Unified Policy Management  
+		c. Unified Data Virtualization Service  
+		d. Federated Data Access Control Service  
+		e. Organization wide Secured Data Sharing
+
+	5. DATA MESH Topology (DECENTRALIZED Topology to power DataMesh NODE PATTERN)
+		a. Governed Data Mesh topology  
+		b. Harmonized Data Mesh topology  
+		c. Highly federated Data Mesh topology
 ## Why DATA MESH (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product node governance with Self-serve Data Infra) Architecture/ Model?:
 - The Beauty of 'Central Data Platform': Organizations of all sizes have recognized that data is one of the key enablers to increase and sustain innovation, and drive value for their customers and business units. They are eagerly modernizing traditional data platforms with cloud-native technologies that are highly scalable, feature-rich, and cost-effective.A centralized model is intended to simplify staffing and training by centralizing data and technical expertise in a single place, to reduce technical debt by managing a single data platform, and to reduce operational costs.
 - The Challenge with 'Central Data Platform': Managing data through a Central Data Platform can create scaling, ownership, and accountability challenges, because central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.
@@ -40,45 +68,13 @@ Disclamer:
 ---- For instance, product teams are responsible for ensuring the product inventory is updated regularly with new products and changes to existing ones. They’re the domain experts of the product inventory datasets. If a discrepancy occurs, they’re the only group who knows how to fix it. Therefore, they’re best able to implement and operate a technical solution to ingest, process, and produce the product inventory dataset. They own everything leading up to the data being consumed: they choose the technology stack, operate in the mindset of data as a product, enforce security and auditing, and provide a mechanism to expose the data to the organization in an easy-to-consume way. This reduces overall friction for information flow in the organization, where the producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs.
 
 
-## The AIM of DATA MESH:
+## The Goal of DATA MESH:
 
 - **Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity**.
 - **A cloud distributed data mesh, which allows DOMAIN-SPECIFIC data and treats “DATA-as-a-PRODUCT”**. 
 - **Enabling each domain to handle its own DATA-PIPELINES**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
 
 
-
-## Enterprise DATA MESH Architecture Principles
-**[Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to  DOMAIN-ORIENTED + DATA PRODUCT + DECENTRALIZED TOPOLOGY + SELF-SERVE DATA Infra +  SCALABLE data architecture that conforms to the following main principles, such as: 
-
-1. Data Mesh Topology (DECENTRALIZED Topology - Data Mesh Node Pattern)
-
-	1a. Governed Data Mesh topology  
-	1b. Harmonized Data Mesh topology  
-	1c. Highly federated Data Mesh topology
-	
-2. Domain Oriented DECENTRALIZATION
-
-	2a. Domain-oriented Data Model  
-	2b. Domain-oriented Data compute  
-	2c. Domain-oriented Data Stoarge  
-	2d. Domain-oriented Data pipeline
-
-3. Data as a Product
-
-	3a. Microservice Service Mesh for data domains (Secured, scalable, self-discovered, performant & resilient for data domains Services)
-	
-		Data products and services are not defined by the size of the function, but instead by the context, cohesion and coupling, requiring either orchestration (Service) or choreography (Micro-Service) to mediate between Services  
-
-	
-4. Self-serve Infra for data platform (DataInfra-as-a-Service)
-
-6. Centeralized Data Governance  
-	5a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)  
-	5b. Unified Policy Management  
-	5c. Unified Data Virtualization Service  
-	5d. Federated Data Access Control Service  
-	5e. Organization wide Secured Data Sharing
 
 
 
