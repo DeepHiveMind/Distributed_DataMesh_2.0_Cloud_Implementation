@@ -68,7 +68,7 @@ Disclamer:
 		c. Highly federated Data Mesh topology
 <br>
 
-## Why DATA MESH Architecture/ Model?
+## Why DATA MESH Architecture/ Model/ Paradigm?
 Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product Node governance with Self-serve Data Infra)?
 
 - The Beauty of 'Central Data Platform': Organizations of all sizes have recognized that data is one of the key enablers to increase and sustain innovation, and drive value for their customers and business units. They are eagerly modernizing traditional data platforms with cloud-native technologies that are highly scalable, feature-rich, and cost-effective.A centralized model is intended to simplify staffing and training by centralizing data and technical expertise in a single place, to reduce technical debt by managing a single data platform, and to reduce operational costs.
