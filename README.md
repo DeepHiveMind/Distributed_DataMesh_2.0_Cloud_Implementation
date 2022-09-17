@@ -24,10 +24,10 @@ Disclamer:
 <br>
 
 # Agenda
-## Nuances of The Universe of "Ditributed Data Mesh 2.0"
-#### What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY | Distributed Data Mesh 2.0 |
+- Nuances of The Universe of "Ditributed Data Mesh 2.0"
+>>>> What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY | Distributed Data Mesh 2.0 |
 
-## DataMesh-as-a-Code on Cloud
+- DataMesh-as-a-Code on Cloud
 >>>> DataMesh-as-a-Code on Azure Cloud | DataMesh in practice on AWS Cloud | DataMesh in Practice on DataBricks | DataMesh in practice with Confluent Kafka |
 
 
