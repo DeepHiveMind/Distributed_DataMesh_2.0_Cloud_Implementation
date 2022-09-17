@@ -120,11 +120,11 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 Following key Patterns of Data Mesh - 
 
 
-|**DATA MESH PATTERN**| **DATA MESH PATTERN**| **DATA MESH PATTERN**|
+|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**|
 | :---: | :---:| :---:|
 | Governed Data Mesh topology- DataMesh Node Pattern | Governed Data Mesh topology- DataMesh Node Ecosystem|  Governed Data Mesh topology- DataMesh Node Ecosystem| 
 |<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
-| **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| **Highly federated Mesh topology**| 
+|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**| 
 |<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">| <img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
 
 
