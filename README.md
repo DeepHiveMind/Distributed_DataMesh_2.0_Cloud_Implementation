@@ -1,8 +1,7 @@
 # Enterprise Data MESH journey :airplane: *from Theory to Practice*
-<br>
 
 This repository is my humble contribution to the Open Source Community for **The Best of Enterprise Data Mesh 2.0** by introducing the Constructs, Design Elements, Real life implementations of Data Mesh, Codesets, Data Mesh Reference Artefacts & FAQs from the captivating landscape of Distributed Data Mesh 2.0. Gear up for **the Conceptual Universe called "Distributed Data Mesh 2.0"**. 
-
+<br>
 
 # Nuances of The Universe of "Ditributed Data Mesh 2.0"
 ### What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY | Distributed Data Mesh 2.0 |
