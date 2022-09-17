@@ -24,7 +24,15 @@ This repository is my humble contribution to the Open Source Community for **The
 
 Disclamer:
 
-	The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on **organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics** . 
+	1. The paradigm shift in Distributed Data Architecture with domain driven ownership comes with several nuances and consideration. Implmentation of Data Mesh architecture in any enterprise mostly depend on 
+	(a) organizational maturity and skills, 
+	(b) organizational structure, 
+	(c) risk appetite, 
+	(d) sizing and dynamics. 
+	
+	2. Data Mesh has a concrete set of principle (most importantly a set of ideas). Physcializing those ideas to practice by building out mesh is a JOURNEY.
+	
+	3. There may not be an obvious THRESHOLD to measure the Data Mesh industrialization. i.e., it's a continuum of care.
 
 
 ## Why DATA MESH (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product node governance with Self-serve Data Infra) Architecture/ Model?:
