@@ -6,22 +6,8 @@
 
 - To Move Beyond a Monolithic Data Lake/ Centralized LakeHouse / Data Warehouse to a Distributed Data Mesh paradigm is a journey. 
 
-- Welcome onaboard to **the Universe of "Distributed Data Mesh 2.0!"**.
+- Welcome onaboard to **The Universe of "Distributed Data Mesh 2.0!"**.
 <br>
-
-# Nuances of The Universe of "Ditributed Data Mesh 2.0"
-#### What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY | Distributed Data Mesh 2.0 |
-<br>
-
-# DataMesh-as-a-Code on Cloud
->>>> DataMesh-as-a-Code on Azure Cloud | DataMesh in practice on AWS Cloud | DataMesh in Practice on DataBricks | DataMesh in practice with Confluent Kafka |
-
-<br>
-
-	"A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
--- Zhamak Dehghani, Thoughtworks
-<br>
-
 Disclamer:
 
 	1. The paradigm shift in Distributed Data Architecture with domain driven ownership comes with several nuances and consideration. Implmentation of Data Mesh architecture in any enterprise mostly depend on 
@@ -35,6 +21,22 @@ Disclamer:
 	3. There may not be an obvious THRESHOLD to measure the Data Mesh industrialization. i.e., it's a continuum of care.
 	
 <br>
+
+# Agenda
+## Nuances of The Universe of "Ditributed Data Mesh 2.0"
+#### What & Why Data Mesh | The Goal of Data Mesh | Enterprise DATA MESH Architecture Principles |  User Persona of Enterprise DATA MESH  | DATA MESH TOPOLOGY | Distributed Data Mesh 2.0 |
+
+## DataMesh-as-a-Code on Cloud
+>>>> DataMesh-as-a-Code on Azure Cloud | DataMesh in practice on AWS Cloud | DataMesh in Practice on DataBricks | DataMesh in practice with Confluent Kafka |
+
+
+<br>
+
+	"A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
+-- Zhamak Dehghani, Thoughtworks
+<br>
+
+
 <br>
 ## What is Enterprise DATA MESH?
 **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to DOMAIN-ORIENTED + DATA PRODUCT + SELF-SERVE DATA Infra + DECENTRALIZED TOPOLOGY data architecture that conforms to the following main Architecture Principles, such as: 
