@@ -91,6 +91,7 @@ Managing data through a Central Data Platform can create following multi-dimensi
 		 [a] scaling, 
 		 [b] ownership,
 		 [c] accountability challenges,
+		 
 		 [d] Huge backlog -- 
 		 'Central Data platform' pattern works for smaller organizations and organizations that have a high degree of centralization from a team setup perspective. However, using only a single team often creates a bottleneck in larger organizations. This bottleneck causes a huge backlog, with parts of an organization having to wait for data integration services and Analytical solutions. 
 		
@@ -104,10 +105,16 @@ Managing data through a Central Data Platform can create following multi-dimensi
 		The recent switch to using microservices as an application development pattern is another driver of long backlogs around data integration because it increases the number of data sources.
 
 - STEP 3: *'Data Mesh as Solution'*: 
-These challenges can often be reduced by giving ownership and autonomy to the team who owns the data, best allowing them to build data products, rather than only being able to use a common central data platform. 
---------- :bulb: For instance, product teams (in E-Commerce/ e-shop) are responsible for ensuring the product inventory is updated regularly with new products and changes to existing ones. They’re the domain experts of the product inventory datasets. If a discrepancy occurs, they’re the only group who knows how to fix it. :bulb: Therefore, they’re best candidates to implement and operate a technical solution to ingest, process, and produce the product inventory dataset. Data Mesh paradigm and Architecture enables the domain team to perform these activities. 
---------- :bulb: With the Data Mesh, The E-Commerce/e-shop 'product team' owns everything leading up to the data being consumed: they choose the technology stack, operate in the mindset of data as a product, enforce security and auditing, and provide a mechanism to expose the data to the organization in an easy-to-consume way. 
---------- :bulb: Therefore, Data Mesh paradigm reduces overall friction for information flow in the organization, where the **data producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs**.
+These challenges can often be reduced by **giving ownership and autonomy to the team who owns the data, best allowing them to build data products, rather than only being able to use a common central data platform**. 
+Data Mesh paradigm is the solution as it supports all the constructs to make it work.
+
+	:bulb: For instance, product teams (in E-Commerce/ e-shop) are responsible for ensuring the product inventory is updated regularly with new products and changes to existing ones. They’re the domain experts of the product inventory datasets. If a discrepancy occurs, they’re the only group who knows how to fix it. :bulb: Therefore, they’re best candidates to implement and operate a technical solution to ingest, process, and produce the product inventory dataset. Data Mesh paradigm and Architecture enables the domain team to perform and own these activities.
+
+	:bulb: With the Data Mesh, The E-Commerce/e-shop 'product team' owns everything leading up to the data being consumed: they choose the technology stack, operate in the mindset of data as a product, enforce security and auditing, and provide a mechanism to expose the data to the organization in an easy-to-consume way.
+
+	:bulb: Data MESH paradigm is based on Architectural framework which infuses Microservices as an application development pattern for the MODERN DISTRIBUTED DECNETRALIZED DATA PLATFORM. 
+
+	:bulb: Therefore, Data Mesh paradigm reduces overall friction for information flow in the organization, where the **data producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs**.
 <br>
 <br>
 
