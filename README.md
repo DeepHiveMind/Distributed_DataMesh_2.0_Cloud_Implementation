@@ -165,8 +165,10 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 | E-Commerce Overview showcase | SHOP-SalesORDER-CUSTOMER-PRODUCT Domain-Implmentation |  SALES ORDER Sub-domain| 
 |<img src="Infographics_Domain/showcase-overview.png" width="400" height="200" border="10">|<img src="Infographics_Domain/shop-domain-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/salesorder-order-completed-dp-impl.png" width="400" height="200" border="10">|
 |**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| 
-| showcase-Overview | Shop-SalesOrder-Customer-Product-DOMAIN Implmentation |  Sales Order Sub-domain| 
-|<img src="Infographics_Domain/showcase-overview.png" width="400" height="200" border="10">|<img src="Infographics_Domain/shop-domain-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/salesorder-order-completed-dp-impl.png" width="400" height="200" border="10">|
+|  Product Sub-domain| product-sales-dataProduct| product-recommendation-dataProduct |
+|<img src="Infographics_Domain/product-product-dp-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-sales-dp.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-recommendation-dp.png" width="400" height="200" border="10">|
+|  Customer Sub-domain| product-sales-dataProduct| product-recommendation-dataProduct |
+|<img src="Infographics_Domain/customer-customer-dp-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-sales-dp.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-recommendation-dp.png" width="400" height="200" border="10">|
 
 <br>
 <br>
