@@ -77,7 +77,8 @@ Disclamer:
 			- STEP 2: Let's then explore { The Challenge/ Bottleneck with 'Central Data Platform' }
 			- STEP 3: Let's then find out solution in { 'Data Mesh as Solution'}
 
-- STEP 1: *The Beauty of 'Central Data Platform'*: 
+- STEP 1: *The Beauty of 'Central Data Platform'*:
+ 
 Organizations of all sizes have recognized that data is one of the key enablers to increase and sustain innovation, and drive value for their customers and business units. They are eagerly modernizing traditional data platforms with cloud-native technologies that are highly scalable, feature-rich, and cost-effective. A centralized model is intended to
 		[a] simplify staffing and training by centralizing data and technical expertise in a single place, 
 		[b] to reduce technical debt by managing a single data platform, and
@@ -86,6 +87,7 @@ Organizations of all sizes have recognized that data is one of the key enablers 
 
 
 - STEP 2: *The Challenge/ Bottleneck with 'Central Data Platform'*: 
+
 Managing data through a Central Data Platform can create following multi-dimensional challenges, (as central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.) --
 
 		 [a] scaling, 
@@ -104,7 +106,8 @@ Managing data through a Central Data Platform can create following multi-dimensi
 		[g] Microservices as an Application development pattern for Business Transcation Processing Source System -- 
 		The recent switch to using microservices as an application development pattern is another driver of long backlogs around data integration because it increases the number of data sources.
 
-- STEP 3: *'Data Mesh as Solution'*: 
+- STEP 3: *'Data Mesh as Solution'*:
+ 
 These challenges can often be reduced by **giving ownership and autonomy to the team who owns the data, best allowing them to build data products, rather than only being able to use a common central data platform**. 
 Data Mesh paradigm is the solution as it supports all the constructs to make it work.
 
