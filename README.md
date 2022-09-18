@@ -167,7 +167,7 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 |**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| 
 |  Product Sub-domain| product-sales-dataProduct| product-recommendation-dataProduct |
 |<img src="Infographics_Domain/product-product-dp-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-sales-dp.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-recommendation-dp.png" width="400" height="200" border="10">|
-|  Customer Sub-domain| customer-interactions-dataProduct| customer-segementation--dataProduct |
+|  Customer Sub-domain| customer-interactions-dataProduct| customer-segementation-dataProduct |
 |<img src="Infographics_Domain/customer-customer-dp-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/customer-interactions-dp.png" width="400" height="200" border="10">|<img src="Infographics_Domain/customer-customersegement-dp.png" width="400" height="200" border="10">|
 
 <br>
