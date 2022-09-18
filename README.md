@@ -26,7 +26,7 @@ Disclamer:
 # Agenda
 - Nuances of The Universe of "Ditributed Data Mesh 2.0" 
  
-			>> 1. What is the Business Goal of Enterprise Data MESH? | 
+			>> 1. [What is the Business Goal of Enterprise Data MESH?](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) | 
 			>> 2. Why Data MESH paradigm? | 		
 			>> 3. Enterprise Data MESH Architecture Principles |  
 			>> 4. Data Mesh Domain-Driven Pattern |  
