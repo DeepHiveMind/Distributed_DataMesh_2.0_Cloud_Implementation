@@ -1,39 +1,84 @@
-#Data Mesh topologies
+## Data Mesh Domain-Driven Patterns
 
-> Design considerations for building a data mesh architecture
-
-The paradigm shift in distributed data architecture comes with several nuances and considerations, which mostly depend on organizational maturity and skills, organizational structure, risk appetite, sizing and dynamics. Based on these nuances and considerations, different data mesh topologies can be used.
-
-The aim is to 
--- Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity.
--- A cloud distributed data mesh, which allows domain-specific data and treats “data-as-a-product,” 
--- Enabling each domain to handle **its own data pipelines**. This is different from plumbing data from the traditional (monolithic) platforms that generally tightly couple and often slow down the ingestion, storage, transformation, and consumption of data from one central data lake or hub.
+Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-shop (Overall Biz Domain: ECommerce) with -
 
 
-**[Data Mesh]** is a new paradigm to data architecture that follows 5 main principles: 
-1. Data Mesh Topology Patterns
-2. Domain-oriented data and compute 
-3. Data as a product
-4. Self-serve data platform (Data-as-a-Service)
-5. Federated computational governance
-6. Service Mesh powered Data Governance & Data Management
-
-# **Data Mesh Topolgy** - 3 Major Patterns
-- Governed Data Mesh topology
-- Harmonized Data Mesh topology
-- Highly federated Mesh topology
-
-|**DATA MESH TOPOLOGY**| **DATA MESH TOPOLOGY**|
-| :---: | :---:|
-| Governed Data Mesh topology- DataMesh Node Pattern | Governed Data Mesh topology- DataMesh Node Ecosystem| 
-|<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
-| **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| 
-|<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
+	1. Domain : Product
+		a. Bounded Context : Product  
+		b. Data Product Name : Product Sales  
 
 
+	2. Domain : Product Recommendation
+		a. Bounded Context : Production Recommendation  
+		b. Data Product Name : Recommendation  
 
-## Governed mesh topology
-The first pattern is the “governed mesh topology”. In this model, as you can see from the image below, the different data domains are grouped and represented as nodes. Each node you can see as a domain, which can represent itself as either a data provider and/or data consumer towards the other domains.
+	3. Domain : Customer
+		a. Bounded Context : Customer  
+		b. Data Product Name : Customer Data  
 
+	4. Domain : Customer
+		a. Bounded Context : Customer  
+		b. Data Product Name : Customer Segmentation  
 
-Nodes, in this model and as a general practice, are instantiated from blueprints, which encompass key capabilities, required in order to enable data value creation (e.g., storage, monitoring, key management, ELT, analytical engines, and automation). Each node is allowed to use its own preferred set of technologies from this blueprint, needed for their specific requirements.
+	5. Domain : Customer
+		a. Bounded Context : Customer  
+		b. Data Product Name : Customer Interactions  
+
+	6. Domain : Churn
+		a. Bounded Context : Churn Detection
+		b. Data Product Name : Churn Detection 
+
+	7. Domain : E-Shop
+		a. Bounded Context : E-Shop 
+		b. Data Product Name : Shopping cart 
+
+	8. Domain : E-Shop
+		a. Bounded Context : E-Shop 
+		b. Data Product Name : Page Navigation 
+
+	9. Domain : E-Shop
+		a. Bounded Context : E-Shop 
+		b. Data Product Name : User Information 
+
+	5. Domain : Order Processing
+		a. Bounded Context : Order Processing  
+		b. Data Product Name : OrderProcessingUpdate  
+
+	... more..
+
+ 
+
+|**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**|
+| :---: | :---:| :---:|
+| E-Commerce Overview showcase | SHOP-SalesORDER-CUSTOMER-PRODUCT Domain-Implmentation |  SALES ORDER Sub-domain| 
+|<img src="Infographics_Domain/showcase-overview.png" width="400" height="200" border="10">|<img src="Infographics_Domain/shop-domain-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/salesorder-order-completed-dp-impl.png" width="400" height="200" border="10">|
+|**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| 
+|  Product Sub-domain| product-sales-dataProduct| product-recommendation-dataProduct |
+|<img src="Infographics_Domain/product-product-dp-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-sales-dp.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-recommendation-dp.png" width="400" height="200" border="10">|
+|  Customer Sub-domain| product-sales-dataProduct| product-recommendation-dataProduct |
+|<img src="Infographics_Domain/customer-customer-dp-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-sales-dp.png" width="400" height="200" border="10">|<img src="Infographics_Domain/product-recommendation-dp.png" width="400" height="200" border="10">|
+
+<br>
+<br>
+
+## Data Mesh Techno-functional Patterns
+
+Illustration of key Techno-functional Patterns of Data Mesh are as following- 
+
+- Data Product Catalog
+- Data Mesh & Event Streaming backbone
+- Data Mesh & Data Lienage
+- Data Mesh & AI ML
+- Data Mesh & CDC
+- Data Mesh & Real time Data Synch
+
+|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**|
+| :---: | :---:| :---:|
+| Pattern_Data Mesh & Data Product Catalog | Pattern_Data Mesh & Event Streaming backbone |  Pattern_Data Mesh & Data Lienage| 
+|<img src="images/Pattern_Data Mesh & Data Product Catalog.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & Event Streaming backbone .png" width="500" height="200" border="10">|<img src="images/Scenario_Data Mesh & Data Lienage.png" width="500" height="200" border="10">|
+|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**| 
+| Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
+|<img src="images/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="images/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
+
+<br>
+<br>
