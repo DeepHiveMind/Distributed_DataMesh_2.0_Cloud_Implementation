@@ -24,23 +24,26 @@ Disclamer:
 <br>
 
 # Agenda
-- Nuances of The Universe of "Ditributed Data Mesh 2.0"  
-		>> 1. What is the Business Goal of Enterprise Data MESH? | 
-		>> 2. Why Data MESH paradigm? | 		
-		>> 3. Enterprise Data MESH Architecture Principles |  
-		>> 4. Data Mesh Domain-Driven Pattern |  
-		>> 5. Data Mesh Technology Patterns |   
-		>> 6. DATA Mesh TOPOLOGY Patterns (Topology for decentralized distributed domain-driven data-product nodes) in Distributed Data Mesh 2.0|  
-		>> 7. User Persona of Enterprise Data Mesh  |  
+- Nuances of The Universe of "Ditributed Data Mesh 2.0" 
+ 
+			>> 1. What is the Business Goal of Enterprise Data MESH? | 
+			>> 2. Why Data MESH paradigm? | 		
+			>> 3. Enterprise Data MESH Architecture Principles |  
+			>> 4. Data Mesh Domain-Driven Pattern |  
+			>> 5. Data Mesh Technology Patterns |   
+			>> 6. DATA Mesh TOPOLOGY Patterns (Topology for decentralized distributed domain-driven data-product nodes) in Distributed Data Mesh 2.0|
+			>> 7. Self-serve Data Platform Infrastructure |	
+			>> 8. User Persona of Enterprise Data Mesh  |	
+			>> 9. Data Mesh Reference Artefacts in Public Domain |
+	
 
-
-- DataMesh-as-a-Code on Cloud  
+- DataMesh-as-a-Code on Cloud 
+ 
 		>>>> A. DataMesh-as-a-Code on Azure Cloud |  
 		>>>> B. DataMesh-in-practice on AWS Cloud |  
 		>>>> C. DataMesh-as-a-Code on Open Source Technology (FOSS) |  
 		>>>> D. DataMesh-in-Practice with DataBricks |   
 		>>>> E. DataMesh-in-practice with Confluent Kafka |
-
 
 <br>
 <br>
@@ -73,7 +76,8 @@ Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Dece
 --------- :bulb: For instance, product teams (in E-Commerce/ e-shop) are responsible for ensuring the product inventory is updated regularly with new products and changes to existing ones. They’re the domain experts of the product inventory datasets. If a discrepancy occurs, they’re the only group who knows how to fix it. :bulb: Therefore, they’re best candidates to implement and operate a technical solution to ingest, process, and produce the product inventory dataset. Data Mesh paradigm and Architecture enables the domain team to perform these activities. 
 --------- :bulb: With the Data Mesh, The E-Commerce/e-shop 'product team' owns everything leading up to the data being consumed: they choose the technology stack, operate in the mindset of data as a product, enforce security and auditing, and provide a mechanism to expose the data to the organization in an easy-to-consume way. 
 --------- :bulb: Therefore, Data Mesh paradigm reduces overall friction for information flow in the organization, where the **data producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs**.
-
+<br>
+<br>
 
 ## What are Architecture Principles of Enterprise Data MESH?
 
@@ -104,6 +108,7 @@ Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Dece
 		b. Harmonized Data Mesh topology  
 		c. Highly federated Data Mesh topology
 <br>
+<br>
 
 ## What are Data MESH Patterns?
 
@@ -118,8 +123,8 @@ key Patterns of Data Mesh are as following-
 | Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
 |<img src="images/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="images/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
 
-
-
+<br>
+<br>
 
 ## Data MESH TOPOLOGY 
 
@@ -138,12 +143,16 @@ Based on nuances and considerations, different data mesh topologies can be used.
 |<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
+<br>
+<br>
 
 ## Self-serve Data Platform Infrastructure
 
 The Self-serve Data Platform Infrastructure consists of two  major parts
  1. The *Core* Data Platform with all the technologies for building the **DATA PRODUCTS**
  2. The *Governance* Data Platform which hosts the **Governance related services for maniging the data products** 
+<br>
+<br>
 
 ## Enterprise Data Mesh Data-Product User Persona 
 - Data Product Owners
@@ -154,6 +163,8 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 - Data Infra PlatformOps specialists
 - Data Security Professionals
 - CDO
+<br>
+<br>
 
 ## DataMesh-as-a-Code on Cloud
 
