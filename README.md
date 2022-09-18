@@ -173,8 +173,14 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 
 ## Data Mesh Techno-functional Patterns
 
-key Techno-functional Patterns of Data Mesh are as following- 
+Illustration of key Techno-functional Patterns of Data Mesh are as following- 
 
+- Data Product Catalog
+- Data Mesh & Event Streaming backbone
+- Data Mesh & Data Lienage
+- Data Mesh & AI ML
+- Data Mesh & CDC
+- Data Mesh & Real time Data Synch
 
 |**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**|
 | :---: | :---:| :---:|
