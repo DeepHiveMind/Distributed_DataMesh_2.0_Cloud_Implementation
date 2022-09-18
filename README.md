@@ -162,7 +162,7 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 
 |**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**|
 | :---: | :---:| :---:|
-| showcase-Overview | Shop-SalesOrder-Customer-Product-DOMAIN Implmentation |  Sales Order Sub-domain| 
+| E-Commerce Overview showcase | SHOP-SalesORDER-CUSTOMER-PRODUCT Domain-Implmentation |  SALES ORDER Sub-domain| 
 |<img src="Infographics_Domain/showcase-overview.png" width="400" height="200" border="10">|<img src="Infographics_Domain/shop-domain-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/salesorder-order-completed-dp-impl.png" width="400" height="200" border="10">|
 |**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| 
 | showcase-Overview | Shop-SalesOrder-Customer-Product-DOMAIN Implmentation |  Sales Order Sub-domain| 
