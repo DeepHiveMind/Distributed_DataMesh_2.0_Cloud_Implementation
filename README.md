@@ -165,8 +165,8 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 | showcase-Overview | Shop-SalesOrder-Customer-Product-DOMAIN Implmentation |  Sales Order Sub-domain| 
 |<img src="Infographics_Domain/showcase-overview.png" width="400" height="200" border="10">|<img src="Infographics_Domain/shop-domain-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/salesorder-order-completed-dp-impl.png" width="400" height="200" border="10">|
 |**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| 
-| Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
-|<img src="Infographics_Domain/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="Infographics_Domain/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="Infographics_Domain/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
+| showcase-Overview | Shop-SalesOrder-Customer-Product-DOMAIN Implmentation |  Sales Order Sub-domain| 
+|<img src="Infographics_Domain/showcase-overview.png" width="400" height="200" border="10">|<img src="Infographics_Domain/shop-domain-impl.png" width="400" height="200" border="10">|<img src="Infographics_Domain/salesorder-order-completed-dp-impl.png" width="400" height="200" border="10">|
 
 <br>
 <br>
