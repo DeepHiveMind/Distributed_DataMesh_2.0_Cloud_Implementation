@@ -86,21 +86,22 @@ Organizations of all sizes have recognized that data is one of the key enablers 
 
 
 - STEP 2: *The Challenge/ Bottleneck with 'Central Data Platform'*: 
-Managing data through a Central Data Platform can create following multi-dimensional challenges, --
+Managing data through a Central Data Platform can create following multi-dimensional challenges, (as central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.) --
 
 		 [a] scaling, 
 		 [b] ownership,
 		 [c] accountability challenges,
-		 
-because central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.
-
-		[d] Huge backlog -- 'Central Data platform' pattern works for smaller organizations and organizations that have a high degree of centralization from a team setup perspective. However, using only a single team often creates a bottleneck in larger organizations. This bottleneck causes a huge backlog, with parts of an organization having to wait for data integration services and Analytical solutions. 
+		 [d] Huge backlog -- 
+		 'Central Data platform' pattern works for smaller organizations and organizations that have a high degree of centralization from a team setup perspective. However, using only a single team often creates a bottleneck in larger organizations. This bottleneck causes a huge backlog, with parts of an organization having to wait for data integration services and Analytical solutions. 
 		
-		[e] Organizations adopting MODERN DATA SCIENCE solutions -- Many modern data science solutions require more data than traditional business intelligence solutions did in the past. It creates a huge backlog and depedencies on central Data platform team. 
+		[e] Organizations adopting MODERN DATA SCIENCE solutions --
+		Many modern data science solutions require more data than traditional business intelligence solutions did in the past. It creates a huge backlog and depedencies on central Data platform team. 
 		
-		[f] Organizations are DECENTRALIZED and DISTRIBUTED from a business perspective -- Most organizations are decentralized and distributed from a business perspective. Having a single team handling all of data ingestion on a single platform in a large organization can also be problematic. One team rarely has experts for every data source.
+		[f] Organizations are DECENTRALIZED and DISTRIBUTED from a business perspective -- 
+		Most organizations are decentralized and distributed from a business perspective. Having a single team handling all of data ingestion on a single platform in a large organization can also be problematic. One team rarely has experts for every data source.
 		
-		[g] Microservices as an Application development pattern for Business Transcation Processing Source System -- The recent switch to using microservices as an application development pattern is another driver of long backlogs around data integration because it increases the number of data sources.
+		[g] Microservices as an Application development pattern for Business Transcation Processing Source System -- 
+		The recent switch to using microservices as an application development pattern is another driver of long backlogs around data integration because it increases the number of data sources.
 
 - STEP 3: *'Data Mesh as Solution'*: 
 These challenges can often be reduced by giving ownership and autonomy to the team who owns the data, best allowing them to build data products, rather than only being able to use a common central data platform. 
