@@ -1,0 +1,39 @@
+descriminator,delay_from_start_ms,unit_measure_code,name
+UnitMeasure,0,BOX,Boxes
+UnitMeasure,0,BTL,Bottle
+UnitMeasure,0,C,Celsius
+UnitMeasure,0,CAN,Canister
+UnitMeasure,0,CAR,Carton
+UnitMeasure,0,CBM,Cubic meters
+UnitMeasure,0,CCM,Cubic centimeter
+UnitMeasure,0,CDM,Cubic decimeter
+UnitMeasure,0,CM,Centimeter
+UnitMeasure,0,CM2,Square centimeter
+UnitMeasure,0,CR,Crate
+UnitMeasure,0,CS,Case
+UnitMeasure,0,CTN,Container
+UnitMeasure,0,DM,Decimeter
+UnitMeasure,0,DZ,Dozen
+UnitMeasure,0,EA,Each
+UnitMeasure,0,FT3,Cubic foot
+UnitMeasure,0,G,Gram
+UnitMeasure,0,GAL,Gallon
+UnitMeasure,0,IN,Inch
+UnitMeasure,0,KG,Kilogram
+UnitMeasure,0,KGV,Kilogram/cubic meter
+UnitMeasure,0,KM,Kilometer
+UnitMeasure,0,KT,Kiloton
+UnitMeasure,0,L,Liter
+UnitMeasure,0,LB,US pound
+UnitMeasure,0,M,Meter
+UnitMeasure,0,M2,Square meter
+UnitMeasure,0,M3,Cubic meter
+UnitMeasure,0,MG,Milligram
+UnitMeasure,0,ML,Milliliter
+UnitMeasure,0,MM,Millimeter
+UnitMeasure,0,OZ,Ounces
+UnitMeasure,0,PAK,Pack
+UnitMeasure,0,PAL,Pallet
+UnitMeasure,0,PC,Piece
+UnitMeasure,0,PCT,Percentage
+UnitMeasure,0,PT,'Pint, US liquid'

@@ -1,0 +1,8 @@
+@namespace("com.trivadis.ecommerce.salesorder.priv.avro")
+protocol SalesOrderCreatedEventProtocol {
+	import idl "SalesOrder.avdl";
+
+	record SalesOrderCreatedEvent {
+		SalesOrder salesOrder;
+	}
+}

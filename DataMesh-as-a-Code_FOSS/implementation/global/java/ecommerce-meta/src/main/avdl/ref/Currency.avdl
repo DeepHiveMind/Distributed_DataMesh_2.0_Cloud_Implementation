@@ -1,0 +1,12 @@
+@namespace("com.trivadis.ecommerce.ref.avro")
+protocol CurrencyProtocol {
+
+	record Currency {
+		string entity;
+		string currency;
+		union { string, null } alphabeticCode;
+		union { int, null } numericCode;
+		union { int, null } minorUnit;
+		union { string, null } withdrawlDate;
+	}
+}

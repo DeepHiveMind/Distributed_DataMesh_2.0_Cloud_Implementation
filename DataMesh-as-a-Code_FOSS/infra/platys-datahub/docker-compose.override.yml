@@ -1,0 +1,11 @@
+# =======================================================================
+# Platform Name            datamesh-gov-platform
+# Platform Stack:          trivadis/platys-modern-data-platform
+# Platform Stack Version:  1.14.0-preview
+# =======================================================================
+version: '3.5'
+services:
+  datahub-actions:
+    extra_hosts:
+      - "dataplatform:${DATAMESH_CORE_PUBLIC_IP}"
+

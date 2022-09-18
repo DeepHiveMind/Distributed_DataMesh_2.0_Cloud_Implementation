@@ -1,0 +1,18 @@
+@namespace("com.trivadis.ecommerce.shop.avro")
+protocol ShopCartActionOccurredEventProtocol {
+	import idl "../../base/DomainEventBaseTypes.avdl";
+
+	enum CartAction {
+		ADD_ITEM, REMOVE_ITEM, INCREASE_QUANTITY, DECREASE_QUANTITY
+	}
+
+	record ShopCartActionOccurredEvent {
+		com.trivadis.ecommerce.domainevent.avro.DomainEventIdentity identity;
+
+		string uniqueVisitorId;
+		timestamp_ms requestTimestamp;
+		CartAction cartAction;
+		string partNumber;
+		int quantity;
+	}
+}

@@ -1,0 +1,431 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T12:03:18+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644571186605_1198762081",
+      "id": "paragraph_1644571186605_1198762081",
+      "dateCreated": "2022-02-11T09:19:46+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5897"
+    },
+    {
+      "text": "",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T09:50:43+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644573021747_497061748",
+      "id": "paragraph_1644573021747_497061748",
+      "dateCreated": "2022-02-11T09:50:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5898"
+    },
+    {
+      "text": "\n\n#import packages\nimport pandas as pd\nimport mlxtend as mlx\n\nfrom mlxtend.frequent_patterns import apriori\nfrom mlxtend.frequent_patterns import association_rules",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T09:21:26+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:114)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:99)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret(RemoteInterpreter.java:208)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:486)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:71)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644563586990_668785461",
+      "id": "paragraph_1644563586990_668785461",
+      "dateCreated": "2022-02-11T07:13:06+0000",
+      "dateStarted": "2022-02-11T09:20:39+0000",
+      "dateFinished": "2022-02-11T09:21:08+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5899"
+    },
+    {
+      "text": "OrderProcessing History (Tabelle Order in SQL)\r\n- ID\r\n- orderNo\r\n- orderDate\r\n- oderStatus\r\n- customerID\r\n- items (unitprice, quantity, product (partno, name, price) \r\n- VisitorID/Session (Sollte ebenfalls noch dazu kommen)",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T07:48:24+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644565622384_2016785182",
+      "id": "paragraph_1644565622384_2016785182",
+      "dateCreated": "2022-02-11T07:47:02+0000",
+      "status": "READY",
+      "$$hashKey": "object:5900"
+    },
+    {
+      "text": "#get data\n\npip install awswrangler\nimport awswrangler as wr\ndf = wr.s3.read_parquet(path=\"s3://my_bucket/path/to/data_folder/my-file.parquet\")\n\n137263e7-8291-4fde-9ceb-9ee3e6a50e60",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T09:51:30+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644565752149_1894778058",
+      "id": "paragraph_1644565752149_1894778058",
+      "dateCreated": "2022-02-11T07:49:12+0000",
+      "status": "READY",
+      "$$hashKey": "object:5901"
+    },
+    {
+      "text": "from pyarrow import fs\r\ns3 = fs.S3FileSystem(region='eu-west-3')\r\nf = s3.open_input_stream('my-test-bucket/Dir1/File2')\r\nf.readall()",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T12:09:19+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644581339548_1588916422",
+      "id": "paragraph_1644581339548_1588916422",
+      "dateCreated": "2022-02-11T12:08:59+0000",
+      "status": "READY",
+      "$$hashKey": "object:5902"
+    },
+    {
+      "text": "",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:25:38+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644585864701_1874130392",
+      "id": "paragraph_1644585864701_1874130392",
+      "dateCreated": "2022-02-11T13:24:24+0000",
+      "status": "READY",
+      "$$hashKey": "object:5903"
+    },
+    {
+      "text": "from typing import Any, Dict, List\r\nimport s3fs\r\nfrom pyarrow import Table, parquet as pq\r\nfrom pandas import DataFrame, Series\r\n\r\nfs = s3fs.S3FileSystem(\r\n    anon=False,\r\n    #key=\"\",\r\n    #secret=\"\",\r\n    use_ssl=False,\r\n    client_kwargs={\r\n        #\"region_name\": \"us-east-1\",\r\n        \"endpoint_url\": \"http://18.184.160.165:9000\",\r\n        \"aws_access_key_id\": \"\",\r\n        \"aws_secret_access_key\": \"\",\r\n        \"verify\": \"False\",\r\n\r\n    },\r\n       config_kwargs={\"addressing_style\": \"path\"}\r\n    }\r\n)   \r\npath_to_s3_object = \"orderproc.order-history/order_hist/schema=/137263e7-8291-4fde-9ceb-9ee3e6a50e60.snappy.parquet\"\r\ndata = pq.read_table(path_to_s3_object, filesystem=fs)\r\n\r\n\r\n\r\ndf = to_df(data)",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:55:10+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Traceback (most recent call last):\n  File \"/tmp/1644584333980-0/zeppelin_python.py\", line 143, in <module>\n    code = compile('\\n'.join(stmts), '<stdin>', 'exec', ast.PyCF_ONLY_AST, 1)\n  File \"<stdin>\", line 20\n    }\n    ^\nSyntaxError: invalid syntax\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644581441520_808279661",
+      "id": "paragraph_1644581441520_808279661",
+      "dateCreated": "2022-02-11T12:10:41+0000",
+      "dateStarted": "2022-02-11T13:51:13+0000",
+      "dateFinished": "2022-02-11T13:51:13+0000",
+      "status": "ERROR",
+      "$$hashKey": "object:5904"
+    },
+    {
+      "text": "",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T12:18:33+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644581913203_236677218",
+      "id": "paragraph_1644581913203_236677218",
+      "dateCreated": "2022-02-11T12:18:33+0000",
+      "status": "READY",
+      "$$hashKey": "object:5905"
+    },
+    {
+      "text": "#create item matrix \ndf_items = df_baskets.pivot_table(index='OrderNo', columns=['items.product.partno'], values='items.quantity').fillna(0)",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T08:05:05+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644565762869_1915240224",
+      "id": "paragraph_1644565762869_1915240224",
+      "dateCreated": "2022-02-11T07:49:22+0000",
+      "status": "READY",
+      "$$hashKey": "object:5906"
+    },
+    {
+      "text": "#generate recommendation function (via item-item collaboration, using pearson correlation coefficient)\n\ndef get_recommendations(df, item):\n    \n    \"\"\"Generate a set of product recommendations using item-based collaborative filtering.\n    \n    Args:\n        df (dataframe): Pandas dataframe containing matrix of items purchased.\n        item (string): Column name for target item. \n        \n    Returns: \n        recommendations (dataframe): Pandas dataframe containing product recommendations. \n    \"\"\"\n    \n    recommendations = df.corrwith(df[item])\n    recommendations.dropna(inplace=True)\n    recommendations = pd.DataFrame(recommendations, columns=['correlation']).reset_index()\n    recommendations = recommendations.sort_values(by='correlation', ascending=False)\n    \n    return recommendations",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T09:15:11+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644565534427_548583644",
+      "id": "paragraph_1644565534427_548583644",
+      "dateCreated": "2022-02-11T07:45:34+0000",
+      "status": "READY",
+      "$$hashKey": "object:5907"
+    },
+    {
+      "text": "#table 1 - based on correlations\n\nitemnames = pd.unique(COLUMNNAMEOFITEMNAMES-FILLIN)\n\n\n\n# Version 1: dataframe\ndf_recommendations = pd.DataFrame()\n\n\nfor item in itemnames:\n    interim = get_recommendations(df, item)\n    \n    #in gemeinsamen df speichern, row-Reihenfolge beachten!\n    df_recommendations[interim.columns[1].name] = interim[1]\n    \n    #Versuch mit iloc\n    columnWithRecommendations = interim.iloc[1, 0:10] #select values\n    df_recommendations([item]) = columnWithRecommendations #add new column\n    \n\n    \n#Version 2: dictionaire\n\nfor item in itemnames:\n    interim = get_recommendations(df, item)\n\n    #Versuch mit iloc\n    columnWithRecommendations = interim.iloc[1, 0:10]\n    df_recommendations(item) = columnWithRecommendations\n    df_recommendations.index = ['Rec_1', 'Rec_2', 'Rec_3', 'Rec_4', 'Rec_5', 'Rec_6', 'Rec_7', 'Rec_8', 'Rec_9', 'Rec_10']\n    dict_recommendations = df_recommendations.to_dict()\n\n    \n\n\n#?????????????????????????\n#wie können wir df_recommendations in anderem Skript aufrufen? Ist eine Funktion notwendig?    \ndef return_df():\n    return df_recommendations ###???\n    \n    \n\n\n\n##############################################\n# put in another script\n\n#newitem = XXXXXXXXXX some streaming data extracted\n\n\n\noutput = df_recommendations[newitem] #fertig? :) -> in welchem Format soll der Output vorhanden sein?\n\n\noutput_dic = dict_recommendations[newitem]\n\n\n\n\n    \n\n\n",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T10:29:46+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644568637723_153838770",
+      "id": "paragraph_1644568637723_153838770",
+      "dateCreated": "2022-02-11T08:37:17+0000",
+      "status": "READY",
+      "$$hashKey": "object:5908"
+    },
+    {
+      "text": "#recommendation via association-rules -> returns df with \n\n#apriori() braucht df mit OrderNo (row) und Item (col), Zelleneinträge (True/False)\n\nsupport_items = apriori(df, min_support = 0.06, use_colnames = True)\n\nrecommendations_ranked = association_rules(support_items, metric = \"lift\", min_threshold = 1)\nrecommendations_ranked = recommendations_ranked.sort_values('lift', ascending = False).reset_index(drop=True)\nrecommendations_ranked = recommendatioms_ranked[['antecedents','consequents','support','confidence','lift']]\n",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T09:25:09+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644565615592_527887957",
+      "id": "paragraph_1644565615592_527887957",
+      "dateCreated": "2022-02-11T07:46:55+0000",
+      "status": "READY",
+      "$$hashKey": "object:5909"
+    }
+  ],
+  "name": "ModelTraining-1",
+  "id": "2GVQNUJUV",
+  "defaultInterpreterGroup": "python",
+  "version": "0.10.1-SNAPSHOT",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": true,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/ModelTraining-1"
+}

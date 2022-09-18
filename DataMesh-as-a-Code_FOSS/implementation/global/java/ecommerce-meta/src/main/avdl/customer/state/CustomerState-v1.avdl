@@ -1,0 +1,8 @@
+@namespace("com.trivadis.ecommerce.customer.avro")
+protocol CustomerStateProtocol {
+	import idl "../Customer.avdl";
+
+	record CustomerState {
+		Customer customer;
+	}
+}

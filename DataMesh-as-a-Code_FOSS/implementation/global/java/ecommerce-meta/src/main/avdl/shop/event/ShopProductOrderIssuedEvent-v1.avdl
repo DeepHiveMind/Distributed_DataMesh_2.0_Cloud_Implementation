@@ -1,0 +1,27 @@
+@namespace("com.trivadis.ecommerce.shop.avro")
+protocol ShopProductOrderIssuedEventProtocol {
+	import idl "../../base/DomainEventBaseTypes.avdl";
+	import idl "../Product.avdl";
+
+	record OrderTotal {
+		string discountCoupon;
+		string currency;
+		double priceWithoutTax;
+		double total;
+	}
+
+	record OrderItem {
+		Product product;
+	}
+
+	record ShopProductOrderIssuedEvent {
+		com.trivadis.ecommerce.domainevent.avro.DomainEventIdentity identity;
+
+		string uniqueVisitorId;
+		timestamp_ms requestTimestamp;
+		string transactionId;
+		int numberOfPositions;
+		array<OrderItem> items;
+		OrderTotal total;
+	}
+}

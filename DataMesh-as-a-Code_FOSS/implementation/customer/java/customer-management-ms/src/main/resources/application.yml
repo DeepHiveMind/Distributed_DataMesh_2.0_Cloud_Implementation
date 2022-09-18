@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//oracledb-xe:1521/XEPDB1
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: ecomm_customer
+    password: abc123!
+

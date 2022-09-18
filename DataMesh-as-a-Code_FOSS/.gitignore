@@ -1,0 +1,12 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+
+**/target/**
+**/.idea/**
+
+hs_err_pid*
+**.DS_Store

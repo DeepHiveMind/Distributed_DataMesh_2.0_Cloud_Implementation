@@ -1,0 +1,33 @@
+@namespace("com.trivadis.ecommerce.salesorder.avro")
+protocol OrderProtocol {
+	import idl "OrderStatusEnum.avdl";
+	import idl "../ref/Currency.avdl";
+	import idl "Product.avdl";
+	import idl "Customer.avdl";
+	import idl "Address.avdl";
+
+	record OrderItem {
+		timestamp_ms createdAt;
+		int quantity;
+		double unitPrice;
+		Product product;
+	}
+
+	record Order {
+		long id;
+
+		union { null, string } orderNo;
+
+		timestamp_ms orderDate;
+
+		OrderStatus orderStatus;
+		union { null, string } currencyCode;
+
+		Address billingAddress;
+		Address shippingAddress;
+
+		Customer customer;
+
+		array<OrderItem> items;
+	}
+}

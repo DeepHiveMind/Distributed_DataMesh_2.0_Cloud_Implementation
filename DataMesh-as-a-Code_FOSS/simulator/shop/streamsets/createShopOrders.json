@@ -1,0 +1,3927 @@
+{
+  "pipelineConfig" : {
+    "schemaVersion" : 6,
+    "version" : 22,
+    "pipelineId" : "createShop2ffef0f8-376e-410f-852a-542999c77d80",
+    "title" : "createShopOrders",
+    "description" : "",
+    "uuid" : "538f9e0f-32a7-4539-9682-78f5d9210eed",
+    "configuration" : [ {
+      "name" : "executionMode",
+      "value" : "STANDALONE"
+    }, {
+      "name" : "edgeHttpUrl",
+      "value" : "http://localhost:18633"
+    }, {
+      "name" : "deliveryGuarantee",
+      "value" : "AT_LEAST_ONCE"
+    }, {
+      "name" : "testOriginStage",
+      "value" : "streamsets-datacollector-dev-lib::com_streamsets_pipeline_stage_devtest_rawdata_RawDataDSource::3"
+    }, {
+      "name" : "startEventStage",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+    }, {
+      "name" : "stopEventStage",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+    }, {
+      "name" : "shouldRetry",
+      "value" : true
+    }, {
+      "name" : "triggerInterval",
+      "value" : 2000
+    }, {
+      "name" : "retryAttempts",
+      "value" : -1
+    }, {
+      "name" : "ludicrousMode",
+      "value" : false
+    }, {
+      "name" : "ludicrousModeInputCount",
+      "value" : false
+    }, {
+      "name" : "advancedErrorHandling",
+      "value" : false
+    }, {
+      "name" : "notifyOnStates",
+      "value" : [ "RUN_ERROR", "STOPPED", "FINISHED" ]
+    }, {
+      "name" : "emailIDs",
+      "value" : [ ]
+    }, {
+      "name" : "constants",
+      "value" : [ ]
+    }, {
+      "name" : "badRecordsHandling",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+    }, {
+      "name" : "errorRecordPolicy",
+      "value" : "ORIGINAL_RECORD"
+    }, {
+      "name" : "statsAggregatorStage",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_StatsDpmDirectlyDTarget::1"
+    }, {
+      "name" : "workerCount",
+      "value" : 0
+    }, {
+      "name" : "clusterSlaveMemory",
+      "value" : 2048
+    }, {
+      "name" : "clusterSlaveJavaOpts",
+      "value" : "-XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Dlog4j.debug"
+    }, {
+      "name" : "clusterLauncherEnv",
+      "value" : [ ]
+    }, {
+      "name" : "mesosDispatcherURL",
+      "value" : null
+    }, {
+      "name" : "logLevel",
+      "value" : "INFO"
+    }, {
+      "name" : "hdfsS3ConfDir",
+      "value" : null
+    }, {
+      "name" : "rateLimit",
+      "value" : 0
+    }, {
+      "name" : "maxRunners",
+      "value" : 0
+    }, {
+      "name" : "runnerIdleTIme",
+      "value" : 60
+    }, {
+      "name" : "shouldCreateFailureSnapshot",
+      "value" : true
+    }, {
+      "name" : "webhookConfigs",
+      "value" : [ ]
+    }, {
+      "name" : "sparkConfigs",
+      "value" : [ ]
+    }, {
+      "name" : "preprocessScript",
+      "value" : "/*\nThe following script define a method\nthat increments an integer by 1 \nand registers it as a UDF with \nthe SparkSession, which can be accessed\nusing the variable named \"spark\":\ndef inc(i: Integer): Integer = {\n  i + 1\n}\nspark.udf.register (\"inc\", inc _)\n\n*/"
+    }, {
+      "name" : "clusterConfig.clusterType",
+      "value" : "LOCAL"
+    }, {
+      "name" : "clusterConfig.sparkMasterUrl",
+      "value" : "local[*]"
+    }, {
+      "name" : "clusterConfig.deployMode",
+      "value" : "CLIENT"
+    }, {
+      "name" : "clusterConfig.hadoopUserName",
+      "value" : null
+    }, {
+      "name" : "clusterConfig.sparkAppName",
+      "value" : "${pipeline:title()}"
+    }, {
+      "name" : "clusterConfig.stagingDir",
+      "value" : "/streamsets"
+    }, {
+      "name" : "clusterConfig.useYarnKerberosKeytab",
+      "value" : false
+    }, {
+      "name" : "clusterConfig.yarnKerberosKeytabSource",
+      "value" : "PROPERTIES_FILE"
+    }, {
+      "name" : "clusterConfig.yarnKerberosKeytab",
+      "value" : null
+    }, {
+      "name" : "clusterConfig.yarnKerberosKeytabBase64Bytes",
+      "value" : null
+    }, {
+      "name" : "clusterConfig.yarnKerberosPrincipal",
+      "value" : "name@DOMAIN"
+    }, {
+      "name" : "clusterConfig.callbackUrl",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.baseUrl",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.credentialType",
+      "value" : "TOKEN"
+    }, {
+      "name" : "databricksConfig.username",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.password",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.token",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.provisionNewCluster",
+      "value" : true
+    }, {
+      "name" : "databricksConfig.clusterId",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.clusterConfig",
+      "value" : "{\n    \"num_workers\": 8,\n    \"spark_version\": \"5.3.x-scala2.11\",\n    \"node_type_id\": \"i3.xlarge\"\n}"
+    }, {
+      "name" : "databricksConfig.terminateCluster",
+      "value" : false
+    }, {
+      "name" : "livyConfig.baseUrl",
+      "value" : "https://localhost:30443/gateway/default/livy/v1/"
+    }, {
+      "name" : "livyConfig.username",
+      "value" : null
+    }, {
+      "name" : "livyConfig.password",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnectionSelection",
+      "value" : "MANUAL"
+    }, {
+      "name" : "sdcEmrConnection.awsConfig.credentialMode",
+      "value" : "WITH_CREDENTIALS"
+    }, {
+      "name" : "sdcEmrConnection.awsConfig.awsAccessKeyId",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.awsConfig.awsSecretAccessKey",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.awsConfig.roleARN",
+      "value" : ""
+    }, {
+      "name" : "sdcEmrConnection.awsConfig.roleSessionName",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.awsConfig.sessionDuration",
+      "value" : 3600
+    }, {
+      "name" : "sdcEmrConnection.awsConfig.setSessionTags",
+      "value" : true
+    }, {
+      "name" : "sdcEmrConnection.region",
+      "value" : "US_WEST_2"
+    }, {
+      "name" : "sdcEmrConnection.customRegion",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.s3StagingUri",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.provisionNewCluster",
+      "value" : false
+    }, {
+      "name" : "sdcEmrConnection.clusterId",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.emrVersion",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.clusterPrefix",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.terminateCluster",
+      "value" : true
+    }, {
+      "name" : "sdcEmrConnection.loggingEnabled",
+      "value" : true
+    }, {
+      "name" : "sdcEmrConnection.s3LogUri",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.serviceRole",
+      "value" : "EMR_DefaultRole"
+    }, {
+      "name" : "sdcEmrConnection.jobFlowRole",
+      "value" : "EMR_EC2_DefaultRole"
+    }, {
+      "name" : "sdcEmrConnection.visibleToAllUsers",
+      "value" : true
+    }, {
+      "name" : "sdcEmrConnection.ec2SubnetId",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.masterSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.slaveSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.serviceAccessSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.instanceCount",
+      "value" : 2
+    }, {
+      "name" : "sdcEmrConnection.stepConcurrency",
+      "value" : 1
+    }, {
+      "name" : "sdcEmrConnection.masterInstanceType",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.masterInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.slaveInstanceType",
+      "value" : null
+    }, {
+      "name" : "sdcEmrConnection.slaveInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "enableEMRDebugging",
+      "value" : true
+    }, {
+      "name" : "transformerEmrConnectionSelection",
+      "value" : "MANUAL"
+    }, {
+      "name" : "transformerEmrConnection.awsConfig.credentialMode",
+      "value" : "WITH_CREDENTIALS"
+    }, {
+      "name" : "transformerEmrConnection.awsConfig.awsAccessKeyId",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.awsConfig.awsSecretAccessKey",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.awsConfig.roleARN",
+      "value" : ""
+    }, {
+      "name" : "transformerEmrConnection.awsConfig.roleSessionName",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.awsConfig.sessionDuration",
+      "value" : 3600
+    }, {
+      "name" : "transformerEmrConnection.awsConfig.setSessionTags",
+      "value" : true
+    }, {
+      "name" : "transformerEmrConnection.region",
+      "value" : "US_WEST_2"
+    }, {
+      "name" : "transformerEmrConnection.customRegion",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.s3StagingUri",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.provisionNewCluster",
+      "value" : false
+    }, {
+      "name" : "transformerEmrConnection.clusterId",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.emrVersion",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.clusterPrefix",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.terminateCluster",
+      "value" : true
+    }, {
+      "name" : "transformerEmrConnection.loggingEnabled",
+      "value" : true
+    }, {
+      "name" : "transformerEmrConnection.s3LogUri",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.serviceRole",
+      "value" : "EMR_DefaultRole"
+    }, {
+      "name" : "transformerEmrConnection.jobFlowRole",
+      "value" : "EMR_EC2_DefaultRole"
+    }, {
+      "name" : "transformerEmrConnection.visibleToAllUsers",
+      "value" : true
+    }, {
+      "name" : "transformerEmrConnection.ec2SubnetId",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.masterSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.slaveSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.serviceAccessSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.instanceCount",
+      "value" : 2
+    }, {
+      "name" : "transformerEmrConnection.stepConcurrency",
+      "value" : 1
+    }, {
+      "name" : "transformerEmrConnection.masterInstanceType",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.masterInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.slaveInstanceType",
+      "value" : null
+    }, {
+      "name" : "transformerEmrConnection.slaveInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.encryption",
+      "value" : "NONE"
+    }, {
+      "name" : "transformerEMRConfig.kmsKeyId",
+      "value" : null
+    }, {
+      "name" : "googleCloudCredentialsConfig.projectId",
+      "value" : null
+    }, {
+      "name" : "googleCloudCredentialsConfig.credentialsProvider",
+      "value" : "DEFAULT_PROVIDER"
+    }, {
+      "name" : "googleCloudCredentialsConfig.path",
+      "value" : null
+    }, {
+      "name" : "googleCloudCredentialsConfig.credentialsFileContent",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.region",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.customRegion",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.gcsStagingUri",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.create",
+      "value" : false
+    }, {
+      "name" : "googleCloudConfig.clusterPrefix",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.version",
+      "value" : "1.4-ubuntu18"
+    }, {
+      "name" : "googleCloudConfig.masterType",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.workerType",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.networkType",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.network",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.subnet",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.tags",
+      "value" : [ ]
+    }, {
+      "name" : "googleCloudConfig.workerCount",
+      "value" : 2
+    }, {
+      "name" : "googleCloudConfig.clusterName",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.terminate",
+      "value" : null
+    } ],
+    "uiInfo" : {
+      "displayMode" : "ADVANCED",
+      "previewConfig" : {
+        "previewSource" : "CONFIGURED_SOURCE",
+        "batchSize" : 10,
+        "timeout" : 30000,
+        "writeToDestinations" : false,
+        "executeLifecycleEvents" : false,
+        "showHeader" : false,
+        "showFieldType" : true,
+        "rememberMe" : false
+      }
+    },
+    "fragments" : [ ],
+    "stages" : [ {
+      "instanceName" : "DevSimulator_01",
+      "library" : "dev-simulator",
+      "stageName" : "com_trivadis_streamsets_devtest_simulator_stage_origin_sample_DevSimulatorDSource",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "basicConfig.filesDirectory",
+        "value" : "${runtime:conf('simulator-root-dir')}/salesorder"
+      }, {
+        "name" : "basicConfig.includeSubdirectories",
+        "value" : false
+      }, {
+        "name" : "basicConfig.fileNamePattern",
+        "value" : "*online*.csv"
+      }, {
+        "name" : "basicConfig.pathMatcherMode",
+        "value" : "WILDCARD"
+      }, {
+        "name" : "basicConfig.inputDataFormat",
+        "value" : "AS_DELIMITED"
+      }, {
+        "name" : "basicConfig.useMultiRecordType",
+        "value" : false
+      }, {
+        "name" : "multiTypeConfig.discriminatorField",
+        "value" : "/descriminator"
+      }, {
+        "name" : "multiTypeConfig.messageTypes",
+        "value" : [ {
+          "outputLane" : "DevSimulator_01OutputLane1650898194431",
+          "discriminatorValue" : "Person",
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "eventTimeConfig.timestampMode",
+        "value" : "RELATIVE_FROM_ANCHOR"
+      }, {
+        "name" : "eventTimeConfig.timestampField",
+        "value" : "/delay_from_start_ms"
+      }, {
+        "name" : "eventTimeConfig.relativeTimeResolution",
+        "value" : "MILLISECONDS"
+      }, {
+        "name" : "eventTimeConfig.anchorTimeNow",
+        "value" : true
+      }, {
+        "name" : "eventTimeConfig.anchorTimestamp",
+        "value" : null
+      }, {
+        "name" : "eventTimeConfig.anchorTimestampDateFormat",
+        "value" : "HH_MM_SS"
+      }, {
+        "name" : "eventTimeConfig.anchorTimestampOtherDateFormat",
+        "value" : null
+      }, {
+        "name" : "eventTimeConfig.simulationStartTimestamp",
+        "value" : null
+      }, {
+        "name" : "eventTimeConfig.simulationStartTimestampDateFormat",
+        "value" : "HH_MM_SS"
+      }, {
+        "name" : "eventTimeConfig.simulatorStartTimestampOtherDateFormat",
+        "value" : null
+      }, {
+        "name" : "eventTimeConfig.fixedTimeDeltaMs",
+        "value" : null
+      }, {
+        "name" : "eventTimeConfig.timestampDateFormat",
+        "value" : null
+      }, {
+        "name" : "eventTimeConfig.otherTimestampDateFormat",
+        "value" : null
+      }, {
+        "name" : "eventTimeConfig.eventTimestampOutputField",
+        "value" : "/EventTimestamp"
+      }, {
+        "name" : "eventTimeConfig.fastForwardToTimestamp",
+        "value" : 0
+      }, {
+        "name" : "eventTimeConfig.delayMs",
+        "value" : 0
+      }, {
+        "name" : "eventTimeConfig.speedup",
+        "value" : 1000
+      }, {
+        "name" : "csvConfig.csvFileFormat",
+        "value" : "CUSTOM"
+      }, {
+        "name" : "csvConfig.csvHeader",
+        "value" : "USE_HEADER"
+      }, {
+        "name" : "csvConfig.csvCustomDelimiter",
+        "value" : ","
+      }, {
+        "name" : "csvConfig.csvCustomEscape",
+        "value" : "\\"
+      }, {
+        "name" : "csvConfig.csvCustomQuote",
+        "value" : "'"
+      }, {
+        "name" : "csvConfig.csvEnableComments",
+        "value" : false
+      }, {
+        "name" : "csvConfig.csvCommentMarker",
+        "value" : "#"
+      }, {
+        "name" : "csvConfig.csvIgnoreEmptyLines",
+        "value" : true
+      }, {
+        "name" : "csvConfig.csvRecordType",
+        "value" : "LIST_MAP"
+      }, {
+        "name" : "csvConfig.csvSkipStartLines",
+        "value" : 0
+      }, {
+        "name" : "csvConfig.parseNull",
+        "value" : false
+      }, {
+        "name" : "csvConfig.nullConstant",
+        "value" : "\\\\N"
+      }, {
+        "name" : "csvConfig.charset",
+        "value" : "UTF-8"
+      }, {
+        "name" : "csvConfig.removeCtrlChars",
+        "value" : false
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "csvConfig.removeEmptyFields",
+        "value" : false
+      }, {
+        "name" : "csvConfig.csvMaxCharsPerColumn",
+        "value" : 5000
+      } ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "SOURCE",
+        "icon" : "dev.png",
+        "description" : "",
+        "label" : "Dev Simulator 1",
+        "xPos" : 60,
+        "displayMode" : "ADVANCED"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ "DevSimulator_01OutputLane1650898194431" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "FieldTypeConverter_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_fieldtypeconverter_FieldTypeConverterDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "convertBy",
+        "value" : "BY_FIELD"
+      }, {
+        "name" : "fieldTypeConverterConfigs",
+        "value" : [ {
+          "fields" : [ "/delay_from_start_ms" ],
+          "targetType" : "LONG",
+          "treatInputFieldAsDate" : false,
+          "dataLocale" : "en,US",
+          "scale" : -1,
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "dateFormat" : "YYYY_MM_DD",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "encoding" : "UTF-8"
+        } ]
+      }, {
+        "name" : "wholeTypeConverterConfigs",
+        "value" : [ {
+          "sourceType" : "INTEGER",
+          "targetType" : "INTEGER",
+          "treatInputFieldAsDate" : false,
+          "dataLocale" : "en,US",
+          "scale" : -1,
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "dateFormat" : "YYYY_MM_DD",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "encoding" : "UTF-8"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "PROCESSOR",
+        "icon" : "converter.png",
+        "description" : "",
+        "label" : "Field Type Converter 1",
+        "xPos" : 280,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "DevSimulator_01OutputLane1650898194431" ],
+      "outputLanes" : [ "FieldTypeConverter_01OutputLane16540199202900" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "DataParser_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_parser_DataParserDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "configs.fieldPathToParse",
+        "value" : "/salesOrder"
+      }, {
+        "name" : "configs.parsedFieldPath",
+        "value" : "/salesOrder"
+      }, {
+        "name" : "configs.multipleValuesBehavior",
+        "value" : "FIRST_ONLY"
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "PROCESSOR",
+        "icon" : "coding.png",
+        "description" : "",
+        "label" : "Data Parser 1",
+        "xPos" : 500,
+        "displayMode" : "ADVANCED"
+      },
+      "inputLanes" : [ "FieldTypeConverter_01OutputLane16540199202900" ],
+      "outputLanes" : [ "DataParser_01OutputLane16508991187390" ],
+      "eventLanes" : [ ],
+      "services" : [ {
+        "service" : "com.streamsets.pipeline.api.service.dataformats.DataFormatParserService",
+        "serviceVersion" : 3,
+        "configuration" : [ {
+          "name" : "dataFormat",
+          "value" : "JSON"
+        }, {
+          "name" : "dataFormatConfig.compression",
+          "value" : "NONE"
+        }, {
+          "name" : "dataFormatConfig.filePatternInArchive",
+          "value" : "*"
+        }, {
+          "name" : "dataFormatConfig.charset",
+          "value" : "UTF-8"
+        }, {
+          "name" : "dataFormatConfig.removeCtrlChars",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.textMaxLineLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.useCustomDelimiter",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.customDelimiter",
+          "value" : "\\r\\n"
+        }, {
+          "name" : "dataFormatConfig.includeCustomDelimiterInTheText",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.jsonContent",
+          "value" : "MULTIPLE_OBJECTS"
+        }, {
+          "name" : "dataFormatConfig.jsonMaxObjectLen",
+          "value" : 4096
+        }, {
+          "name" : "dataFormatConfig.csvHeader",
+          "value" : "NO_HEADER"
+        }, {
+          "name" : "dataFormatConfig.csvFileFormat",
+          "value" : "CSV"
+        }, {
+          "name" : "dataFormatConfig.csvCustomDelimiter",
+          "value" : "|"
+        }, {
+          "name" : "dataFormatConfig.multiCharacterFieldDelimiter",
+          "value" : "||"
+        }, {
+          "name" : "dataFormatConfig.multiCharacterLineDelimiter",
+          "value" : "${str:unescapeJava('\\\\n')}"
+        }, {
+          "name" : "dataFormatConfig.csvCustomEscape",
+          "value" : "\\"
+        }, {
+          "name" : "dataFormatConfig.csvCustomQuote",
+          "value" : "\""
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityFieldSeparator",
+          "value" : ","
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityEscape",
+          "value" : "\\"
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityQuote",
+          "value" : "\""
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityLineSeparator",
+          "value" : "${str:unescapeJava('\\\\n')}"
+        }, {
+          "name" : "dataFormatConfig.csvParser",
+          "value" : "LEGACY_PARSER"
+        }, {
+          "name" : "dataFormatConfig.csvAllowExtraColumns",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvExtraColumnPrefix",
+          "value" : "_extra_"
+        }, {
+          "name" : "dataFormatConfig.csvMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityMaxColumns",
+          "value" : 1000
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityMaxCharsPerColumn",
+          "value" : 1000
+        }, {
+          "name" : "dataFormatConfig.csvUnivocitySkipEmptyLines",
+          "value" : true
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityAllowComments",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityCommentMarker",
+          "value" : "#"
+        }, {
+          "name" : "dataFormatConfig.csvEnableComments",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvCommentMarker",
+          "value" : "#"
+        }, {
+          "name" : "dataFormatConfig.csvIgnoreEmptyLines",
+          "value" : true
+        }, {
+          "name" : "dataFormatConfig.csvRecordType",
+          "value" : "LIST_MAP"
+        }, {
+          "name" : "dataFormatConfig.csvSkipStartLines",
+          "value" : 0
+        }, {
+          "name" : "dataFormatConfig.parseNull",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.nullConstant",
+          "value" : "\\\\N"
+        }, {
+          "name" : "dataFormatConfig.xmlRecordElement",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.preserveRootElement",
+          "value" : true
+        }, {
+          "name" : "dataFormatConfig.includeFieldXpathAttributes",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.xPathNamespaceContext",
+          "value" : [ ]
+        }, {
+          "name" : "dataFormatConfig.outputFieldAttributes",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.xmlMaxObjectLen",
+          "value" : 4096
+        }, {
+          "name" : "dataFormatConfig.logMode",
+          "value" : "COMMON_LOG_FORMAT"
+        }, {
+          "name" : "dataFormatConfig.logMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.retainOriginalLine",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.customLogFormat",
+          "value" : "%h %l %u %t \"%r\" %>s %b"
+        }, {
+          "name" : "dataFormatConfig.regex",
+          "value" : "^(\\S+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(\\S+) (\\S+) (\\S+)\" (\\d{3}) (\\d+)"
+        }, {
+          "name" : "dataFormatConfig.fieldPathsToGroupName",
+          "value" : [ {
+            "fieldPath" : "/",
+            "group" : 1
+          } ]
+        }, {
+          "name" : "dataFormatConfig.grokPatternDefinition",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.grokPattern",
+          "value" : "%{COMMONAPACHELOG}"
+        }, {
+          "name" : "dataFormatConfig.onParseError",
+          "value" : "ERROR"
+        }, {
+          "name" : "dataFormatConfig.maxStackTraceLines",
+          "value" : 50
+        }, {
+          "name" : "dataFormatConfig.enableLog4jCustomLogFormat",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.log4jCustomLogFormat",
+          "value" : "%r [%t] %-5p %c %x - %m%n"
+        }, {
+          "name" : "dataFormatConfig.avroSchemaSource",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.avroSchema",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaRegistryUrls",
+          "value" : [ "" ]
+        }, {
+          "name" : "dataFormatConfig.basicAuth",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaLookupMode",
+          "value" : "SUBJECT"
+        }, {
+          "name" : "dataFormatConfig.subject",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaId",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.avroSkipUnionIndex",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.protoDescriptorFile",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.messageType",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.isDelimited",
+          "value" : true
+        }, {
+          "name" : "dataFormatConfig.binaryMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.datagramMode",
+          "value" : "SYSLOG"
+        }, {
+          "name" : "dataFormatConfig.typesDbPath",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.convertTime",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excludeInterval",
+          "value" : true
+        }, {
+          "name" : "dataFormatConfig.authFilePath",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.netflowOutputValuesMode",
+          "value" : "RAW_AND_INTERPRETED"
+        }, {
+          "name" : "dataFormatConfig.maxTemplateCacheSize",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.templateCacheTimeoutMs",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.netflowOutputValuesModeDatagram",
+          "value" : "RAW_AND_INTERPRETED"
+        }, {
+          "name" : "dataFormatConfig.maxTemplateCacheSizeDatagram",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.templateCacheTimeoutMsDatagram",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.wholeFileMaxObjectLen",
+          "value" : 8192
+        }, {
+          "name" : "dataFormatConfig.rateLimit",
+          "value" : "-1"
+        }, {
+          "name" : "dataFormatConfig.verifyChecksum",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelHeader",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.excelSkipCellsWithNoHeader",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelReadAllSheets",
+          "value" : true
+        }, {
+          "name" : "dataFormatConfig.excelSheetNames",
+          "value" : [ "" ]
+        }, {
+          "name" : "displayFormats",
+          "value" : "AVRO,DELIMITED,JSON,LOG,NETFLOW,PROTOBUF,SYSLOG,SDC_JSON,XML"
+        } ]
+      } ]
+    }, {
+      "instanceName" : "GroovyEvaluator_01",
+      "library" : "streamsets-datacollector-groovy_2_4-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_groovy_GroovyDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "processingMode",
+        "value" : "BATCH"
+      }, {
+        "name" : "initScript",
+        "value" : "/*\n * Available objects:\n *   sdc.state: A Map<String, Object> that is preserved between invocations of this script.\n *          Useful for caching bits of data, e.g. counters.\n *   sdc.log.<level>(msg, obj...): Use instead of println to send log messages to the log4j log\n *                             instead of stdout.\n *                             loglevel is any log4j level: e.g. info, warn, error, trace.\n *   sdc.getFieldNull(Record, 'field path'): Receive a constant defined above\n *                          to check if the field is typed field with value null\n *   sdc.createMap(boolean listMap): Create a map for use as a field in a record.\n *                          Pass true to this function to create a list map (ordered map)\n *   sdc.createEvent(String type, int version): Creates a new event.\n *                          Create new empty event with standard headers.\n *   sdc.toEvent(Record): Send event to event stream\n *                          Only events created with sdc.createEvent are supported.\n *   sdc.pipelineParameters(): Map with pipeline runtime parameters.\n */\n\n// sdc.state['connection'] = new Connection().open();"
+      }, {
+        "name" : "script",
+        "value" : "// This is part of a Streamsets pipeline\nrecords = sdc.records\nfor (record in records) {\n//    try {\n\n        // --------------------------------------------------------------------\n        // Build empty events\n        // --------------------------------------------------------------------\n\n      \t// Calculate Event list\n\t\tdef recordList = []\n\t\tassert recordList.empty\n        rnd = new Random()\n\t\t\n\t\tint timeOffset = 0\n\n\t\t// Max back to search from delete\n\t\tfor (int del = 1; del <= 3; del++)\n\t\t{\n\n\t\t\t// Max back to search from prod2cart\n\t\t\tfor (int p2c = 1; p2c <= 3; p2c++)\n\t\t\t{\n\t\t\n\t\t\t\t// Max back to search from nav2prod\n\t\t\t\tfor (int n2p = 1; n2p <= 3; n2p++)\n\t\t\t\t{\n\n\t\t\t\t\t// 1. Search\n\t\t\t\t\t// Create Search Event\n\t\t\t\t\tint searchNum = 0;\n                    newRecord = sdc.createRecord(record.sourceId + ':newRecordId')\n\t\t\t\t\tnewRecord.value = sdc.createMap(true)\n\t\t\t\t\tnewRecord.value['type'] = 'SEARCH'\n\t\t\t\t\tnewRecord.value['Wait'] = 0\n\t\t\t\t\tnewRecord.value['wexp'] = Character.toString((char)(97 + rnd.nextInt(26))) + '*' + Character.toString((char)(97 + rnd.nextInt(26)))\n\t\t\t\t\t// sdc.output.write(newRecord)\n\t\t\t\t\trecordList << newRecord\n\n\t\t\t\t\tif ((int)(Math.random()*100+1) <= 66 && searchNum <= 5) {\n\t\t\t\t\t\tnewRecord = sdc.createRecord(record.sourceId + ':newRecordId')\n\t\t\t\t\t\tnewRecord.value = sdc.createMap(true)\n\t\t\t\t\t\tnewRecord.value['type'] = 'SEARCH'\n\t\t\t\t\t\tnewRecord.value['Wait'] = (int)(Math.random()*27)+3\n\t\t\t\t\t\tnewRecord.value['wexp'] = Character.toString((char)(97 + rnd.nextInt(26))) + '*' + Character.toString((char)(97 + rnd.nextInt(26)))\n\t\t\t\t\t\ttimeOffset += newRecord.value['Wait']\n\t\t\t\t\t\tsearchNum++\n\t\t\t\t\t\t// sdc.output.write(newRecord)\n\t\t\t\t\t\trecordList << newRecord\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t\t// 2. Navigate\n\t\t\t\t\tnewRecord = sdc.createRecord(record.sourceId + ':newRecordId')\n\t\t\t\t\t//newRecord.value = ['type' : 'PRODUCT', 'Wait' : (int)(Math.random()*57)+3, 'wexp' : '']\n\t\t\t\t\tnewRecord.value = sdc.createMap(true)\n\t\t\t\t\tnewRecord.value['type'] = 'PRODUCT'\n\t\t\t\t\tnewRecord.value['Wait'] = (int)(Math.random()*57)+3\n\t\t\t\t\tnewRecord.value['wexp'] = ''\n\t\t\t\t\ttimeOffset += newRecord.value['Wait']\n\t\t\t\t\t// sdc.output.write(newRecord)\n\t\t\t\t\trecordList << newRecord\t\t\t\t\t\n\t\t\t\t\tif ((int)(Math.random()*100+1) <= 80)\n\t\t\t\t\t{\n\t\t\t\t\t\t// Put the product to the cart\n\t\t\t\t\t\tbreak\n\t\t\t\t\t}\n\t\t\t\t}\t\t\n\n\t\t\t\t// 3. Add Product to Cart\n\t\t\t\tnewRecord = sdc.createRecord(record.sourceId + ':newRecordId')\n\t\t\t\t// newRecord.value = ['type' : 'INTOCART', 'Wait' : (int)(Math.random()*115)+5, 'wexp' : '']\n\t\t\t\tnewRecord.value = sdc.createMap(true)\n\t\t\t\tnewRecord.value['type'] = 'INTOCART'\n\t\t\t\tnewRecord.value['Wait'] = (int)(Math.random()*115)+5\n\t\t\t\tnewRecord.value['wexp'] = ''\n\t\t\t\ttimeOffset += newRecord.value['Wait']\n\t\t\t\t// sdc.output.write(newRecord)\n\t\t\t\trecordList << newRecord\n\t\t\t\tif ((int)(Math.random()*100+1) <= 80)\n\t\t\t\t{\n\t\t\t\t\t// Delete all irrelevant products\n\t\t\t\t\tbreak\n\t\t\t\t}\n\n\t\t\t}\n\n\t\t\t// 4. Delete Product from Cart\n\t\t\tnewRecord = sdc.createRecord(record.sourceId + ':newRecordId')\n\t\t\t// newRecord.value = ['type' : 'DELETE', 'Wait' : (int)(Math.random()*28)+2, 'wexp' : '']\n\t\t\tnewRecord.value = sdc.createMap(true)\n\t\t\tnewRecord.value['type'] = 'DELETE'\n\t\t\tnewRecord.value['Wait'] = (int)(Math.random()*28)+2\n\t\t\tnewRecord.value['wexp'] = ''\n\t\t\ttimeOffset += newRecord.value['Wait']\n\t\t\t// sdc.output.write(newRecord)\n\t\t\trecordList << newRecord\n\t\t\tif ((int)(Math.random()*100+1) <= 80)\n\t\t\t{\n\t\t\t\t// Checkout the cart\n\t\t\t\tbreak\n\t\t\t}\n\n\t\t}\n\n      \t// 5. Checkout Cart\n\t\tnewRecord = sdc.createRecord(record.sourceId + ':newRecordId')\n\t\t// newRecord.value = ['type' : 'CHECKOUT', 'Wait' : (int)(Math.random()*18)+2, 'wexp' : '']\n\t\tnewRecord.value = sdc.createMap(true)\n\t\tnewRecord.value['type'] = 'CHECKOUT'\n\t\tnewRecord.value['Wait'] = (int)(Math.random()*18)+2\n\t\tnewRecord.value['wexp'] = ''\n\t\ttimeOffset += newRecord.value['Wait']\n\t\t// sdc.output.write(newRecord)\n\t\trecordList << newRecord\n\t\t\n        // --------------------------------------------------------------------\n        // Fill events with content from order and write\n        // --------------------------------------------------------------------\n\n\t\t// FINAL - Loop through event records, enhance an write\n        int os = 0\n\t\trecordList.each \n\t\t{\n            // Only if earliest event timestamp is 0 or positive\n            if (timeOffset * 1000 <= record.value['delay_from_start_ms'])\n            {\n\t\t\t\tos += it.value['Wait'] * 1000\n                it.value['delay_from_start_ms'] = record.value['delay_from_start_ms'] - (timeOffset * 1000) + os\n                it.value['id'] = record.value['salesOrder']['id']\n                it.value['customerId'] = record.value['salesOrder']['customerId']\n                it.value['billToAddressId'] = record.value['salesOrder']['billToAddressId']\n                it.value['shipToAddressId'] = record.value['salesOrder']['shipToAddressId']\n                it.value['itemId'] = record.value['salesOrder']['orderDetails'][0]['id']\n                it.value['productId'] = record.value['salesOrder']['orderDetails'][0]['productId']\n                sdc.output.write(it)\n            }\n\n\t\t}\n\n\t\trecord.value['offset'] = timeOffset\n\t\t// sdc.output.write(record)\n\n\n    //    } catch (e) {\n    //        sdc.log.error(e.toString(), e)\n    //        sdc.error.write(record, e.toString())\n    //    }\n}"
+      }, {
+        "name" : "destroyScript",
+        "value" : "/*\n * Available objects:\n *   sdc.state: A Map<String, Object> that is preserved between invocations of this script.\n *          Useful for caching bits of data, e.g. counters.\n *   sdc.log.<level>(msg, obj...): Use instead of println to send log messages to the log4j log\n *                             instead of stdout.\n *                             loglevel is any log4j level: e.g. info, warn, error, trace.\n *   sdc.getFieldNull(Record, 'field path'): Receive a constant defined above\n *                          to check if the field is typed field with value null\n *   sdc.createMap(boolean listMap): Create a map for use as a field in a record.\n *                          Pass true to this function to create a list map (ordered map)\n *   sdc.createEvent(String type, int version): Creates a new event.\n *                          Create new empty event with standard headers.\n *   sdc.toEvent(Record): Send event to event stream\n *                          Only events created with sdc.createEvent are supported.\n *   sdc.pipelineParameters(): Map with pipeline runtime parameters.\n */\n\n// sdc.state.connection.close()"
+      }, {
+        "name" : "scriptRecordType",
+        "value" : "NATIVE_OBJECTS"
+      }, {
+        "name" : "invokeDynamic",
+        "value" : false
+      }, {
+        "name" : "userParams",
+        "value" : [ ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "PROCESSOR",
+        "icon" : "groovy.png",
+        "description" : "",
+        "label" : "Groovy Evaluator 1",
+        "xPos" : 720,
+        "displayMode" : "ADVANCED"
+      },
+      "inputLanes" : [ "DataParser_01OutputLane16508991187390" ],
+      "outputLanes" : [ "GroovyEvaluator_01OutputLane16538553133140" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "StaticLookup_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_kv_local_LocalLookupDProcessor",
+      "stageVersion" : "1",
+      "configuration" : [ {
+        "name" : "conf.values",
+        "value" : [ {
+          "key" : "a*a",
+          "value" : "area"
+        }, {
+          "key" : "a*b",
+          "value" : "aplomb"
+        }, {
+          "key" : "a*c",
+          "value" : "agnostic"
+        }, {
+          "key" : "a*d",
+          "value" : "acid"
+        }, {
+          "key" : "a*e",
+          "value" : "arise"
+        }, {
+          "key" : "a*f",
+          "value" : "aloof"
+        }, {
+          "key" : "a*g",
+          "value" : "along"
+        }, {
+          "key" : "a*h",
+          "value" : "approach"
+        }, {
+          "key" : "a*i",
+          "value" : "alumni"
+        }, {
+          "key" : "a*j",
+          "value" : "aj"
+        }, {
+          "key" : "a*k",
+          "value" : "attack"
+        }, {
+          "key" : "a*l",
+          "value" : "asail"
+        }, {
+          "key" : "a*m",
+          "value" : "aim"
+        }, {
+          "key" : "a*n",
+          "value" : "action"
+        }, {
+          "key" : "a*o",
+          "value" : "also"
+        }, {
+          "key" : "a*p",
+          "value" : "app"
+        }, {
+          "key" : "a*q",
+          "value" : "aq"
+        }, {
+          "key" : "a*r",
+          "value" : "air"
+        }, {
+          "key" : "a*s",
+          "value" : "as"
+        }, {
+          "key" : "a*t",
+          "value" : "affect"
+        }, {
+          "key" : "a*u",
+          "value" : "adieu"
+        }, {
+          "key" : "a*v",
+          "value" : "av"
+        }, {
+          "key" : "a*w",
+          "value" : "allow"
+        }, {
+          "key" : "a*x",
+          "value" : "apex"
+        }, {
+          "key" : "a*y",
+          "value" : "away"
+        }, {
+          "key" : "a*z",
+          "value" : "adz"
+        }, {
+          "key" : "b*a",
+          "value" : "banana"
+        }, {
+          "key" : "b*b",
+          "value" : "bomb"
+        }, {
+          "key" : "b*c",
+          "value" : "basic"
+        }, {
+          "key" : "b*d",
+          "value" : "bluebird"
+        }, {
+          "key" : "b*e",
+          "value" : "be"
+        }, {
+          "key" : "b*f",
+          "value" : "brief"
+        }, {
+          "key" : "b*g",
+          "value" : "bag"
+        }, {
+          "key" : "b*h",
+          "value" : "breach"
+        }, {
+          "key" : "b*i",
+          "value" : "bi"
+        }, {
+          "key" : "b*j",
+          "value" : "bj"
+        }, {
+          "key" : "b*k",
+          "value" : "back"
+        }, {
+          "key" : "b*l",
+          "value" : "ball"
+        }, {
+          "key" : "b*m",
+          "value" : "beam"
+        }, {
+          "key" : "b*n",
+          "value" : "begin"
+        }, {
+          "key" : "b*o",
+          "value" : "bio"
+        }, {
+          "key" : "b*p",
+          "value" : "bump"
+        }, {
+          "key" : "b*q",
+          "value" : "bbq"
+        }, {
+          "key" : "b*r",
+          "value" : "bear"
+        }, {
+          "key" : "b*s",
+          "value" : "business"
+        }, {
+          "key" : "b*t",
+          "value" : "beat"
+        }, {
+          "key" : "b*u",
+          "value" : "bureau"
+        }, {
+          "key" : "b*v",
+          "value" : "bev"
+        }, {
+          "key" : "b*w",
+          "value" : "blow"
+        }, {
+          "key" : "b*x",
+          "value" : "box"
+        }, {
+          "key" : "b*y",
+          "value" : "by"
+        }, {
+          "key" : "b*z",
+          "value" : "buzz"
+        }, {
+          "key" : "c*a",
+          "value" : "cephalalgia"
+        }, {
+          "key" : "c*b",
+          "value" : "club"
+        }, {
+          "key" : "c*c",
+          "value" : "classic"
+        }, {
+          "key" : "c*d",
+          "value" : "card"
+        }, {
+          "key" : "c*e",
+          "value" : "care"
+        }, {
+          "key" : "c*f",
+          "value" : "chef"
+        }, {
+          "key" : "c*g",
+          "value" : "cling"
+        }, {
+          "key" : "c*h",
+          "value" : "catch"
+        }, {
+          "key" : "c*i",
+          "value" : "chi"
+        }, {
+          "key" : "c*j",
+          "value" : "cluj"
+        }, {
+          "key" : "c*k",
+          "value" : "check"
+        }, {
+          "key" : "c*l",
+          "value" : "cell"
+        }, {
+          "key" : "c*m",
+          "value" : "claim"
+        }, {
+          "key" : "c*n",
+          "value" : "concern"
+        }, {
+          "key" : "c*o",
+          "value" : "co"
+        }, {
+          "key" : "c*p",
+          "value" : "creep"
+        }, {
+          "key" : "c*q",
+          "value" : "cinq"
+        }, {
+          "key" : "c*r",
+          "value" : "car"
+        }, {
+          "key" : "c*s",
+          "value" : "class"
+        }, {
+          "key" : "c*t",
+          "value" : "cat"
+        }, {
+          "key" : "c*u",
+          "value" : "chateau"
+        }, {
+          "key" : "c*v",
+          "value" : "cv"
+        }, {
+          "key" : "c*w",
+          "value" : "cow"
+        }, {
+          "key" : "c*x",
+          "value" : "complex"
+        }, {
+          "key" : "c*y",
+          "value" : "company"
+        }, {
+          "key" : "c*z",
+          "value" : "chintz"
+        }, {
+          "key" : "d*a",
+          "value" : "data"
+        }, {
+          "key" : "d*b",
+          "value" : "dab"
+        }, {
+          "key" : "d*c",
+          "value" : "dynamic"
+        }, {
+          "key" : "d*d",
+          "value" : "demand"
+        }, {
+          "key" : "d*e",
+          "value" : "disease"
+        }, {
+          "key" : "d*f",
+          "value" : "dwarf"
+        }, {
+          "key" : "d*g",
+          "value" : "dog"
+        }, {
+          "key" : "d*h",
+          "value" : "death"
+        }, {
+          "key" : "d*i",
+          "value" : "deli"
+        }, {
+          "key" : "d*j",
+          "value" : "dj"
+        }, {
+          "key" : "d*k",
+          "value" : "desk"
+        }, {
+          "key" : "d*l",
+          "value" : "deal"
+        }, {
+          "key" : "d*m",
+          "value" : "deam"
+        }, {
+          "key" : "d*n",
+          "value" : "down"
+        }, {
+          "key" : "d*o",
+          "value" : "do"
+        }, {
+          "key" : "d*p",
+          "value" : "develop"
+        }, {
+          "key" : "d*q",
+          "value" : "duq"
+        }, {
+          "key" : "d*r",
+          "value" : "door"
+        }, {
+          "key" : "d*s",
+          "value" : "disingenuous"
+        }, {
+          "key" : "d*t",
+          "value" : "desert"
+        }, {
+          "key" : "d*u",
+          "value" : "deja vu"
+        }, {
+          "key" : "d*v",
+          "value" : "dev"
+        }, {
+          "key" : "d*w",
+          "value" : "draw"
+        }, {
+          "key" : "d*x",
+          "value" : "dex"
+        }, {
+          "key" : "d*y",
+          "value" : "dictionary"
+        }, {
+          "key" : "d*z",
+          "value" : "daz"
+        }, {
+          "key" : "e*a",
+          "value" : "enigma"
+        }, {
+          "key" : "e*b",
+          "value" : "ebb"
+        }, {
+          "key" : "e*c",
+          "value" : "esoteric"
+        }, {
+          "key" : "e*d",
+          "value" : "end"
+        }, {
+          "key" : "e*e",
+          "value" : "eye"
+        }, {
+          "key" : "e*f",
+          "value" : "elf"
+        }, {
+          "key" : "e*g",
+          "value" : "egg"
+        }, {
+          "key" : "e*h",
+          "value" : "earth"
+        }, {
+          "key" : "e*i",
+          "value" : "ennui"
+        }, {
+          "key" : "e*j",
+          "value" : "ej"
+        }, {
+          "key" : "e*k",
+          "value" : "embark"
+        }, {
+          "key" : "e*l",
+          "value" : "empirical"
+        }, {
+          "key" : "e*m",
+          "value" : "euphemism"
+        }, {
+          "key" : "e*n",
+          "value" : "education"
+        }, {
+          "key" : "e*o",
+          "value" : "echo"
+        }, {
+          "key" : "e*p",
+          "value" : "envelop"
+        }, {
+          "key" : "e*q",
+          "value" : "eq"
+        }, {
+          "key" : "e*r",
+          "value" : "endeavor"
+        }, {
+          "key" : "e*s",
+          "value" : "egregious"
+        }, {
+          "key" : "e*t",
+          "value" : "effect"
+        }, {
+          "key" : "e*u",
+          "value" : "ecru"
+        }, {
+          "key" : "e*v",
+          "value" : "ev"
+        }, {
+          "key" : "e*w",
+          "value" : "eschew"
+        }, {
+          "key" : "e*x",
+          "value" : "equinox"
+        }, {
+          "key" : "e*y",
+          "value" : "employ"
+        }, {
+          "key" : "e*z",
+          "value" : "ersatz"
+        }, {
+          "key" : "f*a",
+          "value" : "formula"
+        }, {
+          "key" : "f*b",
+          "value" : "fob"
+        }, {
+          "key" : "f*c",
+          "value" : "fantastic"
+        }, {
+          "key" : "f*d",
+          "value" : "forward"
+        }, {
+          "key" : "f*e",
+          "value" : "fire"
+        }, {
+          "key" : "f*f",
+          "value" : "fluff"
+        }, {
+          "key" : "f*g",
+          "value" : "fling"
+        }, {
+          "key" : "f*h",
+          "value" : "fish"
+        }, {
+          "key" : "f*i",
+          "value" : "fungi"
+        }, {
+          "key" : "f*j",
+          "value" : "fj"
+        }, {
+          "key" : "f*k",
+          "value" : "fleek"
+        }, {
+          "key" : "f*l",
+          "value" : "fall"
+        }, {
+          "key" : "f*m",
+          "value" : "form"
+        }, {
+          "key" : "f*n",
+          "value" : "function"
+        }, {
+          "key" : "f*o",
+          "value" : "forego"
+        }, {
+          "key" : "f*p",
+          "value" : "flip"
+        }, {
+          "key" : "f*q",
+          "value" : "faq"
+        }, {
+          "key" : "f*r",
+          "value" : "for"
+        }, {
+          "key" : "f*s",
+          "value" : "focus"
+        }, {
+          "key" : "f*t",
+          "value" : "fit"
+        }, {
+          "key" : "f*u",
+          "value" : "flu"
+        }, {
+          "key" : "f*v",
+          "value" : "fiv"
+        }, {
+          "key" : "f*w",
+          "value" : "flow"
+        }, {
+          "key" : "f*x",
+          "value" : "flux"
+        }, {
+          "key" : "f*y",
+          "value" : "fly"
+        }, {
+          "key" : "f*z",
+          "value" : "fizz"
+        }, {
+          "key" : "g*a",
+          "value" : "gala"
+        }, {
+          "key" : "g*b",
+          "value" : "glib"
+        }, {
+          "key" : "g*c",
+          "value" : "generic"
+        }, {
+          "key" : "g*d",
+          "value" : "good"
+        }, {
+          "key" : "g*e",
+          "value" : "game"
+        }, {
+          "key" : "g*f",
+          "value" : "grief"
+        }, {
+          "key" : "g*g",
+          "value" : "gig"
+        }, {
+          "key" : "g*h",
+          "value" : "graph"
+        }, {
+          "key" : "g*i",
+          "value" : "gotti"
+        }, {
+          "key" : "g*j",
+          "value" : "gj"
+        }, {
+          "key" : "g*k",
+          "value" : "geek"
+        }, {
+          "key" : "g*l",
+          "value" : "girl"
+        }, {
+          "key" : "g*m",
+          "value" : "gum"
+        }, {
+          "key" : "g*n",
+          "value" : "green"
+        }, {
+          "key" : "g*o",
+          "value" : "go"
+        }, {
+          "key" : "g*p",
+          "value" : "group"
+        }, {
+          "key" : "g*q",
+          "value" : "gq"
+        }, {
+          "key" : "g*r",
+          "value" : "gear"
+        }, {
+          "key" : "g*s",
+          "value" : "grass"
+        }, {
+          "key" : "g*t",
+          "value" : "get"
+        }, {
+          "key" : "g*u",
+          "value" : "guru"
+        }, {
+          "key" : "g*v",
+          "value" : "gov"
+        }, {
+          "key" : "g*w",
+          "value" : "grow"
+        }, {
+          "key" : "g*x",
+          "value" : "gox"
+        }, {
+          "key" : "g*y",
+          "value" : "grey"
+        }, {
+          "key" : "g*z",
+          "value" : "geez"
+        }, {
+          "key" : "h*a",
+          "value" : "hypophobia"
+        }, {
+          "key" : "h*b",
+          "value" : "hub"
+        }, {
+          "key" : "h*c",
+          "value" : "holistic"
+        }, {
+          "key" : "h*d",
+          "value" : "hand"
+        }, {
+          "key" : "h*e",
+          "value" : "house"
+        }, {
+          "key" : "h*f",
+          "value" : "half"
+        }, {
+          "key" : "h*g",
+          "value" : "hang"
+        }, {
+          "key" : "h*h",
+          "value" : "health"
+        }, {
+          "key" : "h*i",
+          "value" : "hi"
+        }, {
+          "key" : "h*j",
+          "value" : "hajj"
+        }, {
+          "key" : "h*k",
+          "value" : "hack"
+        }, {
+          "key" : "h*l",
+          "value" : "hail"
+        }, {
+          "key" : "h*m",
+          "value" : "homonym"
+        }, {
+          "key" : "h*n",
+          "value" : "horn"
+        }, {
+          "key" : "h*o",
+          "value" : "hello"
+        }, {
+          "key" : "h*p",
+          "value" : "help"
+        }, {
+          "key" : "h*q",
+          "value" : "hq"
+        }, {
+          "key" : "h*r",
+          "value" : "honor"
+        }, {
+          "key" : "h*s",
+          "value" : "hubris"
+        }, {
+          "key" : "h*t",
+          "value" : "heart"
+        }, {
+          "key" : "h*u",
+          "value" : "haiku"
+        }, {
+          "key" : "h*v",
+          "value" : "hiv"
+        }, {
+          "key" : "h*w",
+          "value" : "hew"
+        }, {
+          "key" : "h*x",
+          "value" : "hoax"
+        }, {
+          "key" : "h*y",
+          "value" : "happy"
+        }, {
+          "key" : "h*z",
+          "value" : "hertz"
+        }, {
+          "key" : "i*a",
+          "value" : "idea"
+        }, {
+          "key" : "i*b",
+          "value" : "iamb"
+        }, {
+          "key" : "i*c",
+          "value" : "intrinsic"
+        }, {
+          "key" : "i*d",
+          "value" : "island"
+        }, {
+          "key" : "i*e",
+          "value" : "issue"
+        }, {
+          "key" : "i*f",
+          "value" : "if"
+        }, {
+          "key" : "i*g",
+          "value" : "intriguing"
+        }, {
+          "key" : "i*h",
+          "value" : "impeach"
+        }, {
+          "key" : "i*i",
+          "value" : "ii"
+        }, {
+          "key" : "i*j",
+          "value" : "intj"
+        }, {
+          "key" : "i*k",
+          "value" : "ilk"
+        }, {
+          "key" : "i*l",
+          "value" : "integral"
+        }, {
+          "key" : "i*m",
+          "value" : "idiom"
+        }, {
+          "key" : "i*n",
+          "value" : "in"
+        }, {
+          "key" : "i*o",
+          "value" : "into"
+        }, {
+          "key" : "i*p",
+          "value" : "imp"
+        }, {
+          "key" : "i*q",
+          "value" : "iq"
+        }, {
+          "key" : "i*r",
+          "value" : "infer"
+        }, {
+          "key" : "i*s",
+          "value" : "insidious"
+        }, {
+          "key" : "i*t",
+          "value" : "it"
+        }, {
+          "key" : "i*u",
+          "value" : "impromptu"
+        }, {
+          "key" : "i*v",
+          "value" : "iv"
+        }, {
+          "key" : "i*w",
+          "value" : "interview"
+        }, {
+          "key" : "i*x",
+          "value" : "index"
+        }, {
+          "key" : "i*y",
+          "value" : "idiocracy"
+        }, {
+          "key" : "i*z",
+          "value" : "inez"
+        }, {
+          "key" : "j*a",
+          "value" : "java"
+        }, {
+          "key" : "j*b",
+          "value" : "job"
+        }, {
+          "key" : "j*c",
+          "value" : "jingoistic"
+        }, {
+          "key" : "j*d",
+          "value" : "jerry-build"
+        }, {
+          "key" : "j*e",
+          "value" : "justice"
+        }, {
+          "key" : "j*f",
+          "value" : "jof"
+        }, {
+          "key" : "j*g",
+          "value" : "jarring"
+        }, {
+          "key" : "j*h",
+          "value" : "joseph"
+        }, {
+          "key" : "j*i",
+          "value" : "jumanji"
+        }, {
+          "key" : "j*j",
+          "value" : "juj"
+        }, {
+          "key" : "j*k",
+          "value" : "jack"
+        }, {
+          "key" : "j*l",
+          "value" : "judgemental"
+        }, {
+          "key" : "j*m",
+          "value" : "jam"
+        }, {
+          "key" : "j*n",
+          "value" : "john"
+        }, {
+          "key" : "j*o",
+          "value" : "jo"
+        }, {
+          "key" : "j*p",
+          "value" : "jump"
+        }, {
+          "key" : "j*q",
+          "value" : "jaq"
+        }, {
+          "key" : "j*r",
+          "value" : "jar"
+        }, {
+          "key" : "j*s",
+          "value" : "jealous"
+        }, {
+          "key" : "j*t",
+          "value" : "joint"
+        }, {
+          "key" : "j*u",
+          "value" : "juju"
+        }, {
+          "key" : "j*v",
+          "value" : "jiv"
+        }, {
+          "key" : "j*w",
+          "value" : "jaw"
+        }, {
+          "key" : "j*x",
+          "value" : "jinx"
+        }, {
+          "key" : "j*y",
+          "value" : "joy"
+        }, {
+          "key" : "j*z",
+          "value" : "jazz"
+        }, {
+          "key" : "k*a",
+          "value" : "karma"
+        }, {
+          "key" : "k*b",
+          "value" : "knob"
+        }, {
+          "key" : "k*c",
+          "value" : "kinetic"
+        }, {
+          "key" : "k*d",
+          "value" : "kind"
+        }, {
+          "key" : "k*e",
+          "value" : "knowledge"
+        }, {
+          "key" : "k*f",
+          "value" : "kickoff"
+        }, {
+          "key" : "k*g",
+          "value" : "king"
+        }, {
+          "key" : "k*h",
+          "value" : "kitsch"
+        }, {
+          "key" : "k*i",
+          "value" : "khaki"
+        }, {
+          "key" : "k*j",
+          "value" : "kj"
+        }, {
+          "key" : "k*k",
+          "value" : "kick"
+        }, {
+          "key" : "k*l",
+          "value" : "kneel"
+        }, {
+          "key" : "k*m",
+          "value" : "kingdom"
+        }, {
+          "key" : "k*n",
+          "value" : "keen"
+        }, {
+          "key" : "k*o",
+          "value" : "kangaroo"
+        }, {
+          "key" : "k*p",
+          "value" : "keep"
+        }, {
+          "key" : "k*q",
+          "value" : "kaq"
+        }, {
+          "key" : "k*r",
+          "value" : "kosher"
+        }, {
+          "key" : "k*s",
+          "value" : "kudos"
+        }, {
+          "key" : "k*t",
+          "value" : "knot"
+        }, {
+          "key" : "k*u",
+          "value" : "kudu"
+        }, {
+          "key" : "k*v",
+          "value" : "kiev"
+        }, {
+          "key" : "k*w",
+          "value" : "know"
+        }, {
+          "key" : "k*x",
+          "value" : "knox"
+        }, {
+          "key" : "k*y",
+          "value" : "key"
+        }, {
+          "key" : "k*z",
+          "value" : "kibitz"
+        }, {
+          "key" : "l*a",
+          "value" : "la"
+        }, {
+          "key" : "l*b",
+          "value" : "lamb"
+        }, {
+          "key" : "l*c",
+          "value" : "logic"
+        }, {
+          "key" : "l*d",
+          "value" : "lead"
+        }, {
+          "key" : "l*e",
+          "value" : "line"
+        }, {
+          "key" : "l*f",
+          "value" : "leaf"
+        }, {
+          "key" : "l*g",
+          "value" : "long"
+        }, {
+          "key" : "l*h",
+          "value" : "launch"
+        }, {
+          "key" : "l*i",
+          "value" : "lei"
+        }, {
+          "key" : "l*j",
+          "value" : "lbj"
+        }, {
+          "key" : "l*k",
+          "value" : "look"
+        }, {
+          "key" : "l*l",
+          "value" : "level"
+        }, {
+          "key" : "l*m",
+          "value" : "loom"
+        }, {
+          "key" : "l*n",
+          "value" : "lean"
+        }, {
+          "key" : "l*o",
+          "value" : "limbo"
+        }, {
+          "key" : "l*p",
+          "value" : "loop"
+        }, {
+          "key" : "l*q",
+          "value" : "laq"
+        }, {
+          "key" : "l*r",
+          "value" : "larder"
+        }, {
+          "key" : "l*s",
+          "value" : "logistics"
+        }, {
+          "key" : "l*t",
+          "value" : "lot"
+        }, {
+          "key" : "l*u",
+          "value" : "lieu"
+        }, {
+          "key" : "l*v",
+          "value" : "labov"
+        }, {
+          "key" : "l*w",
+          "value" : "law"
+        }, {
+          "key" : "l*x",
+          "value" : "lax"
+        }, {
+          "key" : "l*y",
+          "value" : "lay"
+        }, {
+          "key" : "l*z",
+          "value" : "lutz"
+        }, {
+          "key" : "m*a",
+          "value" : "media"
+        }, {
+          "key" : "m*b",
+          "value" : "mob"
+        }, {
+          "key" : "m*c",
+          "value" : "music"
+        }, {
+          "key" : "m*d",
+          "value" : "mind"
+        }, {
+          "key" : "m*e",
+          "value" : "meme"
+        }, {
+          "key" : "m*f",
+          "value" : "motif"
+        }, {
+          "key" : "m*g",
+          "value" : "meaning"
+        }, {
+          "key" : "m*h",
+          "value" : "match"
+        }, {
+          "key" : "m*i",
+          "value" : "magi"
+        }, {
+          "key" : "m*j",
+          "value" : "maj"
+        }, {
+          "key" : "m*k",
+          "value" : "mark"
+        }, {
+          "key" : "m*l",
+          "value" : "model"
+        }, {
+          "key" : "m*m",
+          "value" : "medium"
+        }, {
+          "key" : "m*n",
+          "value" : "man"
+        }, {
+          "key" : "m*o",
+          "value" : "mojo"
+        }, {
+          "key" : "m*p",
+          "value" : "map"
+        }, {
+          "key" : "m*q",
+          "value" : "mq"
+        }, {
+          "key" : "m*r",
+          "value" : "matter"
+        }, {
+          "key" : "m*s",
+          "value" : "mass"
+        }, {
+          "key" : "m*t",
+          "value" : "malevolent"
+        }, {
+          "key" : "m*u",
+          "value" : "milieu"
+        }, {
+          "key" : "m*v",
+          "value" : "maglev"
+        }, {
+          "key" : "m*w",
+          "value" : "mow"
+        }, {
+          "key" : "m*x",
+          "value" : "matrix"
+        }, {
+          "key" : "m*y",
+          "value" : "misogyny"
+        }, {
+          "key" : "m*z",
+          "value" : "metz"
+        }, {
+          "key" : "n*a",
+          "value" : "nova"
+        }, {
+          "key" : "n*b",
+          "value" : "numb"
+        }, {
+          "key" : "n*c",
+          "value" : "narcissistic"
+        }, {
+          "key" : "n*d",
+          "value" : "need"
+        }, {
+          "key" : "n*e",
+          "value" : "name"
+        }, {
+          "key" : "n*f",
+          "value" : "naif"
+        }, {
+          "key" : "n*g",
+          "value" : "notwithstanding"
+        }, {
+          "key" : "n*h",
+          "value" : "notch"
+        }, {
+          "key" : "n*i",
+          "value" : "nazi"
+        }, {
+          "key" : "n*j",
+          "value" : "naj"
+        }, {
+          "key" : "n*k",
+          "value" : "network"
+        }, {
+          "key" : "n*l",
+          "value" : "natural"
+        }, {
+          "key" : "n*m",
+          "value" : "nihilism"
+        }, {
+          "key" : "n*n",
+          "value" : "noun"
+        }, {
+          "key" : "n*o",
+          "value" : "no"
+        }, {
+          "key" : "n*p",
+          "value" : "nap"
+        }, {
+          "key" : "n*q",
+          "value" : "nasdaq"
+        }, {
+          "key" : "n*r",
+          "value" : "number"
+        }, {
+          "key" : "n*s",
+          "value" : "nefarious"
+        }, {
+          "key" : "n*t",
+          "value" : "night"
+        }, {
+          "key" : "n*u",
+          "value" : "nonu"
+        }, {
+          "key" : "n*v",
+          "value" : "negev"
+        }, {
+          "key" : "n*w",
+          "value" : "new"
+        }, {
+          "key" : "n*x",
+          "value" : "nix"
+        }, {
+          "key" : "n*y",
+          "value" : "nitty"
+        }, {
+          "key" : "n*z",
+          "value" : "nimitz"
+        }, {
+          "key" : "o*a",
+          "value" : "onomatopoeia"
+        }, {
+          "key" : "o*b",
+          "value" : "orb"
+        }, {
+          "key" : "o*c",
+          "value" : "organic"
+        }, {
+          "key" : "o*d",
+          "value" : "old"
+        }, {
+          "key" : "o*e",
+          "value" : "one"
+        }, {
+          "key" : "o*f",
+          "value" : "off"
+        }, {
+          "key" : "o*g",
+          "value" : "outstanding"
+        }, {
+          "key" : "o*h",
+          "value" : "outreach"
+        }, {
+          "key" : "o*i",
+          "value" : "okapi"
+        }, {
+          "key" : "o*j",
+          "value" : "oj"
+        }, {
+          "key" : "o*k",
+          "value" : "outlook"
+        }, {
+          "key" : "o*l",
+          "value" : "oil"
+        }, {
+          "key" : "o*m",
+          "value" : "overwhelm"
+        }, {
+          "key" : "o*n",
+          "value" : "on"
+        }, {
+          "key" : "o*o",
+          "value" : "onto"
+        }, {
+          "key" : "o*p",
+          "value" : "op"
+        }, {
+          "key" : "o*q",
+          "value" : "oq"
+        }, {
+          "key" : "o*r",
+          "value" : "over"
+        }, {
+          "key" : "o*s",
+          "value" : "ominous"
+        }, {
+          "key" : "o*t",
+          "value" : "out"
+        }, {
+          "key" : "o*u",
+          "value" : "ormolu"
+        }, {
+          "key" : "o*v",
+          "value" : "ov"
+        }, {
+          "key" : "o*w",
+          "value" : "overview"
+        }, {
+          "key" : "o*x",
+          "value" : "orthodox"
+        }, {
+          "key" : "o*y",
+          "value" : "opportunity"
+        }, {
+          "key" : "o*z",
+          "value" : "oz"
+        }, {
+          "key" : "p*a",
+          "value" : "plethora"
+        }, {
+          "key" : "p*b",
+          "value" : "plumb"
+        }, {
+          "key" : "p*c",
+          "value" : "pedantic"
+        }, {
+          "key" : "p*d",
+          "value" : "period"
+        }, {
+          "key" : "p*e",
+          "value" : "principle"
+        }, {
+          "key" : "p*f",
+          "value" : "proof"
+        }, {
+          "key" : "p*g",
+          "value" : "pig"
+        }, {
+          "key" : "p*h",
+          "value" : "pitch"
+        }, {
+          "key" : "p*i",
+          "value" : "priori"
+        }, {
+          "key" : "p*j",
+          "value" : "pj"
+        }, {
+          "key" : "p*k",
+          "value" : "park"
+        }, {
+          "key" : "p*l",
+          "value" : "principal"
+        }, {
+          "key" : "p*m",
+          "value" : "paradigm"
+        }, {
+          "key" : "p*n",
+          "value" : "plan"
+        }, {
+          "key" : "p*o",
+          "value" : "pro"
+        }, {
+          "key" : "p*p",
+          "value" : "pop"
+        }, {
+          "key" : "p*q",
+          "value" : "piq"
+        }, {
+          "key" : "p*r",
+          "value" : "power"
+        }, {
+          "key" : "p*s",
+          "value" : "process"
+        }, {
+          "key" : "p*t",
+          "value" : "point"
+        }, {
+          "key" : "p*u",
+          "value" : "portmanteau"
+        }, {
+          "key" : "p*v",
+          "value" : "pov"
+        }, {
+          "key" : "p*w",
+          "value" : "purview"
+        }, {
+          "key" : "p*x",
+          "value" : "paradox"
+        }, {
+          "key" : "p*y",
+          "value" : "play"
+        }, {
+          "key" : "p*z",
+          "value" : "plotz"
+        }, {
+          "key" : "q*a",
+          "value" : "quinoa"
+        }, {
+          "key" : "q*b",
+          "value" : "quib"
+        }, {
+          "key" : "q*c",
+          "value" : "quixotic"
+        }, {
+          "key" : "q*d",
+          "value" : "qad"
+        }, {
+          "key" : "q*e",
+          "value" : "que"
+        }, {
+          "key" : "q*f",
+          "value" : "quaff"
+        }, {
+          "key" : "q*g",
+          "value" : "qualling"
+        }, {
+          "key" : "q*h",
+          "value" : "quash"
+        }, {
+          "key" : "q*i",
+          "value" : "quasi"
+        }, {
+          "key" : "q*j",
+          "value" : "quj"
+        }, {
+          "key" : "q*k",
+          "value" : "quick"
+        }, {
+          "key" : "q*l",
+          "value" : "quintessential"
+        }, {
+          "key" : "q*m",
+          "value" : "quantum"
+        }, {
+          "key" : "q*n",
+          "value" : "question"
+        }, {
+          "key" : "q*o",
+          "value" : "quo"
+        }, {
+          "key" : "q*p",
+          "value" : "quip"
+        }, {
+          "key" : "q*q",
+          "value" : "qepiq"
+        }, {
+          "key" : "q*r",
+          "value" : "quarter"
+        }, {
+          "key" : "q*s",
+          "value" : "querulous"
+        }, {
+          "key" : "q*t",
+          "value" : "quiet"
+        }, {
+          "key" : "q*u",
+          "value" : "quipu"
+        }, {
+          "key" : "q*v",
+          "value" : "qv"
+        }, {
+          "key" : "q*w",
+          "value" : "qew"
+        }, {
+          "key" : "q*x",
+          "value" : "quex"
+        }, {
+          "key" : "q*y",
+          "value" : "quality"
+        }, {
+          "key" : "q*z",
+          "value" : "quiz"
+        }, {
+          "key" : "r*a",
+          "value" : "ria"
+        }, {
+          "key" : "r*b",
+          "value" : "rub"
+        }, {
+          "key" : "r*c",
+          "value" : "rhetoric"
+        }, {
+          "key" : "r*d",
+          "value" : "read"
+        }, {
+          "key" : "r*e",
+          "value" : "rate"
+        }, {
+          "key" : "r*f",
+          "value" : "relief"
+        }, {
+          "key" : "r*g",
+          "value" : "ring"
+        }, {
+          "key" : "r*h",
+          "value" : "research"
+        }, {
+          "key" : "r*i",
+          "value" : "reiki"
+        }, {
+          "key" : "r*j",
+          "value" : "raj"
+        }, {
+          "key" : "r*k",
+          "value" : "rock"
+        }, {
+          "key" : "r*l",
+          "value" : "roll"
+        }, {
+          "key" : "r*m",
+          "value" : "room"
+        }, {
+          "key" : "r*n",
+          "value" : "run"
+        }, {
+          "key" : "r*o",
+          "value" : "ratio"
+        }, {
+          "key" : "r*p",
+          "value" : "relationship"
+        }, {
+          "key" : "r*q",
+          "value" : "raq"
+        }, {
+          "key" : "r*r",
+          "value" : "river"
+        }, {
+          "key" : "r*s",
+          "value" : "recess"
+        }, {
+          "key" : "r*t",
+          "value" : "revenant"
+        }, {
+          "key" : "r*u",
+          "value" : "rondeau"
+        }, {
+          "key" : "r*v",
+          "value" : "rev"
+        }, {
+          "key" : "r*w",
+          "value" : "review"
+        }, {
+          "key" : "r*x",
+          "value" : "reflex"
+        }, {
+          "key" : "r*y",
+          "value" : "relay"
+        }, {
+          "key" : "r*z",
+          "value" : "riz"
+        }, {
+          "key" : "s*a",
+          "value" : "sea"
+        }, {
+          "key" : "s*b",
+          "value" : "succumb"
+        }, {
+          "key" : "s*c",
+          "value" : "stoic"
+        }, {
+          "key" : "s*d",
+          "value" : "stand"
+        }, {
+          "key" : "s*e",
+          "value" : "syndrome"
+        }, {
+          "key" : "s*f",
+          "value" : "staff"
+        }, {
+          "key" : "s*g",
+          "value" : "spring"
+        }, {
+          "key" : "s*h",
+          "value" : "search"
+        }, {
+          "key" : "s*i",
+          "value" : "ski"
+        }, {
+          "key" : "s*j",
+          "value" : "swaraj"
+        }, {
+          "key" : "s*k",
+          "value" : "stick"
+        }, {
+          "key" : "s*l",
+          "value" : "school"
+        }, {
+          "key" : "s*m",
+          "value" : "system"
+        }, {
+          "key" : "s*n",
+          "value" : "sign"
+        }, {
+          "key" : "s*o",
+          "value" : "so"
+        }, {
+          "key" : "s*p",
+          "value" : "shop"
+        }, {
+          "key" : "s*q",
+          "value" : "suq"
+        }, {
+          "key" : "s*r",
+          "value" : "star"
+        }, {
+          "key" : "s*s",
+          "value" : "spurious"
+        }, {
+          "key" : "s*t",
+          "value" : "set"
+        }, {
+          "key" : "s*u",
+          "value" : "sadhu"
+        }, {
+          "key" : "s*v",
+          "value" : "shiv"
+        }, {
+          "key" : "s*w",
+          "value" : "show"
+        }, {
+          "key" : "s*x",
+          "value" : "sex"
+        }, {
+          "key" : "s*y",
+          "value" : "strategy"
+        }, {
+          "key" : "s*z",
+          "value" : "spitz"
+        }, {
+          "key" : "t*a",
+          "value" : "tea"
+        }, {
+          "key" : "t*b",
+          "value" : "tab"
+        }, {
+          "key" : "t*c",
+          "value" : "traffic"
+        }, {
+          "key" : "t*d",
+          "value" : "threshold"
+        }, {
+          "key" : "t*e",
+          "value" : "time"
+        }, {
+          "key" : "t*f",
+          "value" : "thief"
+        }, {
+          "key" : "t*g",
+          "value" : "tag"
+        }, {
+          "key" : "t*h",
+          "value" : "through"
+        }, {
+          "key" : "t*i",
+          "value" : "tai"
+        }, {
+          "key" : "t*j",
+          "value" : "taj"
+        }, {
+          "key" : "t*k",
+          "value" : "tweek"
+        }, {
+          "key" : "t*l",
+          "value" : "troll"
+        }, {
+          "key" : "t*m",
+          "value" : "term"
+        }, {
+          "key" : "t*n",
+          "value" : "turn"
+        }, {
+          "key" : "t*o",
+          "value" : "to"
+        }, {
+          "key" : "t*p",
+          "value" : "trump"
+        }, {
+          "key" : "t*q",
+          "value" : "tiq"
+        }, {
+          "key" : "t*r",
+          "value" : "together"
+        }, {
+          "key" : "t*s",
+          "value" : "thesaurus"
+        }, {
+          "key" : "t*t",
+          "value" : "test"
+        }, {
+          "key" : "t*u",
+          "value" : "thru"
+        }, {
+          "key" : "t*v",
+          "value" : "tv"
+        }, {
+          "key" : "t*w",
+          "value" : "throw"
+        }, {
+          "key" : "t*x",
+          "value" : "tax"
+        }, {
+          "key" : "t*y",
+          "value" : "theory"
+        }, {
+          "key" : "t*z",
+          "value" : "topaz"
+        }, {
+          "key" : "u*a",
+          "value" : "ultra"
+        }, {
+          "key" : "u*b",
+          "value" : "usb"
+        }, {
+          "key" : "u*c",
+          "value" : "ugric"
+        }, {
+          "key" : "u*d",
+          "value" : "understand"
+        }, {
+          "key" : "u*e",
+          "value" : "use"
+        }, {
+          "key" : "u*f",
+          "value" : "usaf"
+        }, {
+          "key" : "u*g",
+          "value" : "understanding"
+        }, {
+          "key" : "u*h",
+          "value" : "uncouth"
+        }, {
+          "key" : "u*i",
+          "value" : "umami"
+        }, {
+          "key" : "u*j",
+          "value" : "uj"
+        }, {
+          "key" : "u*k",
+          "value" : "uptick"
+        }, {
+          "key" : "u*l",
+          "value" : "universal"
+        }, {
+          "key" : "u*m",
+          "value" : "uniform"
+        }, {
+          "key" : "u*n",
+          "value" : "upon"
+        }, {
+          "key" : "u*o",
+          "value" : "undergo"
+        }, {
+          "key" : "u*p",
+          "value" : "up"
+        }, {
+          "key" : "u*q",
+          "value" : "uq"
+        }, {
+          "key" : "u*r",
+          "value" : "under"
+        }, {
+          "key" : "u*s",
+          "value" : "ubiquitous"
+        }, {
+          "key" : "u*t",
+          "value" : "unit"
+        }, {
+          "key" : "u*u",
+          "value" : "urdu"
+        }, {
+          "key" : "u*v",
+          "value" : "uv"
+        }, {
+          "key" : "u*w",
+          "value" : "unsew"
+        }, {
+          "key" : "u*x",
+          "value" : "unorthodox"
+        }, {
+          "key" : "u*y",
+          "value" : "uncanny"
+        }, {
+          "key" : "u*z",
+          "value" : "uz"
+        }, {
+          "key" : "v*a",
+          "value" : "via"
+        }, {
+          "key" : "v*b",
+          "value" : "verb"
+        }, {
+          "key" : "v*c",
+          "value" : "vitriolic"
+        }, {
+          "key" : "v*d",
+          "value" : "void"
+        }, {
+          "key" : "v*e",
+          "value" : "value"
+        }, {
+          "key" : "v*f",
+          "value" : "void of"
+        }, {
+          "key" : "v*g",
+          "value" : "vetting"
+        }, {
+          "key" : "v*h",
+          "value" : "vouch"
+        }, {
+          "key" : "v*i",
+          "value" : "vi"
+        }, {
+          "key" : "v*j",
+          "value" : "vaj"
+        }, {
+          "key" : "v*k",
+          "value" : "volk"
+        }, {
+          "key" : "v*l",
+          "value" : "visceral"
+        }, {
+          "key" : "v*m",
+          "value" : "vacuum"
+        }, {
+          "key" : "v*n",
+          "value" : "vein"
+        }, {
+          "key" : "v*o",
+          "value" : "video"
+        }, {
+          "key" : "v*p",
+          "value" : "vamp"
+        }, {
+          "key" : "v*q",
+          "value" : "viq"
+        }, {
+          "key" : "v*r",
+          "value" : "vernacular"
+        }, {
+          "key" : "v*s",
+          "value" : "virus"
+        }, {
+          "key" : "v*t",
+          "value" : "vet"
+        }, {
+          "key" : "v*u",
+          "value" : "vu"
+        }, {
+          "key" : "v*v",
+          "value" : "vav"
+        }, {
+          "key" : "v*w",
+          "value" : "vaw"
+        }, {
+          "key" : "v*x",
+          "value" : "vex"
+        }, {
+          "key" : "v*y",
+          "value" : "veracity"
+        }, {
+          "key" : "v*z",
+          "value" : "viz"
+        }, {
+          "key" : "w*a",
+          "value" : "whoa"
+        }, {
+          "key" : "w*b",
+          "value" : "web"
+        }, {
+          "key" : "w*c",
+          "value" : "wholistic"
+        }, {
+          "key" : "w*d",
+          "value" : "word"
+        }, {
+          "key" : "w*e",
+          "value" : "wave"
+        }, {
+          "key" : "w*f",
+          "value" : "wolf"
+        }, {
+          "key" : "w*g",
+          "value" : "well-being"
+        }, {
+          "key" : "w*h",
+          "value" : "with"
+        }, {
+          "key" : "w*i",
+          "value" : "wifi"
+        }, {
+          "key" : "w*j",
+          "value" : "wej"
+        }, {
+          "key" : "w*k",
+          "value" : "work"
+        }, {
+          "key" : "w*l",
+          "value" : "well"
+        }, {
+          "key" : "w*m",
+          "value" : "wisdom"
+        }, {
+          "key" : "w*n",
+          "value" : "win"
+        }, {
+          "key" : "w*o",
+          "value" : "who"
+        }, {
+          "key" : "w*p",
+          "value" : "whip"
+        }, {
+          "key" : "w*q",
+          "value" : "wq"
+        }, {
+          "key" : "w*r",
+          "value" : "water"
+        }, {
+          "key" : "w*s",
+          "value" : "whereas"
+        }, {
+          "key" : "w*t",
+          "value" : "whet"
+        }, {
+          "key" : "w*u",
+          "value" : "wu"
+        }, {
+          "key" : "w*v",
+          "value" : "wav"
+        }, {
+          "key" : "w*w",
+          "value" : "withdraw"
+        }, {
+          "key" : "w*x",
+          "value" : "wax"
+        }, {
+          "key" : "w*y",
+          "value" : "way"
+        }, {
+          "key" : "w*z",
+          "value" : "whiz"
+        }, {
+          "key" : "x*a",
+          "value" : "xenophobia"
+        }, {
+          "key" : "x*b",
+          "value" : "xbeeb"
+        }, {
+          "key" : "x*c",
+          "value" : "xenophobic"
+        }, {
+          "key" : "x*d",
+          "value" : "xiphoid"
+        }, {
+          "key" : "x*e",
+          "value" : "xenophobe"
+        }, {
+          "key" : "x*f",
+          "value" : "xf"
+        }, {
+          "key" : "x*g",
+          "value" : "xing"
+        }, {
+          "key" : "x*h",
+          "value" : "xenolith"
+        }, {
+          "key" : "x*i",
+          "value" : "xi"
+        }, {
+          "key" : "x*j",
+          "value" : "xj"
+        }, {
+          "key" : "x*k",
+          "value" : "xlink"
+        }, {
+          "key" : "x*l",
+          "value" : "xenial"
+        }, {
+          "key" : "x*m",
+          "value" : "xylem"
+        }, {
+          "key" : "x*n",
+          "value" : "xenon"
+        }, {
+          "key" : "x*o",
+          "value" : "xao"
+        }, {
+          "key" : "x*p",
+          "value" : "xp"
+        }, {
+          "key" : "x*q",
+          "value" : "xq"
+        }, {
+          "key" : "x*r",
+          "value" : "xyster"
+        }, {
+          "key" : "x*s",
+          "value" : "xis"
+        }, {
+          "key" : "x*t",
+          "value" : "xit"
+        }, {
+          "key" : "x*u",
+          "value" : "xu"
+        }, {
+          "key" : "x*v",
+          "value" : "xiv"
+        }, {
+          "key" : "x*w",
+          "value" : "xview"
+        }, {
+          "key" : "x*x",
+          "value" : "xxx"
+        }, {
+          "key" : "x*y",
+          "value" : "x-ray"
+        }, {
+          "key" : "x*z",
+          "value" : "xertz"
+        }, {
+          "key" : "y*a",
+          "value" : "yea"
+        }, {
+          "key" : "y*b",
+          "value" : "yob"
+        }, {
+          "key" : "y*c",
+          "value" : "yogic"
+        }, {
+          "key" : "y*d",
+          "value" : "yield"
+        }, {
+          "key" : "y*e",
+          "value" : "yoe"
+        }, {
+          "key" : "y*f",
+          "value" : "yourself"
+        }, {
+          "key" : "y*g",
+          "value" : "young"
+        }, {
+          "key" : "y*h",
+          "value" : "youth"
+        }, {
+          "key" : "y*i",
+          "value" : "yani"
+        }, {
+          "key" : "y*j",
+          "value" : "yoj"
+        }, {
+          "key" : "y*k",
+          "value" : "yak"
+        }, {
+          "key" : "y*l",
+          "value" : "yell"
+        }, {
+          "key" : "y*m",
+          "value" : "yam"
+        }, {
+          "key" : "y*n",
+          "value" : "yeoman"
+        }, {
+          "key" : "y*o",
+          "value" : "yahoo"
+        }, {
+          "key" : "y*p",
+          "value" : "yelp"
+        }, {
+          "key" : "y*q",
+          "value" : "yoq"
+        }, {
+          "key" : "y*r",
+          "value" : "year"
+        }, {
+          "key" : "y*s",
+          "value" : "yes"
+        }, {
+          "key" : "y*t",
+          "value" : "yet"
+        }, {
+          "key" : "y*u",
+          "value" : "you"
+        }, {
+          "key" : "y*v",
+          "value" : "ymmv"
+        }, {
+          "key" : "y*w",
+          "value" : "yellow"
+        }, {
+          "key" : "y*x",
+          "value" : "yox"
+        }, {
+          "key" : "y*y",
+          "value" : "yay"
+        }, {
+          "key" : "y*z",
+          "value" : "yaz"
+        }, {
+          "key" : "z*a",
+          "value" : "zebra"
+        }, {
+          "key" : "z*b",
+          "value" : "zoob"
+        }, {
+          "key" : "z*c",
+          "value" : "zodiac"
+        }, {
+          "key" : "z*d",
+          "value" : "zed"
+        }, {
+          "key" : "z*e",
+          "value" : "zone"
+        }, {
+          "key" : "z*f",
+          "value" : "zarf"
+        }, {
+          "key" : "z*g",
+          "value" : "zing"
+        }, {
+          "key" : "z*h",
+          "value" : "zenith"
+        }, {
+          "key" : "z*i",
+          "value" : "zucchini"
+        }, {
+          "key" : "z*j",
+          "value" : "zij"
+        }, {
+          "key" : "z*k",
+          "value" : "zook"
+        }, {
+          "key" : "z*l",
+          "value" : "zeal"
+        }, {
+          "key" : "z*m",
+          "value" : "zabernism"
+        }, {
+          "key" : "z*n",
+          "value" : "zen"
+        }, {
+          "key" : "z*o",
+          "value" : "zero"
+        }, {
+          "key" : "z*p",
+          "value" : "zap"
+        }, {
+          "key" : "z*q",
+          "value" : "zaq"
+        }, {
+          "key" : "z*r",
+          "value" : "zephyr"
+        }, {
+          "key" : "z*s",
+          "value" : "zealous"
+        }, {
+          "key" : "z*t",
+          "value" : "zeitgeist"
+        }, {
+          "key" : "z*u",
+          "value" : "zulu"
+        }, {
+          "key" : "z*v",
+          "value" : "zhukov"
+        }, {
+          "key" : "z*w",
+          "value" : "zow"
+        }, {
+          "key" : "z*x",
+          "value" : "zax"
+        }, {
+          "key" : "z*y",
+          "value" : "zany"
+        }, {
+          "key" : "z*z",
+          "value" : "zzz"
+        } ]
+      }, {
+        "name" : "conf.mode",
+        "value" : "BATCH"
+      }, {
+        "name" : "conf.lookups",
+        "value" : [ {
+          "keyExpr" : "${record:value('/wexp')}",
+          "outputFieldPath" : "/SearchTerm"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "PROCESSOR",
+        "icon" : "dedup.png",
+        "description" : "",
+        "label" : "Static Lookup 1",
+        "xPos" : 940,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "GroovyEvaluator_01OutputLane16538553133140" ],
+      "outputLanes" : [ "StaticLookup_01OutputLane16552844499530" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "ExpressionEvaluator_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_expression_ExpressionDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "expressionProcessorConfigs",
+        "value" : [ {
+          "fieldToSet" : "/SearchTerm",
+          "expression" : "${record:value('/SearchTerm')}"
+        }, {
+          "fieldToSet" : "/descriminator",
+          "expression" : "ShopEvent"
+        } ]
+      }, {
+        "name" : "headerAttributeConfigs",
+        "value" : [ { } ]
+      }, {
+        "name" : "fieldAttributeConfigs",
+        "value" : [ {
+          "fieldToSet" : "/"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "PROCESSOR",
+        "icon" : "expression.png",
+        "description" : "",
+        "label" : "Expression Evaluator 1",
+        "xPos" : 1160,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "StaticLookup_01OutputLane16552844499530" ],
+      "outputLanes" : [ "ExpressionEvaluator_01OutputLane16557211582990" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "LocalFS_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_localfilesystem_LocalFileSystemDTarget",
+      "stageVersion" : "4",
+      "configuration" : [ {
+        "name" : "configs.uniquePrefix",
+        "value" : "shopEvents.csv"
+      }, {
+        "name" : "configs.fileNameSuffix",
+        "value" : null
+      }, {
+        "name" : "configs.dirPathTemplateInHeader",
+        "value" : false
+      }, {
+        "name" : "configs.dirPathTemplate",
+        "value" : "/data-transfer"
+      }, {
+        "name" : "configs.timeZoneID",
+        "value" : "UTC"
+      }, {
+        "name" : "configs.timeDriver",
+        "value" : "${time:now()}"
+      }, {
+        "name" : "configs.maxRecordsPerFile",
+        "value" : 0
+      }, {
+        "name" : "configs.maxFileSize",
+        "value" : 0
+      }, {
+        "name" : "configs.idleTimeout",
+        "value" : "${1 * HOURS}"
+      }, {
+        "name" : "configs.compression",
+        "value" : "NONE"
+      }, {
+        "name" : "configs.otherCompression",
+        "value" : null
+      }, {
+        "name" : "configs.fileType",
+        "value" : "TEXT"
+      }, {
+        "name" : "configs.keyEl",
+        "value" : "${uuid()}"
+      }, {
+        "name" : "configs.lateRecordsLimit",
+        "value" : "${1 * HOURS}"
+      }, {
+        "name" : "configs.rollIfHeader",
+        "value" : false
+      }, {
+        "name" : "configs.rollHeaderName",
+        "value" : "roll"
+      }, {
+        "name" : "configs.lateRecordsAction",
+        "value" : "SEND_TO_ERROR"
+      }, {
+        "name" : "configs.lateRecordsDirPathTemplate",
+        "value" : "/tmp/late/${YYYY()}-${MM()}-${DD()}"
+      }, {
+        "name" : "configs.dataFormat",
+        "value" : "DELIMITED"
+      }, {
+        "name" : "configs.hdfsPermissionCheck",
+        "value" : true
+      }, {
+        "name" : "configs.permissionEL",
+        "value" : null
+      }, {
+        "name" : "configs.skipOldTempFileRecovery",
+        "value" : false
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.charset",
+        "value" : "UTF-8"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvFileFormat",
+        "value" : "CUSTOM"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvHeader",
+        "value" : "WITH_HEADER"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvReplaceNewLines",
+        "value" : false
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvReplaceNewLinesString",
+        "value" : ""
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvCustomDelimiter",
+        "value" : ","
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvCustomEscape",
+        "value" : "\\"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvCustomQuote",
+        "value" : "\""
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.csvQuoteMode",
+        "value" : "MINIMAL"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.jsonMode",
+        "value" : "MULTIPLE_OBJECTS"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.textFieldPath",
+        "value" : "/text"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.textRecordSeparator",
+        "value" : "\\n"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.textFieldMissingAction",
+        "value" : "ERROR"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.textEmptyLineIfNull",
+        "value" : false
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.avroSchemaSource",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.avroSchema",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.registerSchema",
+        "value" : false
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.schemaRegistryUrlsForRegistration",
+        "value" : [ "" ]
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.schemaRegistryUrls",
+        "value" : [ "" ]
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.basicAuthUserInfo",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.schemaLookupMode",
+        "value" : "SUBJECT"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.subject",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.subjectToRegister",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.basicAuthUserInfoForRegistration",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.schemaId",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.avroCompression",
+        "value" : "NULL"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.binaryFieldPath",
+        "value" : "/"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.protoDescriptorFile",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.messageType",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.fileNameEL",
+        "value" : null
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.wholeFileExistsAction",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.includeChecksumInTheEvents",
+        "value" : false
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.checksumAlgorithm",
+        "value" : "MD5"
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.xmlPrettyPrint",
+        "value" : true
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.xmlValidateSchema",
+        "value" : false
+      }, {
+        "name" : "configs.dataGeneratorFormatConfig.xmlSchema",
+        "value" : null
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "TARGET",
+        "icon" : "localfilesystem.png",
+        "description" : "",
+        "label" : "Local FS 1",
+        "xPos" : 1380,
+        "displayMode" : "ADVANCED"
+      },
+      "inputLanes" : [ "ExpressionEvaluator_01OutputLane16557211582990" ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    } ],
+    "errorStage" : {
+      "instanceName" : "errorStageStageInstance",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "stageType" : "TARGET",
+        "label" : "Error -Discard"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    },
+    "info" : {
+      "pipelineId" : "createShop2ffef0f8-376e-410f-852a-542999c77d80",
+      "title" : "createShopOrders",
+      "description" : "",
+      "created" : 1655721118975,
+      "lastModified" : 1655722507412,
+      "creator" : "admin",
+      "lastModifier" : "admin",
+      "lastRev" : "0",
+      "uuid" : "538f9e0f-32a7-4539-9682-78f5d9210eed",
+      "valid" : true,
+      "metadata" : {
+        "labels" : [ "simulator", "domain-salesorder" ]
+      },
+      "name" : "createShop2ffef0f8-376e-410f-852a-542999c77d80",
+      "sdcVersion" : "3.22.2",
+      "sdcId" : "7bf69e11-f081-11ec-b32f-8d13c588e7e2"
+    },
+    "metadata" : {
+      "labels" : [ "simulator", "domain-salesorder" ]
+    },
+    "statsAggregatorStage" : {
+      "instanceName" : "statsAggregatorStageInstance",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_StatsDpmDirectlyDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "stageType" : "TARGET",
+        "label" : "Stats Aggregator -Write Directly to Control Hub - statistics are not aggregated across Data Collectors"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    },
+    "startEventStages" : [ {
+      "instanceName" : "Discard_StartEventStage",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "TARGET",
+        "icon" : "",
+        "description" : "",
+        "label" : "Start Event - Discard",
+        "xPos" : 280
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    } ],
+    "stopEventStages" : [ {
+      "instanceName" : "Discard_StopEventStage",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "TARGET",
+        "icon" : "",
+        "description" : "",
+        "label" : "Stop Event - Discard",
+        "xPos" : 280
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    } ],
+    "testOriginStage" : {
+      "instanceName" : "com_streamsets_pipeline_stage_devtest_rawdata_RawDataDSource_TestOriginStage",
+      "library" : "streamsets-datacollector-dev-lib",
+      "stageName" : "com_streamsets_pipeline_stage_devtest_rawdata_RawDataDSource",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "rawData",
+        "value" : "{\n  \"f1\": \"abc\",\n  \"f2\": \"xyz\",\n  \"f3\": \"lmn\"\n}"
+      }, {
+        "name" : "stopAfterFirstBatch",
+        "value" : false
+      }, {
+        "name" : "eventData",
+        "value" : null
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      } ],
+      "uiInfo" : {
+        "stageType" : "SOURCE",
+        "label" : "Test Origin - Dev Raw Data Source"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ "com_streamsets_pipeline_stage_devtest_rawdata_RawDataDSource_TestOriginStageOutputLane1" ],
+      "eventLanes" : [ ],
+      "services" : [ {
+        "service" : "com.streamsets.pipeline.api.service.dataformats.DataFormatParserService",
+        "serviceVersion" : 3,
+        "configuration" : [ {
+          "name" : "displayFormats",
+          "value" : "DELIMITED,JSON,LOG,SDC_JSON,TEXT,XML"
+        }, {
+          "name" : "dataFormat",
+          "value" : "JSON"
+        }, {
+          "name" : "dataFormatConfig.compression",
+          "value" : "NONE"
+        }, {
+          "name" : "dataFormatConfig.filePatternInArchive",
+          "value" : "*"
+        }, {
+          "name" : "dataFormatConfig.charset",
+          "value" : "UTF-8"
+        }, {
+          "name" : "dataFormatConfig.removeCtrlChars",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.textMaxLineLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.useCustomDelimiter",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.customDelimiter",
+          "value" : "\\r\\n"
+        }, {
+          "name" : "dataFormatConfig.includeCustomDelimiterInTheText",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.jsonContent",
+          "value" : "MULTIPLE_OBJECTS"
+        }, {
+          "name" : "dataFormatConfig.jsonMaxObjectLen",
+          "value" : 4096
+        }, {
+          "name" : "dataFormatConfig.csvHeader",
+          "value" : "NO_HEADER"
+        }, {
+          "name" : "dataFormatConfig.csvFileFormat",
+          "value" : "CSV"
+        }, {
+          "name" : "dataFormatConfig.csvCustomDelimiter",
+          "value" : "|"
+        }, {
+          "name" : "dataFormatConfig.multiCharacterFieldDelimiter",
+          "value" : "||"
+        }, {
+          "name" : "dataFormatConfig.multiCharacterLineDelimiter",
+          "value" : "${str:unescapeJava('\\\\n')}"
+        }, {
+          "name" : "dataFormatConfig.csvCustomEscape",
+          "value" : "\\"
+        }, {
+          "name" : "dataFormatConfig.csvCustomQuote",
+          "value" : "\""
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityFieldSeparator",
+          "value" : ","
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityEscape",
+          "value" : "\\"
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityQuote",
+          "value" : "\""
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityLineSeparator",
+          "value" : "${str:unescapeJava('\\\\n')}"
+        }, {
+          "name" : "dataFormatConfig.csvParser",
+          "value" : "LEGACY_PARSER"
+        }, {
+          "name" : "dataFormatConfig.csvAllowExtraColumns",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvExtraColumnPrefix",
+          "value" : "_extra_"
+        }, {
+          "name" : "dataFormatConfig.csvMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityMaxColumns",
+          "value" : 1000
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityMaxCharsPerColumn",
+          "value" : 1000
+        }, {
+          "name" : "dataFormatConfig.csvUnivocitySkipEmptyLines",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityAllowComments",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvUnivocityCommentMarker",
+          "value" : "#"
+        }, {
+          "name" : "dataFormatConfig.csvEnableComments",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvCommentMarker",
+          "value" : "#"
+        }, {
+          "name" : "dataFormatConfig.csvIgnoreEmptyLines",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvRecordType",
+          "value" : "LIST_MAP"
+        }, {
+          "name" : "dataFormatConfig.csvSkipStartLines",
+          "value" : 0
+        }, {
+          "name" : "dataFormatConfig.parseNull",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.nullConstant",
+          "value" : "\\\\N"
+        }, {
+          "name" : "dataFormatConfig.xmlRecordElement",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.preserveRootElement",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.includeFieldXpathAttributes",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.xPathNamespaceContext",
+          "value" : [ ]
+        }, {
+          "name" : "dataFormatConfig.outputFieldAttributes",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.xmlMaxObjectLen",
+          "value" : 4096
+        }, {
+          "name" : "dataFormatConfig.logMode",
+          "value" : "COMMON_LOG_FORMAT"
+        }, {
+          "name" : "dataFormatConfig.logMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.retainOriginalLine",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.customLogFormat",
+          "value" : "%h %l %u %t \"%r\" %>s %b"
+        }, {
+          "name" : "dataFormatConfig.regex",
+          "value" : "^(\\S+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(\\S+) (\\S+) (\\S+)\" (\\d{3}) (\\d+)"
+        }, {
+          "name" : "dataFormatConfig.fieldPathsToGroupName",
+          "value" : [ {
+            "fieldPath" : "/",
+            "group" : 1
+          } ]
+        }, {
+          "name" : "dataFormatConfig.grokPatternDefinition",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.grokPattern",
+          "value" : "%{COMMONAPACHELOG}"
+        }, {
+          "name" : "dataFormatConfig.onParseError",
+          "value" : "ERROR"
+        }, {
+          "name" : "dataFormatConfig.maxStackTraceLines",
+          "value" : 50
+        }, {
+          "name" : "dataFormatConfig.enableLog4jCustomLogFormat",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.log4jCustomLogFormat",
+          "value" : "%r [%t] %-5p %c %x - %m%n"
+        }, {
+          "name" : "dataFormatConfig.avroSchemaSource",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.avroSchema",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaRegistryUrls",
+          "value" : [ ]
+        }, {
+          "name" : "dataFormatConfig.basicAuth",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaLookupMode",
+          "value" : "SUBJECT"
+        }, {
+          "name" : "dataFormatConfig.subject",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaId",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.avroSkipUnionIndex",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.protoDescriptorFile",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.messageType",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.isDelimited",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.binaryMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.datagramMode",
+          "value" : "SYSLOG"
+        }, {
+          "name" : "dataFormatConfig.typesDbPath",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.convertTime",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excludeInterval",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.authFilePath",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.netflowOutputValuesMode",
+          "value" : "RAW_AND_INTERPRETED"
+        }, {
+          "name" : "dataFormatConfig.maxTemplateCacheSize",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.templateCacheTimeoutMs",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.netflowOutputValuesModeDatagram",
+          "value" : "RAW_AND_INTERPRETED"
+        }, {
+          "name" : "dataFormatConfig.maxTemplateCacheSizeDatagram",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.templateCacheTimeoutMsDatagram",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.wholeFileMaxObjectLen",
+          "value" : 8192
+        }, {
+          "name" : "dataFormatConfig.rateLimit",
+          "value" : "-1"
+        }, {
+          "name" : "dataFormatConfig.verifyChecksum",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelHeader",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.excelSkipCellsWithNoHeader",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelReadAllSheets",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelSheetNames",
+          "value" : [ ]
+        } ]
+      } ]
+    },
+    "valid" : true,
+    "issues" : {
+      "pipelineIssues" : [ ],
+      "stageIssues" : { },
+      "issueCount" : 0
+    },
+    "previewable" : true
+  },
+  "pipelineRules" : {
+    "schemaVersion" : 3,
+    "version" : 2,
+    "metricsRuleDefinitions" : [ {
+      "id" : "badRecordsAlertID",
+      "alertText" : "High incidence of Error Records",
+      "metricId" : "pipeline.batchErrorRecords.counter",
+      "metricType" : "COUNTER",
+      "metricElement" : "COUNTER_COUNT",
+      "condition" : "${value() > 100}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1650814062810,
+      "valid" : true
+    }, {
+      "id" : "stageErrorAlertID",
+      "alertText" : "High incidence of Stage Errors",
+      "metricId" : "pipeline.batchErrorMessages.counter",
+      "metricType" : "COUNTER",
+      "metricElement" : "COUNTER_COUNT",
+      "condition" : "${value() > 100}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1650814062810,
+      "valid" : true
+    }, {
+      "id" : "idleGaugeID",
+      "alertText" : "Pipeline is Idle",
+      "metricId" : "RuntimeStatsGauge.gauge",
+      "metricType" : "GAUGE",
+      "metricElement" : "TIME_OF_LAST_RECEIVED_RECORD",
+      "condition" : "${time:now() - value() > 120000}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1650814062810,
+      "valid" : true
+    }, {
+      "id" : "batchTimeAlertID",
+      "alertText" : "Batch taking more time to process",
+      "metricId" : "RuntimeStatsGauge.gauge",
+      "metricType" : "GAUGE",
+      "metricElement" : "CURRENT_BATCH_AGE",
+      "condition" : "${value() > 200}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1650814062810,
+      "valid" : true
+    } ],
+    "dataRuleDefinitions" : [ {
+      "id" : "dataRule1650897582951",
+      "label" : "TET",
+      "lane" : "DevSimulator_01OutputLane1650814065413",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "1=1",
+      "alertEnabled" : true,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : true,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1651519185009",
+      "label" : "test",
+      "lane" : "DataParser_01OutputLane16508991187390",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "1=1",
+      "alertEnabled" : true,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1653855337435",
+      "label" : "test2",
+      "lane" : "GroovyEvaluator_01OutputLane16538553133140",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 1000,
+      "condition" : "true",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1654018597247",
+      "label" : "test3",
+      "lane" : "HTTPClient_01OutputLane16540181972940",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 100,
+      "condition" : "true",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1654019212627",
+      "label" : "tes",
+      "lane" : "DevSimulator_01OutputLane1650898194431",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 100,
+      "condition" : "true",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1654631892697",
+      "label" : "test5",
+      "lane" : "StreamSelector_01OutputLane1654023154954",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 1000,
+      "condition" : "true",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1654632200213",
+      "label" : "test6",
+      "lane" : "FieldFlattener_01OutputLane16546320787360",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 1000,
+      "condition" : "true",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : true,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1655279941036",
+      "label" : "test7",
+      "lane" : "FieldFlattener_01OutputLane16552796446090",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 1000,
+      "condition" : "true",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1655280176507",
+      "label" : "test8",
+      "lane" : "ExpressionEvaluator_01OutputLane16552800939430",
+      "samplingPercentage" : 100.0,
+      "samplingRecordsToRetain" : 1000,
+      "condition" : "true",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : true,
+      "timestamp" : 0,
+      "valid" : true
+    } ],
+    "driftRuleDefinitions" : [ ],
+    "uuid" : "9c63824f-7b46-4072-8e6f-5f08a96b469f",
+    "configuration" : [ {
+      "name" : "emailIDs",
+      "value" : [ ]
+    }, {
+      "name" : "webhookConfigs",
+      "value" : [ ]
+    } ],
+    "ruleIssues" : null,
+    "configIssues" : null
+  },
+  "libraryDefinitions" : null
+}

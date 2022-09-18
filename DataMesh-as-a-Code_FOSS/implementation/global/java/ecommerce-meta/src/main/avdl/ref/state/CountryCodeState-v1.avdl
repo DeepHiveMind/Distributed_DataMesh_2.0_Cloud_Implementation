@@ -1,0 +1,9 @@
+@namespace("com.trivadis.ecommerce.ref.avro")
+protocol CountryCodeStateProtocol {
+	import idl "../Country.avdl";
+
+	record CountryCodeState {
+		Country country;
+		timestamp_ms when;
+	}
+}

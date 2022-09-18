@@ -1,0 +1,13 @@
+@namespace("com.trivadis.ecommerce.shop.avro")
+protocol ShopSearchPerformedEventProtocol {
+	import idl "../../base/DomainEventBaseTypes.avdl";
+	import idl "../Page.avdl";
+
+	record ShopSearchPerformedEvent {
+		com.trivadis.ecommerce.domainevent.avro.DomainEventIdentity identity;
+
+		string uniqueVisitorId;
+		timestamp_ms requestTimestamp;
+		string searchTerm;
+	}
+}

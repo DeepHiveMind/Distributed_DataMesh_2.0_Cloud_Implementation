@@ -1,0 +1,46 @@
+@namespace("com.trivadis.ecommerce.salesorder.command.avro")
+protocol CreateOrderCommandProtocol {
+
+	record CreditCard {
+		long id;
+		string cardType;
+		string cardNumber;
+		int expMonth;
+		int expYear;
+		string creditCardApprovalCode;
+	}
+
+	record SalesOrderDetail {
+		long id;
+		int quantity;
+		long productId;
+		union {null, long} specialOfferId;
+		double unitPrice;
+		int unitPriceDiscount;
+	}
+
+	record CreateOrderCommand {
+		long id;
+		long shipMethodId;
+		int revisionNumber;
+		boolean onlineChannel;
+		union {null, string} purchaseOrderNumber;
+		string accountNumber;
+		long customerId;
+		union {null, long} salesPersonId;
+		long territoryId;
+		long billToAddressId;
+		long shipToAddressId;
+		union {null, long} currencyRateId;
+		union {null, string} currencyCode;
+		double subTotal;
+		double taxAmount;
+		double freight;
+		double totalDue;
+		union {null, string} comment;
+
+		array<SalesOrderDetail> salesOrderDetails;
+		union {null, CreditCard} creditCard = null;
+
+	}
+}

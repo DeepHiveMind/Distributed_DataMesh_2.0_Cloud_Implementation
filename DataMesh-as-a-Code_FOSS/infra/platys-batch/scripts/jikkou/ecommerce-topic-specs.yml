@@ -1,0 +1,59 @@
+version: 1
+specs:
+  topics:
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.shop.shop-visited.state.v1'
+    partitions: 8
+    replication_factor: 3
+    configs:
+      cleanup.policy: compact
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.shop.shop-user.state.v1'
+    partitions: 8
+    replication_factor: 3
+    configs:
+      cleanup.policy: compact
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.shop.search-performed.event.v1'
+    partitions: 8
+    replication_factor: 3
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.shop.user-logged-in.event.v1'
+    partitions: 8
+    replication_factor: 3
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.shop.page-navigated.event.v1'
+    partitions: 8
+    replication_factor: 3    
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.shop.cart-action-occurred.event.v1'
+    partitions: 8
+    replication_factor: 3        
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.shop.product-order-issued.event.v1'
+    partitions: 8
+    replication_factor: 3    
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.orderproc.order-confirmed.event.v11'
+    partitions: 8
+    replication_factor: 3
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.orderproc.order-cancelled.event.v1'
+    partitions: 8
+    replication_factor: 3
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.orderproc.order-completed.event.v1'
+    partitions: 8
+    replication_factor: 3            
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.product.product.state.v1'
+    partitions: 1
+    replication_factor: 3
+    configs:
+      cleanup.policy: compact
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.product.product.state.v2'
+    partitions: 1
+    replication_factor: 3
+    configs:
+      cleanup.policy: compact
+      segment.ms: 100
+      delete.retention.ms: 100
+      min.cleanable.dirty.ratio: 0.001
+            
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.customer.customer.state.v1'
+    partitions: 8
+    replication_factor: 3
+    configs:
+      cleanup.policy: compact
+  - name: '{{ labels.topic.prefix | default('') }}public.ecommerce.customer.address-changed.event.v1'
+    partitions: 8
+    replication_factor: 3    

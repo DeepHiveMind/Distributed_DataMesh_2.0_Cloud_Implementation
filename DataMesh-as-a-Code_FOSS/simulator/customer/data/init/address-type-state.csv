@@ -1,0 +1,7 @@
+descriminator,delay_from_start_ms,addresstypeid,name
+AddressType,0,1,Billing
+AddressType,0,2,Home
+AddressType,0,3,Main Office
+AddressType,0,4,Primary
+AddressType,0,5,Shipping
+AddressType,0,6,Archive

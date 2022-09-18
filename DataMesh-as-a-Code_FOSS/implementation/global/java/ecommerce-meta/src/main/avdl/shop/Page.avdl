@@ -1,0 +1,12 @@
+@namespace("com.trivadis.ecommerce.shop.avro")
+protocol PageProtocol {
+	import idl "Product.avdl";
+
+	record Page {
+		string id;
+		string name;
+		union { string, null } skz;
+		string url;
+		Product product;
+	}
+}

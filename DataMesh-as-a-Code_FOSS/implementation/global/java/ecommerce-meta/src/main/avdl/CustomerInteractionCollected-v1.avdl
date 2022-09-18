@@ -1,0 +1,12 @@
+@namespace("com.trivadis.customerint.avro")
+protocol CustomerInteractionCollectedProtocol {
+	record CustomerInteractionCollected {
+		long customerId;
+		long productId;
+		string reaction;
+		string reactionTimestamp;
+	}
+}
+
+
+

@@ -1,0 +1,9 @@
+@namespace("com.trivadis.ecommerce.shop.avro")
+protocol ProductProtocol {
+
+	record Product {
+		string partNumber;
+ 		string name;
+		double price;
+	}
+}

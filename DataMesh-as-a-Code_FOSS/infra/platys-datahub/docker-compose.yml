@@ -1,0 +1,510 @@
+# =======================================================================
+# Platform Name            datamesh-gov-platform
+# Platform Stack:          trivadis/platys-modern-data-platform
+# Platform Stack Version:  1.14.0-preview
+# =======================================================================
+version: '3.5'
+networks:
+  default:
+    name: datamesh-gov-platform
+# enforce some dependencies
+# enforce some dependencies
+# backward compatiblity to platform < 1.14.0
+# Enable PostgreSQL or MySQL for MLflow server
+services:
+  #  ================================== Zookeeper ========================================== #
+  zookeeper-1:
+    image: confluentinc/cp-zookeeper:7.0.1
+    container_name: zookeeper-1
+    hostname: zookeeper-1
+    labels:
+      com.platys.name: zookeeper
+    ports:
+      - 2181:2181
+    environment:
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_INIT_LIMIT: 5
+      ZOOKEEPER_SYNC_LIMIT: 2
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+#  ================================== Kafka ========================================== #
+  kafka-1:
+    image: confluentinc/cp-kafka:7.0.1
+    container_name: kafka-1
+    hostname: kafka-1
+    labels:
+      com.platys.name: kafka
+    depends_on:
+      - zookeeper-1
+    ports:
+      - 9092:9092
+      - 19092:19092
+      - 29092:29092
+      - 39092:39092
+      - 9992:9992
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_BROKER_RACK: rack1
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_INTERNAL
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_INTERNAL:PLAINTEXT,LISTENER_LOCAL:PLAINTEXT,LISTENER_DOCKERHOST:PLAINTEXT,LISTENER_EXTERNAL:PLAINTEXT
+      KAFKA_LISTENERS: LISTENER_INTERNAL://kafka-1:19092,LISTENER_LOCAL://kafka-1:39092,LISTENER_DOCKERHOST://kafka-1:29092,LISTENER_EXTERNAL://kafka-1:9092
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_INTERNAL://kafka-1:19092,LISTENER_LOCAL://localhost:39092,LISTENER_DOCKERHOST://${DOCKER_HOST_IP:-127.0.0.1}:29092,LISTENER_EXTERNAL://${PUBLIC_IP:-127.0.0.1}:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      KAFKA_MESSAGE_TIMESTAMP_TYPE: CreateTime
+      KAFKA_MIN_INSYNC_REPLICAS: 1
+      KAFKA_DELETE_TOPIC_ENABLE: 'True'
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'True'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 100
+      KAFKA_JMX_PORT: 9992
+      KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.rmi.port=9992
+      KAFKA_JMX_HOSTNAME: ${PUBLIC_IP:-127.0.0.1}
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  kafka-2:
+    image: confluentinc/cp-kafka:7.0.1
+    container_name: kafka-2
+    hostname: kafka-2
+    labels:
+      com.platys.name: kafka
+    depends_on:
+      - zookeeper-1
+    ports:
+      - 9093:9093
+      - 19093:19093
+      - 29093:29093
+      - 39093:39093
+      - 9993:9993
+    environment:
+      KAFKA_BROKER_ID: 2
+      KAFKA_BROKER_RACK: rack1
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_INTERNAL
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_INTERNAL:PLAINTEXT,LISTENER_LOCAL:PLAINTEXT,LISTENER_DOCKERHOST:PLAINTEXT,LISTENER_EXTERNAL:PLAINTEXT
+      KAFKA_LISTENERS: LISTENER_INTERNAL://kafka-2:19093,LISTENER_LOCAL://kafka-2:39093,LISTENER_DOCKERHOST://kafka-2:29093,LISTENER_EXTERNAL://kafka-2:9093
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_INTERNAL://kafka-2:19093,LISTENER_LOCAL://localhost:39093,LISTENER_DOCKERHOST://${DOCKER_HOST_IP:-127.0.0.1}:29093,LISTENER_EXTERNAL://${PUBLIC_IP:-127.0.0.1}:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      KAFKA_MESSAGE_TIMESTAMP_TYPE: CreateTime
+      KAFKA_MIN_INSYNC_REPLICAS: 1
+      KAFKA_DELETE_TOPIC_ENABLE: 'True'
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'True'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 100
+      KAFKA_JMX_PORT: 9993
+      KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.rmi.port=9993
+      KAFKA_JMX_HOSTNAME: ${PUBLIC_IP:-127.0.0.1}
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  kafka-3:
+    image: confluentinc/cp-kafka:7.0.1
+    container_name: kafka-3
+    hostname: kafka-3
+    labels:
+      com.platys.name: kafka
+    depends_on:
+      - zookeeper-1
+    ports:
+      - 9094:9094
+      - 19094:19094
+      - 29094:29094
+      - 39094:39094
+      - 9994:9994
+    environment:
+      KAFKA_BROKER_ID: 3
+      KAFKA_BROKER_RACK: rack1
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_INTERNAL
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_INTERNAL:PLAINTEXT,LISTENER_LOCAL:PLAINTEXT,LISTENER_DOCKERHOST:PLAINTEXT,LISTENER_EXTERNAL:PLAINTEXT
+      KAFKA_LISTENERS: LISTENER_INTERNAL://kafka-3:19094,LISTENER_LOCAL://kafka-3:39094,LISTENER_DOCKERHOST://kafka-3:29094,LISTENER_EXTERNAL://kafka-3:9094
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_INTERNAL://kafka-3:19094,LISTENER_LOCAL://localhost:39094,LISTENER_DOCKERHOST://${DOCKER_HOST_IP:-127.0.0.1}:29094,LISTENER_EXTERNAL://${PUBLIC_IP:-127.0.0.1}:9094
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      KAFKA_MESSAGE_TIMESTAMP_TYPE: CreateTime
+      KAFKA_MIN_INSYNC_REPLICAS: 1
+      KAFKA_DELETE_TOPIC_ENABLE: 'True'
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'True'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 100
+      KAFKA_JMX_PORT: 9994
+      KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.rmi.port=9994
+      KAFKA_JMX_HOSTNAME: ${PUBLIC_IP:-127.0.0.1}
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  #  ================================== Confluent Schema Registry ========================================== #
+  schema-registry-1:
+    image: confluentinc/cp-schema-registry:7.0.1
+    hostname: schema-registry-1
+    container_name: schema-registry-1
+    labels:
+      com.platys.name: schema-registry
+      com.platys.restapi.title: Schema Registry REST API
+      com.platys.restapi.url: http://${PUBLIC_IP}:8081
+    ports:
+      - 8081:8081
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry-1
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: kafka-1:19092,kafka-2:19093,kafka-3:19094
+      SCHEMA_REGISTRY_KAFKASTORE_SECURITY_PROTOCOL: PLAINTEXT
+      SCHEMA_REGISTRY_GROUP_ID: schema-registry
+      SCHEMA_REGISTRY_LEADER_ELIGIBILITY: 'True'
+      SCHEMA_REGISTRY_MODE_MUTABILITY: 'True'
+      SCHEMA_REGISTRY_SCHEMA_COMPATIBILITY_LEVEL: backward
+      SCHEMA_REGISTRY_KAFKASTORE_TOPIC_REPLICATION_FACTOR: 1
+      SCHEMA_REGISTRY_ACCESS_CONTROL_ALLOW_ORIGIN: '*'
+      SCHEMA_REGISTRY_ACCESS_CONTROL_ALLOW_METHODS: GET,POST,PUT,OPTIONS
+      SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: info
+      SCHEMA_REGISTRY_DEBUG: 'False'
+    volumes:
+      - ./data-transfer:/data-transfer
+      - ./plugins/opentelemetry/agents:/tmp
+    restart: unless-stopped
+  #  ================================== Apache Kafka HQ (AKHQ) ========================================== #
+  akhq:
+    image: tchiotludo/akhq:latest
+    container_name: akhq
+    hostname: akhq
+    labels:
+      com.platys.name: akhq
+      com.platys.webui.title: Apache Kafka AQ UI
+      com.platys.webui.url: http://${PUBLIC_IP}:28107
+    ports:
+      - 28107:8080
+    environment:
+      AKHQ_CONFIGURATION: |
+        akhq:
+          connections:
+            docker-kafka-server:
+              properties:
+                bootstrap.servers: 'kafka-1:19092,kafka-2:19093,kafka-3:19094'
+              schema-registry:
+                url: "http://${PUBLIC_IP}:8081"
+                type: "confluent"
+    depends_on:
+      - kafka-1
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  #  ================================== Datahub ========================================== #
+  datahub-gms:
+    image: linkedin/datahub-gms:v0.8.25
+    hostname: datahub-gms
+    container_name: datahub-gms
+    depends_on:
+      - datahub-elasticsearch
+      - datahub-mysql
+      - datahub-neo4j
+      - kafka-1
+      - schema-registry-1
+    labels:
+      com.platys.name: datahub
+      com.platys.restapi.title: DataHub GMS API
+      com.platys.restapi.url: http://${PUBLIC_IP}:28142
+    ports:
+      - 28142:8080
+    environment:
+      - DATASET_ENABLE_SCSI=false
+      - EBEAN_DATASOURCE_USERNAME=datahub
+      - EBEAN_DATASOURCE_PASSWORD=datahub
+      - EBEAN_DATASOURCE_HOST=datahub-mysql:3306
+      - EBEAN_DATASOURCE_URL=jdbc:mysql://datahub-mysql:3306/datahub?verifyServerCertificate=false&useSSL=true&useUnicode=yes&characterEncoding=UTF-8&enabledTLSProtocols=TLSv1.2
+      - EBEAN_DATASOURCE_DRIVER=com.mysql.jdbc.Driver
+      - KAFKA_BOOTSTRAP_SERVER=kafka-1:19092
+      - KAFKA_SCHEMAREGISTRY_URL=http://schema-registry-1:8081
+      - ELASTICSEARCH_HOST=datahub-elasticsearch
+      - ELASTICSEARCH_PORT=9200
+      - JAVA_OPTS=-Xms1g -Xmx1g
+      - GRAPH_SERVICE_IMPL=neo4j
+      - ENTITY_REGISTRY_CONFIG_PATH=/datahub/datahub-gms/resources/entity-registry.yml
+      - METADATA_AUDIT_EVENT_NAME=MetadataAuditEvent_v4
+      - METADATA_CHANGE_EVENT_NAME=MetadataChangeEvent_v4
+      - FAILED_METADATA_CHANGE_EVENT_NAME=FailedMetadataChangeEvent_v4
+      - AUTH_POLICIES_ENABLED=false
+      - NEO4J_HOST=http://datahub-neo4j:7474
+      - NEO4J_URI=bolt://${PUBLIC_IP}:17688
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PASSWORD=abc123!
+      - MAE_CONSUMER_ENABLED=true
+      - MCE_CONSUMER_ENABLED=true
+      - DATAHUB_ANALYTICS_ENABLED=false
+      - ANALYTICS_ENABLED=false
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  datahub-frontend-react:
+    image: linkedin/datahub-frontend-react:v0.8.25
+    hostname: datahub-frontend-react
+    container_name: datahub-frontend-react
+    labels:
+      com.platys.name: datahub
+      com.platys.webui.title: DataHub UI
+      com.platys.webui.url: http://${PUBLIC_IP}:28144
+    depends_on:
+      - datahub-gms
+    ports:
+      - 28144:9002
+    environment:
+      - DATAHUB_GMS_HOST=datahub-gms
+      - DATAHUB_GMS_PORT=8080
+      - DATAHUB_SECRET=abc123!
+      - DATAHUB_APP_VERSION=1.0
+      - DATAHUB_PLAY_MEM_BUFFER_SIZE=10MB
+      - JAVA_OPTS=-Xms512m -Xmx512m -Dhttp.port=9002 -Dconfig.file=datahub-frontend/conf/application.conf -Djava.security.auth.login.config=datahub-frontend/conf/jaas.conf -Dlogback.configurationFile=datahub-frontend/conf/logback.xml -Dlogback.debug=false -Dpidfile.path=/dev/null
+      - KAFKA_BOOTSTRAP_SERVER=kafka-1:19092
+      - DATAHUB_TRACKING_TOPIC=DataHubUsageEvent_v1
+      - ELASTIC_CLIENT_HOST=datahub-elasticsearch
+      - ELASTIC_CLIENT_PORT=9200
+      - METADATA_SERVICE_AUTH_ENABLED=false
+      - DATAHUB_ANALYTICS_ENABLED=false
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  datahub-actions:
+    image: public.ecr.aws/datahub/acryl-datahub-actions:head
+    hostname: datahub-actions
+    container_name: datahub-actions
+    labels:
+      com.platys.name: datahub
+    environment:
+      - GMS_HOST=datahub-gms
+      - GMS_PORT=8080
+      - KAFKA_BOOTSTRAP_SERVER=kafka-1:19092
+      - SCHEMA_REGISTRY_URL=http://schema-registry-1:8081
+      - METADATA_AUDIT_EVENT_NAME=MetadataAuditEvent_v4
+      - METADATA_CHANGE_LOG_VERSIONED_TOPIC_NAME=MetadataChangeLog_Versioned_v1
+      - DATAHUB_SYSTEM_CLIENT_ID=__datahub_system
+      - DATAHUB_SYSTEM_CLIENT_SECRET=JohnSnowKnowsNothing
+      - KAFKA_PROPERTIES_SECURITY_PROTOCOL=PLAINTEXT
+    volumes:
+      - ./data-transfer:/data-transfer:ro
+    restart: unless-stopped
+  datahub-mysql:
+    image: mysql:5.7
+    hostname: datahub-mysql
+    container_name: datahub-mysql
+    labels:
+      com.platys.name: mysql
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_DATABASE=datahub
+      - MYSQL_USER=datahub
+      - MYSQL_PASSWORD=datahub
+      - MYSQL_ROOT_PASSWORD=datahub
+    volumes:
+      - ./data-transfer:/data-transfer
+      - ./init/datahub/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
+    restart: unless-stopped
+  datahub-neo4j:
+    image: neo4j:4.0.6
+    hostname: datahub-neo4j
+    container_name: datahub-neo4j
+    labels:
+      com.platys.name: neo4j
+      com.platys.webui.title: DataHub Neo4J UI
+      com.platys.webui.url: http://${PUBLIC_IP}:17475
+    ports:
+      - 17475:7474
+      - 17688:7687
+    environment:
+      - NEO4J_AUTH=neo4j/abc123!
+      - NEO4J_dbms_default__database=graph.db
+      - NEO4J_dbms_allow__upgrade=true
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  datahub-elasticsearch:
+    image: elasticsearch:7.9.3
+    container_name: datahub-elasticsearch
+    hostname: datahub-elasticsearch
+    labels:
+      com.platys.name: elasticsearch
+      com.platys.restapi.title: DataHub ElasticSearch REST API
+      com.platys.restapi.url: http://${PUBLIC_IP}:19202
+    ports:
+      - 19202:9200
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms256m -Xmx256m -Dlog4j2.formatMsgNoLookups=true
+    healthcheck:
+      retries: 4
+      start_period: 2m
+      test:
+        - CMD-SHELL
+        - curl -sS --fail 'http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=0s' || exit 1
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  datahub-kibana:
+    image: kibana:7.9.3
+    container_name: datahub-kibana
+    hostname: datahub-kibana
+    labels:
+      com.platys.name: datahub
+      com.platys.webui.title: DataHub Kibana UI
+      com.platys.webui.url: http://${PUBLIC_IP}:5602
+    ports:
+      - 5602:5601
+    environment:
+      - SERVER_HOST=0.0.0.0
+      - ELASTICSEARCH_HOSTS="http://datahub-elasticsearch:9200"
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  # This "container" is a workaround to pre-create search indices
+  datahub-mysql-setup:
+    image: acryldata/datahub-mysql-setup:head
+    hostname: datahub-mysql-setup
+    container_name: datahub-mysql-setup
+    labels:
+      com.platys.name: datahub
+    depends_on:
+      - datahub-mysql
+    environment:
+      - MYSQL_HOST=datahub-mysql
+      - MYSQL_PORT=3306
+      - MYSQL_USERNAME=datahub
+      - MYSQL_PASSWORD=datahub
+      - DATAHUB_DB_NAME=datahub
+    volumes:
+      - ./data-transfer:/data-transfer
+  # This "container" is a workaround to pre-create search indices
+  datahub-elasticsearch-setup:
+    image: linkedin/datahub-elasticsearch-setup:v0.8.25
+    hostname: datahub-elasticsearch-setup
+    container_name: datahub-elasticsearch-setup
+    labels:
+      com.platys.name: datahub
+    depends_on:
+      - datahub-elasticsearch
+    environment:
+      - ELASTICSEARCH_HOST=datahub-elasticsearch
+      - ELASTICSEARCH_PORT=9200
+      - ELASTICSEARCH_PROTOCOL=http
+      - DATAHUB_ANALYTICS_ENABLED=False
+    volumes:
+      - ./data-transfer:/data-transfer
+  # This "container" is a workaround to pre-create topics
+  kafka-setup:
+    image: linkedin/datahub-kafka-setup:v0.8.25
+    hostname: kafka-setup
+    container_name: kafka-setup
+    labels:
+      com.platys.name: datahub
+    depends_on:
+      - kafka-1
+      - schema-registry-1
+    environment:
+      # The following settings are listed here only to satisfy the image's requirements.
+      # We override the image's `command` anyways, hence this container will not start a broker.
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper-1:2181
+      - KAFKA_BOOTSTRAP_SERVER=kafka-1:19092
+      - DATAHUB_ANALYTICS_ENABLED=False
+    volumes:
+      - ./data-transfer:/data-transfer
+  datahub-cli:
+    image: linkedin/datahub-ingestion:v0.8.25
+    hostname: datahub-cli
+    container_name: datahub-cli
+    labels:
+      com.platys.name: datahub
+    entrypoint: tail -f /dev/null
+    tty: true
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  #  ================================== Adminer ========================================== #
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    hostname: adminer
+    labels:
+      com.platys.name: adminer
+      com.platys.webui.title: Adminer UI
+      com.platys.webui.url: http://${PUBLIC_IP}:28131
+    ports:
+      - 28131:8080
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  #  ================================== Wetty ========================================== #
+  wetty:
+    image: svenihoney/wetty:latest
+    container_name: wetty
+    hostname: wetty
+    labels:
+      com.platys.name: wetty
+      com.platys.webui.title: WeTTY UI
+      com.platys.webui.url: http://${PUBLIC_IP}:3001
+    ports:
+      - 3001:3000
+    environment:
+      - REMOTE_SSH_SERVER=${DOCKER_HOST_IP}
+      - REMOTE_SSH_PORT=22
+      - REMOTE_SSH_USER=
+      - WETTY_PORT=3000
+    volumes:
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  #  ================================== markdown-viewer ========================================== #
+  markdown-viewer:
+    image: trivadis/markdown-web:latest
+    container_name: markdown-viewer
+    hostname: markdown-viewer
+    labels:
+      com.platys.name: markdown-viewer
+      com.platys.webui.title: Markdown Viewer UI
+      com.platys.webui.url: http://${PUBLIC_IP}:80
+    ports:
+      - 80:80
+    volumes:
+      - ./artefacts:/home/python/markdown
+      - ./data-transfer:/data-transfer
+    restart: unless-stopped
+  markdown-renderer:
+    image: trivadis/jinja2-renderer:latest
+    container_name: markdown-renderer
+    hostname: markdown-renderer
+    labels:
+      com.platys.name: markdown-renderer
+    environment:
+      USE_PUBLIC_IP: 'True'
+      PUBLIC_IP: ${PUBLIC_IP}
+      DOCKER_HOST_IP: ${DOCKER_HOST_IP}
+      DATAPLATFORM_HOME: ${DATAPLATFORM_HOME}
+      PLATYS_PLATFORM_NAME: datamesh-gov-platform
+      PLATYS_PLATFORM_STACK: trivadis/platys-modern-data-platform
+      PLATYS_PLATFORM_STACK_VERSION: 1.14.0-preview
+      PLATYS_COPY_COOKBOOK_DATA: 'True'
+    volumes:
+      - ./artefacts/templates:/templates
+      - ./artefacts/templates:/scripts
+      - .:/variables
+      - ./artefacts:/output
+      - ./data-transfer:/data-transfer
+  #  ================================== markdown-viewer ========================================== #
+  log4brains:
+    image: trivadis/log4brains:latest
+    container_name: log4brains
+    hostname: log4brains
+    labels:
+      com.platys.name: log4brains
+      com.platys.webui.title: log4brains UI (ADR Viewer)
+      com.platys.webui.url: http://${PUBLIC_IP}:4004
+    ports:
+      - 4004:4004
+    volumes:
+      - ./adr:/opt/adr
+      - ./data-transfer:/data-transfer
+    command: [log4brains, preview]

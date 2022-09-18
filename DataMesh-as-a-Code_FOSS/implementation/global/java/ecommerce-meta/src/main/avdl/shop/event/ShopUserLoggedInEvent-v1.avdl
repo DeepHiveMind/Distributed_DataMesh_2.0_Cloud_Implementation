@@ -1,0 +1,12 @@
+@namespace("com.trivadis.ecommerce.shop.avro")
+protocol ShopUserLoggedInEventProtocol {
+	import idl "../../base/DomainEventBaseTypes.avdl";
+
+	record ShopUserLoggedInEvent {
+		com.trivadis.ecommerce.domainevent.avro.DomainEventIdentity identity;
+
+		string uniqueVisitorId;
+		timestamp_ms requestTimestamp;
+		long userId;
+	}
+}

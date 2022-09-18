@@ -1,0 +1,9 @@
+@namespace("com.trivadis.ecommerce.ref.avro")
+protocol CurrencyCodeStateProtocol {
+	import idl "../Currency.avdl";
+
+	record CurrencyCodeState {
+		Currency currency;
+		timestamp_ms when;
+	}
+}

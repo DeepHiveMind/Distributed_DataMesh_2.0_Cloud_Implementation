@@ -1,0 +1,263 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "#import packages\nimport pandas as pd\nimport mlxtend as mlx\n\nfrom mlxtend.frequent_patterns import apriori\nfrom mlxtend.frequent_patterns import association_rules",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:49:36+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Fail to execute line 3: import mlxtend as mlx\nTraceback (most recent call last):\n  File \"/tmp/1644584333980-0/zeppelin_python.py\", line 153, in <module>\n    exec(code, _zcUserQueryNameSpace)\n  File \"<stdin>\", line 3, in <module>\nModuleNotFoundError: No module named 'mlxtend'\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644584536575_462766034",
+      "id": "paragraph_1644584536575_462766034",
+      "dateCreated": "2022-02-11T13:02:16+0000",
+      "dateStarted": "2022-02-11T13:49:36+0000",
+      "dateFinished": "2022-02-11T13:49:36+0000",
+      "status": "ERROR",
+      "focus": true,
+      "$$hashKey": "object:4593"
+    },
+    {
+      "text": "#get order history for df_items in next code chunk    ",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:26:42+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644585970478_552306047",
+      "id": "paragraph_1644585970478_552306047",
+      "dateCreated": "2022-02-11T13:26:10+0000",
+      "status": "READY",
+      "$$hashKey": "object:4594"
+    },
+    {
+      "text": "#dummy data - test - delete later\r\n\r\ndata = {'OrderNo': [1, 2, 3,4], 'Items': ['xy', 'xx', 'yy', 'sdfds'], 'Quantity': [4,3,2,1]}  \r\n\r\n\r\n# Create DataFrame  \r\ndf = pd.DataFrame(data)  \r\nprint(df)\r\n\r\n\r\n#recommendation via association-rules\r\n\r\n#create item matrix \r\n#apriori() braucht df mit OrderNo (row) und Item (col), cell entries (True/False)\r\ndf_items = df.pivot_table(index='OrderNo', columns=['Items'], values='Quantity').fillna(False)\r\nprint(df_items)\r\n#df_items.where(df_items = 0, True)\r\n\r\ndf_items[df_items >0] = True\r\nprint(df_items)\r\n\r\n# calculate support for every item and combinations\r\nsupport_items = apriori(df_items, min_support = 0.06, use_colnames = True)\r\n\r\n# calculate support/confidence/lift between items/combinations of items, sort descending with lift\r\nrecommendations_ranked = association_rules(support_items, metric = \"lift\", min_threshold = 1)\r\nrecommendations_ranked = recommendations_ranked.sort_values('lift', ascending = False).reset_index(drop=True)\r\nrecommendations_ranked = recommendatioms_ranked[['antecedents','consequents','support','confidence','lift']]",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:57:50+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "   OrderNo  Items  Quantity\n0        1     xy         4\n1        2     xx         3\n2        3     yy         2\n3        4  sdfds         1\nItems    sdfds     xx     xy     yy\nOrderNo                            \n1        False  False    4.0  False\n2        False    3.0  False  False\n3        False  False  False    2.0\n4          1.0  False  False  False\nItems    sdfds     xx     xy     yy\nOrderNo                            \n1        False  False   True  False\n2        False   True  False  False\n3        False  False  False   True\n4         True  False  False  False\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to execute line 23: support_items = apriori(df_items, min_support = 0.06, use_colnames = True)\r\nTraceback (most recent call last):\n  File \"/tmp/1644584333980-0/zeppelin_python.py\", line 153, in <module>\n    exec(code, _zcUserQueryNameSpace)\n  File \"<stdin>\", line 23, in <module>\nNameError: name 'apriori' is not defined\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644586446317_1522483255",
+      "id": "paragraph_1644586446317_1522483255",
+      "dateCreated": "2022-02-11T13:34:06+0000",
+      "dateStarted": "2022-02-11T13:57:50+0000",
+      "dateFinished": "2022-02-11T13:57:50+0000",
+      "status": "ERROR",
+      "$$hashKey": "object:4595"
+    },
+    {
+      "text": "#recommendation via association-rules\n\n#create item matrix \n#apriori() braucht df mit OrderNo (row) und Item (col), cell entries (True/False)\ndf_items = df_baskets.pivot_table(index='OrderNo', columns=['items.product.partno'], values='items.quantity').fillna(False)\ndf_items.where(df_items == False, inplace = True)\n\n# calculate support for every item and combinations\nsupport_items = apriori(df_items, min_support = 0.06, use_colnames = True)\n\n# calculate support/confidence/lift between items/combinations of items, sort descending with lift\nrecommendations_ranked = association_rules(support_items, metric = \"lift\", min_threshold = 1)\nrecommendations_ranked = recommendations_ranked.sort_values('lift', ascending = False).reset_index(drop=True)\nrecommendations_ranked = recommendatioms_ranked[['antecedents','consequents','support','confidence','lift']]",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:47:13+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644585524499_1104445925",
+      "id": "paragraph_1644585524499_1104445925",
+      "dateCreated": "2022-02-11T13:18:44+0000",
+      "status": "READY",
+      "$$hashKey": "object:4596"
+    },
+    {
+      "text": "#* Code to consume data from eventhubs and push it to tipboard\r\n#***********************************************************\r\n\r\n\r\n\r\n#* Preparations\r\n#***********************************************************\r\n\r\nimport json\r\nimport requests\r\nimport ssl\r\nimport time\r\nimport json\r\n\t\r\n\r\n\t\r\n\r\n\r\n\r\n\r\nfrom confluent_kafka import avro\r\nfrom confluent_kafka.avro import AvroConsumer\r\nfrom confluent_kafka import Consumer, KafkaError\r\nfrom subprocess import check_output\r\nfrom confluent_kafka.avro.serializer import SerializerError\r\n\r\n\r\n\r\nfrom confluent_kafka import Producer\r\n#import socket\r\n\r\n\r\n\r\n\r\n#sasl_mechanism = 'PLAIN'\r\n#security_protocol = 'SASL_SSL'\r\n\r\n#* Preparations - define class (consumer)\r\n#***********************************************************\r\n\r\nclass StringKeyAvroConsumer(AvroConsumer):\r\n\r\n    def __init__(self, config):\r\n        super(StringKeyAvroConsumer, self).__init__(config)\r\n\r\n    def poll(self, timeout=None):\r\n        \"\"\"\r\n        This is an overriden method from AvroConsumer class. This handles message\r\n        deserialization using avro schema for the value only.\r\n\r\n        @:param timeout\r\n        @:return message object with deserialized key and value as dict objects\r\n        \"\"\"\r\n        if timeout is None:\r\n            timeout = -1\r\n        message = super(AvroConsumer, self).poll(timeout)\r\n        if message is None:\r\n            return None\r\n        if not message.value() and not message.key():\r\n            return message\r\n        if not message.error():\r\n            if message.value() is not None:\r\n                decoded_value = self._serializer.decode_message(message.value())\r\n                message.set_value(decoded_value)\r\n            # Don't try to decode the key\r\n        return message\r\n\r\n\r\n\r\n\r\n#* Main \r\n#***********************************************************\r\n\r\n#def main():\r\nc = StringKeyAvroConsumer({\r\n    'bootstrap.servers': 'kafka-1:19092',\r\n    'group.id': 'test3',   \r\n    #'sasl.username': '$ConnectionString',\r\n       #'sasl.password': 'Endpoint=sb://oym-datastore-dev-ehn01.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=OV6ELq+3OT5+PqQz0Sz9KqQCmpVJYkRukg9Wz+CFZPc=',\r\n       #'security.protocol': security_protocol,\r\n       #'sasl.mechanism': sasl_mechanism,\r\n    'schema.registry.url': 'http://18.184.160.165:8081',\r\n    'auto.offset.reset': 'latest',\r\n    #'api.version.request': 'True'\r\n})\r\n\r\n\r\n\r\n#subscribe to eventhubs\r\nc.subscribe(['public.ecommerce.shop.cart-action-occurred.event.v1'])\r\n\r\n\r\nconf = {'bootstrap.servers': \"kafka-1:19092\",\r\n        'client.id': 'recommendations-client'}\r\n\r\nproducer = Producer(conf)\r\n\r\n\r\nwhile True:\r\n#for msg in c:\r\n#    msg = c.poll(1.0)\r\n    msg = c.poll(10)\r\n    if msg is None:\r\n        continue\r\n    if msg.error():\r\n        if msg.error().code() == KafkaError._PARTITION_EOF:\r\n            continue\r\n        else:\r\n            print(msg.error())\r\n            break\r\n    print(msg.value())\r\n    print(msg.value()[\"cartAction\"])\r\n    print(msg.value()[\"partNumber\"])\r\n    \r\n    if msg.value()[\"cartAction\"] == \"ADD_ITEM\":\r\n        print(msg.value()[\"partNumber\"])\r\n        key = msg.value()[\"partNumber\"]\r\n\r\n        json_dummy = {\"PartnoXY\": key, \"Recommendation1\": \"Apples\", \"Recommendation2\": \"somethingelse\", \"timestamp\": time.time()}\r\n        print(json_dummy)\r\n        # Serializing json\r\n        json_object = json.dumps(json_dummy, indent = 4)\r\n        print(json_object)\r\n        producer.produce('recommendation-topic-test1', key=key, value=json_object)\r\n    \r\n\r\n    \r\n#    c.commit()\r\n\r\n\r\n   \r\n#if __name__ == '__main__':\r\n#    main()",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:32:10+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 294,
+              "optionOpen": false
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644584435255_724022590",
+      "id": "paragraph_1644498737300_387039471",
+      "dateCreated": "2022-02-11T13:00:35+0000",
+      "status": "READY",
+      "$$hashKey": "object:4597"
+    },
+    {
+      "text": "#Select top recommendations for current session\n\nWhile True:\n    \n    msg = c.poll(10)\n    if msg is None:\n        continue\n    if msg.error():\n        if msg.error().code() == KafkaError._PARTITION_EOF:\n            continue\n        else:\n            print(msg.error())\n            break\n    print(msg.value())\n    print(msg.value()[\"cartAction\"])\n    print(msg.value()[\"partNumber\"])\n\n    if msg.value()[\"cartAction\"] == \"ADD_ITEM\":\n        \n        print(msg.value()[\"partNumber\"])\n        key = msg.value()[\"partNumber\"]\n\n        recommendations = recommendations_ranked.loc[recommendations_ranked['antecedents'] == key]\n\n        json_dummy = {\"PartnoXY\": key, \"Recommendation1\": recommendations['consequents'].loc[0], \"Recommendation2\": recommendations['consequents'].loc[1], \"timestamp\": time.time()}\n        print(json_dummy)\n        \n        # Serializing json\n        json_object = json.dumps(json_dummy, indent = 4)\n        print(json_object)\n        producer.produce('recommendation-topic-test1', key=key, value=json_object)\n\n    ",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:35:52+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644584555426_1305835358",
+      "id": "paragraph_1644584555426_1305835358",
+      "dateCreated": "2022-02-11T13:02:35+0000",
+      "status": "READY",
+      "$$hashKey": "object:4598"
+    },
+    {
+      "text": "",
+      "user": "zeppelin",
+      "dateUpdated": "2022-02-11T13:00:35+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644584435256_1542830732",
+      "id": "paragraph_1644499379524_2016983745",
+      "dateCreated": "2022-02-11T13:00:35+0000",
+      "status": "READY",
+      "$$hashKey": "object:4599"
+    }
+  ],
+  "name": "DataMesh-2",
+  "id": "2GUVTXWXT",
+  "defaultInterpreterGroup": "python",
+  "version": "0.10.1-SNAPSHOT",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": true,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/DataMesh-2"
+}

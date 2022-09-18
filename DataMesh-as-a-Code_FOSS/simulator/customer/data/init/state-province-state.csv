@@ -1,0 +1,182 @@
+descriminator,delay_from_start_ms,stateprovinceid,stateprovincecode,countryregioncode,isonlystateprovinceflag,name,territoryid
+StateProvince,0,1,AB,CA,false,Alberta,6
+StateProvince,0,2,AK,US,false,Alaska,1
+StateProvince,0,3,AL,US,false,Alabama,5
+StateProvince,0,4,AR,US,false,Arkansas,3
+StateProvince,0,5,AS,AS,true,American Samoa,1
+StateProvince,0,6,AZ,US,false,Arizona,4
+StateProvince,0,7,BC,CA,false,British Columbia,6
+StateProvince,0,8,BY,DE,false,Bayern,8
+StateProvince,0,9,CA,US,false,California,4
+StateProvince,0,10,CO,US,false,Colorado,3
+StateProvince,0,11,CT,US,false,Connecticut,2
+StateProvince,0,12,DC,US,false,District of Columbia,2
+StateProvince,0,13,DE,US,false,Delaware,2
+StateProvince,0,14,ENG,GB,true,England,10
+StateProvince,0,15,FL,US,false,Florida,5
+StateProvince,0,16,FM,FM,true,Micronesia,9
+StateProvince,0,17,GA,US,false,Georgia,5
+StateProvince,0,18,GU,US,false,Guam,4
+StateProvince,0,19,HE,DE,false,Hessen,8
+StateProvince,0,20,HH,DE,false,Hamburg,8
+StateProvince,0,21,HI,US,false,Hawaii,1
+StateProvince,0,22,IA,US,false,Iowa,3
+StateProvince,0,23,ID,US,false,Idaho,1
+StateProvince,0,24,IL,US,false,Illinois,3
+StateProvince,0,25,IN,US,false,Indiana,2
+StateProvince,0,26,KS,US,false,Kansas,3
+StateProvince,0,27,KY,US,false,Kentucky,5
+StateProvince,0,28,LA,US,false,Louisiana,3
+StateProvince,0,29,LB,CA,false,Labrador,6
+StateProvince,0,30,MA,US,false,Massachusetts,2
+StateProvince,0,31,MB,CA,false,Manitoba,6
+StateProvince,0,32,MD,US,false,Maryland,2
+StateProvince,0,33,ME,US,false,Maine,2
+StateProvince,0,34,MH,MH,true,Marshall Islands,9
+StateProvince,0,35,MI,US,false,Michigan,3
+StateProvince,0,36,MN,US,false,Minnesota,3
+StateProvince,0,37,MO,US,false,Missouri,3
+StateProvince,0,38,MP,MP,true,Northern Mariana Islands,9
+StateProvince,0,39,MS,US,false,Mississippi,5
+StateProvince,0,40,MT,US,false,Montana,1
+StateProvince,0,41,NB,CA,false,Brunswick,6
+StateProvince,0,42,NC,US,false,North Carolina,5
+StateProvince,0,43,ND,US,false,North Dakota,3
+StateProvince,0,44,NE,US,false,Nebraska,3
+StateProvince,0,45,NF,CA,false,Newfoundland,6
+StateProvince,0,46,NH,US,false,New Hampshire,2
+StateProvince,0,47,NJ,US,false,New Jersey,2
+StateProvince,0,48,NM,US,false,New Mexico,4
+StateProvince,0,49,NS,CA,false,Nova Scotia,6
+StateProvince,0,50,NSW,AU,false,New South Wales,9
+StateProvince,0,51,NT,CA,false,Northwest Territories,6
+StateProvince,0,52,NV,US,false,Nevada,1
+StateProvince,0,53,NW,DE,false,Nordrhein-Westfalen,8
+StateProvince,0,54,NY,US,false,New York,2
+StateProvince,0,55,OH,US,false,Ohio,2
+StateProvince,0,56,OK,US,false,Oklahoma,3
+StateProvince,0,57,ON,CA,false,Ontario,6
+StateProvince,0,58,OR,US,false,Oregon,1
+StateProvince,0,59,PA,US,false,Pennsylvania,2
+StateProvince,0,60,PE,CA,false,Prince Edward Island,6
+StateProvince,0,61,PR,US,false,Puerto Rico,5
+StateProvince,0,62,PW,PW,true,Palau,9
+StateProvince,0,63,QC,CA,false,Quebec,6
+StateProvince,0,64,QLD,AU,false,Queensland,9
+StateProvince,0,65,RI,US,false,Rhode Island,2
+StateProvince,0,66,SA,AU,false,South Australia,9
+StateProvince,0,67,SC,US,false,South Carolina,5
+StateProvince,0,68,SD,US,false,South Dakota,3
+StateProvince,0,69,SK,CA,false,Saskatchewan,6
+StateProvince,0,70,SL,DE,false,Saarland,8
+StateProvince,0,71,TAS,AU,false,Tasmania,9
+StateProvince,0,72,TN,US,false,Tennessee,5
+StateProvince,0,73,TX,US,false,Texas,4
+StateProvince,0,74,UT,US,false,Utah,1
+StateProvince,0,75,VA,US,false,Virginia,5
+StateProvince,0,76,VI,VI,true,Virgin Islands,5
+StateProvince,0,77,VIC,AU,false,Victoria,9
+StateProvince,0,78,VT,US,false,Vermont,2
+StateProvince,0,79,WA,US,false,Washington,1
+StateProvince,0,80,WI,US,false,Wisconsin,3
+StateProvince,0,81,WV,US,false,West Virginia,5
+StateProvince,0,82,WY,US,false,Wyoming,1
+StateProvince,0,83,YT,CA,false,Yukon Territory,6
+StateProvince,0,84,FR,FR,true,France,7
+StateProvince,0,85,BB,DE,false,Brandenburg,8
+StateProvince,0,86,SN,DE,false,Saxony,8
+StateProvince,0,87,01,FR,false,Ain,7
+StateProvince,0,88,02,FR,false,Aisne,7
+StateProvince,0,89,03,FR,false,Allier,7
+StateProvince,0,90,04,FR,false,Alpes-de-Haute Provence,7
+StateProvince,0,91,05,FR,false,Alpes (Haute),7
+StateProvince,0,92,06,FR,false,Alpes-Maritimes,7
+StateProvince,0,93,07,FR,false,Ardèche,7
+StateProvince,0,94,08,FR,false,Ardennes,7
+StateProvince,0,95,09,FR,false,Ariège,7
+StateProvince,0,96,10,FR,false,Aube,7
+StateProvince,0,97,11,FR,false,Aude,7
+StateProvince,0,98,12,FR,false,Aveyron,7
+StateProvince,0,99,13,FR,false,Bouches du Rhône,7
+StateProvince,0,100,14,FR,false,Calvados,7
+StateProvince,0,101,15,FR,false,Cantal,7
+StateProvince,0,102,16,FR,false,Charente,7
+StateProvince,0,103,17,FR,false,Charente-Maritime,7
+StateProvince,0,104,18,FR,false,Cher,7
+StateProvince,0,105,19,FR,false,Corrèze,7
+StateProvince,0,106,20,FR,false,Corse,7
+StateProvince,0,107,21,FR,false,'Côte d\'Or',7
+StateProvince,0,108,22,FR,false,'Côtes-d\'Armor',7
+StateProvince,0,109,23,FR,false,Creuse,7
+StateProvince,0,110,24,FR,false,Dordogne,7
+StateProvince,0,111,25,FR,false,Toubs,7
+StateProvince,0,112,26,FR,false,Drôme,7
+StateProvince,0,113,27,FR,false,Eure,7
+StateProvince,0,114,28,FR,false,Eure et Loir,7
+StateProvince,0,115,29,FR,false,Finistère,7
+StateProvince,0,116,30,FR,false,Gard,7
+StateProvince,0,117,31,FR,false,Garonne (Haute),7
+StateProvince,0,118,32,FR,false,Gers,7
+StateProvince,0,119,33,FR,false,Gironde,7
+StateProvince,0,120,34,FR,false,Hérault,7
+StateProvince,0,121,35,FR,false,Ille et Vilaine,7
+StateProvince,0,122,36,FR,false,Indre,7
+StateProvince,0,123,37,FR,false,Indre et Loire,7
+StateProvince,0,124,38,FR,false,Isère,7
+StateProvince,0,125,39,FR,false,Jura,7
+StateProvince,0,126,40,FR,false,Landes,7
+StateProvince,0,127,41,FR,false,Loir et Cher,7
+StateProvince,0,128,42,FR,false,Loire,7
+StateProvince,0,129,43,FR,false,Loire (Haute),7
+StateProvince,0,130,44,FR,false,Loire Atlantique,7
+StateProvince,0,131,45,FR,false,Loiret,7
+StateProvince,0,132,46,FR,false,Lot,7
+StateProvince,0,133,47,FR,false,Lot et Garonne,7
+StateProvince,0,134,48,FR,false,Lozère,7
+StateProvince,0,135,49,FR,false,Maine et Loire,7
+StateProvince,0,136,50,FR,false,Manche,7
+StateProvince,0,137,51,FR,false,Marne,7
+StateProvince,0,138,52,FR,false,Marne (Haute),7
+StateProvince,0,139,53,FR,false,Mayenne,7
+StateProvince,0,140,54,FR,false,Meurthe et Moselle,7
+StateProvince,0,141,55,FR,false,Meuse,7
+StateProvince,0,142,56,FR,false,Morbihan,7
+StateProvince,0,143,57,FR,false,Moselle,7
+StateProvince,0,144,58,FR,false,Nièvre,7
+StateProvince,0,145,59,FR,false,Nord,7
+StateProvince,0,146,60,FR,false,Oise,7
+StateProvince,0,147,61,FR,false,Orne,7
+StateProvince,0,148,62,FR,false,Pas de Calais,7
+StateProvince,0,149,63,FR,false,Puy de Dôme,7
+StateProvince,0,150,64,FR,false,Pyrénées Atlantiques,7
+StateProvince,0,151,65,FR,false,Pyrénées (Hautes),7
+StateProvince,0,152,66,FR,false,Pyrénées Orientales,7
+StateProvince,0,153,67,FR,false,Rhin (Bas),7
+StateProvince,0,154,68,FR,false,Rhin (Haut),7
+StateProvince,0,155,69,FR,false,Rhône,7
+StateProvince,0,156,70,FR,false,Saône (Haute),7
+StateProvince,0,157,71,FR,false,Saône et Loire,7
+StateProvince,0,158,72,FR,false,Sarthe,7
+StateProvince,0,159,73,FR,false,Savoie,7
+StateProvince,0,160,74,FR,false,Savoie Haute,7
+StateProvince,0,161,75,FR,false,Seine (Paris),7
+StateProvince,0,162,76,FR,false,Seine Maritime,7
+StateProvince,0,163,77,FR,false,Seine et Marne,7
+StateProvince,0,164,78,FR,false,Yveline,7
+StateProvince,0,165,79,FR,false,Sèvres (Deux),7
+StateProvince,0,166,80,FR,false,Somme,7
+StateProvince,0,167,81,FR,false,Tarne,7
+StateProvince,0,168,82,FR,false,Tarne et Garonne,7
+StateProvince,0,169,83,FR,false,Var,7
+StateProvince,0,170,84,FR,false,Vaucluse,7
+StateProvince,0,171,85,FR,false,La Vendée,7
+StateProvince,0,172,86,FR,false,Vienne,7
+StateProvince,0,173,87,FR,false,Vienne (Haute),7
+StateProvince,0,174,88,FR,false,Vosges,7
+StateProvince,0,175,89,FR,false,Yonne,7
+StateProvince,0,176,90,FR,false,Belford (Territoire de),7
+StateProvince,0,177,91,FR,false,Essonne,7
+StateProvince,0,178,92,FR,false,Hauts de Seine,7
+StateProvince,0,179,93,FR,false,Seine Saint Denis,7
+StateProvince,0,180,94,FR,false,Val de Marne,7
+StateProvince,0,181,95,FR,false,'Val d\'Oise',7

@@ -1,0 +1,17 @@
+@namespace("com.trivadis.ecommerce.ref.avro")
+protocol CountryProtocol {
+
+	record Country {
+		string name;
+		string alpha2;
+		string alpha3;
+		int countryCode;
+		string iso3166_2;
+		string region;
+		union { string, null } subRegion;
+		union { string, null } intermediateRegion;
+		union { int, null } regionCode;
+		union { int, null } subRegionCode;
+		union { int, null } intermediateRegionCode;
+	}
+}

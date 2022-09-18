@@ -1,0 +1,10 @@
+@namespace("com.trivadis.ecommerce.customer.avro")
+protocol CurrencyProtocol {
+
+	record Country {
+		string isoCode2;
+		string isoCode3;
+		int numericCode;
+		string shortName;
+	}
+}

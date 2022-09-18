@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.trivadis.ecommerce</groupId>
+	<artifactId>ecommerce-salesorder-parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Parent project</name>
+
+	<modules>
+		<module>ecommerce-salesorder-meta</module>
+		<module>ecommerce-salesorder-management-ms</module>
+	</modules>
+
+	<!-- to detect the POM hierarchy, just type "mvn dependency:display-ancestors" -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>3.2.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

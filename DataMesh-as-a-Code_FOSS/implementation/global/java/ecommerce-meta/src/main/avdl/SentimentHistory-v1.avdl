@@ -1,0 +1,9 @@
+@namespace("com.trivadis.ecommerce.churndetect.avro")
+protocol SentimentHistoryProtocol {
+	import idl "ChurnProbability.avdl";
+
+	record SentimentHistory {
+		ChurnProbability churnProbability;
+	}
+
+}

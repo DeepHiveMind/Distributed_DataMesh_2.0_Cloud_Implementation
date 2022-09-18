@@ -133,6 +133,11 @@ Based on nuances and considerations, different data mesh topologies can be used.
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 
+## Self-serve Data Platform Infrastructure
+
+The Self-serve Data Platform Infrastructure consists of two  major parts
+ 1. The *Core* Data Platform with all the technologies for building the **DATA PRODUCTS**
+ 2. The *Governance* Data Platform which hosts the **Governance related services for maniging the data products** 
 
 ## Enterprise Data Mesh Data-Product User Persona 
 - Data Product Owners
@@ -148,9 +153,11 @@ Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed
 
 - [Distributed-Data-Mesh-as-a-Code on Cloud]
 	
-	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)
+	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)	
 	
 	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
+	
+	- [DataMesh-as-a-Code with Open Source Technology (FOSS)](#DataMesh-as-a-Code_with_FOSS)
 
 	- [DataMesh-in-practice with DATABRICKS](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
 
