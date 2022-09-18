@@ -1,0 +1,8 @@
+@namespace("com.trivadis.ecommerce.salesorder.avro")
+protocol ProductProtocol {
+
+	record Product {
+		long productId;
+		string name;
+	}
+}

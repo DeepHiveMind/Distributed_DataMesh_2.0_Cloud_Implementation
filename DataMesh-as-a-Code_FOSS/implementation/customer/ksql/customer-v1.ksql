@@ -1,0 +1,11 @@
+		  
+DROP TABLE IF EXISTS ecomm_customer_customer_st;
+		  
+CREATE SOURCE TABLE ecomm_customer_customer_st (
+			id STRING PRIMARY KEY
+	) WITH (KAFKA_TOPIC='pub.ecomm.customer.customer.state.v1',
+		  VALUE_FORMAT='AVRO',
+		  KEY_FORMAT='KAFKA'
+		  );
+		    
+		  

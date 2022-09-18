@@ -1,0 +1,30 @@
+POST http://localhost:48080/api/customers
+Content-Type: application/json
+
+{
+  "businessEntityId" : 99998,
+  "personType" : "IN",
+  "nameStyle" : false,
+  "firstName" : "Barbara",
+  "lastName" : "Muster",
+  "emailPromotion" : 1,
+  "addresses" : [ {
+    "id" : 99998,
+    "addressTypeId": 1,
+    "addressLine1" : "3935 Sample Street",
+    "city" : "Langford",
+    "stateProvinceId" : 7,
+    "postalCode" : "V9"
+  } ],
+  "emailAddresses" : [ {
+    "id" : 99998,
+    "emailAddress" : "barbara.muster@somecorp.com"
+  } ],
+  "phones" : [ {
+    "phoneNumber" : "141-555-0193",
+    "phoneNumberTypeId" : 1
+  } ]
+}
+
+###
+GET http://localhost:8081/api/customers

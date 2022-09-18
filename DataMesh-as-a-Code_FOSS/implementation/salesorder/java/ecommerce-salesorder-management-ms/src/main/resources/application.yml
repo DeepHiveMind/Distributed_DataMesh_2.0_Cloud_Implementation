@@ -1,0 +1,49 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        default_schema: ecomm_salesorder
+
+  datasource:
+    url: jdbc:postgresql://postgresql:5432/postgres
+    username: postgres
+    password: abc123!
+    driverClassName: org.postgresql.Driver
+
+  kafka:
+    properties:
+      schema.registry.url: http://schema-registry-1:8081
+
+    bootstrap-servers: kafka-1:19092
+#    bootstrap-servers: 140.238.174.129:9092
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        auto.register.schemas: false
+        specific.avro.reader: true
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      properties:
+        auto.register.schemas: false
+        use.latest.version: true
+
+outbox:
+  serialization.type: avro
+
+topic:
+  command:
+    create-order:
+      name: pub.ecomm.salesorder.create-order.command.v1

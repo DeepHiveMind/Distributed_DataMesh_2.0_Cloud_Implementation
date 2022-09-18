@@ -1,0 +1,1097 @@
+      # Default values for the generator
+      # this file can be used as a template for a custom configuration
+      # or to know about the different variables available for the generator
+      platys:
+          platform-name: 'platys-platform'
+          platform-stack: 'trivadis/platys-modern-data-platform'
+          platform-stack-version: '1.15.0-preview'
+          structure: 'flat'
+      # ========================================================================
+      # Global configuration, valid for all or a group of services
+      # ========================================================================
+      # Timezone, use a Linux string such as Europe/Zurich or America/New_York
+      use_timezone: ''
+      # the name of the repository to use for private images, which are not on docker hub (currently only Oracle images)
+      private_docker_repository_name: 'trivadis'
+      # the UID to use when using the "user" property in a service to override the user inside the container
+      uid: '1000'
+      data_centers: 'dc1,dc2'
+      data_center_to_use: 0
+      copy_cookbook_data_folder: true
+      # ========================================================================
+      # External Services
+      # ========================================================================
+      external:
+          KAFKA_enable: false
+          KAFKA_bootstrap_servers:
+          KAFKA_username:
+          KAFKA_password:
+          SCHEMA_REGISTRY_enable: false
+          SCHEMA_REGISTRY_url:
+          S3_enable: false
+          S3_endpoint:
+          S3_default_region:
+          S3_path_style_access: false
+      # ========================================================================
+      # Platys Services
+      # ========================================================================
+      PROVISIONING_DATA_enable: true
+      PROVISIONING_DATA_version: '1.15.0-preview'
+      
+      #
+      # ===== Apache Zookeeper ========
+      #
+      ZOOKEEPER_enable: false
+      ZOOKEEPER_volume_map_data: false
+      ZOOKEEPER_nodes: 1 # either 1 or 3
+      ZOOKEEPER_node_first_port: 2181
+      #
+      # ===== Apache Zookeeper Navigator ========
+      #
+      ZOOKEEPER_NAVIGATOR_enable: false
+      #
+      # ===== Apache Kafka ========
+      #
+      KAFKA_enable: false
+      # one of enterprise, community
+      KAFKA_edition: 'community'
+      KAFKA_volume_map_data: false
+      KAFKA_use_standard_port_for_external_interface: true
+      KAFKA_datacenters: 1
+      KAFKA_broker_nodes: 3
+      KAFKA_broker_first_port: 9092
+      KAFKA_use_kraft_mode: false
+      KAFKA_internal_replication_factor: 3
+      KAFKA_delete_topic_enable: true
+      KAFKA_auto_create_topics_enable: true
+      KAFKA_message_timestamp_type: CreateTime
+      KAFKA_jmx_monitoring_prometheus_enable: false
+      # KAFKA_log_segment_bytes:
+      # KAFKA_log_retention_ms:
+      # KAFKA_log_retention_hours:
+      # KAFKA_log_retention_bytes:
+      # KAFKA_compression_type:
+      # KAFKA_min_insync_replicas:
+      # KAFKA_replica_selector_class: org.apache.kafka.common.replica.RackAwareReplicaSelector
+      KAFKA_confluent_log_placement_constraints:
+      KAFKA_confluent_tier_feature: false
+      KAFKA_confluent_tier_enable: false
+      KAFKA_confluent_tier_backend: S3
+      KAFKA_confluent_tier_s3_bucket: kafka-logs
+      KAFKA_confluent_tier_s3_region: us-east-1
+      KAFKA_confluent_tier_s3_aws_endpoint_override:
+      KAFKA_confluent_tier_s3_force_path_style_access: false
+      KAFKA_confluent_tier_local_hotset_bytes:
+      KAFKA_confluent_tier_local_hotset_ms:
+      KAFKA_confluent_tier_archiver_num_threads:
+      KAFKA_confluent_tier_fetcher_num_threads:
+      KAFKA_confluent_tier_topic_delete_check_interval_ms:
+      KAFKA_confluent_tier_metadata_replication_factor: 1
+      #
+      # ===== Kafka Connect ========
+      #
+      KAFKA_CONNECT_enable: false
+      KAFKA_CONNECT_nodes: 1
+      KAFKA_CONNECT_connectors: 'confluentinc/kafka-connect-jdbc:10.0.0,confluentinc/kafka-connect-elasticsearch:11.0.6'
+      KAFKA_CONNECT_config_providers: 'file'
+      KAFKA_CONNECT_config_providers_classes: 'org.apache.kafka.common.config.provider.FileConfigProvider'
+      KAFKA_CONNECT_map_settings_file: false
+      #
+      # ===== Confluent ksqlDB ========
+      #
+      KAFKA_KSQLDB_enable: false
+      KAFKA_KSQLDB_edition: 'oss'
+      KAFKA_KSQLDB_nodes: 1
+      KAFKA_KSQLDB_internal_replication_factor: 1
+      KAFKA_KSQLDB_suppress_enabled: false
+      KAFKA_KSQLDB_suppress_buffer_size_bytes: -1
+      KAFKA_KSQLDB_query_pull_table_scan_enabled: false
+      KAFKA_KSQLDB_queries_file: ''
+      KAFKA_KSQLDB_response_http_headers_config: ''
+      KAFKA_KSQLDB_use_embedded_connect: false
+      KAFAK_KSQLDB_connect_connectors:
+      #
+      # ===== Materialize ========
+      #
+      MATERIALIZE_enable: false
+      #
+      # ===== Azkarra Streams ========
+      #
+      AZKARRA_enable: false
+      #
+      # ===== Confluent Control Center ========
+      #
+      KAFKA_CCC_enable: false
+      #
+      # ===== Confluent Replicator ========
+      #
+      KAFKA_REPLICATOR_enable: false
+      #
+      # ===== Kafka Mirror Maker 2 ========
+      #
+      KAFKA_MM2_enable: false
+      #
+      # ===== Schema Registry ========
+      #
+      SCHEMA_REGISTRY_enable: false
+      # either "confluent", "apicurio"
+      SCHEMA_REGISTRY_flavour: confluent
+      SCHEMA_REGISTRY_nodes: 1
+      # ===== Confluent Schema Registry ========
+      CONFLUENT_SCHEMA_REGISTRY_use_zookeeper_election: false
+      CONFLUENT_SCHEMA_REGISTRY_group_id: schema-registry
+      CONFLUENT_SCHEMA_REGISTRY_replication_factor: 1
+      CONFLUENT_SCHEMA_REGISTRY_leader_eligibility: true
+      CONFLUENT_SCHEMA_REGISTRY_mode_mutability: true
+      # One of "none", "backward", "backward_transitive", "forward", "forward_transitive", "full" or "full_transitive".
+      CONFLUENT_SCHEMA_REGISTRY_schema_compatibility_level: backward
+      CONFLUENT_SCHEMA_REGISTRY_log4j_root_loglevel: info
+      CONFLUENT_SCHEMA_REGISTRY_debug: false
+      # ===== Apicurio Schema Registry ========
+      # either "mem","sql","kafkasql"
+      APICURIO_SCHEMA_REGISTRY_storage: kafkasql
+      APICURIO_SCHEMA_REGISTRY_sql_storage_database: apicuriodb
+      APICURIO_SCHEMA_REGISTRY_sql_storage_user: apicurio
+      APICURIO_SCHEMA_REGISTRY_sql_storage_password: abc123!
+      APICURIO_auth_enabled: false
+      APICURIO_auth_anonymous_read_access_enabled: false
+      APICURIO_auth_import_default_users: false
+      APICURIO_eventsourcing_enabled: false
+      # either 'http' or 'kafka'
+      APICURIO_eventsourcing_protocol: 'kafka'
+      APICURIO_eventsourcing_kafka_topic: 'registry-events'
+      APICURIO_eventsourcing_http_endpoint: ''
+      #
+      # ===== Schema Registry UI ========
+      #
+      SCHEMA_REGISTRY_UI_enable: true
+      SCHEMA_REGISTRY_UI_use_public_ip: true
+      SCHEMA_REGISTRY_UI_map_resolv_conf: true
+      #
+      # ===== Confluent Rest Proxy ========
+      #
+      KAFKA_RESTPROXY_enable: false
+      #
+      # ===== Confluent MQTT Proxy ========
+      #
+      KAFKA_MQTTPROXY_enable: false
+      KAFKA_MQTTPROXY_topic_regex_list:
+      #
+      # ===== Lenses ========
+      #
+      LENSES_BOX_enable: false
+      LENSES_BOX_license: ''
+      #
+      # ===== kcat (used to be kafkacat) ========
+      #
+      KCAT_enable: false
+      #
+      # ===== jikkou (used to be kafkacat) ========
+      #
+      JIKKOU_enable: false
+      JIKKOU_use_verbose_option: false
+      JIKKOU_use_delete_topic_orphans_option: false
+      JIKKOU_use_delete_config_orphans_option: false
+      JIKKOU_use_exclude_internals_option: true
+      JIKKOU_exclude_resources_regexp: ''
+      JIKKOU_include_resources_regexp: 'public.*'
+      JIKKOU_set_labels: ''
+      JIKKOU_set_variables: ''
+      #
+      # ===== Various Kafka UIs ========
+      #
+      KAFKA_TOPICS_UI_enable: false
+      KAFKA_TOPICS_UI_map_resolv_conf: true
+      KAFKA_CONNECT_UI_enable: true
+      KAFKA_CONNECT_UI_use_public_ip: true
+      KAFKA_CONNECT_UI_map_resolv_conf: true
+      #
+      # ===== Cluster Manager for Apache Kafka ========
+      #
+      KAFKA_CMAK_enable: false
+      KAFKA_CMAK_auth_enabled: "'false'"
+      KAFKA_CMAK_username: admin
+      KAFKA_CMAK_password: abc123!
+      #
+      # ===== Kafdrop ========
+      #
+      KAFKA_KAFDROP_enable: false
+      #
+      # ===== KAdmin ========
+      #
+      KAFKA_KADMIN_enable: false
+      #
+      # ===== Apache Kafka HQ ========
+      #
+      KAFKA_AKHQ_enable: true
+      #
+      # ===== Kafka UI ========
+      #
+      KAFKA_UI_enable: true
+      #
+      # ===== EFAK (previously Kafka Eagle) ========
+      #
+      KAFKA_EFAK_enable: false
+      #
+      # ===== kowl ========
+      #
+      KOWL_enable: false
+      #
+      # ===== kouncil ========
+      #
+      KOUNCIL_enable: false
+      #
+      # ===== kafka magic ========
+      #
+      KAFKA_MAGIC_enable: false
+      #
+      # ===== Streams Explorer UI ========
+      #
+      STREAMS_EXPLORER_enable: false
+      #
+      # ===== Kafka Lag Exporter ========
+      #
+      KAFKA_LAG_EXPORTER_enable: false
+      #
+      # ===== Remora ========
+      #
+      REMORA_enable: false
+      #
+      # ===== Linkedin Burrow ========
+      #
+      BURROW_enable: false
+      BURROW_UI_enable: false
+      BURROW_DASHBOARD_enable: false
+      #
+      # ===== Debezium Server ========
+      #      
+      DEBEZIUM_SERVER_enable: false
+      DEBEZIUM_SERVER_volume_map_data: false
+      #
+      # ===== Debezium UI ========
+      #      
+      DEBEZIUM_UI_enable: false
+      #
+      # ===== Apache Hadoop ========
+      #
+      HADOOP_enable: false
+      HADOOP_datanodes: 2
+      #
+      # ===== Apache Spark ========
+      #
+      SPARK_enable: true
+
+      # either 2.4 or 3.1 or 3.2
+      SPARK_base_version: 3.2
+      #SPARK_major_version: 2        # has been replaced by SPARK_base_version
+
+      # "hive" or "in-memory"
+      SPARK_catalog: hive
+      SPARK_workers: 2
+      # to restrict the default cores, use '-Dspark.deploy.defaultCores=6'
+      SPARK_master_opts: '-Dspark.deploy.defaultCores=3'
+      SPARK_worker_cores:
+      SPARK_worker_memory:
+      SPARK_worker_opts: '-Dspark.worker.cleanup.enabled=true'
+      SPARK_jars_repositories: ''
+      SPARK_jars_packages: ''
+      SPARK_jars_excludes: ''
+      SPARK_jars: '/extra-jars/postgresql-42.3.4.jar'
+      SPARK_jars_ivySettings: ''
+      SPARK_driver_extraJavaOptions: ''
+      SPARK_executor_extraJavaOptions: ''
+      SPARK_cores_max:
+      SPARK_executor_memory:
+      # misc spark 'addons'
+      SPARK_HISTORY_enable: false
+      SPARK_THRIFT_enable: false
+      #
+      # ===== Apache Livy ========
+      #
+      LIVY_enable: false
+      #
+      # ===== Apache Flink ========
+      #
+      FLINK_enable: false
+      FLINK_taskmanagers: 1
+      FLINK_SQL_CLI_enable: false
+      FLINK_NUSSKNACKER_enable: false
+      #
+      # ===== Apache Tika ========
+      #
+      TIKA_enable: false
+      # 'minimal' or 'full'
+      TIKA_edition: 'minimal'
+      #
+      # ===== Apache Hive ========
+      #
+      HIVE_SERVER_enable: false
+      #
+      # ===== Apache Hive Metastore ========
+      #
+      HIVE_METASTORE_enable: true
+      #
+      # ===== Apache Avro Tools ========
+      #
+      AVRO_TOOLS_enable: false
+      #
+      # ===== Apache Ranger ========
+      #
+      RANGER_enable: false
+      RANGER_postgresql_volume_map_data: false
+      #
+      # ===== Apache Atlas ========
+      #
+      ATLAS_enable: false
+      ATLAS_provision_atlas_sample_data: false
+      ATLAS_provision_amundsen_sample_data: false
+      ATLAS_install_hive_hook: false
+      #
+      # ===== Data Hub ========
+      #
+      DATAHUB_enable: false
+      DATAHUB_volume_map_data: false
+      DATAHUB_use_ember_ui: false
+      DATAHUB_use_react_ui: true
+      DATAHUB_mce_consumer_standalone: false
+      DATAHUB_mae_consumer_standalone: false
+      DATAHUB_auth_policies_enabled: false
+      # one of "neo4j" or "elasticsearch"
+      DATAHUB_graph_service_impl: neo4j
+      DATAHUB_use_analytics: false
+      DATAHUB_use_kibana: true
+      DATAHUB_provision_sample_data: false
+      #
+      #===== Amundsen ========
+      #
+      AMUNDSEN_enable: false
+      # one of 'amundsen' or 'atlas'
+      AMUNDSEN_metastore: 'amundsen'
+      #
+      #===== Marquez ========
+      #
+      MARQUEZ_enable: false
+      MARQUEZ_volume_map_data: false
+      MARQUEZ_provision_marquez_sample_data: false
+      #
+      # ===== Hue ========
+      #
+      HUE_enable: false
+      #
+      # =====  Streamsets Data Collector ========
+      #
+      STREAMSETS_enable: true
+      STREAMSETS_volume_map_data: false
+      STREAMSETS_volume_map_logs: false
+      STREAMSETS_volume_map_security_policy: false
+      STREAMSETS_activate_https: false
+      STREAMSETS_additional_port_mappings: 0
+      STREAMSETS_kafka_support: false
+      STREAMSETS_aws_support: false
+      STREAMSETS_google_support: false
+      STREAMSETS_azure_support: false
+      STREAMSETS_nosql_support: false
+      # some values for stage libs:  'streamsets-datacollector-apache-kafka_2_6-lib,streamsets-datacollector-aws-lib,streamsets-datacollector-azure-lib,streamsets-datacollector-groovy_2_4-lib,streamsets-datacollector-jdbc-lib'
+      # https://streamsets.com/documentation/datacollector/latest/help/datacollector/UserGuide/Installation/AddtionalStageLibs.html
+      STREAMSETS_stage_libs: 'streamsets-datacollector-apache-kafka_2_6-lib,streamsets-datacollector-aws-lib,streamsets-datacollector-groovy_2_4-lib,streamsets-datacollector-jdbc-lib'
+      STREAMSETS_enterprise_stage_libs: ''
+      STREAMSETS_jdbc_jars: 'ojdbc8.jar,mssql-jdbc-10.2.0.jre8.jar'
+      STREAMSETS_install_pipelines: false
+      # one of 'none', 'basic', 'digest', 'form' or 'aster'
+      STREAMSETS_http_authentication: form
+      STREAMSETS_sdc_id: ''
+      #
+      # =====  Streamsets Transformer ========
+      #
+      STREAMSETS_TRANSFORMER_enable: false
+      STREAMSETS_TRANSFORMER_volume_map_data: false
+      #
+      # =====  Streamsets Edge ========
+      #
+      STREAMSETS_EDGE_enable: false
+      STREAMSETS_EDGE_volume_map_data: false
+      #
+      # =====  Streamsets DataOps Platform (Cloud) ========
+      #
+      STREAMSETS_CLOUD_enable: false
+      STREAMSETS_CLOUD_deployment_sch_url: 'https://eu01.hub.streamsets.com'
+      STREAMSETS_CLOUD_deployment_id:
+      STREAMSETS_CLOUD_deployment_token:
+      #
+      # ===== Apache NiFi ========
+      #
+      NIFI_enable: false
+      NIFI_run_secure: true
+      NIFI_username: nifi
+      # password must be 12 chars minimum, otherwise a random user and password is generated
+      NIFI_password: 1234567890ACD
+      NIFI_nodes: 1
+      NIFI_create_cluster: false
+      NIFI_election_max_wait: '1 min'
+      NIFI_volume_map_data: false
+      NIFI_volume_map_logs: false
+      NIFI_jvm_heap_init:
+      NIFI_jvm_heap_max:
+      #
+      # ===== Apache NiFi Registry ========
+      #
+      NIFI_REGISTRY_enable: false
+      #
+      # ===== Apache StreamPipes ========
+      #
+      STREAMPIPES_enable: false
+      #
+      # ===== Node Red  ========
+      #
+      NODERED_enable: false
+      NODERED_volume_map_data: false
+      #
+      # ===== Streamsheets ========
+      #
+      STREAMSHEETS_enable: false
+      #
+      # ===== Spring Cloud DataFlow ========
+      #
+      SPRING_DATAFLOW_enable: false
+      #
+      # ===== Sqoop ========
+      #
+      SQOOP_enable: false
+
+      #
+      # ===== Airbyte ========
+      #
+      AIRBYTE_enable: false
+      AIRBYTE_volume_map_data: false
+      AIRBYTE_database_user: airbyte
+      AIRBYTE_database_password: abc123!
+      AIRBYTE_database_db: airbyte
+      AIRBYTE_database_host: airbyte-db
+      AIRBYTE_database_port: 5432
+      AIRBYTE_database_minimum_flyway_migration_version: 0.29.15.001
+      AIRBYTE_log_level: INFO
+            
+      #
+      # ===== Apache Airflow  ========
+      #
+      AIRFLOW_enable: false
+      # "celery" or "sequential" or "local"
+      AIRFLOW_executor: local
+      AIRFLOW_volume_map_python: false
+      AIRFLOW_provision_examples: false
+      #
+      # ===== Zeppelin ========
+      #
+      ZEPPELIN_enable: true
+      ZEPPELIN_volume_map_data: false
+      ZEPPELIN_admin_username: admin
+      ZEPPELIN_admin_password: changeme
+      ZEPPELIN_user_username: zeppelin
+      ZEPPELIN_user_password: changeme
+      ZEPPELIN_spark_cores_max:
+      ZEPPELIN_spark_executor_memory:
+      ZEPPELIN_notebook_cron_enable: true
+      ZEPPELIN_spark_submit_options: ""
+      #
+      # ===== Jupyter ========
+      #
+      JUPYTER_enable: false
+      # one of 'minimal', 'r', 'scipy', 'tensorflow', 'datascience', 'all-spark'
+      JUPYTER_edition: 'minimal'
+      JUPYTER_volume_map_data: false
+      JUPYTER_python_packages: ''
+      #
+      # ===== RStudio ========
+      #
+      RSTUDIO_enable: false
+      RSTUDIO_password: rstudio
+      RSTUDIO_run_as_root: false
+      RSTUDIO_disable_auth: false
+      #
+      # ===== Shiny Server ========
+      #
+      SHINY_SERVER_enable: false
+      # one of: 'base' or 'verse' 
+      SHINY_SERVER_edition: base
+      SHINY_SERVER_volume_map_apps: false
+      #
+      # ===== MLflow Server ========
+      #
+      MLFLOW_SERVER_enable: false
+      MLFLOW_SERVER_volume_map_data: false
+      # one of 'file', 'postgresql', 'mysql'
+      MLFLOW_SERVER_backend: 'file'
+      MLFLOW_SERVER_db_user: mlflow
+      MLFLOW_SERVER_db_password: abc123!
+      MLFOW_SERVER_artifact_root: '/mlruns'
+      #
+      # ===== Optuna Server ========
+      #
+      OPTUNA_enable: false
+      OPTUNA_dev_edition: false
+      OPTUNA_DASHBOARD_enable: false
+      #
+      # ===== Dataiku Data Science Studio ========
+      #
+      DATAIKU_DSS_enable: false
+      DATAIKU_DSS_volume_map_data: false
+      #
+      # ===== Drools KIE Server ========
+      #
+      KIE_SERVER_enable: false
+      #
+      # ===== OpenTelemetry Collector ========
+      #
+      OTEL_COLLECTOR_enable: false
+      #
+      # ===== Zipkin ========
+      #
+      ZIPKIN_enable: false
+      # one of 'mem', 'mysql', 'cassandra3', 'elasticsearch'
+      ZIPKIN_storage_type: 'mem'
+      ZIPKIN_collect_kafka: false
+      ZIPKIN_debug: false
+      #
+      # ===== Jaeger ========
+      #
+      JAEGER_enable: false
+      JAEGER_zipkin_port: 9412
+      #
+      # ===== Pitchfork ========
+      #
+      PITCHFORK_enable: false
+      PITCHFORK_server_port: 9413
+      PITCHFORK_use_logging: false
+      PITCHFORK_use_zipkin_http: false
+      PITCHFORK_use_haystack_kafka: false
+      PITCHFORK_haystack_kafka_topic: 'proto-spans'
+      #
+      # ===== Promtail ========
+      #
+      PROMTAIL_enable: false
+      #
+      # ===== Loki ========
+      #
+      LOKI_enable: false
+      #
+      # ===== Tempo ========
+      #
+      TEMPO_enable: false
+      TEMPO_volume_map_data: false
+      #
+      # ===== Grafana ========
+      #
+      GRAFANA_enable: false
+      # list of preview features to enable (tempoSearch, tempoServiceGraph, ... see https://grafana.com/docs/grafana/latest/packages_api/data/featuretoggles/#featuretoggles-interface)
+      GRAFANA_feature_toggles: ''
+      # list of plugins to install (see here: https://grafana.com/grafana/plugins/) 
+      GRAFANA_install_plugins: 'grafana-piechart-panel'
+      #
+      # ===== Elastic Kibana ========
+      #
+      KIBANA_enable: false #needs to have elasticsearch enabled to work
+      # one of 'oss', 'elastic',
+      KIBANA_edition: 'oss'
+      #
+      # ===== Metabase ========
+      #
+      METABASE_enable: false
+      METABASE_volume_map_data: false
+      # either h2 or postgres
+      METABASE_db_type: h2
+      METABASE_postgres_dbname: 'metabasedb'
+      METABASE_postgres_user: 'metabase'
+      METABASE_postgres_password: 'abc123!'
+      #
+      # ===== Superset ========
+      #
+      SUPERSET_enable: false
+      SUPERSET_provision_examples: false
+      #
+      # ===== Redash ========
+      #
+      REDASH_enable: false
+      #
+      # ===== Smashing Dashboard ========
+      #
+      SMASHING_enable: false
+      SMASHING_volume_map_dashboards: false
+      SMASHING_volume_map_jobs: false
+      SMASHING_volume_map_widgets: false
+      SMASHING_install_gems: ''
+      SMASHING_install_widgets: ''
+      #
+      # ===== Tipboard Dashboard ========
+      #
+      TIPBOARD_enable: false
+      TIPBOARD_volume_map_dashboards: false
+      TIPBOARD_project_name: sample
+      TIPBOARD_api_key: e2c3275d0e1a4bc0da360dd225d74a43
+      TIPBOARD_port: 7272
+      TIPBOARD_redis_host: redis-1
+      TIPBOARD_redis_port: 6379
+      TIPBOARD_redis_password:
+      TIPBOARD_redis_db: 4
+      TIPBOARD_flipboard_interval: 0
+      TIPBOARD_flipboard_sequence: ''
+      #
+      # ===== Chartboard Dashboard ========
+      #
+      CHARTBOARD_enable: false
+      CHARTBOARD_volume_map_dashboards: false
+      #
+      # ===== Memcached ========
+      #
+      MEMCACHED_enable: false
+      #
+      # ===== Redis ========
+      #
+      REDIS_enable: false
+      REDIS_replicasets: 0
+      REDIS_allow_empty_password: yes
+      REDIS_disable_commands:
+      REDIS_password: abc123!
+      REDIS_aof_enabled: no
+      REDIS_volume_map_data: false
+      #
+      # ===== Redis Insight ========
+      #
+      REDIS_INSIGHT_enable: false
+      #
+      # ===== Redis Commander ========
+      #
+      REDIS_COMMANDER_enable: false
+      #
+      # ===== Apache Casandra ========
+      #
+      CASSANDRA_enable: false
+      # either 3 or 4
+      CASSANDRA_major_version: 3
+      REAPER_enable: false
+      #
+      # ===== DataStax ========
+      #
+      DATASTAX_enable: false
+      DATASTAX_nodes: 3
+      #
+      # ===== MongoDB ========
+      #
+      MONGO_enable: false
+      MONGO_nodes: 1
+      #
+      # ===== SolR ========
+      #
+      SOLR_enable: false
+      #
+      # ===== Elasticsearch ========
+      #
+      ELASTICSEARCH_enable: false
+      # one of 'oss', 'elastic',
+      ELASTICSEARCH_edition: 'oss'
+      DEJAVU_enable: false
+      CEREBRO_enable: false
+      ELASTICHQ_enable: false
+      #
+      # ===== Neo4J ========
+      #
+      NEO4J_enable: false
+      NEO4J_volume_map_data: false
+      NEO4J_volume_map_logs: false
+      #
+      # ===== DGraph ========
+      #
+      DGRAPH_enable: false
+      #
+      # ===== Stardog ========
+      #
+      STARDOG_enable: false
+      STARDOG_volume_map_data: false
+      STARDOG_STUDIO_enable: false
+      #
+      # ===== GraphDB ========
+      #
+      GRAPHDB_enable: false
+      # one of 'free', 'se', 'ee'
+      GRAPHDB_edition: 'free'
+      GRAPHDB_heap_size: 2G
+      GRAPHDB_volume_map_data: false
+      GRAPHDB_workbench_import_dir: '/opt/graphdb/examples'
+      #
+      # ===== Influx DB 1.x ========
+      #
+      INFLUXDB_enable: false
+      INFLUXDB_volume_map_data: false
+      INFLUXDB_TELEGRAF_enable: false
+      INFLUXDB_CHRONOGRAF_enable: false
+      INFLUXDB_CHRONOGRAF_volume_map_data: false
+      INFLUXDB_KAPACITOR_enable: false
+      INFLUXDB_KAPACITOR_volume_map_data: false
+      #
+      # ===== Influx DB 2.x ========
+      #
+      INFLUXDB2_enable: false
+      INFLUXDB2_volume_map_data: false
+      #
+      # ===== QuestDB ========
+      #
+      QUESTDB_enable: false
+      QUESTDB_volume_map_data: false
+      #
+      # ===== Kudo ========
+      #
+      KUDO_enable: false
+      #
+      # ===== Druid ========
+      #
+      DRUID_enable: false
+      # one of 'oss-sandbox', 'oss-cluster'
+      DRUID_edition: 'oss-sandbox'
+      DRUID_volume_map_data: false
+      #
+      # ===== Pinot ========
+      #
+      PINOT_enable: false
+      PINOT_servers: 1
+      PINOT_volume_map_data: false
+      #
+      # ===== NoSQL - Prometeus ========
+      #
+      PROMETHEUS_enable: false
+      PROMETHEUS_volume_map_data: false
+      PROMETHEUS_PUSHGATEWAY_enable: false
+      PROMETHEUS_NODEEXPORTER_enable: false
+      #
+      # ===== NoSQL - Tile38 ========
+      #
+      TILE38_enable: false
+      #
+      # ===== Yugabyte ========
+      #
+      YUGABYTE_enable: false
+      #
+      # ===== Oracle XE RDBMS ========
+      #
+      ORACLE_XE_enable: true
+      # one of 'slim', 'regular', 'full'
+      ORACLE_XE_edition: 'regular'
+      ORACLE_XE_volume_map_data: false
+      # For Oracle 18 and higher, specify the name of the pluggable database
+      ORACLE_XE_database: ''
+      ORACLE_XE_password: 'EAo4KsTfRR'
+      # set to true, if a random password should be generated
+      ORACLE_XE_random_password: ''
+      ORACLE_XE_app_user: ''
+      ORACLE_XE_app_user_password: ''
+      #
+      # ===== Oracle RDBMS ========
+      #
+      ORACLE_EE_enable: false
+      ORACLE_EE_volume_map_data: false
+      ORACLE_EE_container_enable: false
+      ORACLE_EE_password: 'EAo4KsTfRR'
+      #
+      # ===== Oracle SQLcl ========
+      #
+      ORACLE_SQLCL_enable: true
+      #
+      # ===== Oracle REST Data Service ========
+      #
+      ORACLE_REST_DATA_SERVICE_enable: false
+      #
+      # ===== MySQL ========
+      #
+      MYSQL_enable: false
+      #
+      # ===== SQL Server ========
+      #
+      SQLSERVER_enable: true
+      #
+      # ===== PostgreSQL ========
+      #
+      POSTGRESQL_enable: true
+      POSTGRESQL_volume_map_data: false
+      POSTGRESQL_database: postgres
+      POSTGRESQL_multiple_databases: 'demodb'
+      POSTGRESQL_multiple_users: 'demo'
+      POSTGRESQL_multiple_passwords: 'abc123!'
+      POSTGRESQL_user: postgres
+      POSTGRESQL_password: abc123!
+      POSTGRESQL_schema: demo
+      #POSTGRESQL_anon_role: appuser
+      
+      #
+      # ===== Posgrest ========
+      #
+      POSTGREST_enable: false
+      #
+      # ===== pgAdmin ========
+      #
+      PGADMIN_enable: false
+      #
+      # ===== TimeScale DB ========
+      #
+      TIMESCALEDB_enable: false
+      TIMESCALEDB_volume_map_data: false
+      #
+      # ===== Adminer DB UI ========
+      #
+      ADMINER_enable: true
+      #
+      # ===== Cloudbeaver DB UI ========
+      #
+      CLOUDBEAVER_enable: false
+      CLOUDBEAVER_volume_map_workspace: false
+      #
+      # ===== SQLPad UI ========
+      #
+      SQLPAD_enable: false
+      #
+      # ===== Quix Presto UI ========
+      #
+      QUIX_enable: false
+      #
+      # ===== Hazelcast IMDG ========
+      #
+      HAZELCAST_enable: false
+      HAZELCAST_nodes: 1
+      HAZELCAST_volume_map_custom_config: false
+      HAZELCAST_use_jet: true
+      HAZELCAST_MC_enable: true
+      #
+      # ===== Apache Ignite IMDG ========
+      #
+      IGNITE_enable: false
+      IGNITE_servers: 1
+      # A list of modules to enable such as: 'ignite-rest-http,ignite-cassandra-store,ignite-cassandra-serializers'
+      IGNITE_option_libs: 'ignite-rest-http'
+      #
+      # ===== Axon Event Store ========
+      #
+      AXON_enable: false
+      #
+      # ===== Event Store ========
+      #
+      EVENTSTORE_enable: false
+      #
+      # ===== Trino ========
+      #
+      TRINO_enable: true
+      # "single" or "cluster" install
+      TRINO_install: single
+      TRINO_workers: 3
+      # either starburstdata or oss
+      TRINO_edition: 'oss'
+      TRINO_kafka_table_names: ''
+      # Trino-CLI is enabled by default
+      TRINO_CLI_enable: true
+      TRINO_oracle_user: 'PRODUCT'
+      TRINO_oracle_password: 'abc'      
+      #
+      # ===== Presto ========
+      #
+      PRESTO_enable: false
+      # "single" or "cluster" install
+      PRESTO_install: single
+      PRESTO_workers: 3
+      # either prestodb or ahana
+      PRESTO_edition: 'ahana'
+      # Presto-CLI is enabled by default
+      PRESTO_CLI_enable: true
+      #
+      # ===== Dremio ========
+      #
+      DREMIO_enable: true
+      #
+      # ===== Apache Drill ========
+      #
+      DRILL_enable: false
+      #
+      # ===== Hasura ========
+      #
+      HASURA_enable: false
+      #
+      # ===== GraphQL Mesh ========
+      #
+      GRAPHQL_MESH_enable: false
+      #
+      # ===== Nuclio FaaS ========
+      #
+      NUCLIO_enable: false
+      #
+      # ===== MQTT Mosquitto ========
+      #
+      MOSQUITTO_enable: false
+      MOSQUITTO_nodes: 1
+      MOSQUITTO_volume_map_data: false
+      #
+      # ===== MQTT HiveMQ ========
+      #
+      HIVEMQ3_enable: false
+      HIVEMQ4_enable: false
+      #
+      # ===== MQTT EMQ ========
+      #
+      EMQX_enable: false
+      # either "oss" or "enterpirse"
+      EMQX_edition: oss
+      #
+      # ===== MQTT UIs ========
+      #
+      MQTT_UI_enable: false
+      CEDALO_MANAGEMENT_CENTER_enable: false
+      #
+      # ===== Thingsboard ========
+      #
+      THINGSBOARD_enable: false
+      THINGSBOARD_volume_map_data: false
+      THINGSBOARD_volume_map_log: false
+      #
+      # ===== ActiveMQ ========
+      #
+      ACTIVEMQ_enable: false
+      ACTIVEMQ_volume_map_data: false
+      #
+      # ===== RabbitMQ ========
+      #
+      RABBITMQ_enable: false
+      RABBITMQ_volume_map_data: false
+      RABBITMQ_volume_map_logs: false
+      #
+      #=====  MinIO Object Storage ========
+      #
+      MINIO_enable: true
+      MINIO_volume_map_data: false
+      MINIO_datacenters: 1
+      # "single" or "cluster"
+      MINIO_install: 'single'
+      MINIO_nodes: 1
+      MINIO_access_key: V42FCGRVMK24JJ8DHUYG
+      MINIO_secret_key: bKhWxVF3kQoLY9kFmt91l+tDrEoZjqnWXzY9Eza
+      # add additional buckets, comma separated, admin-bucket will be created by default
+      MINIO_default_buckets: ''
+      MINIO_browser_enable: true
+      #
+      #=====  Object Storage UIs ========
+      #
+      MINIO_CONSOLE_enable: false
+      ADMINIO_UI_enable: false
+      FILESTASH_enable: false
+      S3MANAGER_enable: false
+      AWSCLI_enable: false
+      #
+      #===== LakeFS ========
+      #
+      LAKEFS_enable: false
+      LAKEFS_blockstore_type: s3
+      LAKEFS_logging_level: 'INFO'
+      #
+      # ===== FTP ========
+      #
+      FTP_enable: false
+      #
+      # ===== Camunda ========
+      #
+      CAMUNDA_BPM_PLATFORM_enable: false
+      CAMUNDA_OPTIMIZE_enable: false
+      CAMUNDA_ZEEBE_enable: false
+      CAMUNDA_ZEEBE_volume_map_data: false
+      CAMUNDA_OPERATE_enable: false
+      CAMUNDA_ZEEQS_enable: false
+      #
+      # ===== Penthao Webspoon ========
+      #
+      PENTHAO_enable: false
+      #
+      # ===== Code Server ========
+      #
+      CODE_SERVER_enable: false
+      CODE_SERVER_volume_map_platform_root: false
+      
+      #
+      # ===== MockServer ========
+      #
+      MOCK_SERVER_enable: true
+      MOCK_SERVER_log_level: DEBUG
+      MOCK_SERVER_persist_expectations: false
+      MOCK_SERVER_persisted_expecations_path: ''
+      MOCK_SERVER_initialization_json_path: ''
+
+      #
+      # ===== Excalidraw ========
+      #
+      EXCALIDRAW_enable: false
+      #
+      # ===== Firefox Browser ========
+      #
+      FIREFOX_enable: false
+      FIREFOX_use_port_80: false
+      #
+      # ===== File Browser ========
+      #
+      FILE_BROWSER_enable: true
+      #
+      # ===== Vault ========
+      #
+      VAULT_enable: false
+      VAULT_volume_map_data: false
+      #
+      # ===== Keycloak ========
+      #
+      KEYCLOAK_enable: false
+      KEYCLOAK_db_vendor: 'h2'
+      KEYCLOAK_import_realms: '/tmp/apicurio-realm.json'
+      KEYCLOAK_loglevel: 'INFO'
+      #
+      # ===== Swagger API Management ========
+      #
+      SWAGGER_EDITOR_enable: false
+      SWAGGER_UI_enable: false
+      #
+      # ===== Podman ========
+      #
+      POSTMAN_enable: false
+      #
+      # ===== Microcks ========
+      #
+      MICROCKS_enable: false
+      #
+      # ===== Portainer Container UI ========
+      #
+      PORTAINER_enable: false
+      #
+      # ===== Cadvisor Container Mgmt UI ========
+      #
+      CADVISOR_enable: false
+      #
+      # ===== Hawtio ========
+      #
+      HAWTIO_enable: false
+      #
+      # ===== Wetty ========
+      #
+      WETTY_enable: true
+      #
+      # ===== Markdown Viewer ========
+      #
+      MARKDOWN_VIEWER_enable: true
+      MARKDOWN_VIEWER_use_port_80: true
+      MARKDOWN_VIEWER_use_public_ip: true
+      #
+      # ===== Log4Brains Architectural Decision Records (ADR) ========
+      #
+      LOG4BRAINS_enable: false
+      LOG4BRAINS_repository_name: 'trivadis'
+      LOG4BRAINS_image_name: 'log4brains'
+      LOG4BRAINS_adr_source_dir: ''
+      LOG4BRAINS_command: 'preview'
+      #
+      # ===== Watchtower ========
+      #
+      WATCHTOWER_enable: false
+      #
+      # ===== Python image ========
+      #
+      PYTHON_enable: false
+      PYTHON_script_folder: ''
+      PYTHON_script: ''
+      

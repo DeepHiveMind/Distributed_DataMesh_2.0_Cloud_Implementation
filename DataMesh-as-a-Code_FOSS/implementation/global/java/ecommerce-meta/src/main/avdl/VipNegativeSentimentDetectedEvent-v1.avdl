@@ -1,0 +1,10 @@
+@namespace("com.trivadis.ecommerce.churndetect.avro")
+protocol VipNegativeSentimentDetectedEventProtocol {
+	import idl "base/DomainEventBaseTypes.avdl";
+	import idl "ChurnProbability.avdl";
+
+	record VipNegativeSentimentDetectedEvent {
+		ChurnProbability churnProbability;
+	}
+
+}

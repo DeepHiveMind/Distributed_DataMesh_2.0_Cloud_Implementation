@@ -1,0 +1,8 @@
+@namespace("com.trivadis.ecommerce.customer.avro")
+protocol EmailAddressProtocol {
+
+	record EmailAddress {
+		long id;
+		string emailAddress;
+	}
+}

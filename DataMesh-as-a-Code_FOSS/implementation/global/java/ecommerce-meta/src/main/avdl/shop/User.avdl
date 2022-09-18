@@ -1,0 +1,18 @@
+@namespace("com.trivadis.ecommerce.shop.avro")
+protocol UserProtocol {
+	import idl "Product.avdl";
+
+	record Address {
+		long id;
+		string street;
+		string city;
+		string zipCode;
+	}
+
+	record User {
+		string profileId;
+		string firstName;
+		string lastName;
+		array<Address> addresses;
+	}
+}

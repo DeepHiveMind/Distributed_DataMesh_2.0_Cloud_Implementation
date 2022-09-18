@@ -1,0 +1,9 @@
+@namespace("com.trivadis.ecommerce.customer.avro")
+protocol PhoneProtocol {
+
+	record Phone {
+		string phoneNumber;
+		long phoneNumberTypeId;
+		string phoneNumberType;
+	}
+}

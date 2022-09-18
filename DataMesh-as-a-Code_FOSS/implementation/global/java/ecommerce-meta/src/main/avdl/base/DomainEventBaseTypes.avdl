@@ -1,0 +1,19 @@
+@namespace("com.trivadis.ecommerce.domainevent.avro")
+protocol DomainEventBaseProtocol {
+
+  record DomainEventPublisher {
+    string system;
+    string service;
+  }
+
+  record DomainEventType {
+    string name;
+    string version;
+  }
+
+  record DomainEventIdentity {
+    string eventId;
+    string idempotenceId;
+    timestamp_ms created;
+  }
+}

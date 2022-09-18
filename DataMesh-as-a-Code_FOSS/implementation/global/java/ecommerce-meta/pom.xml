@@ -1,0 +1,175 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.trivadis.ecommerce</groupId>
+        <artifactId>ecommerce-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.trivadis.ecommerce</groupId>
+    <artifactId>ecommerce-meta</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>ecommerce-meta</name>
+
+    <properties>
+        <avro.version>1.11.0</avro.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>11</java.version>
+    </properties>
+    <repositories>
+        <repository>
+            <id>github-releases</id>
+            <url>http://oss.sonatype.org/content/repositories/github-releases/</url>
+        </repository>
+        <repository>
+            <id>clojars.org</id>
+            <url>http://clojars.org/repo</url>
+        </repository>
+        <repository>
+            <id>local-maven-repo</id>
+            <url>file:///${project.parent.basedir}/local-maven-repo</url>
+        </repository>
+        <repository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven/</url>
+        </repository>
+        <repository>
+            <id>Trivadis Maven Repo</id>
+            <url>https://github.com/TrivadisPF/avdl2avsc-maven-plugin/raw/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Trivadis Maven Repo</id>
+            <url>https://github.com/TrivadisPF/avdl2avsc-maven-plugin/raw/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>${avro.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>exec-maven-plugin</artifactId>
+                <version>1.3</version> <executions> <execution> <phase>generate-sources</phase>
+                <goals> <goal>java</goal> </goals> </execution> </executions> <configuration>
+                <mainClass>main.ConvertIdl</mainClass> <arguments> <argument>${project.basedir}/src/main/avro/avdl/</argument>
+                <argument>${project.basedir}/target/generated-sources/avro/avsc/</argument>
+                </arguments> </configuration> </plugin> -->
+
+            <plugin>
+                <groupId>org.apache.avro</groupId>
+                <artifactId>avro-maven-plugin</artifactId>
+                <version>${avro.version}</version>
+                <executions>
+                    <execution>
+                        <id>schemas</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>schema</goal>
+                            <goal>idl-protocol</goal>
+                        </goals>
+                        <configuration>
+                            <stringType>String</stringType>
+                            <excludes>
+                                <exclude>**/mapred/tether/**</exclude>
+                            </excludes>
+                            <sourceDirectory>${project.basedir}/src/main/avdl/</sourceDirectory>
+                            <testSourceDirectory>${project.basedir}/src/test/avro/</testSourceDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.confluent</groupId>
+                <artifactId>kafka-schema-registry-maven-plugin</artifactId>
+                <version>6.0.0</version>
+                <configuration>
+                    <schemaRegistryUrls>
+                        <param>http://${DATAPLATFORM_IP}:8081</param>
+                    </schemaRegistryUrls>
+                    <subjects>
+                        <pub.ecomm.shop.shop-visited.state.v1-value>target/generated-sources/avro/schema/shop/state/ShopVisitedState.avsc</pub.ecomm.shop.shop-visited.state.v1-value>
+                        <pub.ecomm.shop.shop-user.state.v1-value>target/generated-sources/avro/schema//shop/state/ShopUserState.avsc</pub.ecomm.shop.shop-user.state.v1-value>
+                        <pub.ecomm.shop.search-performed.event.v1-value>target/generated-sources/avro/schema//shop/event/ShopSearchPerformedEvent.avsc</pub.ecomm.shop.search-performed.event.v1-value>
+                        <pub.ecomm.shop.user-logged-in.event.v1-value>target/generated-sources/avro/schema/shop/event/ShopUserLoggedInEvent.avsc</pub.ecomm.shop.user-logged-in.event.v1-value>
+                        <pub.ecomm.shop.page-navigated.event.v1-value>target/generated-sources/avro/schema/shop/event/ShopPageNavigatedEvent.avsc</pub.ecomm.shop.page-navigated.event.v1-value>
+                        <pub.ecomm.shop.cart-action-occurred.event.v1-value>target/generated-sources/avro/schema/shop/event/ShopCartActionOccurredEvent.avsc</pub.ecomm.shop.cart-action-occurred.event.v1-value>
+                        <pub.ecomm.shop.product-order-issued.event.v1-value>target/generated-sources/avro/schema/shop/event/ShopProductOrderIssuedEvent.avsc</pub.ecomm.shop.product-order-issued.event.v1-value>
+                        <pub.ecomm.salesorder.create-order.command.v1-value>target/generated-sources/avro/schema/salesorder/command/CreateOrderCommand.avsc</pub.ecomm.salesorder.create-order.command.v1-value>
+                        <pub.ecomm.salesorder.order-confirmed.event.v1-value>target/generated-sources/avro/schema/salesorder/event/OrderConfirmedEvent.avsc</pub.ecomm.salesorder.order-confirmed.event.v1-value>
+                        <pub.ecomm.salesorder.order-cancelled.event.v1-value>target/generated-sources/avro/schema/salesorder/event/OrderCancelledEvent.avsc</pub.ecomm.salesorder.order-cancelled.event.v1-value>
+                        <pub.ecomm.salesorder.order-completed.event.v1-value>target/generated-sources/avro/schema/salesorder/event/OrderCompletedEvent.avsc</pub.ecomm.salesorder.order-completed.event.v1-value>
+                        <pub.ecomm.product.product.state.v1-value>target/generated-sources/avro/schema/product/state/ProductState.avsc</pub.ecomm.product.product.state.v1-value>
+                        <pub.ecomm.customer.customer.state.v1-value>target/generated-sources/avro/schema/customer/state/CustomerState.avsc</pub.ecomm.customer.customer.state.v1-value>
+                        <pub.ecomm.customer.address-changed.event.v1-value>target/generated-sources/avro/schema/customer/event/CustomerAddressChangedEvent.avsc</pub.ecomm.customer.address-changed.event.v1-value>
+                        <pub.ecomm.ref.country-code.state.v1-value>target/generated-sources/avro/schema/ref/state/CountryCodeState.avsc</pub.ecomm.ref.country-code.state.v1-value>
+                        <pub.ecomm.ref.currency-code.state.v1-value>target/generated-sources/avro/schema/ref/state/CurrencyCodeState.avsc</pub.ecomm.ref.currency-code.state.v1-value>
+                    </subjects>
+                </configuration>
+                <goals>
+                    <goal>register</goal>
+                </goals>
+
+            </plugin>
+            <plugin>
+                <groupId>com.trivadis.plugins</groupId>
+                <artifactId>avdl2avsc-maven-plugin</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>genschema</goal>
+                        </goals>
+                        <configuration>
+                            <inputAvdlDirectory>${basedir}/src/main/avdl</inputAvdlDirectory>
+                            <outputSchemaDirectory>${basedir}/target/generated-sources/avro/schema
+                            </outputSchemaDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,15 @@
+@namespace("com.trivadis.ecommerce.customer.avro")
+protocol AddressProtocol {
+	import idl "Country.avdl";
+
+	record Address {
+		long id;
+		long addressTypeId;
+		union { string, null } addressLine1;
+		union { string, null } addressLine2;
+		string city;
+		long stateProvinceId;
+		string postalCode;
+		Country country;
+	}
+}

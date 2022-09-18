@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS ecomm_product_product_st;
+
+CREATE SOURCE TABLE ecomm_product_product_st (
+			id STRING PRIMARY KEY
+	) WITH (KAFKA_TOPIC='pub.ecomm.product.product.state.v1',
+		  VALUE_FORMAT='AVRO',
+		  KEY_FORMAT='KAFKA'
+		  );

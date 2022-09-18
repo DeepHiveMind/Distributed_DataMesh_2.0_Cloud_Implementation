@@ -1,0 +1,10 @@
+@namespace("com.trivadis.ecommerce.ref.avro")
+protocol CurrencyRateProtocol {
+
+	record CurrencyRate {
+		timestamp_ms timestamp;
+		string baseCurrencyIsoCode;
+		string currencyIsoCode;
+		double rate;
+	}
+}

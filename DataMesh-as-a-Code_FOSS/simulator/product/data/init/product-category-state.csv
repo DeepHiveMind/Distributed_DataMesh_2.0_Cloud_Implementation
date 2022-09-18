@@ -1,0 +1,5 @@
+descriminator,delay_from_start_ms,product_category_id,name
+ProductCategory,0,1,Bikes
+ProductCategory,0,2,Components
+ProductCategory,0,3,Clothing
+ProductCategory,0,4,Accessories

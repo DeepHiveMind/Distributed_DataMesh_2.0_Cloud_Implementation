@@ -1,0 +1,37 @@
+SET 'auto.offset.reset' = 'earliest';
+
+DROP STREAM IF EXISTS priv_order_created_event_s;
+
+CREATE OR REPLACE STREAM priv_order_created_event_s
+	WITH (KAFKA_TOPIC='priv.ecomm.salesorder.order-created.event.v1',
+		  VALUE_FORMAT='AVRO',
+		  KEY_FORMAT='KAFKA'
+		  );
+
+DROP STREAM IF EXISTS ecomm_salesorder_order_completed_event_item_s;
+DROP STREAM IF EXISTS ecomm_salesorder_order_completed_event_s;
+		  
+CREATE OR REPLACE STREAM ecomm_salesorder_order_completed_event_s
+	WITH (KAFKA_TOPIC='pub.ecomm.salesorder.order-completed.event.v1',
+		  VALUE_FORMAT='AVRO',
+		  KEY_FORMAT='KAFKA'
+		  );
+
+CREATE OR REPLACE STREAM ecomm_salesorder_order_completed_event_item_s
+	WITH (KAFKA_TOPIC='priv.ecomm.salesorder.order-completed-item.event.v1',
+		  VALUE_FORMAT='AVRO',
+		  KEY_FORMAT='KAFKA'
+		  )
+AS SELECT order->id				                AS order_id
+, explode(order->items)->quantity
+, explode(order->items)->unitprice            AS unit_price
+, explode(order->items)->product->productid   AS product_id
+, explode(order->items)->product->name 	      AS product_name
+FROM ecomm_salesorder_order_completed_event_s  
+emit changes;
+
+
+
+
+
+

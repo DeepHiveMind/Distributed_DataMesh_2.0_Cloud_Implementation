@@ -1,0 +1,43 @@
+POST http://localhost:8081/api/salesOrders
+Content-Type: application/json
+
+{
+  "id": 43836,
+  "shipMethodId": 1,
+  "revisionNumber": 8,
+  "orderDate": "2011-06-29T00:00:00.000Z",
+  "dueDate": "2011-07-11T00:00:00.000Z",
+  "shipDate": "2011-07-06T00:00:00.000Z",
+  "status": 5,
+  "accountNumber": "10-4030-026620",
+  "customerId": 26620,
+  "territoryId": 6,
+  "billToAddressId": 19261,
+  "shipToAddressId": 19261,
+  "currencyRateId": 381,
+  "subTotal": 699.0982,
+  "taxAmount": 55.9279,
+  "freight": 17.4775,
+  "totalDue": 772.5036,
+  "orderDetails": [
+    {
+      "id": 492,
+      "quantity": 1,
+      "productId": 761,
+      "specialOfferId": 1,
+      "unitPrice": 699.0982,
+      "unitPriceDiscount": 0
+    }
+  ],
+  "creditCard": {
+    "id": 6966,
+    "cardType": "Distinguish",
+    "cardNumber": "55556839566975",
+    "expMonth": 4,
+    "expYear": 2008,
+    "creditCardApprovalCode": "233797Vi36226"
+  }
+}
+
+###
+GET http://localhost:8081/api/salesOrder

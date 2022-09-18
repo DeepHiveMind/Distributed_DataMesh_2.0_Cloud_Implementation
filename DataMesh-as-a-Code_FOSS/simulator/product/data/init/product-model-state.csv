@@ -1,0 +1,129 @@
+descriminator,delay_from_start_ms,product_model_id,name
+ProductModel,0,1,Classic Vest
+ProductModel,0,2,Cycling Cap
+ProductModel,0,3,Full-Finger Gloves
+ProductModel,0,4,Half-Finger Gloves
+ProductModel,0,5,HL Mountain Frame
+ProductModel,0,6,HL Road Frame
+ProductModel,0,7,HL Touring Frame
+ProductModel,0,8,LL Mountain Frame
+ProductModel,0,9,LL Road Frame
+ProductModel,0,10,LL Touring Frame
+ProductModel,0,11,Long-Sleeve Logo Jersey
+ProductModel,0,12,'Men\'s Bib-Shorts'
+ProductModel,0,13,'Men\'s Sports Shorts'
+ProductModel,0,14,ML Mountain Frame
+ProductModel,0,15,ML Mountain Frame-W
+ProductModel,0,16,ML Road Frame
+ProductModel,0,17,ML Road Frame-W
+ProductModel,0,18,Mountain Bike Socks
+ProductModel,0,19,Mountain-100
+ProductModel,0,20,Mountain-200
+ProductModel,0,21,Mountain-300
+ProductModel,0,22,Mountain-400-W
+ProductModel,0,23,Mountain-500
+ProductModel,0,24,Racing Socks
+ProductModel,0,25,Road-150
+ProductModel,0,26,Road-250
+ProductModel,0,27,Road-350-W
+ProductModel,0,28,Road-450
+ProductModel,0,29,Road-550-W
+ProductModel,0,30,Road-650
+ProductModel,0,31,Road-750
+ProductModel,0,32,Short-Sleeve Classic Jersey
+ProductModel,0,33,Sport-100
+ProductModel,0,34,Touring-1000
+ProductModel,0,35,Touring-2000
+ProductModel,0,36,Touring-3000
+ProductModel,0,37,'Women\'s Mountain Shorts'
+ProductModel,0,38,'Women\'s Tights'
+ProductModel,0,39,Mountain-400
+ProductModel,0,40,Road-550
+ProductModel,0,41,Road-350
+ProductModel,0,42,LL Mountain Front Wheel
+ProductModel,0,43,Touring Rear Wheel
+ProductModel,0,44,Touring Front Wheel
+ProductModel,0,45,ML Mountain Front Wheel
+ProductModel,0,46,HL Mountain Front Wheel
+ProductModel,0,47,LL Touring Handlebars
+ProductModel,0,48,HL Touring Handlebars
+ProductModel,0,49,LL Road Front Wheel
+ProductModel,0,50,ML Road Front Wheel
+ProductModel,0,51,HL Road Front Wheel
+ProductModel,0,52,LL Mountain Handlebars
+ProductModel,0,53,Touring Pedal
+ProductModel,0,54,ML Mountain Handlebars
+ProductModel,0,55,HL Mountain Handlebars
+ProductModel,0,56,LL Road Handlebars
+ProductModel,0,57,ML Road Handlebars
+ProductModel,0,58,HL Road Handlebars
+ProductModel,0,59,LL Headset
+ProductModel,0,60,ML Headset
+ProductModel,0,61,HL Headset
+ProductModel,0,62,LL Mountain Pedal
+ProductModel,0,63,ML Mountain Pedal
+ProductModel,0,64,HL Mountain Pedal
+ProductModel,0,65,ML Touring Seat/Saddle
+ProductModel,0,66,LL Touring Seat/Saddle
+ProductModel,0,67,HL Touring Seat/Saddle
+ProductModel,0,68,LL Road Pedal
+ProductModel,0,69,ML Road Pedal
+ProductModel,0,70,HL Road Pedal
+ProductModel,0,71,LL Mountain Seat/Saddle 1
+ProductModel,0,72,ML Mountain Seat/Saddle 1
+ProductModel,0,73,HL Mountain Seat/Saddle 1
+ProductModel,0,74,LL Road Seat/Saddle 2
+ProductModel,0,75,ML Road Seat/Saddle 1
+ProductModel,0,76,HL Road Seat/Saddle 1
+ProductModel,0,77,ML Road Rear Wheel
+ProductModel,0,78,HL Road Rear Wheel
+ProductModel,0,79,LL Mountain Seat/Saddle 2
+ProductModel,0,80,ML Mountain Seat/Saddle 2
+ProductModel,0,81,HL Mountain Seat/Saddle 2
+ProductModel,0,82,LL Road Seat/Saddle 1
+ProductModel,0,83,ML Road Seat/Saddle 2
+ProductModel,0,84,HL Road Seat/Saddle 2
+ProductModel,0,85,LL Mountain Tire
+ProductModel,0,86,ML Mountain Tire
+ProductModel,0,87,HL Mountain Tire
+ProductModel,0,88,LL Road Tire
+ProductModel,0,89,ML Road Tire
+ProductModel,0,90,HL Road Tire
+ProductModel,0,91,Touring Tire
+ProductModel,0,92,Mountain Tire Tube
+ProductModel,0,93,Road Tire Tube
+ProductModel,0,94,Touring Tire Tube
+ProductModel,0,95,LL Bottom Bracket
+ProductModel,0,96,ML Bottom Bracket
+ProductModel,0,97,HL Bottom Bracket
+ProductModel,0,98,Chain
+ProductModel,0,99,LL Crankset
+ProductModel,0,100,ML Crankset
+ProductModel,0,101,HL Crankset
+ProductModel,0,102,Front Brakes
+ProductModel,0,103,Front Derailleur
+ProductModel,0,104,LL Fork
+ProductModel,0,105,ML Fork
+ProductModel,0,106,HL Fork
+ProductModel,0,107,Hydration Pack
+ProductModel,0,108,Taillight
+ProductModel,0,109,Headlights - Dual-Beam
+ProductModel,0,110,Headlights - Weatherproof
+ProductModel,0,111,Water Bottle
+ProductModel,0,112,Mountain Bottle Cage
+ProductModel,0,113,Road Bottle Cage
+ProductModel,0,114,Patch kit
+ProductModel,0,115,Cable Lock
+ProductModel,0,116,Minipump
+ProductModel,0,117,Mountain Pump
+ProductModel,0,118,Hitch Rack - 4-Bike
+ProductModel,0,119,Bike Wash
+ProductModel,0,120,Touring-Panniers
+ProductModel,0,121,Fender Set - Mountain
+ProductModel,0,122,All-Purpose Bike Stand
+ProductModel,0,123,LL Mountain Rear Wheel
+ProductModel,0,124,ML Mountain Rear Wheel
+ProductModel,0,125,HL Mountain Rear Wheel
+ProductModel,0,126,LL Road Rear Wheel
+ProductModel,0,127,Rear Derailleur
+ProductModel,0,128,Rear Brakes

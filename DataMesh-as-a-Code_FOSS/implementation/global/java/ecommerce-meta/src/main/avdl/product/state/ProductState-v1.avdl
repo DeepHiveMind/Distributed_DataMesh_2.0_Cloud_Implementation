@@ -1,0 +1,8 @@
+@namespace("com.trivadis.ecommerce.product.avro")
+protocol ProductStateProtocol {
+	import idl "../Product.avdl";
+
+	record ProductState {
+		Product product;
+	}
+}

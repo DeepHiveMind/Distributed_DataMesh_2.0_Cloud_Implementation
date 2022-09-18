@@ -1,0 +1,239 @@
+descriminator,delay_from_start_ms,countryregioncode,name
+CountryRegion,0,AD,Andorra
+CountryRegion,0,AE,United Arab Emirates
+CountryRegion,0,AF,Afghanistan
+CountryRegion,0,AG,Antigua and Barbuda
+CountryRegion,0,AI,Anguilla
+CountryRegion,0,AL,Albania
+CountryRegion,0,AM,Armenia
+CountryRegion,0,AN,Netherlands Antilles
+CountryRegion,0,AO,Angola
+CountryRegion,0,AQ,Antarctica
+CountryRegion,0,AR,Argentina
+CountryRegion,0,AS,American Samoa
+CountryRegion,0,AT,Austria
+CountryRegion,0,AU,Australia
+CountryRegion,0,AW,Aruba
+CountryRegion,0,AZ,Azerbaijan
+CountryRegion,0,BA,Bosnia and Herzegovina
+CountryRegion,0,BB,Barbados
+CountryRegion,0,BD,Bangladesh
+CountryRegion,0,BE,Belgium
+CountryRegion,0,BF,Burkina Faso
+CountryRegion,0,BG,Bulgaria
+CountryRegion,0,BH,Bahrain
+CountryRegion,0,BI,Burundi
+CountryRegion,0,BJ,Benin
+CountryRegion,0,BM,Bermuda
+CountryRegion,0,BN,Brunei
+CountryRegion,0,BO,Bolivia
+CountryRegion,0,BR,Brazil
+CountryRegion,0,BS,'Bahamas, The'
+CountryRegion,0,BT,Bhutan
+CountryRegion,0,BV,Bouvet Island
+CountryRegion,0,BW,Botswana
+CountryRegion,0,BY,Belarus
+CountryRegion,0,BZ,Belize
+CountryRegion,0,CA,Canada
+CountryRegion,0,CC,Cocos (Keeling) Islands
+CountryRegion,0,CD,Congo (DRC)
+CountryRegion,0,CF,Central African Republic
+CountryRegion,0,CG,Congo
+CountryRegion,0,CH,Switzerland
+CountryRegion,0,CI,'Côte d\'Ivoire'
+CountryRegion,0,CK,Cook Islands
+CountryRegion,0,CL,Chile
+CountryRegion,0,CM,Cameroon
+CountryRegion,0,CN,China
+CountryRegion,0,CO,Colombia
+CountryRegion,0,CR,Costa Rica
+CountryRegion,0,CS,Serbia and Montenegro
+CountryRegion,0,CU,Cuba
+CountryRegion,0,CV,Cape Verde
+CountryRegion,0,CX,Christmas Island
+CountryRegion,0,CY,Cyprus
+CountryRegion,0,CZ,Czech Republic
+CountryRegion,0,DE,Germany
+CountryRegion,0,DJ,Djibouti
+CountryRegion,0,DK,Denmark
+CountryRegion,0,DM,Dominica
+CountryRegion,0,DO,Dominican Republic
+CountryRegion,0,DZ,Algeria
+CountryRegion,0,EC,Ecuador
+CountryRegion,0,EE,Estonia
+CountryRegion,0,EG,Egypt
+CountryRegion,0,ER,Eritrea
+CountryRegion,0,ES,Spain
+CountryRegion,0,ET,Ethiopia
+CountryRegion,0,FI,Finland
+CountryRegion,0,FJ,Fiji Islands
+CountryRegion,0,FK,Falkland Islands (Islas Malvinas)
+CountryRegion,0,FM,Micronesia
+CountryRegion,0,FO,Faroe Islands
+CountryRegion,0,FR,France
+CountryRegion,0,GA,Gabon
+CountryRegion,0,GB,United Kingdom
+CountryRegion,0,GD,Grenada
+CountryRegion,0,GE,Georgia
+CountryRegion,0,GF,French Guiana
+CountryRegion,0,GH,Ghana
+CountryRegion,0,GI,Gibraltar
+CountryRegion,0,GL,Greenland
+CountryRegion,0,GM,'Gambia, The'
+CountryRegion,0,GN,Guinea
+CountryRegion,0,GP,Guadeloupe
+CountryRegion,0,GQ,Equatorial Guinea
+CountryRegion,0,GR,Greece
+CountryRegion,0,GS,South Georgia and the South Sandwich Islands
+CountryRegion,0,GT,Guatemala
+CountryRegion,0,GU,Guam
+CountryRegion,0,GW,Guinea-Bissau
+CountryRegion,0,GY,Guyana
+CountryRegion,0,HK,Hong Kong SAR
+CountryRegion,0,HM,Heard Island and McDonald Islands
+CountryRegion,0,HN,Honduras
+CountryRegion,0,HR,Croatia
+CountryRegion,0,HT,Haiti
+CountryRegion,0,HU,Hungary
+CountryRegion,0,ID,Indonesia
+CountryRegion,0,IE,Ireland
+CountryRegion,0,IL,Israel
+CountryRegion,0,IN,India
+CountryRegion,0,IO,British Indian Ocean Territory
+CountryRegion,0,IQ,Iraq
+CountryRegion,0,IR,Iran
+CountryRegion,0,IS,Iceland
+CountryRegion,0,IT,Italy
+CountryRegion,0,JM,Jamaica
+CountryRegion,0,JO,Jordan
+CountryRegion,0,JP,Japan
+CountryRegion,0,KE,Kenya
+CountryRegion,0,KG,Kyrgyzstan
+CountryRegion,0,KH,Cambodia
+CountryRegion,0,KI,Kiribati
+CountryRegion,0,KM,Comoros
+CountryRegion,0,KN,Saint Kitts and Nevis
+CountryRegion,0,KP,North Korea
+CountryRegion,0,KR,Korea
+CountryRegion,0,KW,Kuwait
+CountryRegion,0,KY,Cayman Islands
+CountryRegion,0,KZ,Kazakhstan
+CountryRegion,0,LA,Laos
+CountryRegion,0,LB,Lebanon
+CountryRegion,0,LC,Saint Lucia
+CountryRegion,0,LI,Liechtenstein
+CountryRegion,0,LK,Sri Lanka
+CountryRegion,0,LR,Liberia
+CountryRegion,0,LS,Lesotho
+CountryRegion,0,LT,Lithuania
+CountryRegion,0,LU,Luxembourg
+CountryRegion,0,LV,Latvia
+CountryRegion,0,LY,Libya
+CountryRegion,0,MA,Morocco
+CountryRegion,0,MC,Monaco
+CountryRegion,0,MD,Moldova
+CountryRegion,0,MG,Madagascar
+CountryRegion,0,MH,Marshall Islands
+CountryRegion,0,MK,'Macedonia, Former Yugoslav Republic of'
+CountryRegion,0,ML,Mali
+CountryRegion,0,MM,Myanmar
+CountryRegion,0,MN,Mongolia
+CountryRegion,0,MO,Macao SAR
+CountryRegion,0,MP,Northern Mariana Islands
+CountryRegion,0,MQ,Martinique
+CountryRegion,0,MR,Mauritania
+CountryRegion,0,MS,Montserrat
+CountryRegion,0,MT,Malta
+CountryRegion,0,MU,Mauritius
+CountryRegion,0,MV,Maldives
+CountryRegion,0,MW,Malawi
+CountryRegion,0,MX,Mexico
+CountryRegion,0,MY,Malaysia
+CountryRegion,0,MZ,Mozambique
+CountryRegion,0,NA,Namibia
+CountryRegion,0,NC,New Caledonia
+CountryRegion,0,NE,Niger
+CountryRegion,0,NF,Norfolk Island
+CountryRegion,0,NG,Nigeria
+CountryRegion,0,NI,Nicaragua
+CountryRegion,0,NL,Netherlands
+CountryRegion,0,NO,Norway
+CountryRegion,0,NP,Nepal
+CountryRegion,0,NR,Nauru
+CountryRegion,0,NU,Niue
+CountryRegion,0,NZ,New Zealand
+CountryRegion,0,OM,Oman
+CountryRegion,0,PA,Panama
+CountryRegion,0,PE,Peru
+CountryRegion,0,PF,French Polynesia
+CountryRegion,0,PG,Papua New Guinea
+CountryRegion,0,PH,Philippines
+CountryRegion,0,PK,Pakistan
+CountryRegion,0,PL,Poland
+CountryRegion,0,PM,Saint Pierre and Miquelon
+CountryRegion,0,PN,Pitcairn Islands
+CountryRegion,0,PR,Puerto Rico
+CountryRegion,0,PS,Palestinian Authority
+CountryRegion,0,PT,Portugal
+CountryRegion,0,PW,Palau
+CountryRegion,0,PY,Paraguay
+CountryRegion,0,QA,Qatar
+CountryRegion,0,RE,Réunion
+CountryRegion,0,RO,Romania
+CountryRegion,0,RU,Russia
+CountryRegion,0,RW,Rwanda
+CountryRegion,0,SA,Saudi Arabia
+CountryRegion,0,SB,Solomon Islands
+CountryRegion,0,SC,Seychelles
+CountryRegion,0,SD,Sudan
+CountryRegion,0,SE,Sweden
+CountryRegion,0,SG,Singapore
+CountryRegion,0,SH,Saint Helena
+CountryRegion,0,SI,Slovenia
+CountryRegion,0,SJ,Svalbard and Jan Mayen
+CountryRegion,0,SK,Slovakia
+CountryRegion,0,SL,Sierra Leone
+CountryRegion,0,SM,San Marino
+CountryRegion,0,SN,Senegal
+CountryRegion,0,SO,Somalia
+CountryRegion,0,SR,Suriname
+CountryRegion,0,ST,São Tomé and Príncipe
+CountryRegion,0,SV,El Salvador
+CountryRegion,0,SY,Syria
+CountryRegion,0,SZ,Swaziland
+CountryRegion,0,TC,Turks and Caicos Islands
+CountryRegion,0,TD,Chad
+CountryRegion,0,TF,French Southern and Antarctic Lands
+CountryRegion,0,TG,Togo
+CountryRegion,0,TH,Thailand
+CountryRegion,0,TJ,Tajikistan
+CountryRegion,0,TK,Tokelau
+CountryRegion,0,TL,Timor-Leste
+CountryRegion,0,TM,Turkmenistan
+CountryRegion,0,TN,Tunisia
+CountryRegion,0,TO,Tonga
+CountryRegion,0,TR,Turkey
+CountryRegion,0,TT,Trinidad and Tobago
+CountryRegion,0,TV,Tuvalu
+CountryRegion,0,TW,Taiwan
+CountryRegion,0,TZ,Tanzania
+CountryRegion,0,UA,Ukraine
+CountryRegion,0,UG,Uganda
+CountryRegion,0,UM,U.S. Minor Outlying Islands
+CountryRegion,0,US,United States
+CountryRegion,0,UY,Uruguay
+CountryRegion,0,UZ,Uzbekistan
+CountryRegion,0,VA,Vatican City
+CountryRegion,0,VC,Saint Vincent and the Grenadine
+CountryRegion,0,VE,Venezuela
+CountryRegion,0,VG,'Virgin Islands, British'
+CountryRegion,0,VI,'Virgin Islands, U.S.'
+CountryRegion,0,VN,Vietnam
+CountryRegion,0,VU,Vanuatu
+CountryRegion,0,WF,Wallis and Futuna
+CountryRegion,0,WS,Samoa
+CountryRegion,0,YE,Yemen
+CountryRegion,0,YT,Mayotte
+CountryRegion,0,ZA,South Africa
+CountryRegion,0,ZM,Zambia
+CountryRegion,0,ZW,Zimbabwe

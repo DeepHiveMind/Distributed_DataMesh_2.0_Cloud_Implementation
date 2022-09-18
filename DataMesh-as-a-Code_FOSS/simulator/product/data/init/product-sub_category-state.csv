@@ -1,0 +1,38 @@
+descriminator,delay_from_start_ms,product_sub_category_id,product_category_id,name
+ProductSubCategory,0,1,1,Mountain Bikes
+ProductSubCategory,0,2,1,Road Bikes
+ProductSubCategory,0,3,1,Touring Bikes
+ProductSubCategory,0,4,2,Handlebars
+ProductSubCategory,0,5,2,Bottom Brackets
+ProductSubCategory,0,6,2,Brakes
+ProductSubCategory,0,7,2,Chains
+ProductSubCategory,0,8,2,Cranksets
+ProductSubCategory,0,9,2,Derailleurs
+ProductSubCategory,0,10,2,Forks
+ProductSubCategory,0,11,2,Headsets
+ProductSubCategory,0,12,2,Mountain Frames
+ProductSubCategory,0,13,2,Pedals
+ProductSubCategory,0,14,2,Road Frames
+ProductSubCategory,0,15,2,Saddles
+ProductSubCategory,0,16,2,Touring Frames
+ProductSubCategory,0,17,2,Wheels
+ProductSubCategory,0,18,3,Bib-Shorts
+ProductSubCategory,0,19,3,Caps
+ProductSubCategory,0,20,3,Gloves
+ProductSubCategory,0,21,3,Jerseys
+ProductSubCategory,0,22,3,Shorts
+ProductSubCategory,0,23,3,Socks
+ProductSubCategory,0,24,3,Tights
+ProductSubCategory,0,25,3,Vests
+ProductSubCategory,0,26,4,Bike Racks
+ProductSubCategory,0,27,4,Bike Stands
+ProductSubCategory,0,28,4,Bottles and Cages
+ProductSubCategory,0,29,4,Cleaners
+ProductSubCategory,0,30,4,Fenders
+ProductSubCategory,0,31,4,Helmets
+ProductSubCategory,0,32,4,Hydration Packs
+ProductSubCategory,0,33,4,Lights
+ProductSubCategory,0,34,4,Locks
+ProductSubCategory,0,35,4,Panniers
+ProductSubCategory,0,36,4,Pumps
+ProductSubCategory,0,37,4,Tires and Tubes

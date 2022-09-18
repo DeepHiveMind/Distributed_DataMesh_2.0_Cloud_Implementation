@@ -1,0 +1,9 @@
+@namespace("com.trivadis.ecommerce.churndetect.avro")
+protocol ChurnProbabilityProtocol {
+
+	record ChurnProbability {
+		int customerId;
+		timestamp_ms timestamp;
+		float churnProbability;
+	}
+}

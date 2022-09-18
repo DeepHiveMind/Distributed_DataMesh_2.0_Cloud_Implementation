@@ -1,0 +1,47 @@
+@namespace("com.trivadis.ecommerce.salesorder.priv.avro")
+protocol SalesOrderEnrichedProtocol {
+
+	import idl "SalesOrder.avdl";
+
+	record Country {
+		string isoCode2;
+		string isoCode3;
+		int numericCode;
+		string shortName;
+	}
+	record Address {
+		long id;
+
+		union { string, null } salutation;
+		string firstName;
+		string lastName;
+		union { string, null } additionalAddressLine1;
+		union { string, null } additionalAddressLine2;
+
+		string street;
+		string zipcode;
+
+		string city;
+
+		Country country;
+	}
+
+	record Customer {
+		long id;
+		string name;
+	}
+
+	record Product {
+		long productId;
+		string name;
+	}
+
+	record SalesOrderEnriched {
+		SalesOrder salesOrder;
+
+		union { null,Customer } customer;
+		union { null, Address } billingAddress;
+		union { null, Address } shippingAddress;
+//		union { Product, null} product;
+	}
+}

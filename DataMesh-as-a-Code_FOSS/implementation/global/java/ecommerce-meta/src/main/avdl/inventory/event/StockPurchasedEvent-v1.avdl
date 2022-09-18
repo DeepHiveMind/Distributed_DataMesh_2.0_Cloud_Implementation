@@ -1,0 +1,12 @@
+@namespace("com.trivadis.ecommerce.salesorder.event.avro")
+protocol StockPurchasedEventProtocol {
+	import idl "../../base/DomainEventBaseTypes.avdl";
+
+	record StockPurchaseddEvent {
+		com.trivadis.ecommerce.domainevent.avro.DomainEventIdentity identity;
+
+		long productId;
+		int quantity;
+		int productCurrentQuantity;
+	}
+}
