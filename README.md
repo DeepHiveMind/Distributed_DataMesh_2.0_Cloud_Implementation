@@ -287,8 +287,9 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 	- [Reference Books](#Reference-Books)
 	- [Community Resources](#community-resources)
 	- [Conferences](#conferences)
-	
-Please refer to the [Curated list of Data MESH Artefacts for reference](README_DataMesh_Reference_Artefacts_CuratedList.md)
+
+This repo also offers 'Curated list of Data MESH Artefacts' available in public domain.
+Please refer to the [Curated list of Data MESH Artefacts](README_DataMesh_Reference_Artefacts_CuratedList.md) for further reference.
 
 
 ## License
