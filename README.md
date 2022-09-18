@@ -87,9 +87,11 @@ Organizations of all sizes have recognized that data is one of the key enablers 
 
 - STEP 2: *The Challenge/ Bottleneck with 'Central Data Platform'*: 
 Managing data through a Central Data Platform can create following multi-dimensional challenges, --
+
 		 [a] scaling, 
 		 [b] ownership,
-		 [c] accountability challenges, 
+		 [c] accountability challenges,
+		 
 because central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.
 
 		[d] Huge backlog -- 'Central Data platform' pattern works for smaller organizations and organizations that have a high degree of centralization from a team setup perspective. However, using only a single team often creates a bottleneck in larger organizations. This bottleneck causes a huge backlog, with parts of an organization having to wait for data integration services and Analytical solutions. 
