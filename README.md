@@ -26,27 +26,32 @@ Disclamer:
 # Agenda
 - **Nuances of The Universe of "Ditributed Data Mesh 2.0"**
 
-1. [What is the Business Goal of Enterprise Data MESH?](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) 
- 
-			>> 1. [What is the Business Goal of Enterprise Data MESH?](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) | 
-			>> 2. Why Data MESH paradigm? | 		
-			>> 3. Enterprise Data MESH Architecture Principles |  
-			>> 4. Data Mesh Domain-Driven Pattern |  
-			>> 5. Data Mesh Technology Patterns |   
-			>> 6. DATA Mesh TOPOLOGY Patterns (Topology for decentralized distributed domain-driven data-product nodes) in Distributed Data Mesh 2.0|
-			>> 7. Self-serve Data Platform Infrastructure |	
-			>> 8. User Persona of Enterprise Data Mesh  |	
-			>> 9. Data Mesh Reference Artefacts in Public Domain |
+1. [What is Enterprise Data MESH?](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) 
+2. [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh)
+3. [Why Data MESH paradigm? / Drivers of Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#why-data-mesh-architecturemodelparadigm)| 
+			- The Beauty of 'Central Data Platform'
+			- The Challenge/ Bottleneck with 'Central Data Platform'
+			- 'Data Mesh as Solution'
+4. [Enterprise Data MESH - Architecture Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#architecture-principles-of-enterprise-data-mesh) |  
+6. [Data Mesh Techno-functional Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-techno-functional-patterns) |   
+7. [DATA Mesh TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns)|
+8. [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
+9. [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |	
+10. [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 
-- DataMesh-as-a-Code on Cloud 
- 
+- **DataMesh-as-a-Code on Cloud** 
+Industrialization of Data Mesh on Azure/AWS Cloud using Cloud-native IaaS/PaaS/FaaS, Free & Open Source Technologies et al.
+
+[Distributed-Data-Mesh-as-a-Code on Cloud](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#datamesh-as-a-code-on-cloud)
+
 		>>>> A. DataMesh-as-a-Code on Azure Cloud |  
 		>>>> B. DataMesh-in-practice on AWS Cloud |  
 		>>>> C. DataMesh-as-a-Code on Open Source Technology (FOSS) |  
 		>>>> D. DataMesh-in-Practice with DataBricks |   
 		>>>> E. DataMesh-in-practice with Confluent Kafka |
-
+	
+Please refer to different sub-folders in this repository to access the codesets.
 <br>
 <br>
 
@@ -240,6 +245,7 @@ Illustration of key Techno-functional Patterns of Data Mesh are as following-
 <br>
 
 ## Data MESH TOPOLOGY Patterns
+Topology is the key driver for decentralized distributed domain-driven data-product nodes in Distributed Data Mesh 2.0.
 
 #### 3 Major DECENTRALIZED Topology Patterns are based on (a) Data Mesh Node Pattern and (b) Data Monetization feasibility -
 - Governed Data Mesh topology
@@ -321,7 +327,7 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
 		
-
+Please refer to different sub-folders in this repository to access the codesets.
 
 ## Data Mesh Reference Artefacts in Public Domain 
 
