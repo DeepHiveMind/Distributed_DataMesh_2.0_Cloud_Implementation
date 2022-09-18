@@ -67,7 +67,7 @@ Disclamer:
 ###### To be an integral part of Data Mesh OSS Community, Please make sure to go through the original paper on **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** 
 <br>
 
-## Why DATA MESH Architecture/ Model/ Paradigm?
+## Why DATA MESH Architecture/Model/Paradigm?
 Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Decentralized Domain Oriented Data Product, powered by Topologies for Decentralized Data-Product Node governance with Self-serve Data Infra)?
 
 - The Beauty of 'Central Data Platform': Organizations of all sizes have recognized that data is one of the key enablers to increase and sustain innovation, and drive value for their customers and business units. They are eagerly modernizing traditional data platforms with cloud-native technologies that are highly scalable, feature-rich, and cost-effective.A centralized model is intended to simplify staffing and training by centralizing data and technical expertise in a single place, to reduce technical debt by managing a single data platform, and to reduce operational costs.
@@ -79,7 +79,7 @@ Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Dece
 <br>
 <br>
 
-## What are Architecture Principles of Enterprise Data MESH?
+## Architecture Principles of Enterprise Data MESH
 
 **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to DOMAIN-ORIENTED + DATA PRODUCT + SELF-SERVE DATA Infra + DECENTRALIZED TOPOLOGY data architecture that conforms to the following main Architecture Principles, such as: 
 
@@ -110,12 +110,35 @@ Why to move from 'Central Data Platform' Architectue to Data Mesh Paradigm (Dece
 <br>
 <br>
 
-## Data Mesh Domain-driven Patterns
+## Data Mesh Domain-Driven Patterns
 
-Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-shop (Overall Biz Domain: ECommerce) with - 
-	- Domain : Product / Product Recommendation
-	- Bounded Context : Product / Production Recommendation
-	- Data Product Name : Product Sales / Recommendation
+Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-shop (Overall Biz Domain: ECommerce) with -
+
+
+	1. Domain : Product
+		a. Bounded Context : Product  
+		b. Data Product Name : Product Sales  
+
+
+	2. Domain : Product Recommendation
+		a. Bounded Context : Production Recommendation  
+		b. Data Product Name : Recommendation  
+
+ 	
+	3. Self-serve Infra for data platform (DataInfra-as-a-Service)
+
+	4. Centeralized Data Governance  
+		a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)  
+		b. Unified Policy Management  
+		c. Unified Data Virtualization Service  
+		d. Federated Data Access Control Service  
+		e. Organization wide Secured Data Sharing
+
+	5. DATA MESH Topology (DECENTRALIZED Topology to power DataMesh NODE PATTERN)
+		a. Governed Data Mesh topology  
+		b. Harmonized Data Mesh topology  
+		c. Highly federated Data Mesh topology 
+
 
 <br>
 <br>
