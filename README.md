@@ -25,20 +25,21 @@ Disclamer:
 
 # Agenda
 - Nuances of The Universe of "Ditributed Data Mesh 2.0"  
-		>> 1. What is the Business Goal of Enterprise Data MESH? |  
+		>> 1. What is the Business Goal of Enterprise Data MESH? | 
 		>> 2. Why Data MESH paradigm? | 		
 		>> 3. Enterprise Data MESH Architecture Principles |  
-		>> The Goal of Data Mesh |  
-		>> Enterprise Data MESH Architecture Principles |  
-		>> Data Mesh Patterns |  
-		>> User Persona of Enterprise Data Mesh  |  
-		>> DATA MESH TOPOLOGY (Topology for decentralized distributed domain-driven data-product nodes) in Distributed Data Mesh 2.0| 
+		>> 4. Data Mesh Domain-Driven Pattern |  
+		>> 5. Data Mesh Technology Patterns |   
+		>> 6. DATA Mesh TOPOLOGY Patterns (Topology for decentralized distributed domain-driven data-product nodes) in Distributed Data Mesh 2.0|  
+		>> 7. User Persona of Enterprise Data Mesh  |  
 
-- DataMesh-as-a-Code on Cloud
->>>> DataMesh-as-a-Code on Azure Cloud | 
->>>> DataMesh-in-practice on AWS Cloud | 
->>>> DataMesh-in-Practice with DataBricks | 
->>>> DataMesh-in-practice with Confluent Kafka |
+
+- DataMesh-as-a-Code on Cloud  
+		>>>> A. DataMesh-as-a-Code on Azure Cloud |  
+		>>>> B. DataMesh-in-practice on AWS Cloud |  
+		>>>> C. DataMesh-as-a-Code on Open Source Technology (FOSS) |  
+		>>>> D. DataMesh-in-Practice with DataBricks |   
+		>>>> E. DataMesh-in-practice with Confluent Kafka |
 
 
 <br>
