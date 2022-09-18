@@ -24,16 +24,17 @@ Disclamer:
 <br>
 
 # Agenda
-The Repo welcomes members of OSS Community (Open Source Community) with 2 major sections/segments.
+*The Repo welcomes members of OSS Community (Open Source Community) with 2 major sections/segments - *
  
-The 1st one is more of a conceptual artefacts (all bundeled under "Nuances of The Universe of Ditributed Data Mesh 2.0" section). This segment intends to offer all the major bells-and-whistles to get a broader vision, mission and understanding of Enterprise Data MESH framework.
+*The 1st segment is more of a conceptual artefacts (all bundeled under "Nuances of The Universe of Ditributed Data Mesh 2.0" section). This segment intends to offer all the major bells-and-whistles to get a broader vision, mission and understanding of Enterprise Data MESH framework.*
 
-The 2nd segment is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud" section). This segment intends to share keys aspects of codesets (please note not all the codesets) in order to Industrialize Enterprise Data MESH framework.
+*The 2nd segment is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud" section). This segment intends to share keys aspects of codesets (please note not all the codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License"].
+*In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License"].*
 
 
-- **Nuances of The Universe of "Ditributed Data Mesh 2.0"**
+
+- [SEGMENT 1]  **Nuances of The Universe of "Ditributed Data Mesh 2.0"** 
 
 1. [What is Enterprise Data MESH?](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
 2. [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
@@ -51,7 +52,7 @@ In case, [a] you're willing to contribute to the FOSS Community for Data MESH, o
 10. [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 
-- **DataMesh-as-a-Code on Cloud** 
+- [SEGMENT 2] **DataMesh-as-a-Code on Cloud** 	
 Industrialization of Data Mesh on Azure/AWS Cloud using Cloud-native IaaS/PaaS/FaaS, Free & Open Source Technologies et al.
 
 [Distributed-Data-Mesh-as-a-Code on Cloud](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#datamesh-as-a-code-on-cloud)
