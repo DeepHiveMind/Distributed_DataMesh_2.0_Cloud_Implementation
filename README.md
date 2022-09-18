@@ -164,13 +164,13 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 <br>
 <br>
 
-|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**|
+|**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**|
 | :---: | :---:| :---:|
-| Pattern_Data Mesh & Data Product Catalog | Pattern_Data Mesh & Event Streaming backbone |  Pattern_Data Mesh & Data Lienage| 
-|<img src="images/Pattern_Data Mesh & Data Product Catalog.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & Event Streaming backbone .png" width="500" height="200" border="10">|<img src="images/Scenario_Data Mesh & Data Lienage.png" width="500" height="200" border="10">|
-|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**| 
+| showcase-Overview | Shop-SalesOrder-Customer-Product-DOMAIN Implmentation |  Sales Order Sub-domain| 
+|<img src="Infographics_Domain/showcase-overview.png" width="500" height="200" border="10">|<img src="Infographics_Domain/shop-domain-impl.png" width="500" height="200" border="10">|<img src="Infographics_Domain/salesorder-order-completed-dp-impl.png" width="500" height="200" border="10">|
+|**Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| **Data MESH Domain-Driven PATTERN**| 
 | Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
-|<img src="images/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="images/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
+|<img src="Infographics_Domain/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="Infographics_Domain/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="Infographics_Domain/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
 
 <br>
 <br>
