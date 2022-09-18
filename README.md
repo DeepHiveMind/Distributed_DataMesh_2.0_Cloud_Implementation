@@ -124,21 +124,42 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 		a. Bounded Context : Production Recommendation  
 		b. Data Product Name : Recommendation  
 
- 	
-	3. Self-serve Infra for data platform (DataInfra-as-a-Service)
+	3. Domain : Customer
+		a. Bounded Context : Customer  
+		b. Data Product Name : Customer Data  
 
-	4. Centeralized Data Governance  
-		a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)  
-		b. Unified Policy Management  
-		c. Unified Data Virtualization Service  
-		d. Federated Data Access Control Service  
-		e. Organization wide Secured Data Sharing
+	4. Domain : Customer
+		a. Bounded Context : Customer  
+		b. Data Product Name : Customer Segmentation  
 
-	5. DATA MESH Topology (DECENTRALIZED Topology to power DataMesh NODE PATTERN)
-		a. Governed Data Mesh topology  
-		b. Harmonized Data Mesh topology  
-		c. Highly federated Data Mesh topology 
+	5. Domain : Customer
+		a. Bounded Context : Customer  
+		b. Data Product Name : Customer Interactions  
 
+	6. Domain : Churn
+		a. Bounded Context : Churn Detection
+		b. Data Product Name : Churn Detection 
+
+	7. Domain : E-Shop
+		a. Bounded Context : E-Shop 
+		b. Data Product Name : Shopping cart 
+
+	8. Domain : E-Shop
+		a. Bounded Context : E-Shop 
+		b. Data Product Name : Page Navigation 
+
+	9. Domain : E-Shop
+		a. Bounded Context : E-Shop 
+		b. Data Product Name : User Information 
+
+	5. Domain : Order Processing
+		a. Bounded Context : Order Processing  
+		b. Data Product Name : OrderProcessingUpdate  
+
+	... more..
+
+
+ 
 
 <br>
 <br>
