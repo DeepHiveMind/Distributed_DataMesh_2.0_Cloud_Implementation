@@ -34,8 +34,9 @@ In case, [a] you're willing to contribute to the FOSS Community for Data MESH, o
 5. [Data Mesh Techno-functional Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-techno-functional-patterns) |   
 6. [DATA Mesh TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns) |
 7. [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
-8. [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |	
+8. [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |
 9. [The Challenges of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
+10. [Data Fabric vs Data Mesh]()	
 10. [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 
@@ -100,7 +101,8 @@ Attention:
 ###### To be an integral part of Data Mesh OSS Community, Please make sure to go through the original paper on **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** 
 
 
-<img alt="data-mesh-pillars" src="/images/data-mesh-pillars.jpg" width="250" height="200"/> |<img alt="Data Mesh Domain Primer" src="/images/Data Mesh Domain Primer.webp" width="250" height="200"/> |<img alt="data-mesh-martin-fowler" src="/images/data-mesh-martin-fowler.png" width="250" height="200"/> |<img alt="Mesh of DataProductNodes" src="/images/Mesh of DataProductNodes.jpg" width="250" height="200"/>
+<img alt="data-mesh-pillars" src="/images/data-mesh-pillars.jpg" width="250" height="200"/> |<img alt="Data Mesh Domain Primer" src="/images/Data Mesh Domain Primer.webp" width="250" height="200"/> |<img alt="data-mesh-martin-fowler" src="/images/data-mesh-martin-fowler.png" width="250" height="200"/> |<img alt="Data Mesh_Logical Architecture" src="/images/Data Mesh_Logical Architecture.jpg" width="250" height="200"/> |<img alt="Mesh of DataProductNodes" src="/images/Mesh of DataProductNodes.jpg" width="250" height="200"/> |<img alt="Data Product_Input Ports_Output Ports.jpg" src="/images/Data Product_Input Ports_Output Ports.jpg" width="250" height="200"/> |
+
 
 <br>
 
@@ -329,6 +331,10 @@ While Data Mesh allows much more room to flex and scale, as every other paradigm
 <br>
 <br>
 
+## Data Fabric vs Data Mesh
+
+<br>
+<br>
 ## DataMesh-as-a-Code on Cloud
 
 - [Distributed-Data-Mesh-as-a-Code on Cloud]
