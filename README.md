@@ -25,7 +25,7 @@ In case, [a] you're willing to contribute to the FOSS Community for Data MESH, o
 <br>
 
 
-- :eight_pointed_black_star: [THE SEGMENT 1] - **Conceptual nuances of The Universe of 'Ditributed Data Mesh 2.0'** 
+- :eight_pointed_black_star: [THE SEGMENT 1 for poets] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
 
 	- 1. [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
 	- 2. [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
@@ -40,7 +40,7 @@ In case, [a] you're willing to contribute to the FOSS Community for Data MESH, o
 	- 11. [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 
-- :eight_pointed_black_star: [THE SEGMENT 2] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
+- :eight_pointed_black_star: [THE SEGMENT 2 for doers] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
 	- 1. [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)	
 	- 2. [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)	
 	- 3. [DataMesh-in-practice with DATABRICKS](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
