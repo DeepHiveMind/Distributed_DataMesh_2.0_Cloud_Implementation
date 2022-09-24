@@ -456,7 +456,7 @@ Data Mesh Industrialization Codeset
 
 
 |<img alt="DataProducer_DataConsumer_RefArchitecture.png" src="/Infographics_Domain/AWS_DataMesh/DataProducer_DataConsumer_RefArchitecture.png" width="250" height="200"/> |<img alt="DataDomain_Producer & Consumer_Architecture.png" src="/Infographics_Domain/AWS_DataMesh/DataDomain_Producer%20%26%20Consumer_Architecture.png" width="250" height="200"/> |<img alt="DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" src="/Infographics_Domain/AWS_DataMesh/DataLake%20Account_Central%20Governance%20Account_Consumer%20Account_%20E2EWorkflow_architecture.png" width="250" height="200"/> |
-|<img alt="Cross Account_DataMesh_Architecture.png" src="/Infographics_Domain/AWS_DataMesh/Cross%20Account_DataMesh_Architecture.png" width="250" height="200"/> | <img alt="DataMesh Catalog_Data flow Audit_ABCR.png" src="/Infographics_Domain/AWS_DataMesh/DataMesh%20Catalog_Data%20flow%20Audit_ABCR.png" width="250" height="200"/> | <img alt="Mesh Catalog_Block diagram.png" src="/Infographics_Domain/AWS_Datamesh/Infographics_Domain/AWS_DataMesh/Mesh%20Catalog_Block%20diagram.png" width="250" height="200"/> |
+|<img alt="Cross Account_DataMesh_Architecture.png" src="/Infographics_Domain/AWS_DataMesh/Cross%20Account_DataMesh_Architecture.png" width="250" height="200"/> | <img alt="DataMesh Catalog_Data flow Audit_ABCR.png" src="/Infographics_Domain/AWS_DataMesh/DataMesh%20Catalog_Data%20flow%20Audit_ABCR.png" width="250" height="200"/> | <img alt="Mesh Catalog_Block diagram.png" src="/Infographics_Domain/AWS_DataMesh/Mesh%20Catalog_Block%20diagram.png" width="250" height="200"/> |
 
 - AWS DataMesh Sample implementation Codeset		
 
