@@ -174,7 +174,7 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 <br>
 <br>
 
-## Data Mesh Domain-Driven Patterns
+## Data Mesh Domain-Driven Architecture Patterns
 
 Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-shop (Overall Biz Domain: ECommerce) with -
 
