@@ -301,10 +301,24 @@ Topology is the key driver for decentralized distributed domain-driven data-prod
 | **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| 
 |<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
 
-Based on nuances and considerations, different data mesh topologies can be used.
-- Governance TOPPLOGY: Different Approaches <img alt="Additional Governance TOPOLOGIES" src="/images/Additional Governance TOPOLOGIES.webp" width="800" height="450"/>
 
-Microsoft Ignite Reference on TOPOLOGY (Harmonized Data Mesh Topology) -  [A financial institution scenario for data mesh by Microsoft Ignite](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-data-mesh)
+- Governed Mesh Topology: 
+	- The first pattern is the “governed mesh topology”. In this model, as it's evident from the image above, the different data domains are grouped and represented as nodes. Each node can be seen as a domain, which can represent itself as either a data provider and/or data consumer towards the other domains.
+	- The central heart in the architecture represents all data governance and management solutions for staying in control. It hosts a data catalogue, policy and security enforcement, mesh wide audit capabilities, monitoring, and auxiliary services for deployment and automation.
+	- The benefit of the governed mesh approach is that it better addresses the time-variant and non-volatile concerns for large data consumers. So, it supports can domain time-travel and data deliveries are managed via time periods, which are centrally orchestrated. At the same time, you can block any data distribution in case of data quality problems, for example when cross identifiers between domains don’t match. Another benefit is that you more efficiently can share (central) compute resources.
+	
+- Harmonized Mesh Topology:
+	- The second pattern is the harmonized mesh topology, a term that first has been coined by John Mallinder. In this model nodes operate more on their own. Data distribution goes point-to-point but is governed at the same time.
+	- The benefit of this model is higher flexibility and autonomy for the different domains. The drawback of the model is more network traffic and less efficient utilization of resources, since the entire model is federated. It also requires more mature teams and excellent self-serve (cloud) infrastructure to be up and running.
+	
+- Highly Federated Mesh Topology:
+	- The key last approach is called a highly federated mesh approach. In this model there’s high autonomy for domains to implement their own stack of technologies in different environments. This results in greater flexibility for special domains, experiments or domains that require fast time to market.
+	- In this model you could even pursue a mixed governance model: distribution via hubs, point-to-point or combination of these. Concretely, this means that the model is changed to give domains flexibility to choose, build, and run their own flavor of, for example, any database or integration platform. Domains in this federated approach are required to hook their solutions into the central governance capabilities themselves. The metadata (ownership, data product information, sharing agreement, etc.) is always managed centrally. 
+
+Based on nuances and considerations, different data mesh topologies can be used.
+- Governance TOPPLOGY: Different Approaches <img alt="Additional Governance TOPOLOGIES" src="/images/Additional Governance TOPOLOGIES.webp" width="500" height="200" border="10">
+
+Microsoft Ignite Reference on TOPOLOGY (Governed Data Mesh Topology) -  [A financial institution scenario for data mesh by Microsoft Ignite](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-data-mesh)
 - [Harmonized Data Mesh Topology reference from Microsoft Ignite]<img src="images/Data Mesh Enterprise Architecture.png" width="500" height="200" border="10">
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
