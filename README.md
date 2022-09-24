@@ -67,6 +67,7 @@ In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*,
 <br>
 <br>
 <br>
+<br>
 
 ## What is Enterprise Data MESH?
 
