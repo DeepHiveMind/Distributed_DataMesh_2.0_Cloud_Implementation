@@ -340,8 +340,9 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
  1. "The *Core* Data Platform" with all the technologies for building the **DATA PRODUCTS**
  2. "The *Governance* Data Platform" which hosts the **Governance related services for maniging the data products** 
  
-Self-Serve Data-Platform-Infra:
-<img src="images/Self-Serve_Data-Platform-Infra.png" width="500" height="200" border="10">
+- Self-Serve Data-Platform-Infra:
+
+<img src="images/Self-Serve_Data-Platform-Infra.png" width="500" height="400" border="10">
  
 <br>
 <br>
