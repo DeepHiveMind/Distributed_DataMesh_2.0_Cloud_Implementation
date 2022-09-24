@@ -20,9 +20,6 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 *The 2nd segment is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-*Disclaimer*:
-In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
-<br>
 
 
 - :eight_pointed_black_star: [THE SEGMENT 1 for poets] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
@@ -54,6 +51,9 @@ In case, [a] you're willing to contribute to the FOSS Community for Data MESH, o
 	
 Please refer to different sub-folders in this repository to access the codesets. The codesets reflects Industrialization of Data Mesh on Azure/AWS Cloud using Cloud-native IaaS/PaaS/FaaS, Free & Open Source Technologies etc.
 
+**Disclaimer**:
+In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
 <br>
 <br>
 
