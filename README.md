@@ -36,7 +36,7 @@ Disclamer:
 
 - :eight_pointed_black_star: [THE SEGMENT 1] - **Conceptual nuances of The Universe of 'Ditributed Data Mesh 2.0'** 
 
-1. [What is Enterprise Data MESH?](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
+1. [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
 2. [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
 3. [Why Data MESH paradigm / Drivers of Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#why-data-mesh-architecturemodelparadigm) |
 4. [Enterprise Data MESH - Architecture Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#architecture-principles-of-enterprise-data-mesh) |  
@@ -65,13 +65,19 @@ Please refer to different sub-folders in this repository to access the codesets.
 <br>
 
 ## What is Enterprise Data MESH?
-- "A Data Mesh is a paradigm shift in how we think about building data platforms. The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
+- "A Data Mesh is a paradigm shift in how we think about building data platforms. 
+The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
 -- Zhamak Dehghani, Thoughtworks
 
-- Data Mesh is a new/modern Data Platform paradigm to *DOMAIN-ORIENTED + DATA-PRODUCT + SELF-SERVE DATA Infra PLATFORM + FEDERATED GOVERNANCE + DECENTRALIZED TOPOLOGY* driven modern distributed data architecture that conforms to [A] the certain defined Architecture Principles (as detailed in below section) and [B] the tenets, such as:  
-	(i) Considering domains as the first class concern,  
-	(ii) Applying platform thinking to create self-serve data infrastructure, and  
-	(iii) Treating data as a product
+- Data Mesh is a new/modern Data Platform paradigm to *DOMAIN-ORIENTED + DATA-PRODUCT + SELF-SERVE DATA Infra PLATFORM + FEDERATED GOVERNANCE + DECENTRALIZED TOPOLOGY* driven modern distributed data architecture that conforms to 
+	[A] the certain defined [Architecture Principles as detailed in below section](#architecture-principles-of-enterprise-data-mesh) and 
+	[B] the tenets, such as:  
+		(i) Considering Domains as the first class concern,  
+		(ii) Applying Platform thinking to create Self-Serve Data Infrastructure, and  
+		(iii) Treating Data as a Product with
+		(iv) Federated Governance
+
+- 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
 
 #### The Domain-driven Goal of DATA MESH
 
