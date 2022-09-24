@@ -14,6 +14,8 @@
 <br>
 
 # Agenda
+<img alt="Should I be Meshing?" src="/images/Agenda.jfif" width="950" height="250"/>
+
 The Repo welcomes members of Data Mesh OSS Community (Open Source Community) with 2 major sections/segments - 
  
 *'The 1st segment' is more of a conceptual artefacts (all bundeled under "Conceptual nuances of The Universe of Ditributed Data Mesh 2.0" section). This segment intends to offer all the major bells-and-whistles to get a broader vision, mission and understanding of Enterprise Data MESH framework.*
