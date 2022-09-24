@@ -338,7 +338,7 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 
 ## Enterprise Data Mesh Data-Product User Persona 
 - Data Product Owners
-	- - Citizen Developers (assisted by LCNC)
+		- Citizen Developers (assisted by LCNC)
 - Data Management & Governance 'Stewards'
 - Semantic Specialists
 - Data Story Tellers & Navigation SME
@@ -377,18 +377,20 @@ Whereas, the Data Mesh paradigm stands for decentralised and domain-specific dat
 
 ## Distributed-DataMesh-as-a-Code on Cloud
 
-Data Mesh Industrialization Codeset 
-	- DataMesh-as-a-Code-on-AZURE	
-	- DataMesh-as-a-Code_with_FOSS
-	- DataMesh-as-a-Code-on-AWS
-	- DataMesh-as-a-Code-on-GCP
-	- DataMesh-as-a-Code-on-DATABRICKS
-	- DataMesh-as-a-Code-on-CONFLUENT
+Data Mesh Industrialization Codeset
+ 
+		- DataMesh-as-a-Code-on-AZURE	
+		- DataMesh-as-a-Code_with_FOSS
+		- DataMesh-as-a-Code-on-AWS
+		- DataMesh-as-a-Code-on-GCP
+		- DataMesh-as-a-Code-on-DATABRICKS
+		- DataMesh-as-a-Code-on-CONFLUENT
 
 
-#### DataMesh-as-a-Code on AZURE 
+### DATAMESH-AS-A-CODE on AZURE 
+
 - Azure cloud-native Data Mesh Architecture 
-
+<img alt="DataMesh_Principles_Zamak_Martin.png" src="/images/DataMesh_Principles_Zamak_Martin.png" width="250" height="200"/> |<img alt="Data Mesh Priciples.png" src="/images/Data Mesh Priciples.png" width="250" height="200"/> |<img alt="Martin Fowler_ Principles Data Mesh Governance aspects JPG.JPG" src="/images/Martin Fowler_ Principles Data Mesh Governance aspects JPG.JPG" width="250" height="200"/> |
 
 - Technology & Tools 
 
@@ -422,7 +424,7 @@ Data Mesh Industrialization Codeset
 		Disclaimer:
 		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 
-#### DataMesh-as-a-Code on AWS 
+### DataMesh-as-a-Code on AWS 
 - AWS cloud-native Data Mesh Architecture 
 
 - AZURE Sample implementation Codeset []			
