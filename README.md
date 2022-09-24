@@ -387,7 +387,10 @@ Data Mesh Industrialization Codeset
 
 - Azure cloud-native Data Mesh Architecture 
 
-<img alt="Data Mesh_Azure Reference Architecture.png" src="/images/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/images/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/images/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
+<img alt="Data Mesh_Azure Reference Architecture.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/Infographics_Domain/Azure_Datamesh/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/Infographics_Domain/Azure_Datamesh/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
+
+<img alt="Data Mesh_Azure Reference Architecture.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/Infographics_Domain/Azure_Datamesh/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/Infographics_Domain/Azure_Datamesh/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
+
 
 - Technology & Tools 
 
@@ -429,6 +432,8 @@ Data Mesh Industrialization Codeset
 ### DATAMESH-AS-A-CODE on OSS 
 - Open Source Data Mesh Architecture 
 
+|<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/images/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
+
 - OSS DataMesh Sample implementation Codeset		
 
 [Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/02%20DataMesh-as-a-Code_FOSS)
@@ -439,6 +444,8 @@ Data Mesh Industrialization Codeset
 
 ### DATAMESH-AS-A-CODE on AWS 
 - AWS cloud-native Data Mesh Architecture 
+
+|<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/images/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
 
 - AWS DataMesh Sample implementation Codeset		
 
