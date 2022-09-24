@@ -38,16 +38,12 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	
 
 - :eight_pointed_black_star: [THE SEGMENT 2 for doers] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
-	- 1. [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)	
-	- 2. [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)	
-	- 3. [DataMesh-in-practice with DATABRICKS](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
-	- 4. [DataMesh-as-a-Code with Open Source Technology (FOSS)](#DataMesh-as-a-Code_with_FOSS)
+	- 1. [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)	
+	- 2. [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
+	- 3. [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)	
+	- 4. [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
+	- 5. [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
 	
-		>>>> A. DataMesh-as-a-Code on Azure Cloud |  
-		>>>> B. DataMesh-in-practice on AWS Cloud |  
-		>>>> C. DataMesh-as-a-Code on Open Source Technology (FOSS) |  
-		>>>> D. DataMesh-in-Practice with DataBricks |   
-		>>>> E. DataMesh-in-practice with Confluent Kafka |
 	
 Please refer to different sub-folders in this repository to access the codesets. The codesets reflects Industrialization of Data Mesh on Azure/AWS Cloud using Cloud-native IaaS/PaaS/FaaS, Free & Open Source Technologies etc.
 
@@ -424,16 +420,7 @@ Data Mesh Industrialization Codeset
 
 - AZURE DataMesh Sample implementation Codeset		
 
-[Click to refer to AZURE DataMesh implementation Codeset](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/DataMesh-as-a-Code_AzureCloud)
-
-		Disclaimer:
-			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
-<br>
-
-### DATAMESH-AS-A-CODE on AWS 
-- AWS cloud-native Data Mesh Architecture 
-
-- AWS DataMesh Sample implementation Codeset []		
+[Click to refer to AZURE DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/01%20DataMesh-as-a-Code_AZURE)
 
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
@@ -442,16 +429,34 @@ Data Mesh Industrialization Codeset
 ### DATAMESH-AS-A-CODE on OSS 
 - Open Source Data Mesh Architecture 
 
-- OSS DataMesh Sample implementation Codeset []		
+- OSS DataMesh Sample implementation Codeset		
+
+[Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/01%20DataMesh-as-a-Code_OSS)
+		
+		Disclaimer:
+			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
+
+### DATAMESH-AS-A-CODE on AWS 
+- AWS cloud-native Data Mesh Architecture 
+
+- AWS DataMesh Sample implementation Codeset		
+
+[Click to refer to AWS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/01%20DataMesh-as-a-Code_AWS)
+		
 
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 <br>
 
+
 ### DATAMESH-AS-A-CODE on GCP 
 - GCP cloud-native Data Mesh Architecture 
 
-- GCP DataMesh Sample implementation Codeset []		
+- GCP DataMesh Sample implementation Codeset		
+
+[Click to refer to GCP DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/01%20DataMesh-as-a-Code_GCP)
+	
 
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
@@ -460,11 +465,13 @@ Data Mesh Industrialization Codeset
 #### DATAMESH-AS-A-CODE on DATABRICKS 
 - [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake) Reference]
 
-- DATABRICKS DataMesh Sample implementation Codeset []		
-
-		Disclaimer:
-			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+- DATABRICKS DataMesh Sample implementation Codeset [WORK NOT YET STARTED]		
 <br>
+
+#### DATAMESH-AS-A-CODE on CONFLUENT 
+[WORK NOT YET STARTED]
+<br>
+
 
 ## Data Mesh Reference Artefacts in Public Domain 
 
