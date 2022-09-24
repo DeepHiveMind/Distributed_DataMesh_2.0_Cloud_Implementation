@@ -377,17 +377,20 @@ Whereas, the Data Mesh paradigm stands for decentralised and domain-specific dat
 
 ## Distributed-DataMesh-as-a-Code on Cloud
 
-	- [DataMesh-as-a-Code on Azure Cloud](#DataMesh-as-a-Code-on-Azure-Cloud)	
-	
-	- [DataMesh-as-a-Code on AWS Cloud](#DataMesh-as-a-Code-on-AWS-Cloud)
-	
-	- [DataMesh-as-a-Code with Open Source Technology (FOSS)](#DataMesh-as-a-Code_with_FOSS)
+Data Mesh Industrialization Codeset 
+	- DataMesh-as-a-Code-on-AZURE	
+	- DataMesh-as-a-Code_with_FOSS
+	- DataMesh-as-a-Code-on-AWS
+	- DataMesh-as-a-Code-on-GCP
+	- DataMesh-as-a-Code-on-DATABRICKS
+	- DataMesh-as-a-Code-on-CONFLUENT
 
-	- [DataMesh-in-practice with DATABRICKS](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)
 
-> DataMesh-as-a-Code on Azure Cloud sample implementation  
+#### DataMesh-as-a-Code on AZURE 
+- Azure cloud-native Data Mesh Architecture 
 
-	- Technology & Tools 
+
+- Technology & Tools 
 
 		-- Azure Purview	[Data Provenance engine]
 		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
@@ -414,8 +417,36 @@ Whereas, the Data Mesh paradigm stands for decentralised and domain-specific dat
 		-- WebOntology & Protege
 		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
-		
-Please refer to different sub-folders in this repository to access the codesets.
+
+- AZURE Sample implementation Codeset []		
+		Disclaimer:
+		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+
+#### DataMesh-as-a-Code on AWS 
+- AWS cloud-native Data Mesh Architecture 
+
+- AZURE Sample implementation Codeset []			
+		Disclaimer:
+		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+
+#### DataMesh-as-a-Code on OSS 
+- Open Source Data Mesh Architecture 
+
+- OSS Sample implementation Codeset []			
+		Disclaimer:
+		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").		
+
+#### DataMesh-as-a-Code on GCP 
+- GCP cloud-native Data Mesh Architecture 
+
+- GCP Sample implementation Codeset []			
+		Disclaimer:
+		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+
+#### DataMesh-as-a-Code on DATABRICKS 
+- [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake) Reference]
+
+
 
 ## Data Mesh Reference Artefacts in Public Domain 
 
