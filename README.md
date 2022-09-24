@@ -191,9 +191,9 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 <br>
 <br>
 
-## Data Mesh Domain-Driven Architecture Patterns
+## Data Mesh Domain-Driven Patterns
 
-Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-shop (Overall Biz Domain: ECommerce) with -
+Domain-driven architecture Pattern simulation of Data Mesh are as following for "E-Commerce/e-shop (Overall Biz Domain: ECommerce)" with -
 
 
 	1. Domain : Product
@@ -254,9 +254,9 @@ Domain-driven Pattern simulation of Data Mesh are as following for E-Commerce/e-
 <br>
 <br>
 
-## Data Mesh Techno-functional Patterns
+## Data Mesh Techno-functional Architectural Patterns
 
-Illustration of key Techno-functional Patterns of Data Mesh are as following- 
+Illustration of key Techno-functional Architectural Patterns of Data Mesh are as following- 
 
 - Data Product Catalog
 - Data Mesh & Event Streaming backbone
@@ -264,12 +264,13 @@ Illustration of key Techno-functional Patterns of Data Mesh are as following-
 - Data Mesh & AI ML
 - Data Mesh & CDC
 - Data Mesh & Real time Data Synch
+- Enterprise Data Mesh Architecture
 
-|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**|
+|**Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**|
 | :---: | :---:| :---:|
 | Pattern_Data Mesh & Data Product Catalog | Pattern_Data Mesh & Event Streaming backbone |  Pattern_Data Mesh & Data Lienage| 
 |<img src="images/Pattern_Data Mesh & Data Product Catalog.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & Event Streaming backbone .png" width="500" height="200" border="10">|<img src="images/Scenario_Data Mesh & Data Lienage.png" width="500" height="200" border="10">|
-|**Data MESH PATTERN**| **Data MESH PATTERN**| **Data MESH PATTERN**| 
+|**Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**| 
 | Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
 |<img src="images/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="images/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
 
@@ -333,6 +334,14 @@ While Data Mesh allows much more room to flex and scale, as every other paradigm
 
 ## Data Fabric vs Data Mesh
 
+- A data fabric and a data mesh both provide an architecture to access data across multiple technologies and platforms, a data fabric is technology-centric, while a data mesh focuses on organisational change.
+
+- Data fabric connects data from multiple sources and prepares it in a way in which you – a business user or a data professional – can access and analyse it easily. Think about it like putting a big blanket around your architecture to easily access what you need from the outside of the blanket. 
+Whereas, the Data Mesh paradigm stands for decentralised and domain-specific data ownership that is easily discoverable and ready for consumption for everyone in the organisation via a Marketplace.
+
+			According to *Gartner*, data fabric is a design concept that serves as an integrated layer (fabric) of data and connecting processes. It is a composable, flexible and scalable way to maximize the value of data in an organization. It’s not one tool or process, rather an emerging design concept that gives a framework to think about how to stack existing tools, resources, and processes.
+		
+- Data mesh moves away from the concept of storing, transforming, and processing analytical data centrally. Instead, it advocates that each business domain is responsible for hosting, preparing, and serving their data to their own domain and larger audience. 
 <br>
 <br>
 ## DataMesh-as-a-Code on Cloud
