@@ -271,11 +271,13 @@ Illustration of key Techno-functional Architectural Patterns of Data Mesh are as
 - Data Mesh & Real time Data Synch
 - Enterprise Data Mesh Architecture
 
-|**Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**|
+|**Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**|
 | :---: | :---:| :---:|
+| Enterprise Data Mesh Architecture | Enterprise Data Mesh Architecture  |  Enterprise Data Mesh Product Architecture  | 
+|<img src="images/Data Mesh Enterprise Architecture.png" width="500" height="200" border="10">|<img src="images/Enterprise Data Mesh Architecture.png" width="500" height="200" border="10">|<img src="images/Data Mesh Data Product Architecture.png" width="500" height="200" border="10">|
 | Pattern_Data Mesh & Data Product Catalog | Pattern_Data Mesh & Event Streaming backbone |  Pattern_Data Mesh & Data Lienage| 
 |<img src="images/Pattern_Data Mesh & Data Product Catalog.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & Event Streaming backbone .png" width="500" height="200" border="10">|<img src="images/Scenario_Data Mesh & Data Lienage.png" width="500" height="200" border="10">|
-|**Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**| **Data MESH Architectural PATTERN**| 
+|**Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**| 
 | Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
 |<img src="images/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="images/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
 
@@ -289,8 +291,9 @@ Topology is the key driver for decentralized distributed domain-driven data-prod
 - Governed Data Mesh topology
 - Harmonized Data Mesh topology
 - Highly federated Mesh topology
-Based on nuances and considerations, different data mesh topologies can be used.
 
+Based on nuances and considerations, different data mesh topologies can be used.
+- Governance TOPPLOGY: Different Approaches <img alt="Should I be Meshing?" src="/images/data-mesh-Should-I.jpg" width="950" height="550"/>
 
 |**DATA MESH TOPOLOGY**| **DATA MESH TOPOLOGY**|
 | :---: | :---:|
@@ -298,6 +301,9 @@ Based on nuances and considerations, different data mesh topologies can be used.
 |<img src="images/DataMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">|
 | **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| 
 |<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
+
+
+
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 <br>
