@@ -39,7 +39,6 @@ The following shows the architecture of the solution.
 - [Azure Databricks](https://docs.microsoft.com/en-us/azure/databricks/)
 - [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
 - [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-- [Office365 API Connection](https://docs.microsoft.com/en-us/azure/connectors/connectors-create-api-office365-outlook)
 - [Azure Virtual Network](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)
 - [Private Endpoint](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
 - [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/)

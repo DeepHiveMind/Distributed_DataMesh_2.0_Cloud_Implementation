@@ -395,32 +395,34 @@ Data Mesh Industrialization Codeset
 
 - Technology & Tools 
 
-		-- Azure Purview	[Data Provenance engine]
+		-- Azure Purview			[Data Provenance engine]
 		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
 		-- Azure CosmosDB			[Node on Domain driven storage- MultiDomain NOSQL DB ]
 		-- Azure Data Lake			[Node on Domain driven storage- Data Lake Storage]
 		-- Azure Stream Analytics	[Stream Analytics engine]
 		-- Azure Data Explorer		[Data Exploration Service]
-		-- Presidio					[ Data Protection and PII Anonymization API]
+		-- Presidio					[Data Protection and PII Anonymization API]
+		-- Azure Data Factory		[Data Ingestion engine]
+		-- Azure DataBricks 		[Data Integration engine]
+        
+		-- Azure Function 			[MicroService Serverless engine]
+		-- Azure App Logic			[MicroService Serverless Orachsteration engine]
 		
-		-- Azure Data Factory [Data Ingestion engine]
-		-- Azure DataBricks [Data Integration engine]
-
-		-- Azure Function & Azure App Logic [MicroService Serverless engine & MicroService Serverless Orachsteration engine]
-		
-		-- IaC ARM Templates				[IaC engine]
-		-- Azure Vnet & SubNet		[Azure Networking]
+		-- IaC ARM Templates		[IaC engine]
+		-- Azure Vnet & SubNet		[Azure Virtual Network & Sub Network]
 		-- Azure DevOps 			[DevOps Service]
 		-- Azure Key Valut			[Key Security]
-		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
-		-- Modern Domain Driven Data Warehouse on DataOps
-		
-		-- Domain Ontology on CosmosDB			[Knowledge Graph]		
-		-- WebOntology & Protege
+		-- Azure App Insight 		[Azure Application Monitoring & Telemetry Service engine]
+		-- Private Endpoint			[Network interface connects you privately and securely to Azure service]
+		-- Azure Private DNS		[Azure DNS not only supports internet-facing DNS domains, but it also supports private DNS zones.]
 		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
-		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
+		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication]	
+		-- Azure DevOps					[Devops as one of the Modern DataOps drivers]		 
+        
+        -- Domain Ontology on CosmosDB			[Knowledge Graph]		
+        -- WebOntology & Protege				[Knowledge Graph]
 
-- AZURE DataMesh Sample implementation Codeset []		
+- AZURE DataMesh Sample implementation Codeset [https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/DataMesh-as-a-Code_AzureCloud]		
 
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
