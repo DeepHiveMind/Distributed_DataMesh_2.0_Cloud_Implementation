@@ -390,6 +390,7 @@ Data Mesh Industrialization Codeset
 ### DATAMESH-AS-A-CODE on AZURE 
 
 - Azure cloud-native Data Mesh Architecture 
+
 <img alt="DataMesh_Principles_Zamak_Martin.png" src="/images/DataMesh_Principles_Zamak_Martin.png" width="250" height="200"/> |<img alt="Data Mesh Priciples.png" src="/images/Data Mesh Priciples.png" width="250" height="200"/> |<img alt="Martin Fowler_ Principles Data Mesh Governance aspects JPG.JPG" src="/images/Martin Fowler_ Principles Data Mesh Governance aspects JPG.JPG" width="250" height="200"/> |
 
 - Technology & Tools 
@@ -414,15 +415,17 @@ Data Mesh Industrialization Codeset
 		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
 		-- Modern Domain Driven Data Warehouse on DataOps
 		
-	- Yet to be implemented Tools & Technology
+		- Yet to be implemented Tools & Technology
 		-- Domain Ontology on CosmosDB			[Knowledge Graph]		
 		-- WebOntology & Protege
 		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
 
 - AZURE Sample implementation Codeset []		
-		Disclaimer:
-		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+
+	Disclaimer:
+	
+	In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 
 ### DataMesh-as-a-Code on AWS 
 - AWS cloud-native Data Mesh Architecture 
