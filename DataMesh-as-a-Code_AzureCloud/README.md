@@ -2,30 +2,10 @@ Description:
 - Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices.
 
 Disclaimer:
-In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+- In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 
-High Level Technology View:
-- Azure
-- Azure-Data-factory
-- Azure-Databricks
-- Azure-Stream-Analytics
-- Azure-Data-Lake-Gen2
-- Azure-Function-&-Azure-App-Logic
-- Azure Synapse Analytics	
-- Azure CosmosDB	
-- Azure Data Lake			
-- Azure Stream Analytics
-- Azure Data Explorer		
-- Presidio
-- IaC ARM Templates	
-- Azure Vnet & SubNet	
-- Azure DevOps 		
-- Azure Key Valut		
-- Azure App Insight 	
-- WebOntology & Protege
-- Istio on AKS
 
-> DataMesh-as-a-Code on Azure Cloud - sample implementation  
+DataMesh-as-a-Code on Azure Cloud - High Level Technology View:  
 
 	- Technology & Tools 
 
@@ -55,7 +35,7 @@ High Level Technology View:
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
 
 
-## Single Technology Samples
+## Technology Samples
 
 - [Azure Purview](single_tech_samples/purview/)
   - [IaC - Azure Purview](single_tech_samples/purview/)
