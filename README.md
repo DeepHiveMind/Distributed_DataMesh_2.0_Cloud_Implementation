@@ -14,7 +14,7 @@
 <br>
 
 # Agenda
-<img alt="Should I be Meshing?" src="/images/Agenda.jfif" width="950" height="100"/>
+<img alt="Should I be Meshing?" src="/images/Agenda.jfif" width="450" height="100"/>
 
 The Repo welcomes members of Data Mesh OSS Community (Open Source Community) with 2 major sections/segments - 
  
