@@ -325,10 +325,11 @@ Topology is the key driver for decentralized distributed domain-driven data-prod
 	- In this model you could even pursue a mixed governance model: distribution via hubs, point-to-point or combination of these. Concretely, this means that the model is changed to give domains flexibility to choose, build, and run their own flavor of, for example, any database or integration platform. Domains in this federated approach are required to hook their solutions into the central governance capabilities themselves. The metadata (ownership, data product information, sharing agreement, etc.) is always managed centrally. 
 
 Based on nuances and considerations, different data mesh topologies can be used.
-- Governance TOPPLOGY: Different Approaches <img alt="Additional Governance TOPOLOGIES" src="/images/Additional Governance TOPOLOGIES.webp" width="500" height="200" border="10">
+- Governance TOPOLOGY: Different Approaches 
+
+<img alt="Additional Governance TOPOLOGIES" src="/images/Additional Governance TOPOLOGIES.webp" width="500" height="200" border="10">
 
 Microsoft Ignite Reference on TOPOLOGY (Governed Data Mesh Topology) -  [A financial institution scenario for data mesh by Microsoft Ignite](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-data-mesh)
-- [Harmonized Data Mesh Topology reference from Microsoft Ignite]<img src="images/Data Mesh Enterprise Architecture.png" width="500" height="200" border="10">
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 <br>
