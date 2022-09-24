@@ -141,7 +141,6 @@ Organizations of all sizes have recognized that data is one of the key enablers 
 
 
 - STEP 2: *The Challenge/ Bottleneck with 'Central Data Platform'*:
-<img alt="Should I be Meshing?" src="/images/Challenge.jpg" width="450" height="100"/>
 
 Managing data through a Central Data Platform can create following multi-dimensional challenges, (as central teams may not understand the specific needs of a data domain, whether due to data types and storage, security, data catalog requirements, or specific technologies needed for data processing.) --
 
@@ -372,7 +371,6 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 ## Enterprise Data Mesh Data-Product User Persona 
 - CDO
 - Data Product Owners
-		
 		& Citizen Data Product Developers (assisted by LCNC)
 - Data Management & Governance 'Stewards'
 - Semantic Specialists
@@ -383,10 +381,10 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 <br>
 <br>
 <br>
-<br>
 
 ## The challenges of Data Mesh
 
+<img alt="Should I be Meshing?" src="/images/Challenge.jpg" width="250" height="100"/>
 While Data Mesh allows much more room to flex and scale, as every other paradigm, shouldn’t be considered as a perfect-fit solution for every single scenario. As with all decentralised data architectures, there are a few common challenges, including:
 
 - Ensuring that toolsets and approaches are unified (where applicable) across teams.
