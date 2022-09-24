@@ -1,4 +1,4 @@
-# DataMesh-as-a-Code
+# DataMesh-as-a-Code_AWS
 
 Disclaimer:
 - In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").

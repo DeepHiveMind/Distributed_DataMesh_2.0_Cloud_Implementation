@@ -431,7 +431,7 @@ Data Mesh Industrialization Codeset
 
 - OSS DataMesh Sample implementation Codeset		
 
-[Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/02%20DataMesh-as-a-Code_OSS)
+[Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/02%20DataMesh-as-a-Code_FOSS)
 		
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
