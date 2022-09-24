@@ -389,8 +389,12 @@ Data Mesh Industrialization Codeset
 
 <img alt="Data Mesh_Azure Reference Architecture.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/Infographics_Domain/Azure_Datamesh/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/Infographics_Domain/Azure_Datamesh/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
 
-<img alt="Data Mesh_Azure Reference Architecture.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/Infographics_Domain/Azure_Datamesh/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/Infographics_Domain/Azure_Datamesh/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
+<img alt="Data Mesh Nodes interaction_Azure.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh Nodes interaction_Azure.png" width="250" height="200"/> |<img alt="Data-Mesh-plane_Azure.png" src="/Infographics_Domain/Azure_Datamesh/Data-Mesh-plane_Azure.png" width="250" height="200"/> |<img alt="Data-mesh-integration_Federated Governance_Azure.png" src="/Infographics_Domain/Azure_Datamesh/Data-mesh-integration_Federated Governance_Azure.png" width="250" height="200"/> |
 
+Azure DataMesh Nodes Infra_Option 1_Full VNET Peering
+Azure DataMesh Nodes Infra_Option 2_Hub and Spoke VNET
+Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
+<img alt="Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" width="250" height="200"/> |
 
 - Technology & Tools 
 
