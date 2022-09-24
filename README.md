@@ -42,19 +42,19 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 - :eight_pointed_black_star: [THE SEGMENT 2 for doers] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
 	- |13| [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
-		- AZURE cloud-native Data Mesh Reference Architecture
+		- [AZURE cloud-native Data Mesh Reference Architecture](#azure-cloud-native-data-mesh-reference-architecture)
 		- AZURE cloud-native Technology & Tools
 		- AZURE DataMesh Industrialization Codeset
 	- |14| [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
-		- OSS Data Mesh Reference Architecture
+		- [OSS Data Mesh Reference Architecture](#open-source-data-mesh-architecture)
 		- OSS cloud-native Technology & Tools
 		- OSS DataMesh Industrialization Codeset
 	- |15| [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)
-		- AWS cloud-native Data Mesh Reference Architecture
+		- [AWS cloud-native Data Mesh Reference Architecture](#aws-cloud-native-data-mesh-architecture)
 		- AWS cloud-native Technology & Tools
 		- AWS DataMesh Industrialization Codeset
 	- |16| [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
-		- GCP cloud-native Data Mesh Reference Architecture
+		- [GCP cloud-native Data Mesh Reference Architecture](#gcp-cloud-native-data-mesh-architecture)
 		- GCP cloud-native Technology & Tools
 		- GCP DataMesh Industrialization Codeset		
 	- |17| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
