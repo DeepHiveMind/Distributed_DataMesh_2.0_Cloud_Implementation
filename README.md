@@ -293,8 +293,6 @@ Topology is the key driver for decentralized distributed domain-driven data-prod
 - Harmonized Data Mesh topology
 - Highly federated Mesh topology
 
-Based on nuances and considerations, different data mesh topologies can be used.
-- Governance TOPPLOGY: Different Approaches <img alt="Should I be Meshing?" src="/images/data-mesh-Should-I.jpg" width="950" height="550"/>
 
 |**DATA MESH TOPOLOGY**| **DATA MESH TOPOLOGY**|
 | :---: | :---:|
@@ -303,8 +301,11 @@ Based on nuances and considerations, different data mesh topologies can be used.
 | **Harmonized Data Mesh topology** | **Highly federated Mesh topology**| 
 |<img src="images/HarmonizedMeshNodePattern.png" width="500" height="200" border="10">|<img src="images/HighlyfederatedMeshTopology.png" width="500" height="200" border="10">|
 
+Based on nuances and considerations, different data mesh topologies can be used.
+- Governance TOPPLOGY: Different Approaches <img alt="Additional Governance TOPOLOGIES" src="/images/Additional Governance TOPOLOGIES.webp" width="800" height="450"/>
 
-
+Microsoft Ignite Reference on TOPOLOGY (Harmonized Data Mesh Topology) -  [A financial institution scenario for data mesh by Microsoft Ignite](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-data-mesh)
+- [Harmonized Data Mesh Topology reference from Microsoft Ignite]<img src="images/Data Mesh Enterprise Architecture.png" width="500" height="200" border="10">
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 <br>
