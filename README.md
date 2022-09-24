@@ -118,6 +118,8 @@ Attention:
 
 
 <br>
+<br>
+<br>
 
 ## Why DATA MESH Architecture/Model/Paradigm?
 #### DRIVERS OF DATA MESH
@@ -168,6 +170,8 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 :bulb: Therefore, Data Mesh paradigm reduces overall friction for information flow in the organization, where the **data producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs**.
 <br>
 <br>
+<br>
+<br>
 
 ## Principles of Enterprise Data MESH
 
@@ -206,6 +210,8 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 			:2: pretty much alike "Service MESH of Microservices powered Data Products".
 	
 
+<br>
+<br>
 <br>
 <br>
 
@@ -271,6 +277,8 @@ Domain-driven architecture Pattern simulation of Data Mesh are as following for 
 
 <br>
 <br>
+<br>
+<br>
 
 ## Data Mesh Architectural Patterns
 
@@ -295,6 +303,8 @@ Illustration of key Techno-functional Architectural Patterns of Data Mesh are as
 | Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
 |<img src="images/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="images/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
 
+<br>
+<br>
 <br>
 <br>
 
@@ -340,6 +350,8 @@ Based on nuances and considerations, different data mesh topologies can be used.
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 <br>
 <br>
+<br>
+<br>
 
 ## Self-serve Data Platform Infrastructure
 
@@ -351,6 +363,8 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 
 <img src="images/Self-Serve_Data-Platform-Infra.png" width="500" height="400" border="10">
  
+<br>
+<br>
 <br>
 <br>
 
@@ -367,6 +381,8 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 
 <br>
 <br>
+<br>
+<br>
 
 ## The challenges of Data Mesh
 
@@ -381,6 +397,8 @@ While Data Mesh allows much more room to flex and scale, as every other paradigm
 
 <br>
 <br>
+<br>
+<br>
 
 ## Data Fabric vs Data Mesh
 
@@ -392,6 +410,8 @@ Whereas, the Data Mesh paradigm stands for decentralised and domain-specific dat
 			According to *Gartner*, data fabric is a design concept that serves as an integrated layer (fabric) of data and connecting processes. It is a composable, flexible and scalable way to maximize the value of data in an organization. It’s not one tool or process, rather an emerging design concept that gives a framework to think about how to stack existing tools, resources, and processes.
 		
 - Data mesh moves away from the concept of storing, transforming, and processing analytical data centrally. Instead, it advocates that each business domain is responsible for hosting, preparing, and serving their data to their own domain and larger audience. 
+<br>
+<br>
 <br>
 <br>
 
@@ -460,13 +480,14 @@ Data Mesh Industrialization Codeset
 
 
 ### DATAMESH-AS-A-CODE on AWS 
-- AWS cloud-native Data Mesh Architecture 
+
+##### AWS cloud-native Data Mesh Architecture 
 
 
 |<img alt="DataProducer_DataConsumer_RefArchitecture.png" src="/Infographics_Domain/AWS_DataMesh/DataProducer_DataConsumer_RefArchitecture.png" width="250" height="200"/> |<img alt="DataDomain_Producer & Consumer_Architecture.png" src="/Infographics_Domain/AWS_DataMesh/DataDomain_Producer%20%26%20Consumer_Architecture.png" width="250" height="200"/> |<img alt="DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" src="/Infographics_Domain/AWS_DataMesh/DataLake%20Account_Central%20Governance%20Account_Consumer%20Account_%20E2EWorkflow_architecture.png" width="250" height="200"/> |
 |<img alt="Cross Account_DataMesh_Architecture.png" src="/Infographics_Domain/AWS_DataMesh/Cross%20Account_DataMesh_Architecture.png" width="250" height="200"/> | <img alt="DataMesh Catalog_Data flow Audit_ABCR.png" src="/Infographics_Domain/AWS_DataMesh/DataMesh%20Catalog_Data%20flow%20Audit_ABCR.png" width="250" height="200"/> | <img alt="Mesh Catalog_Block diagram.png" src="/Infographics_Domain/AWS_DataMesh/Mesh%20Catalog_Block%20diagram.png" width="250" height="200"/> |
 
-- AWS DataMesh Sample implementation Codeset		
+##### AWS DataMesh Sample implementation Codeset		
 
 [Click to refer to AWS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/03%20DataMesh-as-a-Code_AWS)
 		
@@ -477,11 +498,12 @@ Data Mesh Industrialization Codeset
 
 
 ### DATAMESH-AS-A-CODE on GCP 
-- GCP cloud-native Data Mesh Architecture 
+
+##### GCP cloud-native Data Mesh Architecture 
 
 <img alt="GCP_DataMesh_Architecture.jpeg" src="/Infographics_Domain/GCP_DataMesh/GCP_DataMesh_Architecture.jpeg" width="250" height="200"/> | <img alt="Datamesh_bigquery.png" src="Infographics_Domain/GCP_DataMesh/Datamesh_bigquery.png" width="250" height="200"/> | <img alt="Dataplex_dataMesh.png" src="Infographics_Domain/GCP_DataMesh/Dataplex_dataMesh.jpg" width="250" height="200"/> |
 
-- GCP DataMesh Sample implementation Codeset		
+##### GCP DataMesh Sample implementation Codeset		
 
 [Click to refer to GCP DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/04%20DataMesh-as-a-Code_GCP)
 	
@@ -492,11 +514,12 @@ Data Mesh Industrialization Codeset
 
 
 ### DATAMESH-AS-A-CODE on OSS 
-- Open Source Data Mesh Architecture 
+
+##### Open Source Data Mesh Architecture 
 
 <img alt="OSS_architecture.png" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture.png" width="250" height="200"/> | <img alt="OSS_architecture-mapping.png" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture-mapping.png" width="250" height="200"/> |
 
-- OSS DataMesh Sample implementation Codeset		
+##### OSS DataMesh Sample implementation Codeset		
 
 [Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/02%20DataMesh-as-a-Code_FOSS)
 		
@@ -505,13 +528,15 @@ Data Mesh Industrialization Codeset
 <br>
 
 #### DATAMESH-AS-A-CODE on DATABRICKS 
-- [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake) Reference]
 
-- DATABRICKS DataMesh Sample implementation Codeset [WORK NOT YET STARTED]		
+##### [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake) Reference]
+
+##### DATABRICKS DataMesh Sample implementation Codeset [WORK NOT YET STARTED]		
 <br>
 
-#### DATAMESH-AS-A-CODE on CONFLUENT 
+### DATAMESH-AS-A-CODE on CONFLUENT 
 [WORK NOT YET STARTED]
+<br>
 <br>
 
 
