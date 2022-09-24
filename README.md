@@ -409,7 +409,7 @@ Data Mesh Industrialization Codeset
 
 ### DATAMESH-AS-A-CODE on AZURE 
 
-- AZURE cloud-native Data Mesh Reference Architecture 
+##### AZURE cloud-native Data Mesh Reference Architecture 
 
 <img alt="Data Mesh_Azure Reference Architecture.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/Infographics_Domain/Azure_Datamesh/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/Infographics_Domain/Azure_Datamesh/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
 
@@ -421,7 +421,7 @@ Data Mesh Industrialization Codeset
 	
 <img alt="Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" width="250" height="200"/> |
 
-- AZURE cloud-native Technology & Tools 
+##### AZURE cloud-native Technology & Tools 
 
 		-- Azure Purview			[Data Provenance engine]
 		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
@@ -450,7 +450,7 @@ Data Mesh Industrialization Codeset
         -- Domain Ontology on CosmosDB			[Knowledge Graph]		
         -- WebOntology & Protege				[Knowledge Graph]
 
-- AZURE DataMesh Industrialization Codeset		
+##### AZURE DataMesh Industrialization Codeset		
 
 [Click to refer to AZURE DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/01%20DataMesh-as-a-Code_AZURE)
 
