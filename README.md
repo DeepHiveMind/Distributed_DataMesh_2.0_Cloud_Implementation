@@ -43,7 +43,17 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 		- AZURE cloud-native Technology & Tools
 		- AZURE DataMesh Industrialization Codeset
 	- 2. [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
-	- 3. [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)	
+		- OSS Data Mesh Reference Architecture
+		- OSS cloud-native Technology & Tools
+		- OSS DataMesh Industrialization Codeset
+	- 3. [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)
+		- AWS cloud-native Data Mesh Reference Architecture
+		- AWS cloud-native Technology & Tools
+		- AWS DataMesh Industrialization Codeset
+	- 4. [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
+		- GCP cloud-native Data Mesh Reference Architecture
+		- GCP cloud-native Technology & Tools
+		- GCP DataMesh Industrialization Codeset		
 	- 4. [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
 	- 5. [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
 	
@@ -436,24 +446,12 @@ Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 <br>
 
-### DATAMESH-AS-A-CODE on OSS 
-- Open Source Data Mesh Architecture 
-
-|<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/images/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
-
-- OSS DataMesh Sample implementation Codeset		
-
-[Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/02%20DataMesh-as-a-Code_FOSS)
-		
-		Disclaimer:
-			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
-<br>
 
 ### DATAMESH-AS-A-CODE on AWS 
 - AWS cloud-native Data Mesh Architecture 
 
-|<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/images/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
-
+|<img alt="DataProducer_DataConsumer_RefArchitecture.png" src="/Infographics_Domain/AWS_Datamesh/DataProducer_DataConsumer_RefArchitecture.png" width="250" height="200"/> |<img alt="DataDomain_Producer & Consumer_Architecture.png" src="/Infographics_Domain/AWS_Datamesh/DataDomain_Producer & Consumer_Architecture.png" width="250" height="200"/> |<img alt="DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" src="/Infographics_Domain/AWS_Datamesh/DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" width="250" height="200"/> |
+|<img alt="Cross Account_DataMesh_Architecture.png" src="/Infographics_Domain/AWS_Datamesh/Cross Account_DataMesh_Architecture.png" width="250" height="200"/> | <img alt="DataMesh Catalog_Data flow Audit_ABCR.png" src="/Infographics_Domain/AWS_Datamesh/DataMesh Catalog_Data flow Audit_ABCR.png" width="250" height="200"/> | <img alt="Mesh Catalog_Block diagram.png" src="/Infographics_Domain/AWS_Datamesh/Mesh Catalog_Block diagram.png" width="250" height="200"/> |
 - AWS DataMesh Sample implementation Codeset		
 
 [Click to refer to AWS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/03%20DataMesh-as-a-Code_AWS)
@@ -467,11 +465,27 @@ Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
 ### DATAMESH-AS-A-CODE on GCP 
 - GCP cloud-native Data Mesh Architecture 
 
+<img alt="GCP_DataMesh_Architecture.jpeg" src="/Infographics_Domain/GCP_Datamesh/GCP_DataMesh_Architecture.jpeg" width="250" height="200"/> | <img alt="Datamesh_bigquery.png" src="/Infographics_Domain/GCP_Datamesh/Datamesh_bigquery.png" width="250" height="200"/> | <img alt="Dataplex_dataMesh.png" src="/Infographics_Domain/GCP_Datamesh/Dataplex_dataMesh.png" width="250" height="200"/> |
+
 - GCP DataMesh Sample implementation Codeset		
 
 [Click to refer to GCP DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/04%20DataMesh-as-a-Code_GCP)
 	
 
+		Disclaimer:
+			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
+
+
+### DATAMESH-AS-A-CODE on OSS 
+- Open Source Data Mesh Architecture 
+
+<img alt="OSS_architecture.png" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture.png" width="250" height="200"/> | <img alt="OSS_architecture-mapping.png" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture-mapping.png" width="250" height="200"/> |
+
+- OSS DataMesh Sample implementation Codeset		
+
+[Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/02%20DataMesh-as-a-Code_FOSS)
+		
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 <br>
