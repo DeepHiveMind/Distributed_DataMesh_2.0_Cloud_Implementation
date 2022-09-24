@@ -98,6 +98,10 @@ Attention:
 - **Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity**.
 
 ###### To be an integral part of Data Mesh OSS Community, Please make sure to go through the original paper on **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** 
+
+
+<img alt="data-mesh-pillars" src="/images/data-mesh-pillars.jpg" width="250" height="250"/> |<img alt="Data Mesh Domain Primer" src="/images/Data Mesh Domain Primer.webp" width="250" height="250"/> |<img alt="data-mesh-martin-fowler" src="/images/data-mesh-martin-fowler.png" width="250" height="250"/>
+
 <br>
 
 ## Why DATA MESH Architecture/Model/Paradigm?
