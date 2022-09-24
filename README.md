@@ -424,7 +424,7 @@ Data Mesh Industrialization Codeset
 
 - AZURE DataMesh Sample implementation Codeset		
 
-[AZURE DataMesh Sample implementation Codeset](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/DataMesh-as-a-Code_AzureCloud)
+[Click to refer to AZURE DataMesh implementation Codeset](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/DataMesh-as-a-Code_AzureCloud)
 
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
