@@ -26,11 +26,11 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 - :eight_pointed_black_star: [THE SEGMENT 1 for poets] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
 
-	- 1. [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
-	- 2. [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
-	- 3. [Why Data MESH paradigm / Drivers of Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#why-data-mesh-architecturemodelparadigm) |
-	- 4. [Data MESH - Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#principles-of-enterprise-data-mesh) |  
-	- 5. [Data Mesh Techno-functional Architectural Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-mesh-techno-functional-architectural-patterns) |   
+	- |1| [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
+	- |2| [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
+	- |3| [Why Data MESH paradigm / Drivers of Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#why-data-mesh-architecturemodelparadigm) |
+	- |4| [Data MESH - Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#principles-of-enterprise-data-mesh) |  
+	- |5| [Data Mesh Techno-functional Architectural Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-mesh-techno-functional-architectural-patterns) |   
 	- 6. [DATA Mesh TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns) |
 	- 7. [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
 	- 8. [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |
