@@ -38,7 +38,10 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	
 
 - :eight_pointed_black_star: [THE SEGMENT 2 for doers] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
-	- 1. [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)	
+	- 1. [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
+		- AZURE cloud-native Data Mesh Reference Architecture
+		- AZURE cloud-native Technology & Tools
+		- AZURE DataMesh Industrialization Codeset
 	- 2. [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
 	- 3. [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)	
 	- 4. [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
@@ -385,7 +388,7 @@ Data Mesh Industrialization Codeset
 
 ### DATAMESH-AS-A-CODE on AZURE 
 
-- Azure cloud-native Data Mesh Architecture 
+- AZURE cloud-native Data Mesh Reference Architecture 
 
 <img alt="Data Mesh_Azure Reference Architecture.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/Infographics_Domain/Azure_Datamesh/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/Infographics_Domain/Azure_Datamesh/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
 
@@ -396,7 +399,7 @@ Azure DataMesh Nodes Infra_Option 2_Hub and Spoke VNET
 Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
 <img alt="Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" width="250" height="200"/> |
 
-- Technology & Tools 
+- AZURE cloud-native Technology & Tools 
 
 		-- Azure Purview			[Data Provenance engine]
 		-- Azure Synapse Analytics	[Node on Domain driven storage- Azure MPP DWH]
@@ -425,7 +428,7 @@ Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
         -- Domain Ontology on CosmosDB			[Knowledge Graph]		
         -- WebOntology & Protege				[Knowledge Graph]
 
-- AZURE DataMesh Sample implementation Codeset		
+- AZURE DataMesh Industrialization Codeset		
 
 [Click to refer to AZURE DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/01%20DataMesh-as-a-Code_AZURE)
 
