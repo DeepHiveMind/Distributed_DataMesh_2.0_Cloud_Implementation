@@ -1,6 +1,9 @@
 Description: 
 - Code samples showcasing how to apply Data Mesh concepts with DevOps with Modern Data Warehouse Architecture leveraging different Azure Sevices.
 
+Disclaimer:
+In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+
 High Level Technology View:
 - Azure
 - Azure-Data-factory
@@ -46,7 +49,6 @@ High Level Technology View:
 		-- Azure App Insight 	[Azure Application Monitoring & Telemetry Service engine]
 		-- Modern Domain Driven Data Warehouse on DataOps
 		
-	- Yet to be implemented Tools & Technology
 		-- Domain Ontology on CosmosDB			[Knowledge Graph]		
 		-- WebOntology & Protege
 		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
@@ -69,17 +71,19 @@ High Level Technology View:
 
 ## End to End samples
 
-
-
-- [**Parking Sensor Solution**](e2e_samples/parking_sensors/) - This demonstrates batch, end-to-end data pipeline following the MDW architecture, along with a corresponding CI/CD process. See [here](https://www.youtube.com/watch?v=Xs1-OU5cmsw) for the presentation which includes a detailed walk-through of the solution.
+- [**Parking Sensor Solution**](e2e_samples/parking_sensors/) 
+	- This demonstrates batch, end-to-end data pipeline following the MDW architecture, along with a corresponding CI/CD process. See [here](https://www.youtube.com/watch?v=Xs1-OU5cmsw) for the presentation which includes a detailed walk-through of the solution.
 ![Architecture](docs/images/CI_CD_process_simplified.PNG?raw=true "Architecture")
 
-- [**Temperature Events Solution**](e2e_samples/temperature_events) - This demonstrate a high-scale event-driven data pipeline with a focus on how to implement Observability and Load Testing.
+- [**Temperature Events Solution**](e2e_samples/temperature_events) 
+	- This demonstrate a high-scale event-driven data pipeline with a focus on how to implement Observability and Load Testing.
 ![Architecture](e2e_samples/temperature_events/images/temperature-events-architecture.png?raw=true "Architecture")
 
-- [**Dataset Versioning Solution**](e2e_samples/dataset_versioning) - This demonstrates how to use DataFactory to Orchestrate DataFlow, to do DeltaLoads into DeltaLake On DataLake.
+- [**Dataset Versioning Solution**](e2e_samples/dataset_versioning) 
+	- This demonstrates how to use DataFactory to Orchestrate DataFlow, to do DeltaLoads into DeltaLake On DataLake.
 
-- [**MDW Data Governance and PII data detection**](e2e_samples/mdw_governance) - This sample demonstrates how to deploy the Infrastructure of an end-to-end MDW Pipeline using [Azure DevOps pipelines](https://azure.microsoft.com/en-au/services/devops/pipelines/) along with a focus around Data Governance and PII data detection.
+- [**MDW Data Governance and PII data detection**](e2e_samples/mdw_governance) 
+	- This sample demonstrates how to deploy the Infrastructure of an end-to-end MDW Pipeline using [Azure DevOps pipelines](https://azure.microsoft.com/en-au/services/devops/pipelines/) along with a focus around Data Governance and PII data detection.
   
   - *Technology stack*: Azure DevOps, Azure Data Factory, Azure Databricks, Azure Purview, [Presidio](https://github.com/microsoft/presidio)
   - Infrastructure as Code (IaC)
