@@ -189,9 +189,12 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 		b. Harmonized Data Mesh topology  
 		c. Highly federated Data Mesh topology
 
-				Based on the aforementioned tenets of Data Mesh, it's safe to call out that, "Data Mesh is a MESH OF DATA PRODUCT NODES". It's pretty much alike "Service MESH of Microservices powered Data Products".
-				
-<img alt="data-mesh-pillars" src="/images/data-mesh-pillars.jpg" width="250" height="200"/> |<img alt="Data Mesh Domain Primer" src="/images/Data Mesh Domain Primer.webp" width="250" height="200"/> |
+		
+<img alt="DataMesh_Principles_Zamak_Martin.png" src="/images/DataMesh_Principles_Zamak_Martin.png" width="250" height="200"/> |<img alt="Data Mesh Priciples.png" src="/images/Data Mesh Priciples.png" width="250" height="200"/> |
+
+			Based on the aforementioned tenets of Data Mesh, it's safe to call out that, :bulb: "Data Mesh is a MESH OF DATA PRODUCT NODES". 
+			It's pretty much alike :bulb: "Service MESH of Microservices powered Data Products".
+	
 
 <br>
 <br>
