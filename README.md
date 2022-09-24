@@ -7,21 +7,22 @@
 - To Move Beyond a Monolithic Data Lake/ Centralized LakeHouse / Data Warehouse to a Distributed Data Mesh paradigm is a JOURNEY. :airplane:
 
 - Welcome onaboard to **The Universe of "Distributed Data Mesh 2.0!"**.
-<img alt="Should I be Meshing?" src="/images/data-mesh-Should-I.jpg" width="800" height="250"/>
+<img alt="Should I be Meshing?" src="/images/data-mesh-Should-I.jpg" width="800" height="550"/>
 
 
 <br>
 <br>
 
 # Agenda
-*The Repo welcomes members of OSS Community (Open Source Community) with 2 major sections/segments* - 
+The Repo welcomes members of Data Mesh OSS Community (Open Source Community) with 2 major sections/segments - 
  
 *The 1st segment is more of a conceptual artefacts (all bundeled under "Conceptual nuances of The Universe of Ditributed Data Mesh 2.0" section). This segment intends to offer all the major bells-and-whistles to get a broader vision, mission and understanding of Enterprise Data MESH framework.*
 
 *The 2nd segment is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-			*In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").*
-
+* Disclaimer*: 
+In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
 
 
 - :eight_pointed_black_star: [THE SEGMENT 1] - **Conceptual nuances of The Universe of 'Ditributed Data Mesh 2.0'** 
@@ -71,7 +72,7 @@ The architecture is the convergence of Distributed Domain Driven Architecture, S
 - 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
 
 <br>
-Attention as to Data Mesh:
+Attention:
 
 	1. The paradigm shift in Distributed Data Architecture with domain driven ownership comes with several nuances and consideration. 
 	Implmentation of Data Mesh architecture in any enterprise mostly depends on 
