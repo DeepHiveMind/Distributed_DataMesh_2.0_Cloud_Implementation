@@ -20,7 +20,7 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 *The 2nd segment is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-* Disclaimer*: 
+*Disclaimer*:
 In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 <br>
 
@@ -61,13 +61,13 @@ Please refer to different sub-folders in this repository to access the codesets.
 The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
 -- Zhamak Dehghani, Thoughtworks
 
-- Data Mesh is a new/modern Data Platform paradigm to *DOMAIN-ORIENTED + DATA-PRODUCT + SELF-SERVE DATA Infra PLATFORM + FEDERATED GOVERNANCE + DECENTRALIZED TOPOLOGY* driven modern distributed data architecture that conforms to 
-	[A] the certain defined [Architecture Principles as detailed in below section](#architecture-principles-of-enterprise-data-mesh) and 
-	[B] the tenets, such as:  
-		(i) Considering Domains as the first class concern,  
-		(ii) Applying Platform thinking to create Self-Serve Data Infrastructure, and  
-		(iii) Treating Data as a Product with
-		(iv) Federated Governance
+- Data Mesh is a new/modern Data Platform paradigm to *DOMAIN-ORIENTED + DATA-PRODUCT + SELF-SERVE DATA Infra PLATFORM + FEDERATED GOVERNANCE + DECENTRALIZED TOPOLOGY* driven modern distributed data architecture that conforms to
+			[A] the certain defined [Architecture Principles as detailed in below section](#architecture-principles-of-enterprise-data-mesh) and
+			[B] the tenets, such as:  
+				(i) Considering Domains as the first class concern,  
+				(ii) Applying Platform thinking to create Self-Serve Data Infrastructure, and  
+				(iii) Treating Data as a Product with
+				(iv) Federated Governance
 
 - 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
 
