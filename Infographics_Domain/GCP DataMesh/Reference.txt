@@ -1,5 +1,0 @@
-https://www.youtube.com/watch?v=os5qkpoWKhQ
-https://towardsdatascience.com/data-mesh-on-the-google-cloud-a-technical-architecture-sketch-c28fb0a6a4d9
-
-
-https://github.com/samiarahman/data-mesh-demo

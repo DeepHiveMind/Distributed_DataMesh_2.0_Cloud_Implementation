@@ -27,7 +27,7 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- 1. [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
 	- 2. [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
 	- 3. [Why Data MESH paradigm / Drivers of Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#why-data-mesh-architecturemodelparadigm) |
-	- 4. [Enterprise Data MESH - Architecture Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#architecture-principles-of-enterprise-data-mesh) |  
+	- 4. [Data MESH - Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#principles-of-enterprise-data-mesh) |  
 	- 5. [Data Mesh Techno-functional Architectural Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-mesh-techno-functional-architectural-patterns) |   
 	- 6. [DATA Mesh TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns) |
 	- 7. [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
@@ -160,7 +160,7 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 <br>
 <br>
 
-## Architecture Principles of Enterprise Data MESH
+## Principles of Enterprise Data MESH
 
 **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** is a new paradigm to DOMAIN-ORIENTED + DATA PRODUCT + SELF-SERVE DATA Infra + DECENTRALIZED TOPOLOGY data architecture that conforms to the following main Architecture Principles, such as: 
 
@@ -177,7 +177,7 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 	
 	3. Self-serve Infra for data platform (DataInfra-as-a-Service)
 
-	4. Centeralized Data Governance  
+	4. Centeralized Data Governance (Federated Computational Governance)
 		a. Centralized Data Provenance (Domain Data Data catalogue, Data Protection and PII Anonymization, Data Lienage, Enterprise MDM 360, et al)  
 		b. Unified Policy Management  
 		c. Unified Data Virtualization Service  
@@ -188,6 +188,11 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 		a. Governed Data Mesh topology  
 		b. Harmonized Data Mesh topology  
 		c. Highly federated Data Mesh topology
+
+				Based on the aforementioned tenets of Data Mesh, it's safe to call out that, "Data Mesh is a MESH OF DATA PRODUCT NODES". It's pretty much alike "Service MESH of Microservices powered Data Products".
+				
+<img alt="data-mesh-pillars" src="/images/data-mesh-pillars.jpg" width="250" height="200"/> |<img alt="Data Mesh Domain Primer" src="/images/Data Mesh Domain Primer.webp" width="250" height="200"/> |
+
 <br>
 <br>
 
