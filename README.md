@@ -279,7 +279,6 @@ Illustration of key Techno-functional Architectural Patterns of Data Mesh are as
 |<img src="images/Data Mesh Enterprise Architecture.png" width="500" height="200" border="10">|<img src="images/Enterprise Data Mesh Architecture.png" width="500" height="200" border="10">|<img src="images/Data Mesh Data Product Architecture.png" width="500" height="200" border="10">|
 | Pattern_Data Mesh & Data Product Catalog | Pattern_Data Mesh & Event Streaming backbone |  Pattern_Data Mesh & Data Lienage| 
 |<img src="images/Pattern_Data Mesh & Data Product Catalog.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & Event Streaming backbone .png" width="500" height="200" border="10">|<img src="images/Scenario_Data Mesh & Data Lienage.png" width="500" height="200" border="10">|
-|**Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**| 
 | Pattern_Data Mesh & AI ML | Pattern_Data Mesh & CDC |  Pattern_Data Mesh & Real time Data Synch| 
 |<img src="images/Scenario_Data Mesh & AI ML.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & CDC.png" width="500" height="200" border="10">| <img src="images/Scenario_Data Mesh & Real time Data Synch.png" width="500" height="200" border="10">|
 
