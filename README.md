@@ -420,36 +420,43 @@ Data Mesh Industrialization Codeset
 		-- Azure AKS for Data Domain KnowledgeGraph			[Azure Managed K8S Services for managing ontology services]
 		-- Istio on AKS 				[Service Mesh for Service Independence, Dynamic Service discovery, circuit breaking, mTLS b/w service-to-service communication] 
 
-- AZURE Sample implementation Codeset []		
+- AZURE DataMesh Sample implementation Codeset []		
 
 		Disclaimer:
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
 
-### DataMesh-as-a-Code on AWS 
+### DATAMESH-AS-A-CODE on AWS 
 - AWS cloud-native Data Mesh Architecture 
 
 - AZURE Sample implementation Codeset []			
 		Disclaimer:
 		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 
-#### DataMesh-as-a-Code on OSS 
+#### DATAMESH-AS-A-CODE on OSS 
 - Open Source Data Mesh Architecture 
 
 - OSS Sample implementation Codeset []			
 		Disclaimer:
 		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").		
 
-#### DataMesh-as-a-Code on GCP 
+#### DATAMESH-AS-A-CODE on GCP 
 - GCP cloud-native Data Mesh Architecture 
 
-- GCP Sample implementation Codeset []			
-		Disclaimer:
-		In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+- GCP DataMesh Sample implementation Codeset []		
 
-#### DataMesh-as-a-Code on DATABRICKS 
+		Disclaimer:
+			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
+
+#### DATAMESH-AS-A-CODE on DATABRICKS 
 - [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake) Reference]
 
+- DATABRICKS DataMesh Sample implementation Codeset []		
 
+		Disclaimer:
+			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
 
 ## Data Mesh Reference Artefacts in Public Domain 
 
