@@ -387,7 +387,7 @@ Data Mesh Industrialization Codeset
 
 - Azure cloud-native Data Mesh Architecture 
 
-<img alt="DataMesh_Principles_Zamak_Martin.png" src="/images/DataMesh_Principles_Zamak_Martin.png" width="250" height="200"/> |<img alt="Data Mesh Priciples.png" src="/images/Data Mesh Priciples.png" width="250" height="200"/> |<img alt="Martin Fowler_ Principles Data Mesh Governance aspects JPG.JPG" src="/images/Martin Fowler_ Principles Data Mesh Governance aspects JPG.JPG" width="250" height="200"/> |
+<img alt="Data Mesh_Azure Reference Architecture.png" src="/images/Data Mesh_Azure Reference Architecture.png" width="250" height="200"/> |<img alt="Logical Architecture Data Mesh_Azure Representational Data Mesh.png" src="/images/Logical Architecture Data Mesh_Azure Representational Data Mesh.png" width="250" height="200"/> |<img alt="DataMesh-with-infrastructure-wrappers_Overview_Azure.png" src="/images/DataMesh-with-infrastructure-wrappers_Overview_Azure.png" width="250" height="200"/> |
 
 - Technology & Tools 
 
