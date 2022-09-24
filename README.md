@@ -7,7 +7,7 @@
 - To Move Beyond a Monolithic Data Lake/ Centralized LakeHouse / Data Warehouse to a Distributed Data Mesh paradigm is a JOURNEY. :airplane:
 
 - Welcome onaboard to **The Universe of "Distributed Data Mesh 2.0!"**.
-<img alt="Should I be Meshing?" src="/images/data-mesh-Should-I.jpg" width="800" height="550"/>
+<img alt="Should I be Meshing?" src="/images/data-mesh-Should-I.jpg" width="950" height="550"/>
 
 
 <br>
