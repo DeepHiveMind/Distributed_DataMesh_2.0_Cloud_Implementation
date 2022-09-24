@@ -35,13 +35,14 @@ In case, [a] you're willing to contribute to the FOSS Community for Data MESH, o
 6. [DATA Mesh TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns) |
 7. [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
 8. [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |	
-9. [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
+9. [The Challenges of Data Mesh]()
+10. [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 
 - :eight_pointed_black_star: [THE SEGMENT 2] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
 
 
-10. [Distributed-Data-Mesh-as-a-Code on Cloud](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#datamesh-as-a-code-on-cloud)
+11. [Distributed-Data-Mesh-as-a-Code on Cloud](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#datamesh-as-a-code-on-cloud)
 
 
 		>>>> A. DataMesh-as-a-Code on Azure Cloud |  
@@ -83,7 +84,9 @@ Attention:
 	
 	2. Data Mesh has a concrete set of principles (most importantly a set of ideas). Physcializing those ideas to practice by building out mesh is a JOURNEY.
 	
-	3. There may not be an obvious THRESHOLD to measure the Data Mesh industrialization. i.e., it's a continuum of care.
+	3. There may not be an obvious THRESHOLD to measure the Data Mesh industrialization. i.e., it's a Continuum of Care (CoC).
+	
+	4. While Data Mesh allows much more room to flex and scale, as every other paradigm, shouldn’t be considered as a perfect-fit solution for every single scenario. As with all decentralised data architectures, there are a few common challenges. Please refer below to the sub-topic [The Challenges of Data Mesh] for further insight. 
 	
 <br>
 
@@ -305,6 +308,20 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 - Data Infra PlatformOps specialists
 - Data Security Professionals
 - CDO
+<br>
+<br>
+
+## The challenges of Data Mesh
+
+While Data Mesh allows much more room to flex and scale, as every other paradigm, shouldn’t be considered as a perfect-fit solution for every single scenario. As with all decentralised data architectures, there are a few common challenges, including:
+
+- Ensuring that toolsets and approaches are unified (where applicable) across teams.
+- Harmonising data and unifying presentation. A user that reads interconnected data across several data products should be able to map it correctly.
+- Making data products easy to find and understand, through a comprehensive documentation process.
+- Establishing consistent monitoring, alerting and logging practices.
+- Safeguarding data access controls, especially where a many-to-many relationship exists between data products.
+- Minimise the duplication of workload and data between different teams; centralised data management is often incredibly hard to implement company-wide.
+
 <br>
 <br>
 
