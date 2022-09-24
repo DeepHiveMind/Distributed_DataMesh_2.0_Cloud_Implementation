@@ -351,15 +351,16 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 <br>
 
 ## Enterprise Data Mesh Data-Product User Persona 
+- CDO
 - Data Product Owners
 		
-		- Citizen Developers (assisted by LCNC)
+		& Citizen Data Product Developers (assisted by LCNC)
 - Data Management & Governance 'Stewards'
 - Semantic Specialists
 - Data Story Tellers & Navigation SME
 - Data Infra PlatformOps specialists
 - Data Security Professionals
-- CDO
+
 <br>
 <br>
 
@@ -474,7 +475,7 @@ Data Mesh Industrialization Codeset
 ### DATAMESH-AS-A-CODE on GCP 
 - GCP cloud-native Data Mesh Architecture 
 
-<img alt="GCP_DataMesh_Architecture.jpeg" src="/Infographics_Domain/GCP_Datamesh/GCP_DataMesh_Architecture.jpeg" width="250" height="200"/> | <img alt="Datamesh_bigquery.png" src="/Infographics_Domain/GCP_Datamesh/Datamesh_bigquery.png" width="250" height="200"/> | <img alt="Dataplex_dataMesh.png" src="/Infographics_Domain/GCP_Datamesh/Dataplex_dataMesh.png" width="250" height="200"/> |
+<img alt="GCP_DataMesh_Architecture.jpeg" src="/Infographics_Domain/GCP_DataMesh/GCP_DataMesh_Architecture.jpeg" width="250" height="200"/> | <img alt="Datamesh_bigquery.png" src="Infographics_Domain/GCP_DataMesh/Datamesh_bigquery.png" width="250" height="200"/> | <img alt="Dataplex_dataMesh.png" src="Infographics_Domain/GCP_DataMesh/Dataplex_dataMesh.jpg" width="250" height="200"/> |
 
 - GCP DataMesh Sample implementation Codeset		
 
