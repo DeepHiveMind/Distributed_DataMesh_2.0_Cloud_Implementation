@@ -98,7 +98,7 @@ Attention:
 - :bulb: Therefore, Data Mesh paradigm objective is to reduce overall friction for information flow in the organization, where the **data producer is responsible for the datasets they produce and is accountable to the consumer based on the advertised SLAs**.
 - **Move away from tightly coupled data interfaces and varying data flows towards an architecture that allows eco-system connectivity**.
 
-###### To be an integral part of Data Mesh OSS Community, Please make sure to go through the original paper on **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** 
+###### To be an integral part of Data Mesh OSS Community, Please be conversant with **[Data Mesh as defined by Martin Fowler](https://martinfowler.com/articles/data-mesh-principles.html)** 
 
 
 <img alt="data-mesh-pillars" src="/images/data-mesh-pillars.jpg" width="250" height="200"/> |<img alt="Data Mesh Domain Primer" src="/images/Data Mesh Domain Primer.webp" width="250" height="200"/> |<img alt="data-mesh-martin-fowler" src="/images/data-mesh-martin-fowler.png" width="250" height="200"/> |<img alt="Data Mesh_Logical Architecture" src="/images/Data Mesh_Logical Architecture.jpg" width="250" height="200"/> |<img alt="Mesh of DataProductNodes" src="/images/Mesh of DataProductNodes.jpg" width="250" height="200"/> |<img alt="Data Product_Input Ports_Output Ports.jpg" src="/images/Data Product_Input Ports_Output Ports.jpg" width="250" height="200"/> |
