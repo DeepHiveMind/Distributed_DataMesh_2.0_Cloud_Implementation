@@ -29,35 +29,36 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- |1| [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
 	- |2| [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
 	- |3| [Why Data MESH paradigm / Drivers of Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#why-data-mesh-architecturemodelparadigm) |
-	- |4| [Data MESH - Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#principles-of-enterprise-data-mesh) |  
-	- |5| [Data Mesh Techno-functional Architectural Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-mesh-techno-functional-architectural-patterns) |   
-	- 6. [DATA Mesh TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns) |
-	- 7. [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
-	- 8. [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |
-	- 9. [The Challenges of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
-	- 10. [Data Fabric vs Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-fabric-vs-data-mesh)  |	
-	- 11. [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
+	- |4| [Data MESH - Principles](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#principles-of-enterprise-data-mesh) | 
+	- |5| [Data Mesh - Reference Design]() | 
+	- |6| [Data Mesh - Architectural Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-mesh-techno-functional-architectural-patterns) |   
+	- |7| [DATA Mesh - TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns) |
+	- |8| [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
+	- |9| [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |
+	- |10| [The Challenges of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
+	- |11| [Data Fabric vs Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-fabric-vs-data-mesh)  |	
+	- |12| [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 
 - :eight_pointed_black_star: [THE SEGMENT 2 for doers] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
-	- 1. [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
+	- |13| [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
 		- AZURE cloud-native Data Mesh Reference Architecture
 		- AZURE cloud-native Technology & Tools
 		- AZURE DataMesh Industrialization Codeset
-	- 2. [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
+	- |14| [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
 		- OSS Data Mesh Reference Architecture
 		- OSS cloud-native Technology & Tools
 		- OSS DataMesh Industrialization Codeset
-	- 3. [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)
+	- |15| [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)
 		- AWS cloud-native Data Mesh Reference Architecture
 		- AWS cloud-native Technology & Tools
 		- AWS DataMesh Industrialization Codeset
-	- 4. [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
+	- |16| [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
 		- GCP cloud-native Data Mesh Reference Architecture
 		- GCP cloud-native Technology & Tools
 		- GCP DataMesh Industrialization Codeset		
-	- 4. [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
-	- 5. [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
+	- |17| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
+	- |18| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
 	
 	
 Please refer to different sub-folders in this repository to access the codesets. The codesets reflects Industrialization of Data Mesh on Azure/AWS Cloud using Cloud-native IaaS/PaaS/FaaS, Free & Open Source Technologies etc.
