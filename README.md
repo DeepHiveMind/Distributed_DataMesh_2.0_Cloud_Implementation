@@ -259,21 +259,23 @@ Domain-driven architecture Pattern simulation of Data Mesh are as following for 
 <br>
 <br>
 
-## Data Mesh Techno-functional Architectural Patterns
+## Data Mesh Architectural Patterns
 
 Illustration of key Techno-functional Architectural Patterns of Data Mesh are as following- 
 
-- Data Product Catalog
+- Enterprise Data Mesh Architecture
+- Data Mesh & Data Product Architecture
+- Data Mesh & Data Product Catalog
 - Data Mesh & Event Streaming backbone
 - Data Mesh & Data Lienage
 - Data Mesh & AI ML
 - Data Mesh & CDC
 - Data Mesh & Real time Data Synch
-- Enterprise Data Mesh Architecture
+
 
 |**Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**| **Data MESH ARCHITECTURE PATTERN**|
 | :---: | :---:| :---:|
-| Enterprise Data Mesh Architecture | Enterprise Data Mesh Architecture  |  Enterprise Data Mesh Product Architecture  | 
+| Enterprise Data Mesh Architecture | Enterprise Data Mesh Architecture  |  Enterprise Data Mesh & Data Product Architecture  | 
 |<img src="images/Data Mesh Enterprise Architecture.png" width="500" height="200" border="10">|<img src="images/Enterprise Data Mesh Architecture.png" width="500" height="200" border="10">|<img src="images/Data Mesh Data Product Architecture.png" width="500" height="200" border="10">|
 | Pattern_Data Mesh & Data Product Catalog | Pattern_Data Mesh & Event Streaming backbone |  Pattern_Data Mesh & Data Lienage| 
 |<img src="images/Pattern_Data Mesh & Data Product Catalog.png" width="500" height="200" border="10">|<img src="images/Pattern_Data Mesh & Event Streaming backbone .png" width="500" height="200" border="10">|<img src="images/Scenario_Data Mesh & Data Lienage.png" width="500" height="200" border="10">|
