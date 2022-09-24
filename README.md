@@ -132,17 +132,13 @@ Managing data through a Central Data Platform can create following multi-dimensi
 		 [a] scaling, 
 		 [b] ownership,
 		 [c] accountability challenges,
-		 
-		 [d] Huge backlog -- 
+		 [d] Huge backlog - 
 		 'Central Data platform' pattern works for smaller organizations and organizations that have a high degree of centralization from a team setup perspective. However, using only a single team often creates a bottleneck in larger organizations. This bottleneck causes a huge backlog, with parts of an organization having to wait for data integration services and Analytical solutions. 
-		
-		[e] Organizations adopting MODERN DATA SCIENCE solutions --
+		 [e] Organizations adopting MODERN DATA SCIENCE solutions -
 		Many modern data science solutions require more data than traditional business intelligence solutions did in the past. It creates a huge backlog and depedencies on central Data platform team. 
-		
-		[f] Organizations are DECENTRALIZED and DISTRIBUTED from a business perspective -- 
+		 [f] Organizations are DECENTRALIZED and DISTRIBUTED from a business perspective - 
 		Most organizations are decentralized and distributed from a business perspective. Having a single team handling all of data ingestion on a single platform in a large organization can also be problematic. One team rarely has experts for every data source.
-		
-		[g] Microservices as an Application development pattern for Business Transcation Processing Source System -- 
+		 [g] Microservices as an Application development pattern for Business Transcation Processing Source System -- 
 		The recent switch to using microservices as an application development pattern is another driver of long backlogs around data integration because it increases the number of data sources.
 
 - STEP 3: *'Data Mesh as Solution'*:
@@ -192,8 +188,9 @@ Data Mesh paradigm is the solution as it supports all the constructs to make it 
 		
 <img alt="DataMesh_Principles_Zamak_Martin.png" src="/images/DataMesh_Principles_Zamak_Martin.png" width="250" height="200"/> |<img alt="Data Mesh Priciples.png" src="/images/Data Mesh Priciples.png" width="250" height="200"/> |
 
-			Based on the aforementioned tenets of Data Mesh, it's safe to call out that, :bulb: "Data Mesh is a MESH OF DATA PRODUCT NODES". 
-			It's pretty much alike :bulb: "Service MESH of Microservices powered Data Products".
+		Based on the aforementioned tenets of Data Mesh, it's safe to call out that, 
+			:bulb: "Data Mesh is a MESH OF DATA PRODUCT NODES". 
+			:bulb: pretty much alike "Service MESH of Microservices powered Data Products".
 	
 
 <br>
