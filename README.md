@@ -1,5 +1,4 @@
-# Enterprise Data MESH journey :airplane: 
-## *from Theory to Practice*
+# Enterprise Data MESH journey :airplane: *from Theory to Practice*
 
 - This repository is my [*@DeepHiveMind*](https://DeepHiveMind.io) humble contribution to the Open Source Community for **The Best of Enterprise Data Mesh** by introducing the Constructs, Design Elements, Real life implementations, Codesets, Reference Artefacts, FAQs & more from the captivating landscape of Distributed Data Mesh 2.0. 
 
