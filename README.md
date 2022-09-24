@@ -7,20 +7,10 @@
 - To Move Beyond a Monolithic Data Lake/ Centralized LakeHouse / Data Warehouse to a Distributed Data Mesh paradigm is a JOURNEY. :airplane:
 
 - Welcome onaboard to **The Universe of "Distributed Data Mesh 2.0!"**.
-<br>
-Disclamer:
+<img alt="Should I be Meshing?" src="/images/data-mesh-Should-I.jpg" width="800" height="250"/>
 
-	1. The paradigm shift in Distributed Data Architecture with domain driven ownership comes with several nuances and consideration. 
-	Implmentation of Data Mesh architecture in any enterprise mostly depends on 
-	(a) organizational maturity and skills, 
-	(b) organizational structure, 
-	(c) risk appetite, 
-	(d) sizing and dynamics. 
-	
-	2. Data Mesh has a concrete set of principles (most importantly a set of ideas). Physcializing those ideas to practice by building out mesh is a JOURNEY.
-	
-	3. There may not be an obvious THRESHOLD to measure the Data Mesh industrialization. i.e., it's a continuum of care.
-	
+
+<br>
 <br>
 
 # Agenda
@@ -30,7 +20,7 @@ Disclamer:
 
 *The 2nd segment is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-*In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").*
+			*In case, [a] you're willing to contribute to the FOSS Community for Data MESH, or, [b] require full access to the code-set for Academic/Not-for-profit purposes, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").*
 
 
 
@@ -65,6 +55,7 @@ Please refer to different sub-folders in this repository to access the codesets.
 <br>
 
 ## What is Enterprise Data MESH?
+
 - "A Data Mesh is a paradigm shift in how we think about building data platforms. 
 The architecture is the convergence of Distributed Domain Driven Architecture, Self-serve Platform Design and Product Thinking with Data". 
 -- Zhamak Dehghani, Thoughtworks
@@ -78,6 +69,22 @@ The architecture is the convergence of Distributed Domain Driven Architecture, S
 		(iv) Federated Governance
 
 - 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
+
+<br>
+Attention as to Data Mesh:
+
+	1. The paradigm shift in Distributed Data Architecture with domain driven ownership comes with several nuances and consideration. 
+	Implmentation of Data Mesh architecture in any enterprise mostly depends on 
+	(a) organizational maturity and skills, 
+	(b) organizational structure, 
+	(c) risk appetite, 
+	(d) sizing and dynamics. 
+	
+	2. Data Mesh has a concrete set of principles (most importantly a set of ideas). Physcializing those ideas to practice by building out mesh is a JOURNEY.
+	
+	3. There may not be an obvious THRESHOLD to measure the Data Mesh industrialization. i.e., it's a continuum of care.
+	
+<br>
 
 #### The Domain-driven Goal of DATA MESH
 
