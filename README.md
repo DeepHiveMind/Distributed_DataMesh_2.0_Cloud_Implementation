@@ -349,6 +349,7 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 
 ## Enterprise Data Mesh Data-Product User Persona 
 - Data Product Owners
+		
 		- Citizen Developers (assisted by LCNC)
 - Data Management & Governance 'Stewards'
 - Semantic Specialists
@@ -406,9 +407,10 @@ Data Mesh Industrialization Codeset
 
 <img alt="Data Mesh Nodes interaction_Azure.png" src="/Infographics_Domain/Azure_Datamesh/Data Mesh Nodes interaction_Azure.png" width="250" height="200"/> |<img alt="Data-Mesh-plane_Azure.png" src="/Infographics_Domain/Azure_Datamesh/Data-Mesh-plane_Azure.png" width="250" height="200"/> |<img alt="Data-mesh-integration_Federated Governance_Azure.png" src="/Infographics_Domain/Azure_Datamesh/Data-mesh-integration_Federated Governance_Azure.png" width="250" height="200"/> |
 
-Azure DataMesh Nodes Infra_Option 1_Full VNET Peering
-Azure DataMesh Nodes Infra_Option 2_Hub and Spoke VNET
-Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
+	Azure DataMesh Nodes Infra_Option 1_Full VNET Peering
+	Azure DataMesh Nodes Infra_Option 2_Hub and Spoke VNET
+	Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
+	
 <img alt="Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 1_Full VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option2_Hub and Spoke VNET Peering.png" width="250" height="200"/> |<img alt="Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" src="/Infographics_Domain/Azure_Datamesh/Azure DataMesh Infra_Nodes_Option 3_Targeted Service Endpointes.png" width="250" height="200"/> |
 
 - AZURE cloud-native Technology & Tools 
@@ -452,7 +454,9 @@ Azure DataMesh Nodes Infra_Option 2_Peering Targeted Service Endpointes
 ### DATAMESH-AS-A-CODE on AWS 
 - AWS cloud-native Data Mesh Architecture 
 
-|<img alt="DataProducer_DataConsumer_RefArchitecture.png" src="/Infographics_Domain/AWS_Datamesh/DataProducer_DataConsumer_RefArchitecture.png" width="250" height="200"/> |<img alt="DataDomain_Producer & Consumer_Architecture.png" src="/Infographics_Domain/AWS_Datamesh/DataDomain_Producer & Consumer_Architecture.png" width="250" height="200"/> |<img alt="DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" src="/Infographics_Domain/AWS_Datamesh/DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" width="250" height="200"/> |
+https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/Infographics_Domain/AWS_DataMesh/DataProducer_DataConsumer_RefArchitecture.png
+
+|<img alt="DataProducer_DataConsumer_RefArchitecture.png" src="/Infographics_Domain/AWS_DataMesh/DataProducer_DataConsumer_RefArchitecture.png" width="250" height="200"/> |<img alt="DataDomain_Producer & Consumer_Architecture.png" src="/Infographics_Domain/AWS_Datamesh/DataDomain_Producer & Consumer_Architecture.png" width="250" height="200"/> |<img alt="DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" src="/Infographics_Domain/AWS_Datamesh/DataLake Account_Central Governance Account_Consumer Account_ E2EWorkflow_architecture.png" width="250" height="200"/> |
 |<img alt="Cross Account_DataMesh_Architecture.png" src="/Infographics_Domain/AWS_Datamesh/Cross Account_DataMesh_Architecture.png" width="250" height="200"/> | <img alt="DataMesh Catalog_Data flow Audit_ABCR.png" src="/Infographics_Domain/AWS_Datamesh/DataMesh Catalog_Data flow Audit_ABCR.png" width="250" height="200"/> | <img alt="Mesh Catalog_Block diagram.png" src="/Infographics_Domain/AWS_Datamesh/Mesh Catalog_Block diagram.png" width="250" height="200"/> |
 - AWS DataMesh Sample implementation Codeset		
 
