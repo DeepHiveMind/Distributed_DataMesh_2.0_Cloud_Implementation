@@ -329,7 +329,9 @@ Based on nuances and considerations, different data mesh topologies can be used.
 
 <img alt="Additional Governance TOPOLOGIES" src="/images/Additional Governance TOPOLOGIES.webp" width="500" height="200" border="10">
 
-Microsoft Ignite Reference on TOPOLOGY (Governed Data Mesh Topology) -  [A financial institution scenario for data mesh by Microsoft Ignite](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-data-mesh)
+- Microsoft Ignite Reference on TOPOLOGY (Governed Data Mesh Topology) -  [A financial institution scenario for data mesh by Microsoft Ignite](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-data-mesh)
+
+<img alt="Governed TOPOLOGIES" src="/images/DataMeshNodeEcosystem.png" width="500" height="200" border="10">
 
 Please refer to [Data Mesh Topology](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/DataMeshTopology.md) for further details into 3 most prevalent Topolgy patterns in Data Mesh.
 <br>
