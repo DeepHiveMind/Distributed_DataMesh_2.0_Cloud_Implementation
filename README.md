@@ -496,7 +496,7 @@ Data Mesh Industrialization Codeset
 
 ##### GCP cloud-native Data Mesh Architecture 
 
-<img alt="GCP_DataMesh_Architecture.jpeg" src="/Infographics_Domain/GCP_DataMesh/GCP_DataMesh_Architecture.jpeg" width="250" height="200"/> | <img alt="Datamesh_bigquery.png" src="Infographics_Domain/GCP_DataMesh/Datamesh_bigquery.png" width="250" height="200"/> | <img alt="Dataplex_dataMesh.png" src="Infographics_Domain/GCP_DataMesh/Dataplex_dataMesh.jpg" width="250" height="200"/> |
+<img alt="GCP_DataMesh_Architecture.jpeg" src="/Infographics_Domain/GCP_DataMesh/GCP_DataMesh_Architecture.jpeg" width="250" height="200"/> | <img alt="Datamesh_bigquery" src="/Infographics_Domain/GCP_DataMesh/DataMesh_bigquery.jpg" width="250" height="200"/> | <img alt="Dataplex_dataMesh" src="Infographics_Domain/GCP_DataMesh/Dataplex_dataMesh.jpg" width="250" height="200"/> |
 
 ##### GCP DataMesh Sample implementation Codeset		
 
