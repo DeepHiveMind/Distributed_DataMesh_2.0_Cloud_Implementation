@@ -524,12 +524,16 @@ Data Mesh Industrialization Codeset
 
 #### DATAMESH-AS-A-CODE on DATABRICKS 
 
-##### [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake) Reference]
+##### [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)]
 
-##### DATABRICKS DataMesh Sample implementation Codeset [WORK NOT YET STARTED]		
+##### DATABRICKS DataMesh Sample implementation Codeset 
+
+[WORK NOT YET STARTED]		
+<br>
 <br>
 
 ### DATAMESH-AS-A-CODE on CONFLUENT 
+
 [WORK NOT YET STARTED]
 <br>
 <br>
