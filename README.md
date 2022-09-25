@@ -512,7 +512,7 @@ Data Mesh Industrialization Codeset
 
 ##### Open Source Data Mesh Architecture 
 
-<img alt="OSS_architecture.png" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture.png" width="250" height="200"/> | <img alt="OSS_architecture-mapping.png" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture-mapping.png" width="250" height="200"/> |
+<img alt="OSS_architecture" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture.jpg" width="250" height="200"/> | <img alt="OSS_architecture-mapping" src="/Infographics_Domain/OSS_Datamesh/OSS_architecture-mapping.jpg" width="250" height="200"/> |
 
 ##### OSS DataMesh Sample implementation Codeset		
 
