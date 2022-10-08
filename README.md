@@ -388,7 +388,7 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 ## The challenges of Data Mesh
 #### Should I be Meshing? Why not Data Mesh?
 
-<img alt="Should I be Meshing?" src="/images/Challenge.jpg" width="250" height="100"/> <img alt="why-not-dataMesh" src="/images/why-not.webp" width="250" height="100"/>
+<img alt="Should I be Meshing?" src="/images/Challenge.jpg" width="250" height="100"/> <img alt="why-not-dataMesh" src="/images/WhyNot.png" width="250" height="100"/>
 
 While Data Mesh allows much more room to flex and scale, as every other paradigm, shouldn’t be considered as a perfect-fit solution for every single scenario. 
 As with all decentralised data architectures, there are a few common challenges, including:
