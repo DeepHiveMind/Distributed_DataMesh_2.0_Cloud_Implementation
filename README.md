@@ -22,11 +22,10 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 *'The 2nd segment' is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-*'The 3rd segment' is dedicated for FASCINATED ONLOOKERS who believe in continuous learning. I am sharing herewith Curated list of Data Mesh reference artefacts in Public Domain.
+*'The 3rd segment' is dedicated for FASCINATED ONLOOKERS who believe in continuous learning. I am sharing herewith Curated list of cherishable Data Mesh reference artefacts in Public Domain for your leisurely consumption. 
 
- journey industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-- :eight_pointed_black_star: [THE SEGMENT 1 for Data Mesh **POETS**!] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
+- :eight_pointed_black_star: [The SEGMENT 1 for Data Mesh **POETS**!] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
 
 	- |1| [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
 	- |2| [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
@@ -40,9 +39,9 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- |10| [The Challenges of Data Mesh | Why Not Data Mesh? ](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
 	- |11| [Data Fabric vs Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-fabric-vs-data-mesh)  |	
 
-	
+<br>	
 
-- :eight_pointed_black_star: [THE SEGMENT 2 for Data Mesh **DOERS**!] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
+- :eight_pointed_black_star: [The SEGMENT 2 for Data Mesh **DOERS**!] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
 	- |12| [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
 		- [AZURE cloud-native Data Mesh Reference Architecture](#azure-cloud-native-data-mesh-reference-architecture)
 		- [AZURE DataMesh Industrialization Codeset](#azure-datamesh-industrialization-codeset)
@@ -54,16 +53,19 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 		- [AWS DataMesh Industrialization Codeset](#aws-datamesh-sample-implementation-codeset)
 	- |15| [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
 		- [GCP cloud-native Data Mesh Reference Architecture](#gcp-cloud-native-data-mesh-architecture)
-		- [GCP DataMesh Industrialization Codeset](#gcp-datamesh-sample-implementation-codeset)		
-	- |16| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
-	- |17| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
+		- [GCP DataMesh Industrialization Codeset](#gcp-datamesh-sample-implementation-codeset)	
+	- |16| [DataMesh-as-a-Code on SNOWFLAKE](#DataMesh-as-a-Code-on-SNOWFLAKE)		
+	- |17| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
+	- |18| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
 
 
+<br>
 
-- :eight_pointed_black_star: [THE SEGMENT 3 for Data Mesh **FASCINATED ONLOOKERS**!] 	
-	- |18| [Curated list of Data Mesh reference artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
+- :eight_pointed_black_star: [The SEGMENT 3 for Data Mesh **FASCINATED ONLOOKERS**!] 	
+	- |19| [Curated list of Data Mesh reference artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
-	
+
+<br>	
 Please refer to different sub-folders in this repository to access the codesets. The codesets reflects Industrialization of Data Mesh on Azure/AWS Cloud using Cloud-native IaaS/PaaS/FaaS, Free & Open Source Technologies etc.
 
 **Disclaimer**:
@@ -386,7 +388,7 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 <br>
 
 ## The challenges of Data Mesh
-#### Should I be Meshing? Why not Data Mesh?
+#### Should I be Meshing? Why not to rush to Data Mesh culture?
 
 <img alt="Should I be Meshing?" src="/images/Challenge.jpg" width="250" height="100"/> <img alt="why-not-dataMesh" src="/images/WhyNot.png" width="250" height="100"/>
 
@@ -425,9 +427,10 @@ Whereas, the Data Mesh paradigm stands for decentralised and domain-specific dat
 Data Mesh Industrialization Codeset
  
 		- DataMesh-as-a-Code-on-AZURE	
-		- DataMesh-as-a-Code_with_FOSS
 		- DataMesh-as-a-Code-on-AWS
 		- DataMesh-as-a-Code-on-GCP
+		- DataMesh-as-a-Code-on-SNOWFLAKE
+		- DataMesh-as-a-Code_with_FOSS
 		- DataMesh-as-a-Code-on-DATABRICKS
 		- DataMesh-as-a-Code-on-CONFLUENT
 
@@ -532,6 +535,20 @@ Data Mesh Industrialization Codeset
 			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
 <br>
 
+#### DATAMESH-AS-A-CODE on SNOWFLAKE 
+
+##### SNOWFLAKE & DBT powered cloud-native Data Mesh Reference Architecture 
+
+<img alt="Data Mesh_DBT_SNOWFLAKE_DataMesh_Architecture" src="/Infographics_Domain/DBT_SNOWFLAKE_DataMesh/dbt-snowflake.jpg" width="450" height="500"/>
+
+##### SNOWFLAKE DataMesh Sample implementation Codeset		
+
+[Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/05%20DataMesh-as-a-Code_SNOWFLAKE)
+		
+		Disclaimer:
+			In case, [a] *you're willing to contribute to the FOSS Community for Data MESH*, or, [b] *require full access to the code-set for Academic/Not-for-profit purposes*, Please reach me @[DeepHiveMind Contact](https://deephivemind.io/contact.html). I may grant you the full access to my another private repo with the full code sets (in due conformance with "Copyright 2019 DeepHiveMind License").
+<br>
+<br>
 #### DATAMESH-AS-A-CODE on DATABRICKS 
 
 ##### [DataMesh-in-practice with DATABRICKS | Rerefence](https://databricks.com/session_na20/data-mesh-in-practice-how-europes-leading-online-platform-for-fashion-goes-beyond-the-data-lake)]
