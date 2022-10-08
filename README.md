@@ -39,7 +39,6 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- |10| [The Challenges of Data Mesh | Why Not Data Mesh? ](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
 	- |11| [Data Fabric vs Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-fabric-vs-data-mesh)  |	
 <br>	
-
 - :eight_pointed_black_star: [The SEGMENT 2 for Data Mesh **DOERS**!] -  **DataMesh-as-a-Code on Cloud for Industrialization** 
 	
 	- |12| [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
@@ -60,7 +59,6 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- |17| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
 	- |18| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
 <br>
-
 - :eight_pointed_black_star: [The SEGMENT 3 for Data Mesh **FASCINATED ONLOOKERS**!]
  	
 	- |19| [Curated list of Data Mesh reference artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
@@ -99,7 +97,7 @@ Well! Well!! .. We all know the concptual blocks which are fuelling SCALING UP S
 - 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
 
 
-<img alt="What is DataMesh?" src="/Infographics_Domain/DataMesh/What-is-DataMesh.jpg/What-is-DataMesh.jpg" width="450" height="400"/> <img alt="See the resemblance" src="/Infographics_Domain/DataMesh/What-is-DataMesh.jpg/Domain-oriented-decentralization-for-analytical-data.jpg" width="450" height="400"/>
+<img alt="What is DataMesh" src="/Infographics_Domain/DataMesh/What-is-DataMesh.jpg" width="450" height="400"/> <img alt="See the resemblance" src="/Infographics_Domain/DataMesh/Domain-oriented-decentralization-for-analytical-data.jpg" width="450" height="400"/>
 
 <br>
 Attention:
