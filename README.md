@@ -41,7 +41,8 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 <br>	
 
-- :eight_pointed_black_star: [The SEGMENT 2 for Data Mesh **DOERS**!] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
+- :eight_pointed_black_star: [The SEGMENT 2 for Data Mesh **DOERS**!] -  **DataMesh-as-a-Code on Cloud for Industrialization** 
+	
 	- |12| [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
 		- [AZURE cloud-native Data Mesh Reference Architecture](#azure-cloud-native-data-mesh-reference-architecture)
 		- [AZURE DataMesh Industrialization Codeset](#azure-datamesh-industrialization-codeset)
@@ -63,7 +64,8 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 <br>
 
-- :eight_pointed_black_star: [The SEGMENT 3 for Data Mesh **FASCINATED ONLOOKERS**!] 	
+- :eight_pointed_black_star: [The SEGMENT 3 for Data Mesh **FASCINATED ONLOOKERS**!]
+ 	
 	- |19| [Curated list of Data Mesh reference artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 
@@ -91,7 +93,16 @@ The architecture is the convergence of Distributed Domain Driven Architecture, S
 				(iii) Treating Data as a Product with
 				(iv) Federated Governance
 
+
+- In technical parlance, Data Mesh is *simply a fusion of similar concepts, which are off-late being practised to "SCALE UP SOFTWARE DEVELOPMENT", in Data Analytics World to "SCALE UP DATA ANLAYTICS". 
+Well! Well!! .. We all know the concptual blocks which are fuelling SCALING UP SOFTWARE DEVELOPMENT, such as -[a] Decentralize business into domains, [b] Decentralize engineering into autonomous teams, [c] Decentralize monoliths into microservices, [d] Decentralize operations into DevOps-driven teams. Yes! These very concepts are embedded in Data Mesh to SCALE UP DATA ANLAYTICS!!.. Hope! You can see the resemblance!
+
+ 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
+
 - 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
+
+
+<img alt="What is DataMesh?" src="/images/DataMesh/What-is-DataMesh.jpg" width="450" height="400"/> <img alt="See the resemblance" src="/images/DataMesh/Domain-oriented-decentralization-for-analytical-data.jpg" width="450" height="400"/>
 
 <br>
 Attention:
