@@ -571,16 +571,15 @@ Data Mesh Industrialization Codeset
 
 
 ## Data Mesh Reference Artefacts in Public Domain 
+This repo offers 'Curated list of Data MESH Artefacts' available in public domain. Please refer to the [Curated list of Data MESH Artefacts](README_DataMesh_Reference_Artefacts_CuratedList.md) for further reference.
+
+	- [Reference Technical Blogs]
+	- [Reference Training Courses]
+	- [Reference Books]
+	- [Community Resources]
+	- [Conferences]
 
 
-	- [Reference Technical Blogs](#Reference-Technical-Blogs)
-	- [Reference Training Courses](#Reference-training-courses)
-	- [Reference Books](#Reference-Books)
-	- [Community Resources](#community-resources)
-	- [Conferences](#conferences)
-
-This repo also offers 'Curated list of Data MESH Artefacts' available in public domain.
-Please refer to the [Curated list of Data MESH Artefacts](README_DataMesh_Reference_Artefacts_CuratedList.md) for further reference.
 
 
 ## Copyright 2019 DeepHiveMind License
