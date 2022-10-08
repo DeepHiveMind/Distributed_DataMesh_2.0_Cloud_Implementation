@@ -16,15 +16,17 @@
 # Agenda
 <img alt="Should I be Meshing?" src="/images/Agenda.jfif" width="450" height="100"/>
 
-The Repo welcomes members of Data Mesh OSS Community (Open Source Community) with 2 major sections/segments - 
+The Repo welcomes members of Data Mesh OSS Community (Open Source Community) with 3 major sections/segments - 
  
 *'The 1st segment' is more of a conceptual artefacts (all bundeled under "Conceptual nuances of The Universe of Ditributed Data Mesh 2.0" section). This segment intends to offer all the major bells-and-whistles to get a broader vision, mission and understanding of Enterprise Data MESH framework.*
 
 *'The 2nd segment' is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
+*'The 3rd segment' is dedicated for FASCINATED ONLOOKERS who believe in continuous learning. I am sharing herewith Curated list of Data Mesh reference artefacts in Public Domain.
 
+ journey industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-- :eight_pointed_black_star: [THE SEGMENT 1 for poets] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
+- :eight_pointed_black_star: [THE SEGMENT 1 for Data Mesh **POETS**!] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
 
 	- |1| [What is Enterprise Data MESH](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#what-is-enterprise-data-mesh) |
 	- |2| [Domain-driven GOAL of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#the-domain-driven-goal-of-data-mesh) |
@@ -35,26 +37,31 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- |7| [DATA Mesh - TOPOLOGY Patterns](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#data-mesh-topology-patterns) |
 	- |8| [Self-serve Data Platform Infrastructure](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#self-serve-data-platform-infrastructure) |	
 	- |9| [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |
-	- |10| [The Challenges of Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
+	- |10| [The Challenges of Data Mesh | Why Not Data Mesh? ](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
 	- |11| [Data Fabric vs Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-fabric-vs-data-mesh)  |	
-	- |12| [curated list of Data Mesh Reference Artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
+
 	
 
-- :eight_pointed_black_star: [THE SEGMENT 2 for doers] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
-	- |13| [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
+- :eight_pointed_black_star: [THE SEGMENT 2 for Data Mesh **DOERS**!] -  **DataMesh-as-a-Code on Cloud for Industrialization** 	
+	- |12| [DATAMESH-AS-A-CODE on AZURE](#DataMesh-as-a-Code-on-AZURE)
 		- [AZURE cloud-native Data Mesh Reference Architecture](#azure-cloud-native-data-mesh-reference-architecture)
 		- [AZURE DataMesh Industrialization Codeset](#azure-datamesh-industrialization-codeset)
-	- |14| [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
+	- |13| [DATAMESH-AS-A-CODE on OSS](#DataMesh-as-a-Code-on-OSS)
 		- [OSS Data Mesh Reference Architecture](#open-source-data-mesh-architecture)
 		- OSS DataMesh Industrialization Codeset(#oss-datamesh-sample-implementation-codeset)
-	- |15| [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)
+	- |14| [DataMesh-as-a-Code on AWS](#DataMesh-as-a-Code-on-AWS)
 		- [AWS cloud-native Data Mesh Reference Architecture](#aws-cloud-native-data-mesh-architecture)
 		- [AWS DataMesh Industrialization Codeset](#aws-datamesh-sample-implementation-codeset)
-	- |16| [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
+	- |15| [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
 		- [GCP cloud-native Data Mesh Reference Architecture](#gcp-cloud-native-data-mesh-architecture)
 		- [GCP DataMesh Industrialization Codeset](#gcp-datamesh-sample-implementation-codeset)		
-	- |17| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
-	- |18| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
+	- |16| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
+	- |17| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
+
+
+
+- :eight_pointed_black_star: [THE SEGMENT 3 for Data Mesh **FASCINATED ONLOOKERS**!] 	
+	- |18| [Curated list of Data Mesh reference artefacts in Public Domain](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README_DataMesh_Reference_Artefacts_CuratedList.md) |
 	
 	
 Please refer to different sub-folders in this repository to access the codesets. The codesets reflects Industrialization of Data Mesh on Azure/AWS Cloud using Cloud-native IaaS/PaaS/FaaS, Free & Open Source Technologies etc.
@@ -379,10 +386,13 @@ The Self-serve Data Platform Infrastructure consists of two  major parts
 <br>
 
 ## The challenges of Data Mesh
+#### Should I be Meshing? Why not Data Mesh?
 
-<img alt="Should I be Meshing?" src="/images/Challenge.jpg" width="250" height="100"/>
-While Data Mesh allows much more room to flex and scale, as every other paradigm, shouldn’t be considered as a perfect-fit solution for every single scenario. As with all decentralised data architectures, there are a few common challenges, including:
+<img alt="Should I be Meshing?" src="/images/Challenge.jpg" width="250" height="100"/> <img alt="why-not-dataMesh" src="/images/why-not.webp" width="250" height="100"/>
 
+While Data Mesh allows much more room to flex and scale, as every other paradigm, shouldn’t be considered as a perfect-fit solution for every single scenario. 
+As with all decentralised data architectures, there are a few common challenges, including:
+<br>
 - Ensuring that toolsets and approaches are unified (where applicable) across teams.
 - Harmonising data and unifying presentation. A user that reads interconnected data across several data products should be able to map it correctly.
 - Making data products easy to find and understand, through a comprehensive documentation process.
