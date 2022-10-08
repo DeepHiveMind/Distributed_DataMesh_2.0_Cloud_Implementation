@@ -84,12 +84,12 @@ The architecture is the convergence of Distributed Domain Driven Architecture, S
 
 - Data Mesh is a `new/modern Data Platform paradigm to DOMAIN-ORIENTED + DATA-PRODUCT + SELF-SERVE DATA Infra PLATFORM + FEDERATED GOVERNANCE + DECENTRALIZED TOPOLOGY driven modern distributed data architecture to SCALE UP DATA ANLAYTICS` that conforms to
 
-			[A] the certain defined [Architecture Principles as detailed in below section](#architecture-principles-of-enterprise-data-mesh),
+			[A] the certain defined Architecture Principles as detailed in below section (#architecture-principles-of-enterprise-data-mesh),
 			[B] the tenets, 
 			such as:  
-				(i) Considering Domains as the first class concern,  
-				(ii) Applying Platform thinking to create Self-Serve Data Infrastructure,   
-				(iii) Treating Data as a Product with, and  
+				(i) Considering Domains as the first class concern,   
+				(iii) Treating Data as a Product,     
+				(ii) Applying Platform thinking to create Self-Serve Data Infrastructure, and
 				(iv) Federated Governance
 
 
