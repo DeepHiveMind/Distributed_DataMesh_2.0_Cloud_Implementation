@@ -22,7 +22,7 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 *'The 2nd segment' is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-'The 3rd segment' is dedicated for FASCINATED ONLOOKERS who believe in continuous learning. I am sharing herewith Curated list of cherishable Data Mesh reference artefacts in Public Domain for your leisurely consumption. 
+*'The 3rd segment' is dedicated for FASCINATED ONLOOKERS who believe in continuous learning. I am sharing herewith Curated list of cherishable Data Mesh reference artefacts in Public Domain for your leisurely consumption.* 
 
 
 - :eight_pointed_black_star: [The SEGMENT 1 for Data Mesh **POETS**!] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
@@ -91,10 +91,12 @@ The architecture is the convergence of Distributed Domain Driven Architecture, S
 				(iv) Federated Governance
 
 
-- In technical parlance, Data Mesh is *simply a fusion of similar concepts, which are off-late being practised to "SCALE UP SOFTWARE DEVELOPMENT", in Data Analytics World to "SCALE UP DATA ANLAYTICS" *. 
-Well! Well!! .. We all know the concptual blocks which are fuelling SCALING UP SOFTWARE DEVELOPMENT, such as -[a] Decentralize business into domains, [b] Decentralize engineering into autonomous teams, [c] Decentralize monoliths into microservices, [d] Decentralize operations into DevOps-driven teams. Yes! These very concepts are embedded in Data Mesh to SCALE UP DATA ANLAYTICS!!.. Hope! You can see the resemblance!
 
- 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
+- In technical parlance, Data Mesh is `simply a fusion of similar concepts, which are off-late being practised to "SCALE UP SOFTWARE DEVELOPMENT", in Data Analytics World to "SCALE UP DATA ANLAYTICS" `. 
+	- Well!! .. We all know the concptual blocks which are fuelling SCALING UP SOFTWARE DEVELOPMENT, such as -[a] Decentralize business into domains, [b] Decentralize engineering into autonomous teams, [c] Decentralize monoliths into microservices, [d] Decentralize operations into DevOps-driven teams. 
+	Yes! These very concepts are embedded in Data Mesh to SCALE UP DATA ANLAYTICS!!.. Hope! You can see the resemblance!
+
+
 
 - 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
 
