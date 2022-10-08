@@ -541,7 +541,7 @@ Data Mesh Industrialization Codeset
 
 <img alt="OSS_architecture" src="/Infographics_Domain/OSS_DataMesh/OSS_architecture.jpg" width="250" height="200"/> | <img alt="OSS_architecture-mapping" src="/Infographics_Domain/OSS_DataMesh/OSS_architecture-mapping.jpg" width="250" height="200"/> |
 
-##### OSS DataMesh Sample implementation Codeset		
+##### OSS DataMesh Sample implementation Codeset	
 
 [Click to refer to OSS DataMesh implementation CODESET folder](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/tree/main/02%20DataMesh-as-a-Code_FOSS)
 		
