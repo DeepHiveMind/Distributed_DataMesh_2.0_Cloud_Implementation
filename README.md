@@ -22,7 +22,7 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 
 *'The 2nd segment' is dedicated for DOERS who believe in industrialization of framework in real world (all bundeled in "DataMesh-as-a-Code on Cloud for Industrialization" section). This segment intends to share keys aspects of codesets (please note, it's the key aspects of the complete codesets) in order to Industrialize Enterprise Data MESH framework.*
 
-*'The 3rd segment' is dedicated for FASCINATED ONLOOKERS who believe in continuous learning. I am sharing herewith Curated list of cherishable Data Mesh reference artefacts in Public Domain for your leisurely consumption. 
+'The 3rd segment' is dedicated for FASCINATED ONLOOKERS who believe in continuous learning. I am sharing herewith Curated list of cherishable Data Mesh reference artefacts in Public Domain for your leisurely consumption. 
 
 
 - :eight_pointed_black_star: [The SEGMENT 1 for Data Mesh **POETS**!] - **Conceptual Universe of 'Ditributed Data Mesh 2.0'** 
@@ -38,7 +38,6 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- |9| [User Persona of Enterprise Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation#enterprise-data-mesh-data-product-user-persona)  |
 	- |10| [The Challenges of Data Mesh | Why Not Data Mesh? ](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#the-challenges-of-data-mesh)  |
 	- |11| [Data Fabric vs Data Mesh](https://github.com/DeepHiveMind/Distributed_DataMesh_2.0_Cloud_Implementation/blob/main/README.md#data-fabric-vs-data-mesh)  |	
-
 <br>	
 
 - :eight_pointed_black_star: [The SEGMENT 2 for Data Mesh **DOERS**!] -  **DataMesh-as-a-Code on Cloud for Industrialization** 
@@ -60,8 +59,6 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 		- [SNOWFLAKE DataMesh Industrialization Codeset](#snowflake-datamesh-sample-implementation-codeset)	
 	- |17| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
 	- |18| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
-
-
 <br>
 
 - :eight_pointed_black_star: [The SEGMENT 3 for Data Mesh **FASCINATED ONLOOKERS**!]
@@ -102,7 +99,7 @@ Well! Well!! .. We all know the concptual blocks which are fuelling SCALING UP S
 - 'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
 
 
-<img alt="What is DataMesh?" src="/images/DataMesh/What-is-DataMesh.jpg" width="450" height="400"/> <img alt="See the resemblance" src="/images/DataMesh/Domain-oriented-decentralization-for-analytical-data.jpg" width="450" height="400"/>
+<img alt="What is DataMesh?" src="/Infographics_Domain/DataMesh/What-is-DataMesh.jpg/What-is-DataMesh.jpg" width="450" height="400"/> <img alt="See the resemblance" src="/Infographics_Domain/DataMesh/What-is-DataMesh.jpg/Domain-oriented-decentralization-for-analytical-data.jpg" width="450" height="400"/>
 
 <br>
 Attention:
