@@ -54,7 +54,9 @@ The Repo welcomes members of Data Mesh OSS Community (Open Source Community) wit
 	- |15| [DataMesh-as-a-Code on GCP](#DataMesh-as-a-Code-on-GCP)
 		- [GCP cloud-native Data Mesh Reference Architecture](#gcp-cloud-native-data-mesh-architecture)
 		- [GCP DataMesh Industrialization Codeset](#gcp-datamesh-sample-implementation-codeset)	
-	- |16| [DataMesh-as-a-Code on SNOWFLAKE](#DataMesh-as-a-Code-on-SNOWFLAKE)		
+	- |16| [DataMesh-as-a-Code on SNOWFLAKE](#DataMesh-as-a-Code-on-SNOWFLAKE)	
+		- [SNOWFLAKE cloud-native Data Mesh Reference Architecture](#snowflake--dbt-powered-cloud-native-data-mesh-reference-architecture)
+		- [SNOWFLAKE DataMesh Industrialization Codeset](#snowflake-datamesh-sample-implementation-codeset)	
 	- |17| [DataMesh-as-a-Code on DATABRICKS](#DataMesh-as-a-Code-on-DATABRICKS)
 	- |18| [DataMesh-as-a-Code on CONFLUENT](#DataMesh-as-a-Code-on-CONFLUENT)
 
@@ -539,7 +541,7 @@ Data Mesh Industrialization Codeset
 
 ##### SNOWFLAKE & DBT powered cloud-native Data Mesh Reference Architecture 
 
-<img alt="Data Mesh_DBT_SNOWFLAKE_DataMesh_Architecture" src="/Infographics_Domain/DBT_SNOWFLAKE_DataMesh/dbt-snowflake.jpg" width="450" height="500"/>
+<img alt="Data Mesh_DBT_SNOWFLAKE_DataMesh_Architecture" src="/Infographics_Domain/DBT_SNOWFLAKE_DataMesh/dbt-snowflake.jpg" width="750" height="500"/>
 
 ##### SNOWFLAKE DataMesh Sample implementation Codeset		
 
