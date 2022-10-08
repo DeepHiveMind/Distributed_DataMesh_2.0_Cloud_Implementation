@@ -91,7 +91,7 @@ The architecture is the convergence of Distributed Domain Driven Architecture, S
 				(iv) Federated Governance
 
 
-- In technical parlance, Data Mesh is *simply a fusion of similar concepts, which are off-late being practised to "SCALE UP SOFTWARE DEVELOPMENT", in Data Analytics World to "SCALE UP DATA ANLAYTICS". 
+- In technical parlance, Data Mesh is *simply a fusion of similar concepts, which are off-late being practised to "SCALE UP SOFTWARE DEVELOPMENT", in Data Analytics World to "SCALE UP DATA ANLAYTICS" *. 
 Well! Well!! .. We all know the concptual blocks which are fuelling SCALING UP SOFTWARE DEVELOPMENT, such as -[a] Decentralize business into domains, [b] Decentralize engineering into autonomous teams, [c] Decentralize monoliths into microservices, [d] Decentralize operations into DevOps-driven teams. Yes! These very concepts are embedded in Data Mesh to SCALE UP DATA ANLAYTICS!!.. Hope! You can see the resemblance!
 
  'Distributed Data Mesh 2.0' is an advancement of Data Mesh Architectural paradigm with [advanced Data Mesh Topologies](#data-mesh-topology-patterns) across Multi/Hybrid Cloud.
